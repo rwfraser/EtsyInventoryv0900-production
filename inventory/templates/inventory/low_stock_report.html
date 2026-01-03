@@ -1,0 +1,60 @@
+{% extends 'inventory/base.html' %}
+
+{% block title %}Low Stock Report - Etsy Inventory{% endblock %}
+
+{% block content %}
+<h2>Low Stock Alert</h2>
+
+{% if low_stock_products %}
+<div class="alert alert-warning">
+    ⚠️ <strong>{{ low_stock_products|length }}</strong> product(s) are running low on stock!
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>SKU</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Available</th>
+            <th>Reserved</th>
+            <th>Threshold</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in low_stock_products %}
+        <tr>
+            <td><strong>{{ product.sku }}</strong></td>
+            <td>{{ product.title }}</td>
+            <td>{{ product.category|default:"—" }}</td>
+            <td>
+                {% if product.available_stock == 0 %}
+                    <span class="badge badge-danger">OUT OF STOCK</span>
+                {% else %}
+                    <span class="badge badge-warning">{{ product.available_stock }}</span>
+                {% endif %}
+            </td>
+            <td>{{ product.quantity_reserved }}</td>
+            <td>{{ product.low_stock_threshold }}</td>
+            <td>
+                <a href="{% url 'inventory:product_detail' product.pk %}" class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div style="padding: 40px; text-align: center; color: #666;">
+    <h3 style="color: green;">✓ All Products Well Stocked</h3>
+    <p>No products are currently below their low stock threshold.</p>
+    <a href="{% url 'inventory:product_list' %}" class="btn btn-primary">View All Products</a>
+</div>
+{% endif %}
+
+<div style="margin-top: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 4px;">
+    <h3>Inventory Summary</h3>
+    <p><strong>Total Inventory Value:</strong> ${{ total_value|floatformat:2 }}</p>
+</div>
+
+{% endblock %}

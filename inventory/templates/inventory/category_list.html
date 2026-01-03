@@ -1,0 +1,37 @@
+{% extends 'inventory/base.html' %}
+
+{% block title %}Categories - Etsy Inventory{% endblock %}
+
+{% block content %}
+<h2>Product Categories</h2>
+
+{% if categories %}
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Product Count</th>
+            <th>Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for category in categories %}
+        <tr>
+            <td><strong>{{ category.name }}</strong></td>
+            <td>{{ category.description|truncatewords:15|default:"—" }}</td>
+            <td>{{ category.products.count }}</td>
+            <td>{{ category.created_at|date:"Y-m-d" }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No categories found. <a href="{% url 'admin:inventory_category_add' %}">Add your first category</a></p>
+{% endif %}
+
+<div style="margin-top: 30px;">
+    <a href="{% url 'admin:inventory_category_add' %}" class="btn btn-primary">Add New Category</a>
+</div>
+
+{% endblock %}

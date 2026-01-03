@@ -1,0 +1,159 @@
+{% extends 'inventory/base.html' %}
+
+{% block title %}{{ product.title }} - Product Detail{% endblock %}
+
+{% block content %}
+<a href="{% url 'inventory:product_list' %}" style="color: #d56c00;">&larr; Back to Products</a>
+
+<h2 style="margin-top: 20px;">{{ product.title }}</h2>
+<p style="color: #666; margin-bottom: 30px;">SKU: {{ product.sku }}</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+    <div>
+        <h3>Product Information</h3>
+        <table style="margin-top: 10px;">
+            <tr>
+                <td><strong>Category:</strong></td>
+                <td>{{ product.category|default:"Not categorized" }}</td>
+            </tr>
+            <tr>
+                <td><strong>Status:</strong></td>
+                <td>
+                    {% if product.status == 'active' %}
+                        <span class="badge badge-success">Active</span>
+                    {% elif product.status == 'draft' %}
+                        <span class="badge badge-secondary">Draft</span>
+                    {% elif product.status == 'sold_out' %}
+                        <span class="badge badge-danger">Sold Out</span>
+                    {% else %}
+                        <span class="badge badge-warning">{{ product.get_status_display }}</span>
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Description:</strong></td>
+                <td>{{ product.description }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h3>Pricing & Inventory</h3>
+        <table style="margin-top: 10px;">
+            <tr>
+                <td><strong>Cost Price:</strong></td>
+                <td>${{ product.cost_price }}</td>
+            </tr>
+            <tr>
+                <td><strong>Sale Price:</strong></td>
+                <td>${{ product.sale_price }}</td>
+            </tr>
+            <tr>
+                <td><strong>Profit Margin:</strong></td>
+                <td>{{ product.profit_margin|floatformat:1 }}%</td>
+            </tr>
+            <tr>
+                <td><strong>Total Available:</strong></td>
+                <td>{{ product.quantity_available }}</td>
+            </tr>
+            <tr>
+                <td><strong>Reserved:</strong></td>
+                <td>{{ product.quantity_reserved }}</td>
+            </tr>
+            <tr>
+                <td><strong>Available to Sell:</strong></td>
+                <td>
+                    {% if product.is_low_stock %}
+                        <span class="badge badge-danger">{{ product.available_stock }}</span>
+                    {% else %}
+                        {{ product.available_stock }}
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Total Value:</strong></td>
+                <td>${{ product.total_value }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% if product.etsy_listing_id %}
+<div style="margin-bottom: 30px;">
+    <h3>Etsy Integration</h3>
+    <p><strong>Listing ID:</strong> {{ product.etsy_listing_id }}</p>
+    {% if product.etsy_url %}
+        <p><a href="{{ product.etsy_url }}" target="_blank" class="btn btn-primary">View on Etsy</a></p>
+    {% endif %}
+</div>
+{% endif %}
+
+{% if suppliers %}
+<div style="margin-bottom: 30px;">
+    <h3>Suppliers</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Supplier</th>
+                <th>Supplier SKU</th>
+                <th>Price</th>
+                <th>Min Order</th>
+                <th>Lead Time</th>
+                <th>Primary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ps in suppliers %}
+            <tr>
+                <td>{{ ps.supplier.name }}</td>
+                <td>{{ ps.supplier_sku|default:"—" }}</td>
+                <td>${{ ps.supplier_price }}</td>
+                <td>{{ ps.minimum_order_quantity }}</td>
+                <td>{{ ps.lead_time_days }} days</td>
+                <td>{% if ps.is_primary %}<span class="badge badge-success">Yes</span>{% else %}—{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if recent_movements %}
+<div>
+    <h3>Recent Stock Movements</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Quantity</th>
+                <th>Reference</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for movement in recent_movements %}
+            <tr>
+                <td>{{ movement.created_at|date:"Y-m-d H:i" }}</td>
+                <td>{{ movement.get_movement_type_display }}</td>
+                <td>
+                    {% if movement.quantity > 0 %}
+                        <span style="color: green;">+{{ movement.quantity }}</span>
+                    {% else %}
+                        <span style="color: red;">{{ movement.quantity }}</span>
+                    {% endif %}
+                </td>
+                <td>{{ movement.reference_number|default:"—" }}</td>
+                <td>{{ movement.notes|truncatewords:10|default:"—" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+<div style="margin-top: 30px;">
+    <a href="{% url 'admin:inventory_product_change' product.pk %}" class="btn btn-primary">Edit Product</a>
+</div>
+
+{% endblock %}
