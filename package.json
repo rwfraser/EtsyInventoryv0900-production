@@ -1,0 +1,13 @@
+{
+  "name": "etsy-scraper",
+  "version": "1.0.0",
+  "type": "module",  
+  "scripts": {
+    "start": "ts-node SelfHealingScraper.ts"
+  },
+
+  "dependencies": {
+    "openai": "^6.15.0",
+    "playwright": "^1.57.0"
+  }
+}
