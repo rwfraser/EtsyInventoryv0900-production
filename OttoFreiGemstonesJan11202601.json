@@ -1,0 +1,1314 @@
+{
+  "scraped_at": "2026-01-11T09:44:59.142062",
+  "total_products": 24,
+  "categories_scraped": 1,
+  "source_url": "https://www.ottofrei.com/collections/lab-created-assembled-faceted-gemstones?page=4",
+  "products": [
+    {
+      "name": "Round Faceted Imitation Aquamarine",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.00mm",
+          "price": 0.54,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 0.7,
+          "in_stock": false
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.58,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.65,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.4,
+          "in_stock": false
+        },
+        {
+          "size": "5.00mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.8,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.96,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 4.45,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 5,
+          "in_stock": false
+        },
+        {
+          "size": "8.00mm",
+          "price": 5.8,
+          "in_stock": false
+        },
+        {
+          "size": "1.00mm",
+          "price": 0.3,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 0.33,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 0.8,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3,
+          "in_stock": false
+        },
+        {
+          "size": "11.00mm",
+          "price": 7.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-aqumarine"
+    },
+    {
+      "name": "Square Faceted Imitation Citrine",
+      "material": null,
+      "color": "Yellow",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 5,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-citrine"
+    },
+    {
+      "name": "Round Faceted Imitation Alexandrite",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 0.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 0.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 0.65,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 0.69,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 0.72,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 0.75,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.62,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.8,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 4.4,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 4.6,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 7.1,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 6.84,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Square Faceted Imitation Pink Tourmaline",
+      "material": null,
+      "color": "Pink",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 3.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Square Faceted Imitation Blue Zircon",
+      "material": null,
+      "color": "Blue",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Square Faceted Imitation Peridot",
+      "material": null,
+      "color": "Green",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 3,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 3.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-peridot"
+    },
+    {
+      "name": "Round Faceted Imitation Sapphire",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 0.45,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 1.08,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 1.1,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 1.12,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 1.15,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.17,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.2,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.25,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.3,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.35,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.45,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 5,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 5.2,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 5.8,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 6.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Square Faceted Imitation Emerald",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-emerald"
+    },
+    {
+      "name": "Round Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 0.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 0.55,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 0.65,
+          "in_stock": false
+        },
+        {
+          "size": "1.75mm",
+          "price": 0.7,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 0.75,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 0.8,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 0.9,
+          "in_stock": false
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.2,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.3,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 1.71,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.25,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 2.3,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 2.35,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.25,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 3.75,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Round Faceted Imitation Emerald",
+      "material": null,
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 1.95,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 1.99,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 2.05,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 2.25,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 2.35,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 3.93,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 5.04,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 5.1,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 5.2,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 5.25,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 6.42,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 7.82,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 8.6,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 10.49,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 5.15,
+          "in_stock": true
+        },
+        {
+          "size": "12.0mm",
+          "price": 14.75,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-emerald"
+    },
+    {
+      "name": "Emerald Cut Imitation Aquamarine",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 6.15,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 7,
+          "in_stock": false
+        },
+        {
+          "size": "10x8mm",
+          "price": 8.34,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 13.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-imitation-aquamarine"
+    },
+    {
+      "name": "Square Faceted Imitation Amethyst",
+      "material": null,
+      "color": "Purple",
+      "shape": null,
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 6,
+          "in_stock": true
+        },
+        {
+          "size": "3x3mm",
+          "price": 5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Round Faceted Imitation Blue Zircon",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 0.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 2.55,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.65,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.33,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 6.1,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 7.95,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 9,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 14.58,
+          "in_stock": false
+        },
+        {
+          "size": "1.50mm",
+          "price": 0.65,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 0.75,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.8,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Amethyst",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 7.11,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.72,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 10.41,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 12.33,
+          "in_stock": false
+        },
+        {
+          "size": "10x8mm",
+          "price": 27,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 30,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-imitation-amethyst"
+    },
+    {
+      "name": "Square Faceted Imitation Sapphire",
+      "material": null,
+      "color": "Blue",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Square Faceted Imitation Alexandrite",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 1.95,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Cushion Faceted Imitation Emerald",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "7x5mm",
+          "price": 7,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 6.94,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 10.05,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 18.75,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 28.5,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 29.75,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 5.46,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/cushion-faceted-imitation-emerald"
+    },
+    {
+      "name": "Square Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.61,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.05,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Round Faceted Imitation Pink Tourmaline",
+      "material": null,
+      "color": "Pink",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 0.6,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 0.65,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 0.7,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 0.8,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 0.95,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.55,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.25,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 5.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.7,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 2.8,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 3,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.2,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 3.4,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 6.35,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 6.45,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Round Faceted Imitation Citrine",
+      "material": null,
+      "color": "Yellow",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 1.05,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 1.1,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.55,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.65,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 5.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.2,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 7.68,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 8,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 9.81,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 12.06,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 13,
+          "in_stock": true
+        },
+        {
+          "size": "12mm",
+          "price": 15,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-citrine"
+    },
+    {
+      "name": "Round Faceted Imitation Peridot",
+      "material": null,
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 0.78,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 0.84,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 0.9,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.57,
+          "in_stock": false
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.74,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 3,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 3.05,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.25,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.43,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 5,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 5,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 6.42,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 8.85,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 18.42,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 18.75,
+          "in_stock": true
+        },
+        {
+          "size": "12mm",
+          "price": 19,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-peridot"
+    },
+    {
+      "name": "Square Faceted Imitation Red Garnet",
+      "material": null,
+      "color": "Red",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.45,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-red-garnet-simulant"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Red Garnet",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 4.95,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 9,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 10.85,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 12.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Square Faceted Imitation Aquamarine",
+      "material": null,
+      "color": "Blue",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.55,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.41,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-aquamarine"
+    }
+  ]
+}

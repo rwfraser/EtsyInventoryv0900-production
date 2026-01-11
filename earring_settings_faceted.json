@@ -5,14 +5,7 @@
     "price": "$22.94",
     "material": "Sterling Silver",
     "overall_dimensions": "4mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "4mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46462806687967,
@@ -24,14 +17,7 @@
     "price": "$27.39",
     "material": "Sterling Silver",
     "overall_dimensions": "5mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "5mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46883265773791,
@@ -43,14 +29,7 @@
     "price": "$29.20",
     "material": "Sterling Silver",
     "overall_dimensions": "6mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "6mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46883265806559,
@@ -62,14 +41,7 @@
     "price": "$31.15",
     "material": "Sterling Silver",
     "overall_dimensions": "7mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "7mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46883265839327,
@@ -81,14 +53,7 @@
     "price": "$33.73",
     "material": "Sterling Silver",
     "overall_dimensions": "8mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "8mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46883265872095,
@@ -100,14 +65,7 @@
     "price": "$31.12",
     "material": "Sterling Silver",
     "overall_dimensions": "10mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "10mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46883265904863,
@@ -119,12 +77,7 @@
     "price": "$11.24",
     "material": "Sterling Silver",
     "overall_dimensions": "3x3mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "3x3mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576063684831,
@@ -136,12 +89,7 @@
     "price": "$12.33",
     "material": "Sterling Silver",
     "overall_dimensions": "4x4mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "4x4mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576063717599,
@@ -153,12 +101,7 @@
     "price": "$12.15",
     "material": "Sterling Silver",
     "overall_dimensions": "5x5mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "5x5mm",
     "gemstone_shape": "cushion",
     "available_quantity": "Out of Stock",
     "variant_id": 44576063750367,
@@ -170,12 +113,7 @@
     "price": "$13.38",
     "material": "Sterling Silver",
     "overall_dimensions": "6x6mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "6x6mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576063783135,
@@ -187,13 +125,7 @@
     "price": "$30.31",
     "material": "Sterling Silver",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575962071263,
@@ -205,13 +137,7 @@
     "price": "$31.42",
     "material": "Sterling Silver",
     "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
+    "gemstone_dimensions": "6x8mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575962104031,
@@ -223,13 +149,7 @@
     "price": "$25.55",
     "material": "Sterling Silver",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575962136799,
@@ -241,13 +161,7 @@
     "price": "$40.19",
     "material": "Sterling Silver",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575962169567,
@@ -259,13 +173,7 @@
     "price": "$38.08",
     "material": "Sterling Silver",
     "overall_dimensions": "9x11mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
+    "gemstone_dimensions": "9x11mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575962202335,
@@ -277,14 +185,7 @@
     "price": "$12.56",
     "material": "Sterling Silver",
     "overall_dimensions": "4x4mm",
-    "gemstone_dimensions": [
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm",
-      "7mm x 7mm",
-      "8mm x 8mm",
-      "12mm x 12mm"
-    ],
+    "gemstone_dimensions": "4x4mm",
     "gemstone_shape": "square",
     "available_quantity": "In Stock",
     "variant_id": 44575920783583,
@@ -296,14 +197,7 @@
     "price": "$18.49",
     "material": "Sterling Silver",
     "overall_dimensions": "5x5mm",
-    "gemstone_dimensions": [
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm",
-      "7mm x 7mm",
-      "8mm x 8mm",
-      "12mm x 12mm"
-    ],
+    "gemstone_dimensions": "5x5mm",
     "gemstone_shape": "square",
     "available_quantity": "In Stock",
     "variant_id": 44575920816351,
@@ -315,14 +209,7 @@
     "price": "$19.39",
     "material": "Sterling Silver",
     "overall_dimensions": "6x6mm",
-    "gemstone_dimensions": [
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm",
-      "7mm x 7mm",
-      "8mm x 8mm",
-      "12mm x 12mm"
-    ],
+    "gemstone_dimensions": "6x6mm",
     "gemstone_shape": "square",
     "available_quantity": "In Stock",
     "variant_id": 44575920849119,
@@ -334,14 +221,7 @@
     "price": "$19.71",
     "material": "Sterling Silver",
     "overall_dimensions": "7x7mm",
-    "gemstone_dimensions": [
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm",
-      "7mm x 7mm",
-      "8mm x 8mm",
-      "12mm x 12mm"
-    ],
+    "gemstone_dimensions": "7x7mm",
     "gemstone_shape": "square",
     "available_quantity": "In Stock",
     "variant_id": 44575920881887,
@@ -353,14 +233,7 @@
     "price": "$32.60",
     "material": "Sterling Silver",
     "overall_dimensions": "8x8mm",
-    "gemstone_dimensions": [
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm",
-      "7mm x 7mm",
-      "8mm x 8mm",
-      "12mm x 12mm"
-    ],
+    "gemstone_dimensions": "8x8mm",
     "gemstone_shape": "square",
     "available_quantity": "In Stock",
     "variant_id": 44575920914655,
@@ -372,14 +245,7 @@
     "price": "$34.95",
     "material": "Sterling Silver",
     "overall_dimensions": "12x12mm",
-    "gemstone_dimensions": [
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm",
-      "7mm x 7mm",
-      "8mm x 8mm",
-      "12mm x 12mm"
-    ],
+    "gemstone_dimensions": "12x12mm",
     "gemstone_shape": "square",
     "available_quantity": "In Stock",
     "variant_id": 44575920947423,
@@ -391,14 +257,7 @@
     "price": "$15.15",
     "material": "Sterling Silver",
     "overall_dimensions": "3x5mm",
-    "gemstone_dimensions": [
-      "3mm x 5mm",
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "3x5mm",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 46462807507167,
@@ -410,14 +269,7 @@
     "price": "$23.21",
     "material": "Sterling Silver",
     "overall_dimensions": "4x6mm",
-    "gemstone_dimensions": [
-      "3mm x 5mm",
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "4x6mm",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 46883235889375,
@@ -429,14 +281,7 @@
     "price": "$15.49",
     "material": "Sterling Silver",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "3mm x 5mm",
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 46883235922143,
@@ -448,14 +293,7 @@
     "price": "$16.70",
     "material": "Sterling Silver",
     "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "3mm x 5mm",
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "6x8mm",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 46883235954911,
@@ -467,14 +305,7 @@
     "price": "$20.16",
     "material": "Sterling Silver",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "3mm x 5mm",
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 46883235987679,
@@ -486,14 +317,7 @@
     "price": "$20.97",
     "material": "Sterling Silver",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "3mm x 5mm",
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 46883236020447,
@@ -505,10 +329,7 @@
     "price": "$25.52",
     "material": "Sterling Silver",
     "overall_dimensions": "4x6mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm"
-    ],
+    "gemstone_dimensions": "4x6mm",
     "gemstone_shape": "rectangular",
     "available_quantity": "In Stock",
     "variant_id": 44576095731935,
@@ -520,10 +341,7 @@
     "price": "$31.00",
     "material": "Sterling Silver",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "rectangular",
     "available_quantity": "In Stock",
     "variant_id": 44576095764703,
@@ -535,9 +353,7 @@
     "price": "$21.18",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993790687,
@@ -549,12 +365,7 @@
     "price": "$10.88",
     "material": "Sterling Silver",
     "overall_dimensions": "3x3mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "3x3mm",
     "gemstone_shape": "triangular",
     "available_quantity": "In Stock",
     "variant_id": 44576096059615,
@@ -566,12 +377,7 @@
     "price": "$11.54",
     "material": "Sterling Silver",
     "overall_dimensions": "4x4mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "4x4mm",
     "gemstone_shape": "triangular",
     "available_quantity": "In Stock",
     "variant_id": 44576096092383,
@@ -583,12 +389,7 @@
     "price": "$11.66",
     "material": "Sterling Silver",
     "overall_dimensions": "5x5mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "5x5mm",
     "gemstone_shape": "triangular",
     "available_quantity": "In Stock",
     "variant_id": 44576096125151,
@@ -600,12 +401,7 @@
     "price": "$20.13",
     "material": "Sterling Silver",
     "overall_dimensions": "6x6mm",
-    "gemstone_dimensions": [
-      "3mm x 3mm",
-      "4mm x 4mm",
-      "5mm x 5mm",
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "6x6mm",
     "gemstone_shape": "triangular",
     "available_quantity": "In Stock",
     "variant_id": 44576096157919,
@@ -617,15 +413,7 @@
     "price": "$13.88",
     "material": "Sterling Silver",
     "overall_dimensions": "5mm",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "5mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44576092291295,
@@ -637,15 +425,7 @@
     "price": "$15.50",
     "material": "Sterling Silver",
     "overall_dimensions": "6mm",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "6mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44576092324063,
@@ -657,15 +437,7 @@
     "price": "$16.89",
     "material": "Sterling Silver",
     "overall_dimensions": "6.5mm",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "6.5mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44576092455135,
@@ -677,15 +449,7 @@
     "price": "$21.75",
     "material": "Sterling Silver",
     "overall_dimensions": "8mm",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "8mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44576092356831,
@@ -697,15 +461,7 @@
     "price": "$20.56",
     "material": "Sterling Silver",
     "overall_dimensions": "8mm shallow",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "8mm shallow",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46242173223135,
@@ -717,15 +473,7 @@
     "price": "$20.56",
     "material": "Sterling Silver",
     "overall_dimensions": "10mm",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "10mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44576092389599,
@@ -737,109 +485,11 @@
     "price": "$34.44",
     "material": "Sterling Silver",
     "overall_dimensions": "12mm",
-    "gemstone_dimensions": [
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "8mm",
-      "8mm shallow",
-      "10mm",
-      "12mm"
-    ],
+    "gemstone_dimensions": "12mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44576092422367,
     "product_url": "https://diyjewelry.us/products/ear-wires-with-round-basket-setting-in-sterling-silver"
-  },
-  {
-    "product_number": "EW730",
-    "product_title": "Ear Wires Earrings Settingss with Pear Shape Basket Prongs Mounting in Sterling Silver - Various Sizes",
-    "price": "$18.79",
-    "material": "Sterling Silver",
-    "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
-    "gemstone_shape": "pear",
-    "available_quantity": "In Stock",
-    "variant_id": 44575963807967,
-    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settingss-with-pear-shape-basket-prongs-mounting-in-sterling-silver-various-sizes"
-  },
-  {
-    "product_number": "EW731",
-    "product_title": "Ear Wires Earrings Settingss with Pear Shape Basket Prongs Mounting in Sterling Silver - Various Sizes",
-    "price": "$15.31",
-    "material": "Sterling Silver",
-    "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
-    "gemstone_shape": "pear",
-    "available_quantity": "In Stock",
-    "variant_id": 44575963840735,
-    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settingss-with-pear-shape-basket-prongs-mounting-in-sterling-silver-various-sizes"
-  },
-  {
-    "product_number": "EW732",
-    "product_title": "Ear Wires Earrings Settingss with Pear Shape Basket Prongs Mounting in Sterling Silver - Various Sizes",
-    "price": "$19.31",
-    "material": "Sterling Silver",
-    "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
-    "gemstone_shape": "pear",
-    "available_quantity": "In Stock",
-    "variant_id": 44575963873503,
-    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settingss-with-pear-shape-basket-prongs-mounting-in-sterling-silver-various-sizes"
-  },
-  {
-    "product_number": "EW733",
-    "product_title": "Ear Wires Earrings Settingss with Pear Shape Basket Prongs Mounting in Sterling Silver - Various Sizes",
-    "price": "$18.10",
-    "material": "Sterling Silver",
-    "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
-    "gemstone_shape": "pear",
-    "available_quantity": "In Stock",
-    "variant_id": 44575963906271,
-    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settingss-with-pear-shape-basket-prongs-mounting-in-sterling-silver-various-sizes"
-  },
-  {
-    "product_number": "EW734",
-    "product_title": "Ear Wires Earrings Settingss with Pear Shape Basket Prongs Mounting in Sterling Silver - Various Sizes",
-    "price": "$26.54",
-    "material": "Sterling Silver",
-    "overall_dimensions": "9x11mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "9mm x 11mm"
-    ],
-    "gemstone_shape": "pear",
-    "available_quantity": "In Stock",
-    "variant_id": 44575963939039,
-    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settingss-with-pear-shape-basket-prongs-mounting-in-sterling-silver-various-sizes"
   },
   {
     "product_number": "ES210",
@@ -847,12 +497,7 @@
     "price": "$23.91",
     "material": "Sterling Silver",
     "overall_dimensions": "4x6mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "4x6mm",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 46462806589663,
@@ -864,12 +509,7 @@
     "price": "$25.43",
     "material": "Sterling Silver",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46883296903391,
@@ -881,12 +521,7 @@
     "price": "$35.87",
     "material": "Sterling Silver",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46883296936159,
@@ -898,12 +533,7 @@
     "price": "$38.25",
     "material": "Sterling Silver",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46883296968927,
@@ -915,10 +545,7 @@
     "price": "$2.41",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm",
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575919997151,
@@ -930,9 +557,7 @@
     "price": "$84.42",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7x9mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44576063815903,
@@ -944,9 +569,7 @@
     "price": "$26.39",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575997984991,
@@ -958,28 +581,11 @@
     "price": "$25.14",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575997919455,
     "product_url": "https://diyjewelry.us/products/czs-petals-flower-earrings-settings-with-round-prongs-mounting-in-sterling-silver-4mm"
-  },
-  {
-    "product_number": "EW558",
-    "product_title": "Ear Wires Earrings Settings with Pear Shape Prongs Mounting in Sterling Silver 7x10mm",
-    "price": "$30.39",
-    "material": "Sterling Silver",
-    "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7mm",
-      "10mm"
-    ],
-    "gemstone_shape": "pear",
-    "available_quantity": "In Stock",
-    "variant_id": 44575994904799,
-    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settings-with-pear-shape-prongs-mounting-in-sterling-silver-7x10mm"
   },
   {
     "product_number": "EW551",
@@ -987,9 +593,7 @@
     "price": "$24.56",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm x 6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575994642655,
@@ -1001,9 +605,7 @@
     "price": "$18.43",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575992807647,
@@ -1015,10 +617,7 @@
     "price": "$32.28",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm",
-      "8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575962366175,
@@ -1030,9 +629,7 @@
     "price": "$30.60",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575997788383,
@@ -1044,9 +641,7 @@
     "price": "$18.15",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575992611039,
@@ -1058,9 +653,7 @@
     "price": "$30.93",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6x8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575992381663,
@@ -1072,14 +665,7 @@
     "price": "$155.90",
     "material": "gold",
     "overall_dimensions": "4x6mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "4x6mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46463050055903,
@@ -1091,14 +677,7 @@
     "price": "$195.34",
     "material": "gold",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46463050088671,
@@ -1110,14 +689,7 @@
     "price": "$220.69",
     "material": "gold",
     "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "6x8mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46463050121439,
@@ -1129,14 +701,7 @@
     "price": "$244.63",
     "material": "gold",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46463050154207,
@@ -1148,14 +713,7 @@
     "price": "$274.21",
     "material": "gold",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46463050186975,
@@ -1167,14 +725,7 @@
     "price": "$312.24",
     "material": "gold",
     "overall_dimensions": "10x12mm",
-    "gemstone_dimensions": [
-      "4mm x 6mm",
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "10x12mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 46463050219743,
@@ -1186,9 +737,7 @@
     "price": "$30.33",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993626847,
@@ -1200,9 +749,7 @@
     "price": "$24.68",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575964365023,
@@ -1214,9 +761,7 @@
     "price": "$19.31",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "9mm x 11mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575960432863,
@@ -1228,10 +773,7 @@
     "price": "$32.10",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm",
-      "8mm x 12mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575960301791,
@@ -1243,9 +785,7 @@
     "price": "$4.23",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575919931615,
@@ -1257,9 +797,7 @@
     "price": "$30.15",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "10mm x 15mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575919636703,
@@ -1271,12 +809,7 @@
     "price": "$3.05",
     "material": "Sterling Silver",
     "overall_dimensions": "3mm",
-    "gemstone_dimensions": [
-      "3mm",
-      "4mm",
-      "5mm",
-      "6mm"
-    ],
+    "gemstone_dimensions": "3mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575918817503,
@@ -1288,12 +821,7 @@
     "price": "$3.28",
     "material": "Sterling Silver",
     "overall_dimensions": "4mm",
-    "gemstone_dimensions": [
-      "3mm",
-      "4mm",
-      "5mm",
-      "6mm"
-    ],
+    "gemstone_dimensions": "4mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575918850271,
@@ -1305,12 +833,7 @@
     "price": "$3.55",
     "material": "Sterling Silver",
     "overall_dimensions": "5mm",
-    "gemstone_dimensions": [
-      "3mm",
-      "4mm",
-      "5mm",
-      "6mm"
-    ],
+    "gemstone_dimensions": "5mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575918883039,
@@ -1322,12 +845,7 @@
     "price": "$3.83",
     "material": "Sterling Silver",
     "overall_dimensions": "6mm",
-    "gemstone_dimensions": [
-      "3mm",
-      "4mm",
-      "5mm",
-      "6mm"
-    ],
+    "gemstone_dimensions": "6mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575918915807,
@@ -1339,9 +857,7 @@
     "price": "$45.18",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8x10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575998279903,
@@ -1353,9 +869,7 @@
     "price": "$39.31",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7x9mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575998214367,
@@ -1367,9 +881,7 @@
     "price": "$21.37",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575994282207,
@@ -1381,9 +893,7 @@
     "price": "$20.00",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993561311,
@@ -1395,9 +905,7 @@
     "price": "$21.40",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993397471,
@@ -1409,9 +917,7 @@
     "price": "$17.20",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575992971487,
@@ -1423,9 +929,7 @@
     "price": "$26.81",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575992709343,
@@ -1437,9 +941,7 @@
     "price": "$20.97",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575992479967,
@@ -1451,9 +953,7 @@
     "price": "$36.12",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7x10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "Out of Stock",
     "variant_id": 44575991988447,
@@ -1465,10 +965,8 @@
     "price": "$21.72",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6-7mm"
-    ],
-    "gemstone_shape": "various (up to 6-7mm thick)",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "various (up to approximately 6-7mm thick)",
     "available_quantity": "Out of Stock",
     "variant_id": 44575965020383,
     "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settingss-with-pinch-bail-mounting-in-sterling-silver-20-gauge"
@@ -1479,9 +977,7 @@
     "price": "$1.51",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "2.5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575936479455,
@@ -1493,9 +989,7 @@
     "price": "$45.43",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6x8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575998345439,
@@ -1507,9 +1001,7 @@
     "price": "$32.48",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575998148831,
@@ -1521,9 +1013,7 @@
     "price": "$34.77",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm x 8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575995003103,
@@ -1535,9 +1025,7 @@
     "price": "$32.26",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575994577119,
@@ -1549,9 +1037,7 @@
     "price": "$18.75",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575994380511,
@@ -1563,9 +1049,7 @@
     "price": "$26.56",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575994314975,
@@ -1577,9 +1061,7 @@
     "price": "$20.24",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4.5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575994249439,
@@ -1591,9 +1073,7 @@
     "price": "$20.20",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575993233631,
@@ -1605,9 +1085,7 @@
     "price": "$20.97",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575992774879,
@@ -1619,9 +1097,7 @@
     "price": "$28.16",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575992447199,
@@ -1633,9 +1109,7 @@
     "price": "$21.90",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm x 5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575966003423,
@@ -1647,10 +1121,8 @@
     "price": "$27.42",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "10mm x 10mm"
-    ],
-    "gemstone_shape": "square",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575960826079,
     "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settings-with-czs-and-round-prongs-mounting-in-sterling-silver-9mm"
@@ -1661,10 +1133,8 @@
     "price": "$39.82",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8mm x 8mm"
-    ],
-    "gemstone_shape": "square",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "heart",
     "available_quantity": "In Stock",
     "variant_id": 44575960334559,
     "product_url": "https://diyjewelry.us/products/heart-ear-studs-earrings-settings-with-heart-shape-prongs-mounting-in-sterling-silver-8x8mm"
@@ -1675,9 +1145,7 @@
     "price": "$34.19",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6x8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575936872671,
@@ -1689,10 +1157,7 @@
     "price": "$13.70",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm",
-      "7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575930908895,
@@ -1704,7 +1169,7 @@
     "price": "$26.25",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "not specified",
     "available_quantity": "In Stock",
     "variant_id": 44575919145183,
@@ -1716,12 +1181,7 @@
     "price": "$224.91",
     "material": "gold",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576086065375,
@@ -1733,12 +1193,7 @@
     "price": "$230.55",
     "material": "gold",
     "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "6x8mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576086098143,
@@ -1750,12 +1205,7 @@
     "price": "$264.35",
     "material": "gold",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576086130911,
@@ -1767,12 +1217,7 @@
     "price": "$307.36",
     "material": "gold",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576086163679,
@@ -1784,15 +1229,7 @@
     "price": "$165.76",
     "material": "gold",
     "overall_dimensions": "4mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "4mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46463050350815,
@@ -1804,15 +1241,7 @@
     "price": "$172.80",
     "material": "gold",
     "overall_dimensions": "5mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "5mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46463050383583,
@@ -1824,15 +1253,7 @@
     "price": "$241.82",
     "material": "gold",
     "overall_dimensions": "6.5mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "6.5mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46463050416351,
@@ -1844,15 +1265,7 @@
     "price": "$205.20",
     "material": "gold",
     "overall_dimensions": "6mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "6mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46463050449119,
@@ -1864,15 +1277,7 @@
     "price": "$241.82",
     "material": "gold",
     "overall_dimensions": "7mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "7mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46463050481887,
@@ -1884,15 +1289,7 @@
     "price": "$298.15",
     "material": "gold",
     "overall_dimensions": "8mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "8mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46463050514655,
@@ -1904,15 +1301,7 @@
     "price": "$381.26",
     "material": "gold",
     "overall_dimensions": "10mm",
-    "gemstone_dimensions": [
-      "4mm",
-      "5mm",
-      "6mm",
-      "6.5mm",
-      "7mm",
-      "8mm",
-      "10mm"
-    ],
+    "gemstone_dimensions": "10mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46463050547423,
@@ -1924,9 +1313,7 @@
     "price": "$21.45",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575994151135,
@@ -1938,9 +1325,7 @@
     "price": "$30.38",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575994118367,
@@ -1952,9 +1337,7 @@
     "price": "$33.06",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993725151,
@@ -1966,9 +1349,7 @@
     "price": "$21.07",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993594079,
@@ -1980,9 +1361,7 @@
     "price": "$19.75",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993004255,
@@ -1994,9 +1373,7 @@
     "price": "$25.09",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "9mm x 13mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "rectangular",
     "available_quantity": "In Stock",
     "variant_id": 44575960498399,
@@ -2008,9 +1385,7 @@
     "price": "$23.87",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm x 6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44576096256223,
@@ -2022,9 +1397,7 @@
     "price": "$399.70",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8x10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44576085508319,
@@ -2036,12 +1409,7 @@
     "price": "$267.68",
     "material": "Sterling Silver",
     "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "6x8mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44576085311711,
@@ -2053,12 +1421,7 @@
     "price": "$343.74",
     "material": "Sterling Silver",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44576085344479,
@@ -2070,12 +1433,7 @@
     "price": "$350.78",
     "material": "Sterling Silver",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44576085377247,
@@ -2087,12 +1445,7 @@
     "price": "$514.15",
     "material": "Sterling Silver",
     "overall_dimensions": "10x12mm",
-    "gemstone_dimensions": [
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm",
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "10x12mm",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44576085410015,
@@ -2104,12 +1457,7 @@
     "price": "$248.86",
     "material": "gold",
     "overall_dimensions": "5x7mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "5x7mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576085147871,
@@ -2121,12 +1469,7 @@
     "price": "$250.26",
     "material": "gold",
     "overall_dimensions": "6x8mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "6x8mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576085180639,
@@ -2138,12 +1481,7 @@
     "price": "$272.80",
     "material": "gold",
     "overall_dimensions": "7x9mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "7x9mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576085213407,
@@ -2155,12 +1493,7 @@
     "price": "$331.96",
     "material": "gold",
     "overall_dimensions": "8x10mm",
-    "gemstone_dimensions": [
-      "5mm x 7mm",
-      "6mm x 8mm",
-      "7mm x 9mm",
-      "8mm x 10mm"
-    ],
+    "gemstone_dimensions": "8x10mm",
     "gemstone_shape": "cushion",
     "available_quantity": "In Stock",
     "variant_id": 44576085246175,
@@ -2172,10 +1505,7 @@
     "price": "$48.00",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7x9mm",
-      "8x10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575998312671,
@@ -2187,9 +1517,7 @@
     "price": "$40.28",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "13x15mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575998181599,
@@ -2201,9 +1529,7 @@
     "price": "$43.27",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8x10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575994511583,
@@ -2215,9 +1541,7 @@
     "price": "$22.30",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3x4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575994478815,
@@ -2229,9 +1553,7 @@
     "price": "$25.14",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575994446047,
@@ -2243,9 +1565,7 @@
     "price": "$29.29",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7x9mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575994413279,
@@ -2257,9 +1577,7 @@
     "price": "$29.90",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575994347743,
@@ -2271,9 +1589,7 @@
     "price": "$18.82",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575994183903,
@@ -2285,9 +1601,7 @@
     "price": "$18.27",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993954527,
@@ -2299,9 +1613,7 @@
     "price": "$32.92",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6x8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575993757919,
@@ -2313,9 +1625,7 @@
     "price": "$28.09",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993692383,
@@ -2327,9 +1637,7 @@
     "price": "$17.63",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993659615,
@@ -2341,9 +1649,7 @@
     "price": "$28.01",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993528543,
@@ -2355,9 +1661,7 @@
     "price": "$34.60",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575993430239,
@@ -2369,9 +1673,7 @@
     "price": "$25.74",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575993200863,
@@ -2383,9 +1685,7 @@
     "price": "$18.34",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3x5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575993037023,
@@ -2397,9 +1697,7 @@
     "price": "$21.49",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7x9mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575992938719,
@@ -2411,10 +1709,7 @@
     "price": "$14.86",
     "material": "Sterling Silver",
     "overall_dimensions": "5mm",
-    "gemstone_dimensions": [
-      "6mm",
-      "5mm"
-    ],
+    "gemstone_dimensions": "5mm",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 46462807933151,
@@ -2426,10 +1721,7 @@
     "price": "$21.30",
     "material": "Sterling Silver",
     "overall_dimensions": "6mm",
-    "gemstone_dimensions": [
-      "6mm",
-      "5mm"
-    ],
+    "gemstone_dimensions": "6mm",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 46883228582111,
@@ -2441,9 +1733,7 @@
     "price": "$19.37",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575992152287,
@@ -2455,9 +1745,7 @@
     "price": "$20.21",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575991890143,
@@ -2469,9 +1757,7 @@
     "price": "$16.36",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575991824607,
@@ -2483,9 +1769,7 @@
     "price": "$18.49",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575991791839,
@@ -2497,9 +1781,7 @@
     "price": "$30.87",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm x 7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575965774047,
@@ -2511,9 +1793,7 @@
     "price": "$43.82",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm x 7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575965610207,
@@ -2525,10 +1805,8 @@
     "price": "$23.37",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "up to 10mm"
-    ],
-    "gemstone_shape": "various (beads, briolets, or top-drilled stones or pendants)",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "various (beads, briolets, top-drilled stones or pendants)",
     "available_quantity": "Out of Stock",
     "variant_id": 44575965577439,
     "product_url": "https://diyjewelry.us/products/ear-wires-earrigs-setting-with-ribbon-flower-element-and-pinch-bail-mounting-in-sterling-silver-10mm"
@@ -2539,10 +1817,7 @@
     "price": "$25.49",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7mm",
-      "11mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575961907423,
@@ -2554,10 +1829,7 @@
     "price": "$21.72",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm",
-      "13mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575961776351,
@@ -2569,9 +1841,7 @@
     "price": "$25.91",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm x 5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575960891615,
@@ -2583,9 +1853,7 @@
     "price": "$21.56",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "11mm x 13mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "rectangular",
     "available_quantity": "Out of Stock",
     "variant_id": 44575960858847,
@@ -2597,9 +1865,7 @@
     "price": "$17.94",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7mm x 10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575960760543,
@@ -2611,9 +1877,7 @@
     "price": "$29.61",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "11mm x 11mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "In Stock",
     "variant_id": 44575960727775,
@@ -2625,9 +1889,7 @@
     "price": "$24.45",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm x 6mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575960695007,
@@ -2639,9 +1901,7 @@
     "price": "$22.55",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7mm x 8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575960662239,
@@ -2653,13 +1913,23 @@
     "price": "$21.34",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "4x7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "rectangular",
     "available_quantity": "Out of Stock",
     "variant_id": 44575960400095,
     "product_url": "https://diyjewelry.us/products/canada-flag-ear-studs-earrings-settings-with-rectangular-prongs-mounting-in-sterling-silver-4x7mm"
+  },
+  {
+    "product_number": "EW111",
+    "product_title": "Ear Wires Earrings Settings with Earring Component and Pinch Bail Mounting in Sterling Silver",
+    "price": "$24.33",
+    "material": "Sterling Silver",
+    "overall_dimensions": "Default Title",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "round",
+    "available_quantity": "Out of Stock",
+    "variant_id": 44575949455583,
+    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settings-with-earring-component-and-pinch-bail-mounting-in-sterling-silver"
   },
   {
     "product_number": "EW093",
@@ -2667,7 +1937,7 @@
     "price": "$9.05",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575948964063,
@@ -2679,11 +1949,23 @@
     "price": "$16.99",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "not specified",
     "available_quantity": "Out of Stock",
     "variant_id": 44575948898527,
     "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settings-with-czs-and-pinch-bail-mounting-in-sterling-silver-20-gauge"
+  },
+  {
+    "product_number": "EW038",
+    "product_title": "Ear Wires Earrings Settings with CZ's and Chain and Pinch Bail Mounting in Sterling Silver 23 Gauge",
+    "price": "$12.60",
+    "material": "Sterling Silver",
+    "overall_dimensions": "Default Title",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "round",
+    "available_quantity": "In Stock",
+    "variant_id": 44575948767455,
+    "product_url": "https://diyjewelry.us/products/ear-wires-earrings-settings-with-czs-chain-and-pinch-bail-mounting-in-sterling-silver-23-gauge"
   },
   {
     "product_number": "EW031",
@@ -2691,9 +1973,7 @@
     "price": "$19.84",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "30.5mm x 14mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575948603615,
@@ -2705,9 +1985,7 @@
     "price": "$30.91",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm x 8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575936643295,
@@ -2719,9 +1997,7 @@
     "price": "$19.92",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "3mm x 5mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "pear",
     "available_quantity": "In Stock",
     "variant_id": 44575936610527,
@@ -2733,9 +2009,7 @@
     "price": "$24.40",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "6mm x 8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "In Stock",
     "variant_id": 44575930843359,
@@ -2747,9 +2021,7 @@
     "price": "$7.42",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "8mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575920029919,
@@ -2761,27 +2033,23 @@
     "price": "$25.35",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "10mm x 12mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575919800543,
     "product_url": "https://diyjewelry.us/products/ear-studs-earrings-settings-with-oval-bezel-mounting-in-sterling-silver-10x12mm"
   },
   {
-    "product_number": "ES152",
-    "product_title": "Ear Studs Earrings Settings with Marquise Shape Bezel Mounting in Sterling Silver 5x11mm",
-    "price": "$29.96",
+    "product_number": "ES154",
+    "product_title": "Ear Studs Earrings Settings with Pear Shape Bezel Mounting in Sterling Silver 7x11mm",
+    "price": "$28.39",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm x 11mm"
-    ],
-    "gemstone_shape": "marquise",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "pear",
     "available_quantity": "In Stock",
-    "variant_id": 44575919603935,
-    "product_url": "https://diyjewelry.us/products/ear-studs-earrings-settings-with-marquise-shape-bezel-mounting-in-sterling-silver-5x11mm"
+    "variant_id": 44575919767775,
+    "product_url": "https://diyjewelry.us/products/ear-studs-earrings-settings-with-pear-shape-bezel-mounting-in-sterling-silver-7x11mm"
   },
   {
     "product_number": "ES151",
@@ -2789,9 +2057,7 @@
     "price": "$28.68",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "5mm x 10mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "oval",
     "available_quantity": "Out of Stock",
     "variant_id": 44575919571167,
@@ -2803,9 +2069,7 @@
     "price": "$30.16",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "7mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575919440095,
@@ -2817,12 +2081,22 @@
     "price": "$15.44",
     "material": "Sterling Silver",
     "overall_dimensions": "Default Title",
-    "gemstone_dimensions": [
-      "9mm"
-    ],
+    "gemstone_dimensions": "Default Title",
     "gemstone_shape": "round",
     "available_quantity": "Out of Stock",
     "variant_id": 44575919407327,
     "product_url": "https://diyjewelry.us/products/ear-studs-earrings-settings-with-round-cup-bezel-mounting-in-sterling-silver-9mm"
+  },
+  {
+    "product_number": "ES103",
+    "product_title": "Ear Studs Earrings Pearl Settings with CZ's and Round Cup and Peg Mounting in Sterling Silver 9mm",
+    "price": "$53.35",
+    "material": "Sterling Silver",
+    "overall_dimensions": "Default Title",
+    "gemstone_dimensions": "Default Title",
+    "gemstone_shape": "pear",
+    "available_quantity": "Out of Stock",
+    "variant_id": 44575879659743,
+    "product_url": "https://diyjewelry.us/products/ear-studs-earrings-pearl-settings-with-czs-and-round-cup-and-peg-mounting-in-sterling-silver-9mm"
   }
 ]
