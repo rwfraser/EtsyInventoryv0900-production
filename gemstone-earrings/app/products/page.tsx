@@ -10,7 +10,18 @@ export default function ProductsPage() {
   const [filteredProducts, setFilteredProducts] = useState<EarringPair[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const [filters, setFilters] = useState({
+  // Pending filters (not yet applied)
+  const [pendingFilters, setPendingFilters] = useState({
+    color: '',
+    shape: '',
+    size: '',
+    material: '',
+    minPrice: undefined as number | undefined,
+    maxPrice: undefined as number | undefined,
+  });
+
+  // Applied filters (currently active)
+  const [appliedFilters, setAppliedFilters] = useState({
     color: '',
     shape: '',
     size: '',
@@ -32,10 +43,29 @@ export default function ProductsPage() {
   }, []);
 
   useEffect(() => {
-    let result = filterProducts(allProducts, filters);
+    let result = filterProducts(allProducts, appliedFilters);
     result = sortProducts(result, sortBy);
     setFilteredProducts(result);
-  }, [filters, sortBy, allProducts]);
+  }, [appliedFilters, sortBy, allProducts]);
+
+  const handleApplyFilters = () => {
+    setAppliedFilters(pendingFilters);
+  };
+
+  const handleClearFilters = () => {
+    const emptyFilters = {
+      color: '',
+      shape: '',
+      size: '',
+      material: '',
+      minPrice: undefined,
+      maxPrice: undefined,
+    };
+    setPendingFilters(emptyFilters);
+    setAppliedFilters(emptyFilters);
+  };
+
+  const hasFilterChanges = JSON.stringify(pendingFilters) !== JSON.stringify(appliedFilters);
 
   if (loading) {
     return (
@@ -79,8 +109,8 @@ export default function ProductsPage() {
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2">Color</label>
               <select
-                value={filters.color}
-                onChange={(e) => setFilters({ ...filters, color: e.target.value })}
+                value={pendingFilters.color}
+                onChange={(e) => setPendingFilters({ ...pendingFilters, color: e.target.value })}
                 className="w-full p-2 border rounded"
               >
                 <option value="">All Colors</option>
@@ -94,8 +124,8 @@ export default function ProductsPage() {
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2">Shape</label>
               <select
-                value={filters.shape}
-                onChange={(e) => setFilters({ ...filters, shape: e.target.value })}
+                value={pendingFilters.shape}
+                onChange={(e) => setPendingFilters({ ...pendingFilters, shape: e.target.value })}
                 className="w-full p-2 border rounded"
               >
                 <option value="">All Shapes</option>
@@ -109,8 +139,8 @@ export default function ProductsPage() {
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2">Size</label>
               <select
-                value={filters.size}
-                onChange={(e) => setFilters({ ...filters, size: e.target.value })}
+                value={pendingFilters.size}
+                onChange={(e) => setPendingFilters({ ...pendingFilters, size: e.target.value })}
                 className="w-full p-2 border rounded"
               >
                 <option value="">All Sizes</option>
@@ -124,8 +154,8 @@ export default function ProductsPage() {
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2">Material</label>
               <select
-                value={filters.material}
-                onChange={(e) => setFilters({ ...filters, material: e.target.value })}
+                value={pendingFilters.material}
+                onChange={(e) => setPendingFilters({ ...pendingFilters, material: e.target.value })}
                 className="w-full p-2 border rounded"
               >
                 <option value="">All Materials</option>
@@ -135,20 +165,27 @@ export default function ProductsPage() {
               </select>
             </div>
 
-            {/* Clear Filters */}
-            <button
-              onClick={() => setFilters({
-                color: '',
-                shape: '',
-                size: '',
-                material: '',
-                minPrice: undefined,
-                maxPrice: undefined,
-              })}
-              className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded"
-            >
-              Clear All Filters
-            </button>
+            {/* Apply and Clear Filters */}
+            <div className="space-y-3">
+              <button
+                onClick={handleApplyFilters}
+                disabled={!hasFilterChanges}
+                className={`w-full font-bold py-2 px-4 rounded transition-colors ${
+                  hasFilterChanges
+                    ? 'bg-purple-600 hover:bg-purple-700 text-white'
+                    : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                }`}
+              >
+                Apply Filters
+              </button>
+              
+              <button
+                onClick={handleClearFilters}
+                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded"
+              >
+                Clear All Filters
+              </button>
+            </div>
           </div>
         </aside>
 
@@ -162,14 +199,7 @@ export default function ProductsPage() {
             <div className="text-center py-16">
               <p className="text-xl text-gray-600">No products match your filters.</p>
               <button
-                onClick={() => setFilters({
-                  color: '',
-                  shape: '',
-                  size: '',
-                  material: '',
-                  minPrice: undefined,
-                  maxPrice: undefined,
-                })}
+                onClick={handleClearFilters}
                 className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded"
               >
                 Clear Filters
