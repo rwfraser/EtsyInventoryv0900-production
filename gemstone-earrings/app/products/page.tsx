@@ -43,12 +43,15 @@ export default function ProductsPage() {
   }, []);
 
   useEffect(() => {
+    console.log('Filtering with:', appliedFilters);
     let result = filterProducts(allProducts, appliedFilters);
+    console.log('Filtered results:', result.length, 'products');
     result = sortProducts(result, sortBy);
     setFilteredProducts(result);
   }, [appliedFilters, sortBy, allProducts]);
 
   const handleApplyFilters = () => {
+    console.log('Applying filters:', pendingFilters);
     setAppliedFilters(pendingFilters);
   };
 
