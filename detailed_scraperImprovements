@@ -1,0 +1,7 @@
+Gemsngems scraper improvements:  1/10/26
+- add min required order quantity
+- add vendor name to all products
+- filter out 'drilled', 'hole', "flat bottom","briolette"
+- fix the hardcoded API key
+- move product URL to start of section from end of section
+- refine AI prompt, for example: ASSCHER is a CUT, not a shape therefore provide translation table of cuts <=> shapes in the prompt example: cushion is a square cut i.e. cushion cut = square shape, asscher cut = square shape

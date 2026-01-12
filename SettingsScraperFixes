@@ -1,0 +1,12 @@
+Scraper:
+- add supplier name to each item
+- filter 'bezel'
+- certain items have 'default title' rather than dimensions in the dimensions fields
+
+
+Importer:
+- no pricing information present
+- set Default Title to Material + Shape
+- supplier name is missing
+- quantity is missing
+- variant id is not imported 

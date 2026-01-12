@@ -288,8 +288,8 @@ def generate_combinations(settings_file: str, gemstones_file: str, output_file: 
 if __name__ == "__main__":
     # File paths
     settings_file = "earring_settings_faceted.json"
-    gemstones_file = "complete_gemstone_data_20260110_095929.json"
-    output_file = "all_earring_pair_combinations001.json"
+    gemstones_file = "OttoFreiGemstonesJan11202603_CORRECTED.json"
+    output_file = "OttoFreiGems_DIYSettings_EarringPairs_CORRECTED.json"
     
     try:
         generate_combinations(settings_file, gemstones_file, output_file)

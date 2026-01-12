@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 from datetime import datetime
 
 # Target URL - page 4 of faceted gemstones collection
-TARGET_URL = "https://www.ottofrei.com/collections/lab-created-assembled-faceted-gemstones?page=4"
+TARGET_URL = "https://www.ottofrei.com/collections/faceted-stones?page=5"
 
 async def get_product_links(page, category_url):
     """Get all individual product links from the category page."""
@@ -258,7 +258,7 @@ async def main():
         await browser.close()
         
         # Save to JSON file
-        output_file = "OttoFreiGemstonesJan11202601.json"
+        output_file = "OttoFreiGemstonesJan11202602.json"
         output_data = {
             "scraped_at": datetime.now().isoformat(),
             "total_products": len(all_products),

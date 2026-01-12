@@ -1,0 +1,56 @@
+// Enhanced Inventory ERD
+digraph {
+	nodesep=0.5 rankdir=TB ranksep=1 splines=ortho
+	node [fontname=Arial fontsize=11 shape=plaintext]
+	edge [fontcolor=gray40 fontsize=9]
+	Component [label=<
+        <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6">
+            <TR><TD BGCOLOR="#4A90E2" COLSPAN="3"><FONT COLOR="white"><B>Component</B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E8F4FD">PK</TD><TD ALIGN="LEFT" BGCOLOR="#E8F4FD">id</TD><TD BGCOLOR="#E8F4FD">integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">name</TD><TD>varchar(255)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">component_type</TD><TD>varchar(20)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">specs</TD><TD>JSON</TD></TR>
+            <TR><TD BGCOLOR="#FFF9E6">UK</TD><TD ALIGN="LEFT" BGCOLOR="#FFF9E6">supplier_url</TD><TD BGCOLOR="#FFF9E6">URL</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">cost_per_unit</TD><TD>decimal(10,2)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">stock_level</TD><TD>integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">reorder_point</TD><TD>integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">is_discontinued</TD><TD>boolean</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">last_scraped_at</TD><TD>datetime</TD></TR>
+        </TABLE>>]
+	Product [label=<
+        <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6">
+            <TR><TD BGCOLOR="#4A90E2" COLSPAN="3"><FONT COLOR="white"><B>Product</B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E8F4FD">PK</TD><TD ALIGN="LEFT" BGCOLOR="#E8F4FD">id</TD><TD BGCOLOR="#E8F4FD">integer</TD></TR>
+            <TR><TD BGCOLOR="#FFF9E6">UK</TD><TD ALIGN="LEFT" BGCOLOR="#FFF9E6">sku</TD><TD BGCOLOR="#FFF9E6">varchar(50)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">title</TD><TD>varchar(255)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">description</TD><TD>text</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">base_cost</TD><TD>decimal(10,2)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">price</TD><TD>decimal(10,2)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">margin_percent</TD><TD>decimal(5,2)</TD></TR>
+            <TR><TD BGCOLOR="#FFF9E6">UK</TD><TD ALIGN="LEFT" BGCOLOR="#FFF9E6">etsy_listing_id</TD><TD BGCOLOR="#FFF9E6">varchar(100)</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">inventory</TD><TD>integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">status</TD><TD>varchar(20)</TD></TR>
+        </TABLE>>]
+	ProductComponent [label=<
+        <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6">
+            <TR><TD BGCOLOR="#7CB342" COLSPAN="3"><FONT COLOR="white"><B>ProductComponent</B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E8F4FD">PK</TD><TD ALIGN="LEFT" BGCOLOR="#E8F4FD">id</TD><TD BGCOLOR="#E8F4FD">integer</TD></TR>
+            <TR><TD BGCOLOR="#FFE8E8">FK</TD><TD ALIGN="LEFT" BGCOLOR="#FFE8E8">product_id</TD><TD BGCOLOR="#FFE8E8">integer</TD></TR>
+            <TR><TD BGCOLOR="#FFE8E8">FK</TD><TD ALIGN="LEFT" BGCOLOR="#FFE8E8">component_id</TD><TD BGCOLOR="#FFE8E8">integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">quantity</TD><TD>integer</TD></TR>
+        </TABLE>>]
+	MarketSnapshot [label=<
+        <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6">
+            <TR><TD BGCOLOR="#FFA726" COLSPAN="3"><FONT COLOR="white"><B>MarketSnapshot</B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E8F4FD">PK</TD><TD ALIGN="LEFT" BGCOLOR="#E8F4FD">id</TD><TD BGCOLOR="#E8F4FD">integer</TD></TR>
+            <TR><TD BGCOLOR="#FFE8E8">FK</TD><TD ALIGN="LEFT" BGCOLOR="#FFE8E8">product_id</TD><TD BGCOLOR="#FFE8E8">integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">recorded_at</TD><TD>datetime</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">views</TD><TD>integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">favorites</TD><TD>integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">sales_count</TD><TD>integer</TD></TR>
+            <TR><TD></TD><TD ALIGN="LEFT">listed_price</TD><TD>decimal(10,2)</TD></TR>
+        </TABLE>>]
+	ProductComponent -> Product [label="  many:1" arrowhead=crow]
+	ProductComponent -> Component [label="  many:1" arrowhead=crow]
+	MarketSnapshot -> Product [label="  many:1" arrowhead=crow]
+}

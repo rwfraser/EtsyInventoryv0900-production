@@ -1,0 +1,663 @@
+{
+  "scraped_at": "2026-01-11T11:16:42.005191",
+  "total_products": 25,
+  "categories_scraped": 1,
+  "source_url": "https://www.ottofrei.com/collections/faceted-stones?page=5",
+  "products": [
+    {
+      "name": "Oval Faceted Lab-Created Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 13.8,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 18.2,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 31.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-lab-created-emerald"
+    },
+    {
+      "name": "Octagon Faceted Lab-Created Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 15,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 23.2,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 35,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/octagon-faceted-lab-created-emerald"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Faceted Rhodolite Garnet",
+      "material": null,
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 6.5,
+          "in_stock": false
+        },
+        {
+          "size": "5.0mm",
+          "price": 9.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-swarovski-gemstones-genuine-faceted-rhodolite-garnet"
+    },
+    {
+      "name": "Pear Faceted Imitation Peridot",
+      "material": null,
+      "color": "Green",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.04,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 5.86,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 7.6,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 11.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-peridot"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine White Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm pack of 10",
+          "price": 11.88,
+          "in_stock": true
+        },
+        {
+          "size": "5mm Pack of 2",
+          "price": 14.7,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm pack of 10",
+          "price": 11.88,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm pack of 6",
+          "price": 8.64,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-white"
+    },
+    {
+      "name": "Pear Faceted Imitation Blue Zircon",
+      "material": null,
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.6,
+          "in_stock": false
+        },
+        {
+          "size": "8x5mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 5.88,
+          "in_stock": true
+        },
+        {
+          "size": "12x8mm",
+          "price": 7.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "OttoFrei.com Gift Card",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "$25.00",
+          "price": 25,
+          "in_stock": true
+        },
+        {
+          "size": "$50.00",
+          "price": 50,
+          "in_stock": true
+        },
+        {
+          "size": "$100.00",
+          "price": 100,
+          "in_stock": true
+        },
+        {
+          "size": "$250.00",
+          "price": 250,
+          "in_stock": true
+        },
+        {
+          "size": "$500.00",
+          "price": 500,
+          "in_stock": true
+        },
+        {
+          "size": "$1,000.00",
+          "price": 1000,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/ottofrei-com-gift-card"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Pink Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.25mm pack of 10",
+          "price": 9,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm pack of 10",
+          "price": 12.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm pack of 6",
+          "price": 11.44,
+          "in_stock": true
+        },
+        {
+          "size": "2mm pack of 5",
+          "price": 10.8,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-pink"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Rainforest Green Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.5mm pack of 10",
+          "price": 11.5,
+          "in_stock": false
+        },
+        {
+          "size": "1mm pack of 10",
+          "price": 9,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-rainforest-green"
+    },
+    {
+      "name": "Round Faceted Lab-Created Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 12,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 15,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 23.7,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 30.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-emerald"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Faceted 1mm Bright Blue & Pink Sapphires | OttoFrei.com",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Pink",
+          "price": 4,
+          "in_stock": true
+        },
+        {
+          "size": "Bright Blue",
+          "price": 4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-swarovski-gemstones-genuine-faceted-sapphires"
+    },
+    {
+      "name": "Closeout Round Rose-cut Genuine Tiger's-Eye",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.5mm Pack of 100",
+          "price": 12,
+          "in_stock": true
+        },
+        {
+          "size": "1.9mm Pack of 50",
+          "price": 8,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-round-rose-cut-genuine-tigers-eye"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Violac Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm pack of 10",
+          "price": 9,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-violac"
+    },
+    {
+      "name": "Oval Faceted Sunstone",
+      "material": null,
+      "color": null,
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 40,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 60,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 100,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 150,
+          "in_stock": true
+        },
+        {
+          "size": "14x10mm",
+          "price": 300,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-sunstone"
+    },
+    {
+      "name": "Round Faceted Genuine Iolite",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 6,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 10.5,
+          "in_stock": false
+        },
+        {
+          "size": "5mm",
+          "price": 18,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 27,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-iolite"
+    },
+    {
+      "name": "Pear Faceted Imitation PInk Tourmaline",
+      "material": null,
+      "color": "Pink",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 3.6,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.25,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Square Rose-Cut Marcasite",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "1.50mm Pack of 50",
+          "price": 20,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm Pack of 50",
+          "price": 23,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-rose-cut-marcasite"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Ice Blue Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm pack of 10",
+          "price": 9,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm pack of 10",
+          "price": 9.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm pack of 10",
+          "price": 11,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm pack of 6",
+          "price": 11.46,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-ice-blue"
+    },
+    {
+      "name": "Pear Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 3.96,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.2,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Faceted Marquise Sunstone",
+      "material": null,
+      "color": null,
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "6x3mm",
+          "price": 30,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 90,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/faceted-marquise-sunstone"
+    },
+    {
+      "name": "Pear Faceted Imitation Citrine",
+      "material": null,
+      "color": "Yellow",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "8x5mm",
+          "price": 12.6,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 9.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 14.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-citrine"
+    },
+    {
+      "name": "Round Faceted Lab-Created Blue Sapphire",
+      "material": "Lab Created",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 5.85,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 6.6,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 7,
+          "in_stock": false
+        },
+        {
+          "size": "6mm",
+          "price": 10.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-blue-sapphire"
+    },
+    {
+      "name": "Oval Faceted Genuine Iolite",
+      "material": null,
+      "color": null,
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 10.92,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 11.38,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 29.7,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-iolite"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Blazing Red Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm pack of 10",
+          "price": 9,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm pack of 10",
+          "price": 12,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-blazing-red"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Poppy Topaz",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2mm pack of 5",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "1mm pack of 10",
+          "price": 9,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm pack of 10",
+          "price": 11,
+          "in_stock": true
+        },
+        {
+          "size": "7mm",
+          "price": 15.66,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-poppy"
+    }
+  ]
+}

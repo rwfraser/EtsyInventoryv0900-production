@@ -6,7 +6,7 @@
   "products": [
     {
       "name": "Round Faceted Imitation Aquamarine",
-      "material": null,
+      "material": "Synthetic",
       "color": "Blue",
       "shape": "Round",
       "variations": [
@@ -110,9 +110,9 @@
     },
     {
       "name": "Square Faceted Imitation Citrine",
-      "material": null,
+      "material": "Synthetic",
       "color": "Yellow",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -129,8 +129,8 @@
     },
     {
       "name": "Round Faceted Imitation Alexandrite",
-      "material": null,
-      "color": null,
+      "material": "Synthetic",
+      "color":"varies",
       "shape": "Round",
       "variations": [
         {
@@ -228,9 +228,9 @@
     },
     {
       "name": "Square Faceted Imitation Pink Tourmaline",
-      "material": null,
+      "material": "Synthetic",
       "color": "Pink",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -247,9 +247,9 @@
     },
     {
       "name": "Square Faceted Imitation Blue Zircon",
-      "material": null,
+      "material": "Synthetic",
       "color": "Blue",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -266,9 +266,9 @@
     },
     {
       "name": "Square Faceted Imitation Peridot",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -285,7 +285,7 @@
     },
     {
       "name": "Round Faceted Imitation Sapphire",
-      "material": null,
+      "material": "Synthetic",
       "color": "Blue",
       "shape": "Round",
       "variations": [
@@ -394,7 +394,7 @@
     },
     {
       "name": "Square Faceted Imitation Emerald",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
       "shape": "Emerald",
       "variations": [
@@ -522,7 +522,7 @@
     },
     {
       "name": "Round Faceted Imitation Emerald",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
       "shape": "Round",
       "variations": [
@@ -631,7 +631,7 @@
     },
     {
       "name": "Emerald Cut Imitation Aquamarine",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
       "shape": "Emerald",
       "variations": [
@@ -670,9 +670,9 @@
     },
     {
       "name": "Square Faceted Imitation Amethyst",
-      "material": null,
+      "material": "Synthetic",
       "color": "Purple",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "4x4mm",
@@ -689,7 +689,7 @@
     },
     {
       "name": "Round Faceted Imitation Blue Zircon",
-      "material": null,
+      "material": "Synthetic",
       "color": "Blue",
       "shape": "Round",
       "variations": [
@@ -788,7 +788,7 @@
     },
     {
       "name": "Emerald Cut Faceted Imitation Amethyst",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
       "shape": "Emerald",
       "variations": [
@@ -827,9 +827,9 @@
     },
     {
       "name": "Square Faceted Imitation Sapphire",
-      "material": null,
+      "material": "Synthetic",
       "color": "Blue",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -846,9 +846,9 @@
     },
     {
       "name": "Square Faceted Imitation Alexandrite",
-      "material": null,
-      "color": null,
-      "shape": null,
+      "material": "Synthetic",
+      "color": "varies",
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -865,9 +865,9 @@
     },
     {
       "name": "Cushion Faceted Imitation Emerald",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
-      "shape": "Emerald",
+      "shape": "Cushion",
       "variations": [
         {
           "size": "7x5mm",
@@ -911,7 +911,7 @@
       "name": "Square Faceted Lab-Created Ruby",
       "material": "Lab Created",
       "color": "Red",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -928,7 +928,7 @@
     },
     {
       "name": "Round Faceted Imitation Pink Tourmaline",
-      "material": null,
+      "material": "Synthetic",
       "color": "Pink",
       "shape": "Round",
       "variations": [
@@ -1027,7 +1027,7 @@
     },
     {
       "name": "Round Faceted Imitation Citrine",
-      "material": null,
+      "material": "Synthetic",
       "color": "Yellow",
       "shape": "Round",
       "variations": [
@@ -1131,7 +1131,7 @@
     },
     {
       "name": "Round Faceted Imitation Peridot",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
       "shape": "Round",
       "variations": [
@@ -1235,9 +1235,9 @@
     },
     {
       "name": "Square Faceted Imitation Red Garnet",
-      "material": null,
+      "material": "Synthetic",
       "color": "Red",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",
@@ -1254,7 +1254,7 @@
     },
     {
       "name": "Emerald Cut Faceted Imitation Red Garnet",
-      "material": null,
+      "material": "Synthetic",
       "color": "Green",
       "shape": "Emerald",
       "variations": [
@@ -1293,9 +1293,9 @@
     },
     {
       "name": "Square Faceted Imitation Aquamarine",
-      "material": null,
+      "material": "Synthetic",
       "color": "Blue",
-      "shape": null,
+      "shape": "Square",
       "variations": [
         {
           "size": "3x3mm",

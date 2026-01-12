@@ -1,0 +1,3277 @@
+{
+  "scraped_at": "2026-01-08T10:17:37.124822",
+  "total_products": 42,
+  "categories_scraped": 3,
+  "products": [
+    {
+      "name": "Cubic Zirconia Amethyst, Faceted Balls With Full Hole",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Ball",
+      "variations": [
+        {
+          "size": "5.00 mm",
+          "price": 80.0
+        },
+        {
+          "size": "6.00 mm",
+          "price": 199.7
+        },
+        {
+          "size": "7.00 mm",
+          "price": null
+        },
+        {
+          "size": "8.00 mm",
+          "price": null
+        },
+        {
+          "size": "9.00 mm",
+          "price": null
+        },
+        {
+          "size": "10.00 mm",
+          "price": null
+        },
+        {
+          "size": "12.00 mm",
+          "price": null
+        },
+        {
+          "size": "15.00 mm",
+          "price": null
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-faceted-balls-with-full-hole/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Octagon",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Octagon",
+      "variations": [
+        {
+          "size": "3x2mm",
+          "price": 19.0
+        },
+        {
+          "size": "4x2mm",
+          "price": 19.0
+        },
+        {
+          "size": "5x3mm",
+          "price": 19.0
+        },
+        {
+          "size": "6x4mm",
+          "price": 19.0
+        },
+        {
+          "size": "7x5mm",
+          "price": 19.0
+        },
+        {
+          "size": "8x6mm",
+          "price": 19.0
+        },
+        {
+          "size": "9x7mm",
+          "price": 19.0
+        },
+        {
+          "size": "10x8mm",
+          "price": 19.0
+        },
+        {
+          "size": "11x9mm",
+          "price": 19.0
+        },
+        {
+          "size": "12x10mm",
+          "price": 19.0
+        },
+        {
+          "size": "14x10mm",
+          "price": 19.0
+        },
+        {
+          "size": "16x12mm",
+          "price": 19.0
+        },
+        {
+          "size": "18x13mm",
+          "price": 19.0
+        },
+        {
+          "size": "20x10mm",
+          "price": 19.0
+        },
+        {
+          "size": "20x15mm",
+          "price": 19.0
+        },
+        {
+          "size": "25x18mm",
+          "price": 149.0
+        },
+        {
+          "size": "30x20mm",
+          "price": 149.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-octagon/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Radiant",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Radiant",
+      "variations": [
+        {
+          "size": "4 x 4 mm",
+          "price": 43.5
+        },
+        {
+          "size": "5 x 5 mm",
+          "price": null
+        },
+        {
+          "size": "6 x 6 mm",
+          "price": null
+        },
+        {
+          "size": "7 x 7 mm",
+          "price": null
+        },
+        {
+          "size": "8 x 8 mm",
+          "price": null
+        },
+        {
+          "size": "9 x 9 mm",
+          "price": null
+        },
+        {
+          "size": "10 x 10 mm",
+          "price": null
+        },
+        {
+          "size": "11 x 11 mm",
+          "price": null
+        },
+        {
+          "size": "12 x 12 mm",
+          "price": null
+        },
+        {
+          "size": "15 x 15 mm",
+          "price": null
+        },
+        {
+          "size": "20 x 20 mm",
+          "price": 160.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-radiant/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Triangle",
+      "variations": [
+        {
+          "size": "4 X 4 mm",
+          "price": 19.0
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": 19.0
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": 19.0
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": 19.0
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": 19.0
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": 19.0
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": 49.0
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": 49.0
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": 49.0
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": 49.0
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": 49.0
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": 49.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-triangle/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Star",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Star",
+      "variations": [
+        {
+          "size": "3 x 3 mm",
+          "price": 19.0
+        },
+        {
+          "size": "4 x 4 mm",
+          "price": 19.0
+        },
+        {
+          "size": "5 x 5 mm",
+          "price": 19.0
+        },
+        {
+          "size": "6 x 6 mm",
+          "price": 19.0
+        },
+        {
+          "size": "7 x 7 mm",
+          "price": 19.0
+        },
+        {
+          "size": "8 x 8 mm",
+          "price": 19.0
+        },
+        {
+          "size": "9 x 9 mm",
+          "price": 26.5
+        },
+        {
+          "size": "10 x 10 mm",
+          "price": 26.5
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-star/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Square",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "2 X 2 mm",
+          "price": 15.0
+        },
+        {
+          "size": "2.5 X 2.5 mm",
+          "price": null
+        },
+        {
+          "size": "3 X 3 mm",
+          "price": null
+        },
+        {
+          "size": "3.5 X 3.5 mm",
+          "price": null
+        },
+        {
+          "size": "4 X 4 mm",
+          "price": null
+        },
+        {
+          "size": "4.5 X 4.5 mm",
+          "price": null
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": null
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "16 X 16 mm",
+          "price": null
+        },
+        {
+          "size": "17 X 17 mm",
+          "price": null
+        },
+        {
+          "size": "18 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "19 X 19 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": 160.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-square/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "4 X 4 mm",
+          "price": 19.0
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": 19.0
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": 19.0
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": 19.0
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": 19.0
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": 49.0
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": 49.0
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": 49.0
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": 49.0
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": 49.0
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": 49.0
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": 49.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-trillion/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Baguette",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Baguette",
+      "variations": [
+        {
+          "size": "3x2mm",
+          "price": 19.0
+        },
+        {
+          "size": "4x2mm",
+          "price": 19.0
+        },
+        {
+          "size": "5x3mm",
+          "price": 19.0
+        },
+        {
+          "size": "6x4mm",
+          "price": 19.0
+        },
+        {
+          "size": "7x5mm",
+          "price": 19.0
+        },
+        {
+          "size": "8x6mm",
+          "price": 19.0
+        },
+        {
+          "size": "9x7mm",
+          "price": 19.0
+        },
+        {
+          "size": "10x8mm",
+          "price": 19.0
+        },
+        {
+          "size": "11x9mm",
+          "price": 19.0
+        },
+        {
+          "size": "12x10mm",
+          "price": 19.0
+        },
+        {
+          "size": "14x10mm",
+          "price": 19.0
+        },
+        {
+          "size": "16x12mm",
+          "price": 19.0
+        },
+        {
+          "size": "18x13mm",
+          "price": 19.0
+        },
+        {
+          "size": "20x10mm",
+          "price": 19.0
+        },
+        {
+          "size": "20x15mm",
+          "price": 19.0
+        },
+        {
+          "size": "25x18mm",
+          "price": 19.0
+        },
+        {
+          "size": "30x20mm",
+          "price": 19.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-baguette/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Round Rose Cut (Flat Bottom)",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Round Rose Cut",
+      "variations": [
+        {
+          "size": "5.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "6.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "7.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "8.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "9.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "10.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "11.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "12.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "13.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "14.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "15.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "16.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "17.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "18.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "19.00 mm",
+          "price": 25.0
+        },
+        {
+          "size": "20.00 mm",
+          "price": 25.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-round-rose-cut-flat-bottom/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Flower",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Flower",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 19.0
+        },
+        {
+          "size": "4x4mm",
+          "price": 19.0
+        },
+        {
+          "size": "5x5mm",
+          "price": 19.0
+        },
+        {
+          "size": "6x6mm",
+          "price": 19.0
+        },
+        {
+          "size": "7x7mm",
+          "price": 19.0
+        },
+        {
+          "size": "8x8mm",
+          "price": 26.5
+        },
+        {
+          "size": "9x9mm",
+          "price": 26.5
+        },
+        {
+          "size": "10x10mm",
+          "price": 26.5
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-flower/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Asscher",
+      "variations": [
+        {
+          "size": "4 X 4 mm",
+          "price": 43.5
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": 160.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-asscher/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Cushion",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Cushion",
+      "variations": [
+        {
+          "size": "3 X 3 mm",
+          "price": 17.5
+        },
+        {
+          "size": "3.5 X 3.5 mm",
+          "price": null
+        },
+        {
+          "size": "4 X 4 mm",
+          "price": null
+        },
+        {
+          "size": "4.5 X 4.5 mm",
+          "price": null
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": null
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "16 X 16 mm",
+          "price": null
+        },
+        {
+          "size": "17 X 17 mm",
+          "price": null
+        },
+        {
+          "size": "18 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "19 X 19 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": 160.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-cushion/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Pear",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": "$15.60"
+        },
+        {
+          "size": "4 X 3 mm",
+          "price": null
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "15 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": "$149.00"
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-pear/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Round",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "0.80 mm",
+          "price": 16.0
+        },
+        {
+          "size": "0.90 mm",
+          "price": 16.0
+        },
+        {
+          "size": "1.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "1.25 mm",
+          "price": 16.0
+        },
+        {
+          "size": "1.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "1.75 mm",
+          "price": 16.0
+        },
+        {
+          "size": "2.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "2.25 mm",
+          "price": 16.0
+        },
+        {
+          "size": "2.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "2.75 mm",
+          "price": 16.0
+        },
+        {
+          "size": "3.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "3.25 mm",
+          "price": 16.0
+        },
+        {
+          "size": "3.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "3.75 mm",
+          "price": 16.0
+        },
+        {
+          "size": "4.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "4.25 mm",
+          "price": 16.0
+        },
+        {
+          "size": "4.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "4.75 mm",
+          "price": 16.0
+        },
+        {
+          "size": "5.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "5.25 mm",
+          "price": 16.0
+        },
+        {
+          "size": "5.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "5.75 mm",
+          "price": 16.0
+        },
+        {
+          "size": "6.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "6.25 mm",
+          "price": 16.0
+        },
+        {
+          "size": "6.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "6.75 mm",
+          "price": 16.0
+        },
+        {
+          "size": "7.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "7.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "8.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "8.50 mm",
+          "price": 16.0
+        },
+        {
+          "size": "9.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "10.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "11.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "12.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "13.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "14.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "15.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "16.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "17.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "18.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "20.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "25.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "50.00 mm",
+          "price": 16.0
+        },
+        {
+          "size": "100.00 mm",
+          "price": 999.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-round/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Briolette Drop With Top Or Side Hole Drilled",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Briolette Drop",
+      "variations": [
+        {
+          "size": "5 x 3 mm",
+          "price": 87.0
+        },
+        {
+          "size": "6 x 4 mm",
+          "price": 100.0
+        },
+        {
+          "size": "7 x 5 mm",
+          "price": 110.0
+        },
+        {
+          "size": "8 x 6 mm",
+          "price": 120.0
+        },
+        {
+          "size": "9 x 7 mm",
+          "price": 130.0
+        },
+        {
+          "size": "10 x 8 mm",
+          "price": 140.0
+        },
+        {
+          "size": "12 x 8 mm",
+          "price": 142.0
+        },
+        {
+          "size": "16 x 10 mm",
+          "price": null
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-briolette-drop-with-top-or-side-hole-drilled/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Marquise",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 13.5
+        },
+        {
+          "size": "5 X 2.5 mm",
+          "price": 13.5
+        },
+        {
+          "size": "6 X 3 mm",
+          "price": 13.5
+        },
+        {
+          "size": "7 X 3.5 mm",
+          "price": 13.5
+        },
+        {
+          "size": "8 X 4 mm",
+          "price": 13.5
+        },
+        {
+          "size": "10 X 5 mm",
+          "price": 13.5
+        },
+        {
+          "size": "12 X 6 mm",
+          "price": 13.5
+        },
+        {
+          "size": "14 X 7 mm",
+          "price": 13.5
+        },
+        {
+          "size": "16 X 8 mm",
+          "price": 13.5
+        },
+        {
+          "size": "18 X 9 mm",
+          "price": 13.5
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 31.2
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-marquise/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 19.0
+        },
+        {
+          "size": "4 X 3 mm",
+          "price": 19.0
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": 19.0
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": 19.0
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": 19.0
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": 19.0
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": 19.0
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": 19.0
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": 149.0
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "14 X 12 mm",
+          "price": 149.0
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": 149.0
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": 149.0
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": 149.0
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": 149.0
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": 149.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-oval/"
+    },
+    {
+      "name": "Cubic Zirconia Amethyst, Heart",
+      "material": "Cubic Zirconia",
+      "color": "Amethyst",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "3 X 3 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "4 X 4 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": "19.00"
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": "49.00"
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": "49.00"
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-amethyst-aaa-heart/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "4 X 4 mm",
+          "price": 22.0
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": 22.0
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": 22.0
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": 22.0
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": 22.0
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": 22.0
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": 22.0
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": 49.0
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": 49.0
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": 49.0
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": 49.0
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": 49.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-trillion/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green, Oval",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 20.0
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": 30.0
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": 40.0
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": 50.0
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": 60.0
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": 70.0
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": 80.0
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": 90.0
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": 100.0
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": 110.0
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": 120.0
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": 130.0
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 140.0
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": 149.0
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": null
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-oval/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green, Marquise",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4 x 2 mm",
+          "price": 16.5
+        },
+        {
+          "size": "5 x 2.5 mm",
+          "price": 16.5
+        },
+        {
+          "size": "6 x 3 mm",
+          "price": 16.5
+        },
+        {
+          "size": "7 x 3.5 mm",
+          "price": 16.5
+        },
+        {
+          "size": "8 x 4 mm",
+          "price": 16.5
+        },
+        {
+          "size": "10 x 5 mm",
+          "price": 16.5
+        },
+        {
+          "size": "12 x 6 mm",
+          "price": 16.5
+        },
+        {
+          "size": "14 x 7 mm",
+          "price": 32.25
+        },
+        {
+          "size": "16 x 8 mm",
+          "price": 32.25
+        },
+        {
+          "size": "18 x 9 mm",
+          "price": 32.25
+        },
+        {
+          "size": "20 x 10 mm",
+          "price": 32.25
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-marquise/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Baguette",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 31.04
+        },
+        {
+          "size": "5x3mm",
+          "price": null
+        },
+        {
+          "size": "6x4mm",
+          "price": null
+        },
+        {
+          "size": "7x5mm",
+          "price": null
+        },
+        {
+          "size": "8x6mm",
+          "price": null
+        },
+        {
+          "size": "9x7mm",
+          "price": null
+        },
+        {
+          "size": "10x8mm",
+          "price": null
+        },
+        {
+          "size": "11x9mm",
+          "price": null
+        },
+        {
+          "size": "12x10mm",
+          "price": null
+        },
+        {
+          "size": "14x10mm",
+          "price": null
+        },
+        {
+          "size": "16x12mm",
+          "price": null
+        },
+        {
+          "size": "18x13mm",
+          "price": null
+        },
+        {
+          "size": "20x10mm",
+          "price": null
+        },
+        {
+          "size": "20x15mm",
+          "price": null
+        },
+        {
+          "size": "25x18mm",
+          "price": null
+        },
+        {
+          "size": "30x20mm",
+          "price": null
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-baguette/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green, Heart",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": "$20.00"
+        },
+        {
+          "size": "4x4mm",
+          "price": "$20.00"
+        },
+        {
+          "size": "5x5mm",
+          "price": "$20.00"
+        },
+        {
+          "size": "6x6mm",
+          "price": "$20.00"
+        },
+        {
+          "size": "7x7mm",
+          "price": "$20.00"
+        },
+        {
+          "size": "8x8mm",
+          "price": "$20.00"
+        },
+        {
+          "size": "9x9mm",
+          "price": "$49.00"
+        },
+        {
+          "size": "10x10mm",
+          "price": "$49.00"
+        },
+        {
+          "size": "11x11mm",
+          "price": "$49.00"
+        },
+        {
+          "size": "12x12mm",
+          "price": "$49.00"
+        },
+        {
+          "size": "13x13mm",
+          "price": "$49.00"
+        },
+        {
+          "size": "14x14mm",
+          "price": "$49.00"
+        },
+        {
+          "size": "15x15mm",
+          "price": "$49.00"
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-heart/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green, Round",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "0.80 mm",
+          "price": 21.0
+        },
+        {
+          "size": "0.90 mm",
+          "price": 21.0
+        },
+        {
+          "size": "1.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "1.25 mm",
+          "price": 21.0
+        },
+        {
+          "size": "1.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "1.75 mm",
+          "price": 21.0
+        },
+        {
+          "size": "2.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "2.25 mm",
+          "price": 21.0
+        },
+        {
+          "size": "2.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "2.75 mm",
+          "price": 21.0
+        },
+        {
+          "size": "3.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "3.25 mm",
+          "price": 21.0
+        },
+        {
+          "size": "3.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "3.75 mm",
+          "price": 21.0
+        },
+        {
+          "size": "4.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "4.25 mm",
+          "price": 21.0
+        },
+        {
+          "size": "4.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "4.75 mm",
+          "price": 21.0
+        },
+        {
+          "size": "5.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "5.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "6.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "6.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "7.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "7.50 mm",
+          "price": 21.0
+        },
+        {
+          "size": "8.00 mm",
+          "price": 21.0
+        },
+        {
+          "size": "9.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "10.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "11.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "12.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "13.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "14.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "15.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "16.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "17.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "18.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "19.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "20.00 mm",
+          "price": 250.0
+        },
+        {
+          "size": "25.00 mm",
+          "price": 250.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-round/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Cushion",
+      "variations": [
+        {
+          "size": "3 x 3 mm",
+          "price": 22.0
+        },
+        {
+          "size": "3.5 x 3.5 mm",
+          "price": null
+        },
+        {
+          "size": "4 x 4 mm",
+          "price": null
+        },
+        {
+          "size": "4.5 x 4.5 mm",
+          "price": null
+        },
+        {
+          "size": "5 x 5 mm",
+          "price": null
+        },
+        {
+          "size": "6 x 6 mm",
+          "price": null
+        },
+        {
+          "size": "7 x 7 mm",
+          "price": null
+        },
+        {
+          "size": "8 x 8 mm",
+          "price": null
+        },
+        {
+          "size": "9 x 9 mm",
+          "price": null
+        },
+        {
+          "size": "10 x 10 mm",
+          "price": null
+        },
+        {
+          "size": "11 x 11 mm",
+          "price": null
+        },
+        {
+          "size": "12 x 12 mm",
+          "price": null
+        },
+        {
+          "size": "13 x 13 mm",
+          "price": null
+        },
+        {
+          "size": "14 x 14 mm",
+          "price": null
+        },
+        {
+          "size": "15 x 15 mm",
+          "price": null
+        },
+        {
+          "size": "16 x 16 mm",
+          "price": null
+        },
+        {
+          "size": "17 x 17 mm",
+          "price": null
+        },
+        {
+          "size": "18 x 18 mm",
+          "price": null
+        },
+        {
+          "size": "19 x 19 mm",
+          "price": null
+        },
+        {
+          "size": "20 x 20 mm",
+          "price": 160.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-cushion/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Triangle",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 22.0
+        },
+        {
+          "size": "5x5mm",
+          "price": 22.0
+        },
+        {
+          "size": "6x6mm",
+          "price": 22.0
+        },
+        {
+          "size": "7x7mm",
+          "price": 22.0
+        },
+        {
+          "size": "8x8mm",
+          "price": 22.0
+        },
+        {
+          "size": "9x9mm",
+          "price": 22.0
+        },
+        {
+          "size": "10x10mm",
+          "price": 49.0
+        },
+        {
+          "size": "11x11mm",
+          "price": 49.0
+        },
+        {
+          "size": "12x12mm",
+          "price": 49.0
+        },
+        {
+          "size": "13x13mm",
+          "price": 49.0
+        },
+        {
+          "size": "14x14mm",
+          "price": 49.0
+        },
+        {
+          "size": "15x15mm",
+          "price": 49.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-triangle/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green, Square",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "2 X 2 mm",
+          "price": "$18.00"
+        },
+        {
+          "size": "3 X 3 mm",
+          "price": null
+        },
+        {
+          "size": "3.5 X 3.5 mm",
+          "price": null
+        },
+        {
+          "size": "4 X 4 mm",
+          "price": null
+        },
+        {
+          "size": "4.5 X 4.5 mm",
+          "price": null
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": null
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "16 X 16 mm",
+          "price": null
+        },
+        {
+          "size": "17 X 17 mm",
+          "price": null
+        },
+        {
+          "size": "18 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "19 X 19 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": "$160.00"
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-square/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 19.6
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": 24.6
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": 39.6
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": 49.6
+        },
+        {
+          "size": "8 X 5 mm",
+          "price": 69.6
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": 79.6
+        },
+        {
+          "size": "9 X 6 mm",
+          "price": 89.6
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": 99.6
+        },
+        {
+          "size": "10 X 7 mm",
+          "price": 109.6
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": 119.6
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": 129.6
+        },
+        {
+          "size": "12 X 8 mm",
+          "price": 139.6
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "14 X 9 mm",
+          "price": 149.0
+        },
+        {
+          "size": "15 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": 149.0
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": 149.0
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": 149.0
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": 149.0
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": 149.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-pear/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Octagon",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 24.6
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": 24.6
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": 24.6
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": 24.6
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": 24.6
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": 24.6
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": 24.6
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": 24.6
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": 24.6
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": 149.0
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": 149.0
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 149.0
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": 149.0
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": 149.0
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": 149.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-octagon/"
+    },
+    {
+      "name": "Cubic Zirconia Apple Green, Round Rose Cut (Flat Bottom)",
+      "material": "Cubic Zirconia",
+      "color": "Apple Green",
+      "shape": "Round Rose Cut",
+      "variations": [
+        {
+          "size": "5.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "6.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "7.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "8.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "9.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "10.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "11.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "12.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "13.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "14.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "15.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "16.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "17.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "18.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "19.00 mm",
+          "price": 28.6
+        },
+        {
+          "size": "20.00 mm",
+          "price": 99.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-apple-green-round-rose-cut-flat-bottom/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine, Heart",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "3 x 3 mm",
+          "price": 26.0
+        },
+        {
+          "size": "4 x 4 mm",
+          "price": 26.0
+        },
+        {
+          "size": "5 x 5 mm",
+          "price": 26.0
+        },
+        {
+          "size": "6 x 6 mm",
+          "price": 26.0
+        },
+        {
+          "size": "7 x 7 mm",
+          "price": 26.0
+        },
+        {
+          "size": "8 x 8 mm",
+          "price": 26.0
+        },
+        {
+          "size": "9 x 9 mm",
+          "price": 26.0
+        },
+        {
+          "size": "10 x 10 mm",
+          "price": 26.0
+        },
+        {
+          "size": "11 x 11 mm",
+          "price": 26.0
+        },
+        {
+          "size": "12 x 12 mm",
+          "price": 26.0
+        },
+        {
+          "size": "13 x 13 mm",
+          "price": 26.0
+        },
+        {
+          "size": "14 x 14 mm",
+          "price": 26.0
+        },
+        {
+          "size": "15 x 15 mm",
+          "price": 26.0
+        },
+        {
+          "size": "16 x 16 mm",
+          "price": 199.0
+        },
+        {
+          "size": "17 x 17 mm",
+          "price": 199.0
+        },
+        {
+          "size": "18 x 18 mm",
+          "price": 199.0
+        },
+        {
+          "size": "19 x 19 mm",
+          "price": 199.0
+        },
+        {
+          "size": "20 x 20 mm",
+          "price": 199.0
+        },
+        {
+          "size": "25 x 25 mm",
+          "price": 199.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-heart/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine, Pear",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "4 x 2 mm",
+          "price": 18.5
+        },
+        {
+          "size": "5 x 3 mm",
+          "price": 21.0
+        },
+        {
+          "size": "6 x 4 mm",
+          "price": 25.0
+        },
+        {
+          "size": "7 x 5 mm",
+          "price": 30.0
+        },
+        {
+          "size": "8 x 5 mm",
+          "price": 35.0
+        },
+        {
+          "size": "8 x 6 mm",
+          "price": 40.0
+        },
+        {
+          "size": "9 x 6 mm",
+          "price": 45.0
+        },
+        {
+          "size": "9 x 7 mm",
+          "price": 50.0
+        },
+        {
+          "size": "10 x 7 mm",
+          "price": 55.0
+        },
+        {
+          "size": "10 x 8 mm",
+          "price": 60.0
+        },
+        {
+          "size": "11 x 9 mm",
+          "price": 70.0
+        },
+        {
+          "size": "12 x 8 mm",
+          "price": 80.0
+        },
+        {
+          "size": "12 x 10 mm",
+          "price": 100.0
+        },
+        {
+          "size": "14 x 9 mm",
+          "price": 120.0
+        },
+        {
+          "size": "15 x 10 mm",
+          "price": 140.0
+        },
+        {
+          "size": "16 x 12 mm",
+          "price": 150.0
+        },
+        {
+          "size": "18 x 13 mm",
+          "price": 160.0
+        },
+        {
+          "size": "20 x 10 mm",
+          "price": 175.0
+        },
+        {
+          "size": "20 x 15 mm",
+          "price": 179.0
+        },
+        {
+          "size": "25 x 18 mm",
+          "price": 200.0
+        },
+        {
+          "size": "30 x 20 mm",
+          "price": 225.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-pear/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "5x5mm",
+          "price": 26.0
+        },
+        {
+          "size": "6x6mm",
+          "price": 26.0
+        },
+        {
+          "size": "7x7mm",
+          "price": 26.0
+        },
+        {
+          "size": "8x8mm",
+          "price": 26.0
+        },
+        {
+          "size": "9x9mm",
+          "price": 26.0
+        },
+        {
+          "size": "10x10mm",
+          "price": 26.0
+        },
+        {
+          "size": "11x11mm",
+          "price": 26.0
+        },
+        {
+          "size": "12x12mm",
+          "price": 26.0
+        },
+        {
+          "size": "13x13mm",
+          "price": 26.0
+        },
+        {
+          "size": "14x14mm",
+          "price": 26.0
+        },
+        {
+          "size": "15x15mm",
+          "price": 26.0
+        },
+        {
+          "size": "16x16mm",
+          "price": 26.0
+        },
+        {
+          "size": "17x17mm",
+          "price": 26.0
+        },
+        {
+          "size": "18x18mm",
+          "price": 26.0
+        },
+        {
+          "size": "19x19mm",
+          "price": 26.0
+        },
+        {
+          "size": "20x20mm",
+          "price": 26.0
+        },
+        {
+          "size": "25x25mm",
+          "price": 199.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-trillion/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine, Cushion",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Cushion",
+      "variations": [
+        {
+          "size": "3 X 3 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "4 X 4 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "16 X 16 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "17 X 17 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "18 X 18 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "19 X 19 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": "26.00"
+        },
+        {
+          "size": "25 X 25 mm",
+          "price": "26.00"
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-cushion/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine, Oval",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 20.25
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": 179.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-oval/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Baguette",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 26.0
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": null
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": null
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": null
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": null
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": null
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": null
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": null
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": null
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": null
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": null
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": null
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": 179.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-baguette/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Octagon",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 26.0
+        },
+        {
+          "size": "5 X 3 mm",
+          "price": 26.0
+        },
+        {
+          "size": "6 X 4 mm",
+          "price": 26.0
+        },
+        {
+          "size": "7 X 5 mm",
+          "price": 26.0
+        },
+        {
+          "size": "8 X 6 mm",
+          "price": 26.0
+        },
+        {
+          "size": "9 X 7 mm",
+          "price": 26.0
+        },
+        {
+          "size": "10 X 8 mm",
+          "price": 26.0
+        },
+        {
+          "size": "11 X 9 mm",
+          "price": 26.0
+        },
+        {
+          "size": "12 X 10 mm",
+          "price": 26.0
+        },
+        {
+          "size": "14 X 10 mm",
+          "price": 26.0
+        },
+        {
+          "size": "16 X 12 mm",
+          "price": 26.0
+        },
+        {
+          "size": "18 X 13 mm",
+          "price": 26.0
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 26.0
+        },
+        {
+          "size": "20 X 15 mm",
+          "price": 26.0
+        },
+        {
+          "size": "25 X 18 mm",
+          "price": 26.0
+        },
+        {
+          "size": "30 X 20 mm",
+          "price": 179.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-octagon/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine, Round Rose Cut (Flat Bottom)",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Round Rose Cut",
+      "variations": [
+        {
+          "size": "5.00 mm",
+          "price": 40.3
+        },
+        {
+          "size": "6.00 mm",
+          "price": null
+        },
+        {
+          "size": "7.00 mm",
+          "price": null
+        },
+        {
+          "size": "8.00 mm",
+          "price": null
+        },
+        {
+          "size": "9.00 mm",
+          "price": null
+        },
+        {
+          "size": "10.00 mm",
+          "price": null
+        },
+        {
+          "size": "11.00 mm",
+          "price": null
+        },
+        {
+          "size": "12.00 mm",
+          "price": null
+        },
+        {
+          "size": "13.00 mm",
+          "price": null
+        },
+        {
+          "size": "14.00 mm",
+          "price": null
+        },
+        {
+          "size": "15.00 mm",
+          "price": null
+        },
+        {
+          "size": "16.00 mm",
+          "price": null
+        },
+        {
+          "size": "17.00 mm",
+          "price": null
+        },
+        {
+          "size": "18.00 mm",
+          "price": null
+        },
+        {
+          "size": "19.00 mm",
+          "price": null
+        },
+        {
+          "size": "20.00 mm",
+          "price": 246.25
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-round-rose-cut-flat-bottom/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Triangle",
+      "variations": [
+        {
+          "size": "4 X 4 mm",
+          "price": 26.0
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": 26.0
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": 26.0
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": 26.0
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": 26.0
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": 26.0
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": 26.0
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": 26.0
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": 26.0
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": 26.0
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": 26.0
+        },
+        {
+          "size": "16 X 16 mm",
+          "price": 26.0
+        },
+        {
+          "size": "17 X 17 mm",
+          "price": 26.0
+        },
+        {
+          "size": "18 X 18 mm",
+          "price": 26.0
+        },
+        {
+          "size": "19 X 19 mm",
+          "price": 26.0
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": 26.0
+        },
+        {
+          "size": "25 X 25 mm",
+          "price": 199.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-triangle/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "0.80 mm",
+          "price": 18.0
+        },
+        {
+          "size": "0.90 mm",
+          "price": 18.0
+        },
+        {
+          "size": "1.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "1.25 mm",
+          "price": 18.0
+        },
+        {
+          "size": "1.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "1.75 mm",
+          "price": 18.0
+        },
+        {
+          "size": "2.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "2.25 mm",
+          "price": 18.0
+        },
+        {
+          "size": "2.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "2.75 mm",
+          "price": 18.0
+        },
+        {
+          "size": "3.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "3.25 mm",
+          "price": 18.0
+        },
+        {
+          "size": "3.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "3.75 mm",
+          "price": 18.0
+        },
+        {
+          "size": "4.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "4.25 mm",
+          "price": 18.0
+        },
+        {
+          "size": "4.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "4.75 mm",
+          "price": 18.0
+        },
+        {
+          "size": "5.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "5.25 mm",
+          "price": 18.0
+        },
+        {
+          "size": "5.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "5.75 mm",
+          "price": 18.0
+        },
+        {
+          "size": "6.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "6.25 mm",
+          "price": 18.0
+        },
+        {
+          "size": "6.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "6.75 mm",
+          "price": 18.0
+        },
+        {
+          "size": "7.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "7.50 mm",
+          "price": 18.0
+        },
+        {
+          "size": "8.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "9.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "10.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "11.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "12.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "13.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "14.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "15.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "16.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "17.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "18.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "19.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "20.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "25.00 mm",
+          "price": 18.0
+        },
+        {
+          "size": "30.00 mm",
+          "price": 18.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-round/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "2 X 2 mm",
+          "price": 18.0
+        },
+        {
+          "size": "3 X 3 mm",
+          "price": 18.0
+        },
+        {
+          "size": "4 X 4 mm",
+          "price": 18.0
+        },
+        {
+          "size": "5 X 5 mm",
+          "price": 18.0
+        },
+        {
+          "size": "6 X 6 mm",
+          "price": 18.0
+        },
+        {
+          "size": "7 X 7 mm",
+          "price": 18.0
+        },
+        {
+          "size": "8 X 8 mm",
+          "price": 18.0
+        },
+        {
+          "size": "9 X 9 mm",
+          "price": 18.0
+        },
+        {
+          "size": "10 X 10 mm",
+          "price": 18.0
+        },
+        {
+          "size": "11 X 11 mm",
+          "price": 18.0
+        },
+        {
+          "size": "12 X 12 mm",
+          "price": 18.0
+        },
+        {
+          "size": "13 X 13 mm",
+          "price": 18.0
+        },
+        {
+          "size": "14 X 14 mm",
+          "price": 18.0
+        },
+        {
+          "size": "15 X 15 mm",
+          "price": 18.0
+        },
+        {
+          "size": "16 X 16 mm",
+          "price": 18.0
+        },
+        {
+          "size": "17 X 17 mm",
+          "price": 18.0
+        },
+        {
+          "size": "18 X 18 mm",
+          "price": 18.0
+        },
+        {
+          "size": "19 X 19 mm",
+          "price": 18.0
+        },
+        {
+          "size": "20 X 20 mm",
+          "price": 18.0
+        },
+        {
+          "size": "25 X 25 mm",
+          "price": 199.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-square/"
+    },
+    {
+      "name": "Cubic Zirconia Aquamarine, Marquise",
+      "material": "Cubic Zirconia",
+      "color": "Aquamarine",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4 X 2 mm",
+          "price": 16.0
+        },
+        {
+          "size": "5 X 2.5 mm",
+          "price": 16.0
+        },
+        {
+          "size": "6 X 3 mm",
+          "price": 16.0
+        },
+        {
+          "size": "7 X 3.5 mm",
+          "price": 16.0
+        },
+        {
+          "size": "8 X 4 mm",
+          "price": 16.0
+        },
+        {
+          "size": "10 X 5 mm",
+          "price": 16.0
+        },
+        {
+          "size": "12 X 6 mm",
+          "price": 16.0
+        },
+        {
+          "size": "14 X 7 mm",
+          "price": 44.0
+        },
+        {
+          "size": "16 X 8 mm",
+          "price": 44.0
+        },
+        {
+          "size": "18 X 9 mm",
+          "price": 44.0
+        },
+        {
+          "size": "20 X 10 mm",
+          "price": 44.0
+        }
+      ],
+      "url": "https://www.gemsngems.com/product/cubic-zirconia-aquamarine-marquise/"
+    }
+  ]
+}

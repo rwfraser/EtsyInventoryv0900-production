@@ -1,10 +1,14 @@
 import asyncio
 import json
 import os
+import subprocess
 from playwright.async_api import async_playwright
 from openai import OpenAI
 from datetime import datetime
 from dotenv import load_dotenv
+
+# Clear OPENAI_API_KEY environment variable using PowerShell
+subprocess.run(["powershell", "-Command", "$env:OPENAI_API_KEY = $null"], shell=True)
 
 # Load environment variables
 load_dotenv()

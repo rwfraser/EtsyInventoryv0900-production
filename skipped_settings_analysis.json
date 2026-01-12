@@ -1,0 +1,910 @@
+{
+  "summary": {
+    "total_in_stock": 126,
+    "total_skipped": 65,
+    "total_valid": 61,
+    "skipped_by_category": {
+      "default_title": 65,
+      "no_dimension": 0,
+      "no_shape": 0,
+      "vague_shape": 0,
+      "dimension_not_normalized": 0
+    }
+  },
+  "skipped": {
+    "default_title": [
+      {
+        "product_number": "ES338",
+        "product_title": "Snowflake Stud Earrings Settingss with CZ's and Round Prongs Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES174",
+        "product_title": "Ear Studs Earrings Settings with Round Crown Prongs Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW792",
+        "product_title": "Floral Bling Earrings Settings with Oval Prongs Mounting in Sterling Silver 7x9mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x9mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW782",
+        "product_title": "CZ's Petals Flower Earrings Settings with Round Prongs Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES318",
+        "product_title": "CZ's Daisy Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 3mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW781",
+        "product_title": "Retro Starburst Earrings Settings with Round Prongs Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES311",
+        "product_title": "Bow CZ's Topped Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 6x8mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6x8mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES332",
+        "product_title": "Triangle CZ's Halo Dangle Earrings Settings with Round Prongs Mounting in Sterling Silver 3mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW728",
+        "product_title": "Ear Wires Earrings Settings with Swirl Element and Oval Basket Prongs Mounting in Sterling Silver 8x10mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "8x10mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW534",
+        "product_title": "Pear Ear Studs Earrings Settings with Pear Shape Prongs Mounting in Sterling Silver 8x12mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "8x12mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES173",
+        "product_title": "Ear Studs Earrings Settings with Round Crown Prongs Mounting in Sterling Silver 3mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES153",
+        "product_title": "Ear Studs Earrings Settings with Pear Shape Bezel Mounting in Sterling Silver 10x15mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "10x15mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW789",
+        "product_title": "Victorian Rococo Earrings Settings with Oval Prongs Mounting in Sterling Silver 8x10mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "8x10mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW787",
+        "product_title": "Teardrop CZ's Border Earrings Settings with Pear Prongs Mounting in Sterling Silver 7x9mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x9mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES346",
+        "product_title": "Filigree Border Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 5x7mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5x7mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES330",
+        "product_title": "CZ's Flower Halo Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES327",
+        "product_title": "Pentagon Studs Earrings Settings with CZ's and Round Prongs Mounting in Sterling Silver 5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES320",
+        "product_title": "CZ's Ribbons Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES288",
+        "product_title": "Ear Studs Earrings Settings with Round Crown Prongs Mounting in Sterling Silver 2.5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "2.5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW780",
+        "product_title": "Rings Border Earrings with Oval Setting in Sterling Silver for 6x8mm Stones",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6x8mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES349",
+        "product_title": "CZ's Halo Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver Prongs 4x6mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4x6mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES347",
+        "product_title": "Square Stud Earrings Settings with CZ's's and Round Prongss Mounting in Sterling Silver 3mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES345",
+        "product_title": "Star Stud Earrings Settings with Round Prongss Mounting in Sterling Silver 4.5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4.5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES317",
+        "product_title": "CZ's Halo Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES313",
+        "product_title": "Oval CZ's Border Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 4x6mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4x6mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW768",
+        "product_title": "Ear Wires Earrings Settings with CZ's Trio Pear Shaped Prongs Mounting in Sterling Silver 3x5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3x5mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW545",
+        "product_title": "Ear Wires Earrings Settings with CZ's and Round Prongs Mounting in Sterling Silver 9mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "9mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW535",
+        "product_title": "Heart Ear Studs Earrings Settings with Heart Shape Prongs Mounting in Sterling Silver 8x8mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "8x8mm",
+        "shape": "heart",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES232",
+        "product_title": "Ear Studs Earrings Settings with Round Claw Prongs Mounting in Sterling Silver 6-7mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES01",
+        "product_title": "Ear Studs Earrings Settings with CZ's Chain and Pinch Bail in Sterling Silver 21 Gauge",
+        "current_dimension": "Default Title",
+        "extracted_dimension": null,
+        "shape": "not specified",
+        "can_fix": false
+      },
+      {
+        "product_number": "ES341",
+        "product_title": "Intertwined Ovals Stud Earrings with Round Prong Mounting in Sterling Silver for 5mm Stones",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES335",
+        "product_title": "Hearts Studs Earrings Settings with CZ's and Round Prongs Mounting in Sterling Silver 5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES331",
+        "product_title": "Trefoil Studs Earrings Settings with CZ's and Round Prongs Mounting in Sterling Silver 6mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES321",
+        "product_title": "Square Border Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 6mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW540",
+        "product_title": "Ear Studs Earrings Settings with Rectangular Prongs Mounting in Sterling Silver 9x13mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "9x13mm",
+        "shape": "rectangular",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW553",
+        "product_title": "Inukshuk Earrings with Oval Mounting in Sterling Silver for 4x6mm Oval Stones",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4x6mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW790",
+        "product_title": "Teardrop CZ's Halo Earrings Settings with Pear Prongs Mounting in Sterling Silver 8x10mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "8x10mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW786",
+        "product_title": "Teardrop CZ's Halo Earrings Settings with Pear Prongs Mounting in Sterling Silver 13x15mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "13x15mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES353",
+        "product_title": "CZ's Halo Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 8x10mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "8x10mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES352",
+        "product_title": "CZ's Border Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 3x4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3x4mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES350",
+        "product_title": "Quatrefoil CZ's Halo Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 7x9mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x9mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES348",
+        "product_title": "Square Border Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 5x7mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5x7mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES343",
+        "product_title": "Square Halo Stud Earrings Settings with Round Prongss Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES339",
+        "product_title": "Leaf & CZ's Stud Earrings with Round Prongs Mounting in Sterling Silver for 3mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES336",
+        "product_title": "CZ's Dangle Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 6x8mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6x8mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES334",
+        "product_title": "Clover Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 4mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES333",
+        "product_title": "Hearts Halo Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES329",
+        "product_title": "Flower CZ's Halo Stud Earrings Settings with Round Prongs Mounting in Sterling Silver 3mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES325",
+        "product_title": "Quatrefoil Studs Earrings Settings with CZ's and Round Prongs Mounting in Sterling Silver 5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES322",
+        "product_title": "Heart Border Stud Earrings Settings with CZ's and Oval Prongs Mounting in Sterling Silver 3x5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3x5mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES319",
+        "product_title": "Floral Border Stud Earrings Settings with CZ's and Oval Prongs Mounting in Sterling Silver 7x9mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x9mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES306",
+        "product_title": "Quatrefoil CZ's Border Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 5x7mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5x7mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES143",
+        "product_title": "Spiral Fan Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 5x7mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5x7mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES140",
+        "product_title": "Scalloped Stud Earrings with Oval Prongs Mounting in Sterling Silver 4x6mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "4x6mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW766",
+        "product_title": "Ear Wires Earrings Settings with CZ's Inlaid and Oval Prongs Mounting in Sterling Silver 5x7mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "5x7mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW598",
+        "product_title": "Ear Wires Earrings Settings with Earring Components and Oval Prongs Mounting in Sterling Silver 7x11mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x11mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW544",
+        "product_title": "Ear Studs Earrings Settings with Pear Shape Prongs Mounting in Sterling Silver 7x10mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x10mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW543",
+        "product_title": "Ear Studs Earrings Settings with Round Prongs Mounting in Sterling Silver 11mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "11mm",
+        "shape": "round",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW541",
+        "product_title": "Ear Studs with Pear Shape Mounting in Sterling Silver 7x8mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x8mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "EW038",
+        "product_title": "Ear Wires Earrings Settings with CZ's and Chain and Pinch Bail Mounting in Sterling Silver 23 Gauge",
+        "current_dimension": "Default Title",
+        "extracted_dimension": null,
+        "shape": "round",
+        "can_fix": false
+      },
+      {
+        "product_number": "EW031",
+        "product_title": "Ear Wires Earrings Settings with CZ's and Pinch Bail Mounting in Sterling Silver 22 Gauge",
+        "current_dimension": "Default Title",
+        "extracted_dimension": null,
+        "shape": "pear",
+        "can_fix": false
+      },
+      {
+        "product_number": "ES299",
+        "product_title": "Filigree & CZ's Border Stud Earrings Settings with Oval Prongs Mounting in Sterling Silver 6x8mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6x8mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES297",
+        "product_title": "Pear Dangle with Ear Studs Earrings Settings with Chain and Pear Prongs Mounting in Sterling Silver 3x5mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "3x5mm",
+        "shape": "pear",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES212",
+        "product_title": "Oval Basket Ear Studs Earrings Settings with Oval Prongs Mounting in Sterling Silver 6x8mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "6x8mm",
+        "shape": "oval",
+        "can_fix": true
+      },
+      {
+        "product_number": "ES154",
+        "product_title": "Ear Studs Earrings Settings with Pear Shape Bezel Mounting in Sterling Silver 7x11mm",
+        "current_dimension": "Default Title",
+        "extracted_dimension": "7x11mm",
+        "shape": "pear",
+        "can_fix": true
+      }
+    ],
+    "no_dimension": [],
+    "no_shape": [],
+    "vague_shape": [],
+    "dimension_not_normalized": []
+  },
+  "valid": [
+    {
+      "product_number": "ES216",
+      "product_title": "Round Basket Ear Studs Earrings Settings with Round Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "4mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES218",
+      "product_title": "Round Basket Ear Studs Earrings Settings with Round Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "6mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES219",
+      "product_title": "Round Basket Ear Studs Earrings Settings with Round Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "7mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES221",
+      "product_title": "Round Basket Ear Studs Earrings Settings with Round Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "10mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES282",
+      "product_title": "Cushion Cut Basket Ear Studs Earrings Settings in Sterling Silver Various Sizes",
+      "dimension": "3x3mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES283",
+      "product_title": "Cushion Cut Basket Ear Studs Earrings Settings in Sterling Silver Various Sizes",
+      "dimension": "4x4mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES276",
+      "product_title": "Cushion Cut Basket Ear Studs Earrings Settings in Sterling Silver Various Sizes",
+      "dimension": "6x6mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "EW724",
+      "product_title": "Ear Wires Earrings Stting with Oval Basket Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "5x7mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "EW725",
+      "product_title": "Ear Wires Earrings Stting with Oval Basket Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "6x8mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "EW727",
+      "product_title": "Ear Wires Earrings Stting with Oval Basket Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "7x9mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "EW726",
+      "product_title": "Ear Wires Earrings Stting with Oval Basket Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "8x10mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "EW729",
+      "product_title": "Ear Wires Earrings Stting with Oval Basket Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "9x11mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES227",
+      "product_title": "Square Basket Ear Studs in Sterling Silver",
+      "dimension": "4x4mm",
+      "shape": "square"
+    },
+    {
+      "product_number": "ES227B",
+      "product_title": "Square Basket Ear Studs in Sterling Silver",
+      "dimension": "5x5mm",
+      "shape": "square"
+    },
+    {
+      "product_number": "ES228",
+      "product_title": "Square Basket Ear Studs in Sterling Silver",
+      "dimension": "6x6mm",
+      "shape": "square"
+    },
+    {
+      "product_number": "ES229",
+      "product_title": "Square Basket Ear Studs in Sterling Silver",
+      "dimension": "7x7mm",
+      "shape": "square"
+    },
+    {
+      "product_number": "ES230",
+      "product_title": "Square Basket Ear Studs in Sterling Silver",
+      "dimension": "8x8mm",
+      "shape": "square"
+    },
+    {
+      "product_number": "ES231",
+      "product_title": "Square Basket Ear Studs in Sterling Silver",
+      "dimension": "12x12mm",
+      "shape": "square"
+    },
+    {
+      "product_number": "ES278",
+      "product_title": "Pear Shape Basket Ear Studs Earrings Settings with Pear Prongs Mounting  in Sterling Silver - Various Sizes",
+      "dimension": "3x5mm",
+      "shape": "pear"
+    },
+    {
+      "product_number": "ES222",
+      "product_title": "Pear Shape Basket Ear Studs Earrings Settings with Pear Prongs Mounting  in Sterling Silver - Various Sizes",
+      "dimension": "4x6mm",
+      "shape": "pear"
+    },
+    {
+      "product_number": "ES223",
+      "product_title": "Pear Shape Basket Ear Studs Earrings Settings with Pear Prongs Mounting  in Sterling Silver - Various Sizes",
+      "dimension": "5x7mm",
+      "shape": "pear"
+    },
+    {
+      "product_number": "ES224",
+      "product_title": "Pear Shape Basket Ear Studs Earrings Settings with Pear Prongs Mounting  in Sterling Silver - Various Sizes",
+      "dimension": "6x8mm",
+      "shape": "pear"
+    },
+    {
+      "product_number": "ES225",
+      "product_title": "Pear Shape Basket Ear Studs Earrings Settings with Pear Prongs Mounting  in Sterling Silver - Various Sizes",
+      "dimension": "7x9mm",
+      "shape": "pear"
+    },
+    {
+      "product_number": "ES226",
+      "product_title": "Pear Shape Basket Ear Studs Earrings Settings with Pear Prongs Mounting  in Sterling Silver - Various Sizes",
+      "dimension": "8x10mm",
+      "shape": "pear"
+    },
+    {
+      "product_number": "ES286",
+      "product_title": "Earstuds with Rectangular Basket Setting in Sterling Silver - Various sizes",
+      "dimension": "4x6mm",
+      "shape": "rectangular"
+    },
+    {
+      "product_number": "ES287",
+      "product_title": "Earstuds with Rectangular Basket Setting in Sterling Silver - Various sizes",
+      "dimension": "5x7mm",
+      "shape": "rectangular"
+    },
+    {
+      "product_number": "ES279",
+      "product_title": "Trillium Basket Ear Studs in Sterling Silver - Various sizes",
+      "dimension": "3x3mm",
+      "shape": "triangular"
+    },
+    {
+      "product_number": "ES280",
+      "product_title": "Trillium Basket Ear Studs in Sterling Silver - Various sizes",
+      "dimension": "4x4mm",
+      "shape": "triangular"
+    },
+    {
+      "product_number": "ES281",
+      "product_title": "Trillium Basket Ear Studs in Sterling Silver - Various sizes",
+      "dimension": "5x5mm",
+      "shape": "triangular"
+    },
+    {
+      "product_number": "ES277",
+      "product_title": "Trillium Basket Ear Studs in Sterling Silver - Various sizes",
+      "dimension": "6x6mm",
+      "shape": "triangular"
+    },
+    {
+      "product_number": "EW737",
+      "product_title": "Ear Wires with Round Basket Setting in Sterling Silver",
+      "dimension": "6.5mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "EW739",
+      "product_title": "Ear Wires with Round Basket Setting in Sterling Silver",
+      "dimension": "12mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES211",
+      "product_title": "Oval Basket Ear Studs Earrings Settingss with Oval Prongs Mouting in Sterling Silver - Various Sizes",
+      "dimension": "5x7mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES213",
+      "product_title": "Oval Basket Ear Studs Earrings Settingss with Oval Prongs Mouting in Sterling Silver - Various Sizes",
+      "dimension": "7x9mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES215",
+      "product_title": "Oval Basket Ear Studs Earrings Settingss with Oval Prongs Mouting in Sterling Silver - Various Sizes",
+      "dimension": "8x10mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES210K14",
+      "product_title": "Oval Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "4x6mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES211K14",
+      "product_title": "Oval Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "5x7mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES212K14",
+      "product_title": "Oval Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "6x8mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES213K14",
+      "product_title": "Oval Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "7x9mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES215K14",
+      "product_title": "Oval Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "8x10mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES370K14",
+      "product_title": "Oval Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "10x12mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES201",
+      "product_title": "Round Stone Ear Studs Earrings Settings with Round Bezel Mounting in Sterling Silver - Various Sizes",
+      "dimension": "3mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES202",
+      "product_title": "Round Stone Ear Studs Earrings Settings with Round Bezel Mounting in Sterling Silver - Various Sizes",
+      "dimension": "4mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES203",
+      "product_title": "Round Stone Ear Studs Earrings Settings with Round Bezel Mounting in Sterling Silver - Various Sizes",
+      "dimension": "5mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES204",
+      "product_title": "Round Stone Ear Studs Earrings Settings with Round Bezel Mounting in Sterling Silver - Various Sizes",
+      "dimension": "6mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "EW811K14",
+      "product_title": "Cushion Cut Basket Earring Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "5x7mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "EW812K14",
+      "product_title": "Cushion Cut Basket Earring Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "6x8mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "EW813K14",
+      "product_title": "Cushion Cut Basket Earring Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "7x9mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "EW814K14",
+      "product_title": "Cushion Cut Basket Earring Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "8x10mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES218BK14",
+      "product_title": "Round Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "6.5mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES218K14",
+      "product_title": "Round Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "6mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES219K14",
+      "product_title": "Round Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "7mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "ES220K14",
+      "product_title": "Round Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "8mm",
+      "shape": "round"
+    },
+    {
+      "product_number": "EW809K14",
+      "product_title": "Earrings with Oval Basket Setting and Swirl Element in 14K Yellow Gold - Various Sizes",
+      "dimension": "6x8mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "EW810K14",
+      "product_title": "Earrings with Oval Basket Setting and Swirl Element in 14K Yellow Gold - Various Sizes",
+      "dimension": "7x9mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "EW807K14",
+      "product_title": "Earrings with Oval Basket Setting and Swirl Element in 14K Yellow Gold - Various Sizes",
+      "dimension": "8x10mm",
+      "shape": "oval"
+    },
+    {
+      "product_number": "ES371K14",
+      "product_title": "Cushion Cut Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "5x7mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES372K14",
+      "product_title": "Cushion Cut Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "6x8mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES373K14",
+      "product_title": "Cushion Cut Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "7x9mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES374K14",
+      "product_title": "Cushion Cut Basket Ear Stud Setting in 14K Yellow Gold - Various sizes",
+      "dimension": "8x10mm",
+      "shape": "cushion"
+    },
+    {
+      "product_number": "ES337",
+      "product_title": "Quatrefoil Stud Earrings Settings with CZ's and Round Prongs Mounting in Sterling Silver - Various Sizes",
+      "dimension": "6mm",
+      "shape": "round"
+    }
+  ]
+}

@@ -2,14 +2,21 @@ import requests
 import json
 import os
 import re
+import subprocess
 from openai import OpenAI
 from dotenv import load_dotenv
+
+# Clear OPENAI_API_KEY environment variable using PowerShell
+subprocess.run(["powershell", "-Command", "$env:OPENAI_API_KEY = $null"], shell=True)
 
 # Load environment variables
 load_dotenv()
 
 # Initialize OpenAI client
 api_key = os.getenv('OPENAI_API_KEY')
+if not api_key:
+    raise ValueError("OPENAI_API_KEY not found in environment variables")
+
 if api_key:
     # Remove quotes if present
     api_key = api_key.strip('"').strip("'")
@@ -130,13 +137,16 @@ def extract_product_data(products):
         variants = product.get('variants', [])
         
         for variant in variants:
+            # Get the variant's specific size
+            variant_size = variant.get('option1', 'N/A')
+            
             product_data = {
                 'product_number': variant.get('sku', 'N/A'),
                 'product_title': product.get('title', 'N/A'),
                 'price': f"${variant.get('price', '0')}",
                 'material': 'Sterling Silver' if 'sterling silver' in product.get('product_type', '').lower() else product.get('product_type', 'N/A'),
-                'overall_dimensions': f"{variant.get('option1', 'N/A')}",
-                'gemstone_dimensions': analysis.get('gemstone_dimensions', []),
+                'overall_dimensions': variant_size,
+                'gemstone_dimensions': variant_size,  # Use the specific variant size
                 'gemstone_shape': analysis.get('gemstone_shape', 'N/A'),
                 'available_quantity': 'In Stock' if variant.get('available', False) else 'Out of Stock',
                 'variant_id': variant.get('id'),

@@ -1,0 +1,20 @@
+iterations - how to iterate through the AI models to optimize the intermediate prompts and the final application?  
+What will be the application architecture?  What is the best way to communicate the application architecture to the GPT?  
+
+create a prompt to generate complete code for a django application, as well as the devops requirements such as creating and activating a virtual environment, installing the correct versions of python, django, and python libraries for the app, creating the django project and applications, the superuser, and the database installation and schema deployment.  Also we need to configure and run a local server, and prepare to deploy the finished app to a web host along with any public facing database such as postgres on supabase.   this app will incorporate AI, so we will need to choose our models and apis and will need api keys for the api calls.  we will need to specify the functions ai will perform and integrate engineered prompts.  In addition to API keys we may also need to fund the api providers.  the infrastructure must be secured and also we must build in unit-testing and other testing and logging to the app.  
+
+checklist for application development: 
+
+platofrms
+
+code base 
+
+framework(s)
+
+
+credentials and api keys ect
+
+urls
+
+ai models and integrations for automations and agents
+

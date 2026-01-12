@@ -1,0 +1,7957 @@
+{
+  "scraped_at": "2026-01-11T12:14:34.734589",
+  "total_products": 261,
+  "categories_scraped": 1,
+  "source_url": "https://www.ottofrei.com/collections/faceted-stones",
+  "products": [
+    {
+      "name": "Closeout Round Faceted 5.5mm Mahenge Garnet",
+      "material": null,
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 35.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-round-faceted-5-5mm-mahenge-garnet"
+    },
+    {
+      "name": "Closeout Pack of 20 Trillion Cut Corner 9x9mm Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 18.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-pack-of-20-trillion-cut-corner-9x9mm-cubic-zirconia"
+    },
+    {
+      "name": "Round Moissanite 4.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 10.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-4-5mm"
+    },
+    {
+      "name": "Closeout Pack of 10 Black Princess-Square 10x10mm Cubic Zirconia Hand Cut",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 15.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-pack-of-10-black-princess-square-10x10mm-cubic-zirconia-hand-cut"
+    },
+    {
+      "name": "Closeout Pack of 10 Black Princess-Square 9x9mm Cubic Zirconia Hand Cut",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 8.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-pack-of-10-black-princess-square-9x9mm-cubic-zirconia-hand-cut"
+    },
+    {
+      "name": "Closeout Pack of 25 Black Princess-Square 7x7mm Cubic Zirconia Hand Cut",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 15.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-pack-of-25-black-princess-square-7x7mm-cubic-zirconia-hand-cut"
+    },
+    {
+      "name": "Closeout Pack of 200 Black Princess-Square 5x5mm Cubic Zirconia Hand Cut",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 35.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-pack-of-200-black-princess-square-5x5mm-cubic-zirconia-hand-cut"
+    },
+    {
+      "name": "Closeout Rose Cut Tourmaline 10-10.15 Carat Assorted Bag 4-5 Stones",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 47.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-rose-cut-tourmaline-10-10-15-carat-assorted-bag-4-5-stones"
+    },
+    {
+      "name": "Closeout Rock Deco 5.7ct Black Raw Diamonds",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 4.7,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-raw-natural-diamonds-africa-5-7ct-pack"
+    },
+    {
+      "name": "Closeout Rock Deco 2ct Black Raw Diamonds",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 2.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-rock-deco-2ct-black-raw-diamonds"
+    },
+    {
+      "name": "Closeout Pack of 50 White Heart 8 x 8mm Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 25.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-pack-of-50-white-heart-8-x-8mm-cubic-zirconia"
+    },
+    {
+      "name": "Oval Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Red",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 1.68,
+          "in_stock": false
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.78,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 6.2,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 7.5,
+          "in_stock": false
+        },
+        {
+          "size": "11x9mm",
+          "price": 10.32,
+          "in_stock": false
+        },
+        {
+          "size": "12x10mm",
+          "price": 17.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Pear Shape Moissanite - 12x8mm",
+      "material": null,
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.05,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-shape-moissanite-12x8mm"
+    },
+    {
+      "name": "Pear Shape Moissanite - 9x6mm",
+      "material": null,
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 50.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-shape-moissanite-9x6mm"
+    },
+    {
+      "name": "Pear Shape Moissanite - 10x7mm",
+      "material": null,
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 65.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-shape-moissanite-10x7mm"
+    },
+    {
+      "name": "Brilliant Cushion Moissanite - 10x10mm",
+      "material": null,
+      "color": null,
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/brilliant-cushion-moissanite-10x10mm"
+    },
+    {
+      "name": "Brilliant Cushion Moissanite - 8x8mm",
+      "material": null,
+      "color": null,
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 80.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/brilliant-cushion-moissanite-8x8mm"
+    },
+    {
+      "name": "Brilliant Cushion Moissanite - 9x9mm",
+      "material": null,
+      "color": null,
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 90.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/brilliant-cushion-moissanite-9x9mm"
+    },
+    {
+      "name": "Emerald Moissanite - 10x8mm",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.05,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-moissanite-10x8mm"
+    },
+    {
+      "name": "Emerald Moissanite - 8x6mm",
+      "material": null,
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 69.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-moissanite-8x6mm"
+    },
+    {
+      "name": "Round Moissanite - 10mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 85.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-10mm"
+    },
+    {
+      "name": "Closeout Pack of 6 Cubic Zirconia 10x10mm-Square",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 20.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-square-chess-synthetic-10x10mm-cubic-zirconia"
+    },
+    {
+      "name": "Round Moissanite - 9mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 65.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-9mm"
+    },
+    {
+      "name": "Round Moissanite - 8mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 55.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-8mm"
+    },
+    {
+      "name": "Round Moissanite - 7mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 37.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-7mm"
+    },
+    {
+      "name": "Round Moissanite 6.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 24.95,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-6-5mm"
+    },
+    {
+      "name": "Round Moissanite  6mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 19.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-6mm"
+    },
+    {
+      "name": "Round Moissanite 5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 13.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-5mm"
+    },
+    {
+      "name": "Round Moissanite 4mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 7.25,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-4mm"
+    },
+    {
+      "name": "Round Moissanite 3.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 4.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-moissanite-3-5mm"
+    },
+    {
+      "name": "Pack-3 Round Moissanite 3mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 8.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-round-moissanite-3mm"
+    },
+    {
+      "name": "Pack-6 Round Moissanite 2.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 12.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-6-round-moissanite-2-5mm"
+    },
+    {
+      "name": "Pack-10 Round Moissanite 1.7mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 12.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-moissanite-1-7mm"
+    },
+    {
+      "name": "Pack-10 Round Moissanite 2mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 10.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-moissanite-2mm"
+    },
+    {
+      "name": "Pack-10 Round Moissanite 1.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 5.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-moissanite-1-5mm"
+    },
+    {
+      "name": "Pack-10 Round Moissanite 1.3mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 6.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-moissanite-1-3mm"
+    },
+    {
+      "name": "Pack-100 Round Moissanite 1mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 20.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-moissanite-1mm"
+    },
+    {
+      "name": "Round Created Diamond - 4.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 73.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-created-diamond-4-5mm"
+    },
+    {
+      "name": "Round Created Diamond - 4mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 49.9,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-created-diamond-4mm"
+    },
+    {
+      "name": "Round Created Diamond - 3.5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 36.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-created-diamond-3-5mm"
+    },
+    {
+      "name": "Rock Deco 3.5mm Diamond Pearls-Orange (N)",
+      "material": null,
+      "color": "Orange",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-3-5mm-diamond-pearls-orange-n"
+    },
+    {
+      "name": "Rock Deco 3.5mm Diamond Pearls-Grey (N)",
+      "material": null,
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-3-5mm-diamond-pearls-grey-n"
+    },
+    {
+      "name": "Rock Deco 4.5mm Diamond Pearls Yellow",
+      "material": null,
+      "color": "Yellow",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 3.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-4-5mm-diamond-pearls-yellow"
+    },
+    {
+      "name": "Rock Deco 4.5mm Diamond Pearls Orange",
+      "material": null,
+      "color": "Orange",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 3.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-4-5mm-diamond-pearls-orange"
+    },
+    {
+      "name": "Pack-2 Round Created Diamond-2.50mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 27.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-2-round-created-diamond-2-50mm"
+    },
+    {
+      "name": "Pack-2 Round Created Diamond-2.25mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 19.95,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-2-round-created-diamond-2-25mm"
+    },
+    {
+      "name": "Pack-3 Round Created Diamond-2mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 20.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-round-created-diamond-2mm"
+    },
+    {
+      "name": "Pack-5 Round Created Diamond-1.75mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 25.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-round-created-diamond-1-75mm"
+    },
+    {
+      "name": "Pack-10 Round Created Diamond-1.50mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 40.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-created-diamond-1-50mm"
+    },
+    {
+      "name": "Pack-10 Round Created Diamond-1.25mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 30.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-created-diamond-1-25mm"
+    },
+    {
+      "name": "Pack-10 Round Created Diamond-1mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 17.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-10-round-created-diamond-1mm"
+    },
+    {
+      "name": "Rock Deco 4.5mm Diamond Pearls Grey",
+      "material": null,
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 3.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-4-5mm-diamond-pearls-grey"
+    },
+    {
+      "name": "Oval Synthetic Canary Yellow 8x6mm Cubic Zirconia",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 2.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-synthetic-canary-yellow-8x6mm-cubic-zirconia"
+    },
+    {
+      "name": "Oval Synthetic Canary Yellow 10x8mm Cubic Zirconia",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 3.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-synthetic-canary-yellow-10x8mm-cubic-zirconia"
+    },
+    {
+      "name": "Round Rose Cut Lab-Created 10mm Blue Sapphire",
+      "material": "Lab Created",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 40.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-rose-cut-lab-created-10mm-blue-sapphire"
+    },
+    {
+      "name": "Round Synthetic Canary Yellow 5mm Cubic Zirconia",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 2.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-synthetic-canary-yellow-5mm-cubic-zirconia"
+    },
+    {
+      "name": "Pack-5 Rock Deco Natural Rose Cut Diamonds-1.3mm Yellow",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 30.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-rock-deco-natural-rose-cut-diamonds-1-3mm-yellow"
+    },
+    {
+      "name": "Rock Deco Natural Rose Cut Diamonds-4mm Yellow",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 90.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-natural-rose-cut-diamonds-4mm-yellow"
+    },
+    {
+      "name": "Pack-5 Rock Deco Natural Rose Cut Diamonds-2mm Yellow",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 40.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-rock-deco-natural-rose-cut-diamonds-2mm-yellow"
+    },
+    {
+      "name": "Rock Deco Natural Rose Cut Diamonds-4mm White",
+      "material": "Natural",
+      "color": "White",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-natural-rose-cut-diamonds-4mm-white"
+    },
+    {
+      "name": "Pack-5 Rock Deco Natural Rose Cut Diamonds-2mm White",
+      "material": "Natural",
+      "color": "White",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 55.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-rock-deco-natural-rose-cut-diamonds-2mm-white"
+    },
+    {
+      "name": "Diamond Melee 2.6mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 69.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-2-6mm-si"
+    },
+    {
+      "name": "Diamond Melee 2.5mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 61.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-2-5mm-si"
+    },
+    {
+      "name": "Pack-3 Diamond Melee 1.6mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 54.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-diamond-melee-1-6mm-si"
+    },
+    {
+      "name": "Pack-3 Diamond Melee 1.5mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 44.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-diamond-melee-1-5mm-si"
+    },
+    {
+      "name": "Pack-4 Diamond Melee 1.3mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 40.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-4-diamond-melee-1-3mm-si"
+    },
+    {
+      "name": "Pack-5 Diamond Melee 1.2mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 45.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-diamond-melee-1-2mm-si"
+    },
+    {
+      "name": "Pack-5 Diamond Melee 1.1mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 28.45,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-diamond-melee-1-1mm-si"
+    },
+    {
+      "name": "Pack-5 Diamond Melee 1mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 26.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-diamond-melee-1mm-si"
+    },
+    {
+      "name": "Pack-5 Diamond Melee .9mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 20.25,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-diamond-melee-9mm-si"
+    },
+    {
+      "name": "Pack-5 Diamond Melee 0.8mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 14.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-diamond-melee-0-8mm-si"
+    },
+    {
+      "name": "5mm Faceted Trillion Tanzanite",
+      "material": null,
+      "color": "Blue",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/5mm-faceted-trillion-tanzanite"
+    },
+    {
+      "name": "6mm x 3mm Marquise Faceted Genuine Swiss Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 7.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/6mm-x-3mm-marquise-faceted-genuine-swiss-blue-topaz"
+    },
+    {
+      "name": "6mm x 4mm Pear Faceted Genuine Ruby",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 190.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/6mm-x-4mm-pear-faceted-genuine-ruby"
+    },
+    {
+      "name": "Triangular Faceted Cubic Zirconia with Cut Corners",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 2.15,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "7mm",
+          "price": 4.75,
+          "in_stock": true
+        },
+        {
+          "size": "8mm",
+          "price": 5.75,
+          "in_stock": true
+        },
+        {
+          "size": "10mm",
+          "price": 12.5,
+          "in_stock": true
+        },
+        {
+          "size": "12mm",
+          "price": 14.5,
+          "in_stock": false
+        },
+        {
+          "size": "9mm",
+          "price": 10.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/triangular-faceted-cubic-zirconia-with-cut-corners"
+    },
+    {
+      "name": "Tapered Baguette Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Baguette",
+      "variations": [
+        {
+          "size": "1.5x1mm",
+          "price": 1.64,
+          "in_stock": true
+        },
+        {
+          "size": "1.5x1mm",
+          "price": 1.75,
+          "in_stock": true
+        },
+        {
+          "size": "2x1mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.5x1mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "1.5x1mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "2x1.5mm",
+          "price": 3.6,
+          "in_stock": true
+        },
+        {
+          "size": "1.5x1mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "2x1.5mm",
+          "price": 4.1,
+          "in_stock": true
+        },
+        {
+          "size": "2x1.5mm",
+          "price": 4.1,
+          "in_stock": true
+        },
+        {
+          "size": "2.5x1.75mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "2.5x1.5mm",
+          "price": 4.25,
+          "in_stock": true
+        },
+        {
+          "size": "3x1mm",
+          "price": 4.25,
+          "in_stock": true
+        },
+        {
+          "size": "2x1.5mm",
+          "price": 4.25,
+          "in_stock": true
+        },
+        {
+          "size": "3x2mm",
+          "price": 4.3,
+          "in_stock": true
+        },
+        {
+          "size": "3x2mm",
+          "price": 4.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/tapered-step-cut-baguette-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Oval Faceted Lab-Created Light Blue Sapphire",
+      "material": "Lab Created",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "8x6mm",
+          "price": 17.82,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 22.95,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-lab-created-light-blue-sapphire"
+    },
+    {
+      "name": "Round Cubic Zirconia-Sizes 1.0mm to 8.0mm",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.25mm",
+          "price": 12.1,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 21.75,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 21.2,
+          "in_stock": true
+        },
+        {
+          "size": "1.0mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.0mm",
+          "price": 13.2,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm",
+          "price": 12.15,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 12.25,
+          "in_stock": true
+        },
+        {
+          "size": "2.0mm",
+          "price": 13.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 16.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 18.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 17.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 18.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 15.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 11.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.5mm",
+          "price": 11.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.7mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.5mm",
+          "price": 15.6,
+          "in_stock": true
+        },
+        {
+          "size": "7.5mm",
+          "price": 13.4,
+          "in_stock": true
+        },
+        {
+          "size": "8.0mm",
+          "price": 15.6,
+          "in_stock": true
+        },
+        {
+          "size": "5.25mm",
+          "price": 11.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.25mm",
+          "price": 14.0,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 11.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.2mm",
+          "price": 11.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-cubic-zirconia"
+    },
+    {
+      "name": "Round Faceted Pink Amethyst",
+      "material": null,
+      "color": "Purple",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "6mm",
+          "price": 8.5,
+          "in_stock": true
+        },
+        {
+          "size": "8mm",
+          "price": 18.5,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 5.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-pink-amethyst"
+    },
+    {
+      "name": "Round Faceted Green Quartz",
+      "material": null,
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "6mm",
+          "price": 8.75,
+          "in_stock": true
+        },
+        {
+          "size": "8mm",
+          "price": 13.2,
+          "in_stock": false
+        },
+        {
+          "size": "4mm",
+          "price": 7.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-green-quartz"
+    },
+    {
+      "name": "Round Faceted Morganite",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "5mm",
+          "price": 63.0,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 1.02,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 25.72,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-morganite"
+    },
+    {
+      "name": "Emerald Cut Faceted Lab-Created Nano Crystal Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "7mm",
+          "price": 4.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-lab-created-nano-crystal-emerald"
+    },
+    {
+      "name": "Round Faceted Lab-Created Nano Crystal Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "5.5mm",
+          "price": 4.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-nano-crystal-emerald"
+    },
+    {
+      "name": "Marquise Faceted Genuine Sky Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "6mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 3.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-sky-blue-topaz_2"
+    },
+    {
+      "name": "Round Faceted Genuine White Sapphire",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 5.44,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 6.4,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 6.5,
+          "in_stock": false
+        },
+        {
+          "size": "1.75mm",
+          "price": 6.75,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 7.8,
+          "in_stock": false
+        },
+        {
+          "size": "2.25mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 14.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 24.8,
+          "in_stock": false
+        },
+        {
+          "size": "3.50mm",
+          "price": 31.78,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 46.5,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 2.98,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-white-sapphire"
+    },
+    {
+      "name": "Round Faceted Chrome Diopside",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2mm",
+          "price": 10.0,
+          "in_stock": false
+        },
+        {
+          "size": "3mm",
+          "price": 12.0,
+          "in_stock": false
+        },
+        {
+          "size": "4mm",
+          "price": 26.0,
+          "in_stock": false
+        },
+        {
+          "size": "5mm",
+          "price": 62.0,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 92.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-chrome-diopside"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Kashmir Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.0mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm",
+          "price": 11.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-kashmir"
+    },
+    {
+      "name": "Oval Faceted Tanzanite",
+      "material": null,
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 65.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-tanzanite"
+    },
+    {
+      "name": "Round Faceted Tanzanite",
+      "material": null,
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.5mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "2mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 14.72,
+          "in_stock": true
+        },
+        {
+          "size": "3mm",
+          "price": 25.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 30.6,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 74.5,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 1.91,
+          "in_stock": true
+        },
+        {
+          "size": "5.5mm",
+          "price": 2.7,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 4.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-tanzanite"
+    },
+    {
+      "name": "Pear Faceted Mexican Fire Opal",
+      "material": null,
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 48.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 80.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 1.2,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 36.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-mexican-fired-opal"
+    },
+    {
+      "name": "Octagon Faceted Lab-Created Blue Sapphire",
+      "material": "Lab Created",
+      "color": "Blue",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 5.75,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 7.25,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 10.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/octagon-faceted-lab-created-blue-sapphire"
+    },
+    {
+      "name": "Oval Faceted Lab-Created Blue Sapphire",
+      "material": "Lab Created",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 6.0,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.9,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 17.82,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 22.95,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-lab-created-blue-sapphire"
+    },
+    {
+      "name": "Round Faceted Lab-Created Blue Sapphire",
+      "material": "Lab Created",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 5.85,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 6.6,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 7.0,
+          "in_stock": false
+        },
+        {
+          "size": "6mm",
+          "price": 10.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-blue-sapphire"
+    },
+    {
+      "name": "Octagon Faceted Lab-Created Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 15.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 23.2,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 35.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/octagon-faceted-lab-created-emerald"
+    },
+    {
+      "name": "Oval Faceted Lab-Created Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 13.8,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 18.2,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 31.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-lab-created-emerald"
+    },
+    {
+      "name": "Round Faceted Lab-Created Emerald",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 15.0,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 23.7,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 30.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-emerald"
+    },
+    {
+      "name": "Oval Faceted Sunstone",
+      "material": null,
+      "color": null,
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 40.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 60.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 100.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "14x10mm",
+          "price": 3.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-sunstone"
+    },
+    {
+      "name": "Faceted Marquise Sunstone",
+      "material": null,
+      "color": null,
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "6x3mm",
+          "price": 30.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 90.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/faceted-marquise-sunstone"
+    },
+    {
+      "name": "Oval Faceted Genuine Iolite",
+      "material": "Natural",
+      "color": null,
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 10.92,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 11.38,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 29.7,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-iolite"
+    },
+    {
+      "name": "Round Faceted Genuine Iolite",
+      "material": "Natural",
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 10.5,
+          "in_stock": false
+        },
+        {
+          "size": "5mm",
+          "price": 18.0,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 27.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-iolite"
+    },
+    {
+      "name": "Closeout Round Rose-cut Genuine Tiger's-Eye",
+      "material": "Natural",
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.5mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.9mm",
+          "price": 8.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-round-rose-cut-genuine-tigers-eye"
+    },
+    {
+      "name": "Square Rose-Cut Marcasite",
+      "material": null,
+      "color": null,
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "1.50mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 23.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-rose-cut-marcasite"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Faceted 1mm Bright Blue & Pink Sapphires | OttoFrei.com",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.0mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.0mm",
+          "price": 4.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-swarovski-gemstones-genuine-faceted-sapphires"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Pink Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.25mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm",
+          "price": 12.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 11.44,
+          "in_stock": true
+        },
+        {
+          "size": "2mm",
+          "price": 10.8,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-pink"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Faceted Rhodolite Garnet",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 6.5,
+          "in_stock": false
+        },
+        {
+          "size": "5.0mm",
+          "price": 9.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-swarovski-gemstones-genuine-faceted-rhodolite-garnet"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Ice Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 9.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm",
+          "price": 11.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 11.46,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-ice-blue"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Violac Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm",
+          "price": 9.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-violac"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Blazing Red Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm",
+          "price": 12.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-blazing-red"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Poppy Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "1mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.5mm",
+          "price": 11.0,
+          "in_stock": true
+        },
+        {
+          "size": "7mm",
+          "price": 15.66,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-poppy"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine White Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1mm",
+          "price": 11.88,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 14.7,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 11.88,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 8.64,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-white"
+    },
+    {
+      "name": "Closeout-Round Swarovski Gemstones™ Genuine Rainforest Green Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.5mm",
+          "price": 11.5,
+          "in_stock": false
+        },
+        {
+          "size": "1mm",
+          "price": 9.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/swarovski-genuine-topaz-rainforest-green"
+    },
+    {
+      "name": "Pear Faceted Imitation Blue Zircon",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.6,
+          "in_stock": false
+        },
+        {
+          "size": "8x5mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 5.88,
+          "in_stock": true
+        },
+        {
+          "size": "12x8mm",
+          "price": 7.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Pear Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Yellow",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "8x5mm",
+          "price": 12.6,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 9.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 14.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-citrine"
+    },
+    {
+      "name": "Pear Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.04,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 5.86,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 7.6,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 11.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-peridot"
+    },
+    {
+      "name": "Pear Faceted Imitation PInk Tourmaline",
+      "material": "Synthetic",
+      "color": "Pink",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 3.6,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.25,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Pear Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 3.96,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.2,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Pear Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.04,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 6.3,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 7.0,
+          "in_stock": false
+        },
+        {
+          "size": "12x8mm",
+          "price": 8.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Pear Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 4.53,
+          "in_stock": false
+        },
+        {
+          "size": "8x5mm",
+          "price": 5.0,
+          "in_stock": false
+        },
+        {
+          "size": "9x6mm",
+          "price": 6.2,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 14.1,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-emerald"
+    },
+    {
+      "name": "Pear Faceted Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.2,
+          "in_stock": false
+        },
+        {
+          "size": "8x5mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 3.81,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 5.88,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-aquamarine"
+    },
+    {
+      "name": "Pear Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Purple",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 4.53,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 8.67,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 10.47,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 12.75,
+          "in_stock": false
+        },
+        {
+          "size": "13x8mm",
+          "price": 13.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Pear Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Red",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 5.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.9,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Oval Synthetic Ocean Blue Zircon Spinel",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.55,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 3.6,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 5.25,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 12.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-synthetic-ocean-blue-zircon-spinel"
+    },
+    {
+      "name": "Oval Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Yellow",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 11.5,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 12.75,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 15.25,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 16.75,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 18.75,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 22.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-citrine"
+    },
+    {
+      "name": "Oval Faceted Imitation Pink Tourmaline",
+      "material": "Synthetic",
+      "color": "Pink",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 8.25,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 8.75,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 9.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Oval Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.06,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 4.25,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 6.93,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 11.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Oval Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 6.75,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 8.91,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 12.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 18.2,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 19.0,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 20.08,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 20.95,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 10.08,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-peridot"
+    },
+    {
+      "name": "Oval Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.6,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.05,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 4.25,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 4.35,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 9.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Oval Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": null,
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.3,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 5.19,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 9.4,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 10.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Oval Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.25,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 7.17,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 16.6,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 22.0,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 23.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 24.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-emerald"
+    },
+    {
+      "name": "Oval Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Purple",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 8.91,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.2,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 11.1,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 22.0,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 23.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 28.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Marquise Faceted Imitation Blue Zircon",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "6x3mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 3.6,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 5.91,
+          "in_stock": false
+        },
+        {
+          "size": "12x6mm",
+          "price": 7.77,
+          "in_stock": true
+        },
+        {
+          "size": "4x2mm",
+          "price": 1.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Marquise Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Yellow",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 8.4,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 11.45,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 12.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-citrine"
+    },
+    {
+      "name": "Marquise Faceted Imitation Pink Tourmaline",
+      "material": "Synthetic",
+      "color": "Pink",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 93.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 3.45,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 6.25,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 8.16,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Marquise Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 6.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Marquise Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 9.33,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 10.08,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 10.58,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 11.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-peridot"
+    },
+    {
+      "name": "Marquise Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 3.75,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 6.3,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Marquise Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": null,
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 5.13,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 8.16,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Marquise Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 6.22,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 10.49,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 12.96,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 11.13,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-emerald"
+    },
+    {
+      "name": "Marquise Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Purple",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 1.59,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 3.33,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 3.99,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 5.78,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 7.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Marquise Faceted Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "8x4mm",
+          "price": 5.85,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 6.2,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 7.2,
+          "in_stock": false
+        },
+        {
+          "size": "4x2mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 2.73,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-aquamarine"
+    },
+    {
+      "name": "Marquise Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Red",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 1.92,
+          "in_stock": true
+        },
+        {
+          "size": "8x4mm",
+          "price": 3.45,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 6.12,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 13.23,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Heart Faceted Imitation Blue Zircon",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 1.89,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 3.36,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Heart Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Yellow",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "5x5mm",
+          "price": 3.39,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 4.23,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-citrine"
+    },
+    {
+      "name": "Heart Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "6x6mm",
+          "price": 3.36,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Heart Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 8.7,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 11.65,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-peridot"
+    },
+    {
+      "name": "Heart Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 4.05,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Heart Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 3.66,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 6.84,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 12.96,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-emerald"
+    },
+    {
+      "name": "Heart Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": null,
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 5.0,
+          "in_stock": false
+        },
+        {
+          "size": "6x6mm",
+          "price": 5.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Heart Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Purple",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 10.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 12.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Heart Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Red",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 4.9,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 5.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Blue Zircon",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 4.6,
+          "in_stock": false
+        },
+        {
+          "size": "9x7mm",
+          "price": 5.75,
+          "in_stock": false
+        },
+        {
+          "size": "10x8mm",
+          "price": 8.85,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 15.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 5.25,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 18.0,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 21.25,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 27.5,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 5.1,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-citrine"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation PInk Tourmaline",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 4.9,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 15.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 9.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.49,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.06,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 3.48,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 7.35,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 8.34,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 13.65,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 8.49,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.72,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 13.05,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 17.55,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 22.92,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 10.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-peridot"
+    },
+    {
+      "name": "Emerald/Octagon Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.15,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.95,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 5.35,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 5.75,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 6.3,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 7.26,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 8.37,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.24,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 3.75,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 6.6,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 8.25,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 14.25,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 8.49,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 13.2,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 15.48,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 19.53,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 16.25,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-emerald"
+    },
+    {
+      "name": "Emerald Cut Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 6.15,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 7.0,
+          "in_stock": false
+        },
+        {
+          "size": "10x8mm",
+          "price": 8.34,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 13.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-imitation-aquamarine"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 7.11,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.72,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 10.41,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 12.33,
+          "in_stock": false
+        },
+        {
+          "size": "10x8mm",
+          "price": 27.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 30.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-imitation-amethyst"
+    },
+    {
+      "name": "Emerald Cut Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6.5mm",
+          "price": 4.95,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 10.85,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 12.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-cut-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Cushion Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "7x5mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 6.94,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 10.05,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 18.75,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 28.5,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 29.75,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 5.46,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/cushion-faceted-imitation-emerald"
+    },
+    {
+      "name": "Square Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Yellow",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 6.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-citrine"
+    },
+    {
+      "name": "Square Faceted Imitation Blue Zircon",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Square Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Square Faceted Imitation Pink Tourmaline",
+      "material": "Synthetic",
+      "color": "Pink",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 3.4,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Square Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 3.8,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-peridot"
+    },
+    {
+      "name": "Square Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.61,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.05,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Square Faceted Imitation Emerald",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-emerald"
+    },
+    {
+      "name": "Square Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": null,
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 1.95,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Square Faceted Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.55,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 4.41,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-aquamarine"
+    },
+    {
+      "name": "Square Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Purple",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "3x3mm",
+          "price": 5.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Square Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Red",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3x3mm",
+          "price": 2.45,
+          "in_stock": true
+        },
+        {
+          "size": "4x4mm",
+          "price": 5.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-red-garnet-simulant"
+    },
+    {
+      "name": "Round Faceted Imitation Blue Zircon",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 60.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 2.55,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.65,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.33,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 6.1,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 7.95,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 14.58,
+          "in_stock": false
+        },
+        {
+          "size": "1.50mm",
+          "price": 65.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 75.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.8,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 5.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-blue-zircon"
+    },
+    {
+      "name": "Round Faceted Imitation Citrine",
+      "material": "Synthetic",
+      "color": "Yellow",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 1.05,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 1.1,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.55,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.65,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 5.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.2,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 7.68,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 9.81,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 12.06,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 13.0,
+          "in_stock": true
+        },
+        {
+          "size": "12mm",
+          "price": 15.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-citrine"
+    },
+    {
+      "name": "Round Faceted Imitation Pink Tourmaline",
+      "material": "Synthetic",
+      "color": "Pink",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 60.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 65.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 70.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 80.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 95.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.55,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.25,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 5.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.7,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 2.8,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.2,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 3.4,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 6.35,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 6.45,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Round Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 45.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 1.08,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 1.1,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 1.12,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 1.15,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.17,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.2,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.25,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.3,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.35,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.45,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.9,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 5.2,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 5.8,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 6.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Round Faceted Imitation Peridot",
+      "material": "Synthetic",
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 78.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 84.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 90.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.57,
+          "in_stock": false
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.74,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 3.05,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.25,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.43,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 6.42,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 8.85,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 18.42,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 18.75,
+          "in_stock": true
+        },
+        {
+          "size": "12mm",
+          "price": 19.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-peridot"
+    },
+    {
+      "name": "Round Faceted Lab-Created Ruby",
+      "material": "Lab Created",
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 50.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 55.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 65.0,
+          "in_stock": false
+        },
+        {
+          "size": "1.75mm",
+          "price": 70.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 75.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 80.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 90.0,
+          "in_stock": false
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.2,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.3,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 1.71,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.25,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 2.3,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 2.35,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.25,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 3.75,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 4.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-lab-created-ruby"
+    },
+    {
+      "name": "Round Faceted Imitation Alexandrite",
+      "material": "Synthetic",
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 50.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 60.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 65.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 69.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 72.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 75.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 100.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.1,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.62,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.8,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 4.4,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 4.6,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 7.1,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 6.84,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-alexandrite"
+    },
+    {
+      "name": "Round Faceted Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.00mm",
+          "price": 54.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 70.0,
+          "in_stock": false
+        },
+        {
+          "size": "2.75mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.58,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.65,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.4,
+          "in_stock": false
+        },
+        {
+          "size": "5.00mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.8,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.96,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 4.45,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 5.0,
+          "in_stock": false
+        },
+        {
+          "size": "8.00mm",
+          "price": 5.8,
+          "in_stock": false
+        },
+        {
+          "size": "1.00mm",
+          "price": 30.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 33.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 80.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.0,
+          "in_stock": false
+        },
+        {
+          "size": "11.00mm",
+          "price": 7.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-aqumarine"
+    },
+    {
+      "name": "Round Faceted Imitation Amethyst",
+      "material": "Synthetic",
+      "color": "Purple",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 1.6,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 1.65,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 1.7,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 1.75,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 2.8,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 2.95,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.4,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 4.3,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 4.35,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 6.42,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 6.6,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 11.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-amethyst"
+    },
+    {
+      "name": "Round Faceted Imitation Red Garnet",
+      "material": "Synthetic",
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 42.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 45.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 54.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 57.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 70.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.25mm",
+          "price": 75.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.75mm",
+          "price": 85.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 1.1,
+          "in_stock": true
+        },
+        {
+          "size": "3.50mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "4.00mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.00mm",
+          "price": 3.15,
+          "in_stock": true
+        },
+        {
+          "size": "6.50mm",
+          "price": 3.96,
+          "in_stock": true
+        },
+        {
+          "size": "7.00mm",
+          "price": 5.28,
+          "in_stock": true
+        },
+        {
+          "size": "8.00mm",
+          "price": 8.62,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 72.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.25mm",
+          "price": 1.23,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 2.82,
+          "in_stock": true
+        },
+        {
+          "size": "4.50mm",
+          "price": 3.1,
+          "in_stock": true
+        },
+        {
+          "size": "5.50mm",
+          "price": 3.2,
+          "in_stock": true
+        },
+        {
+          "size": "6.00mm",
+          "price": 3.25,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-imitation-red-garnet"
+    },
+    {
+      "name": "Marquise Faceted Genuine Pink Tourmaline",
+      "material": "Natural",
+      "color": "Pink",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 16.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 27.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-pink-tourmaline"
+    },
+    {
+      "name": "Oval Faceted Genuine Pink Tourmaline",
+      "material": "Natural",
+      "color": "Pink",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 40.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 67.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 1.36,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-pink-tourmaline"
+    },
+    {
+      "name": "Round Faceted Genuine Pink Tourmaline",
+      "material": "Natural",
+      "color": "Pink",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 22.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 30.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 55.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 1.1,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 1.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-pink-tourmaline"
+    },
+    {
+      "name": "Oval Faceted Genuine Swiss Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 4.6,
+          "in_stock": false
+        },
+        {
+          "size": "6x4mm",
+          "price": 9.9,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 17.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-swiss-blue-topaz"
+    },
+    {
+      "name": "Pear Faceted Genuine Swiss Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 7.8,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 16.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-swiss-blue-topaz"
+    },
+    {
+      "name": "Pear Faceted Genuine Sky Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 6.6,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 7.3,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 8.96,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-sky-blue-topaz"
+    },
+    {
+      "name": "Round Faceted Genuine Swiss Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3.0mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 8.8,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 16.0,
+          "in_stock": false
+        },
+        {
+          "size": "6.0mm",
+          "price": 26.0,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 40.0,
+          "in_stock": false
+        },
+        {
+          "size": "8.0mm",
+          "price": 60.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-swiss-blue-topaz"
+    },
+    {
+      "name": "Round Faceted Genuine Sky Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "3.0mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 4.4,
+          "in_stock": false
+        },
+        {
+          "size": "5.0mm",
+          "price": 7.5,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 16.02,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-sky-blue-topaz"
+    },
+    {
+      "name": "Pear Faceted Genuine Smoky Quartz",
+      "material": "Natural",
+      "color": null,
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 5.2,
+          "in_stock": false
+        },
+        {
+          "size": "6x4mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-smoky-quartz"
+    },
+    {
+      "name": "Marquise Faceted Genuine Smoky Quartz",
+      "material": "Natural",
+      "color": null,
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 4.7,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 5.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-genuine-smokey-quartz"
+    },
+    {
+      "name": "Oval Faceted Genuine Smoky Quartz",
+      "material": "Natural",
+      "color": null,
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 5.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 6.0,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 6.9,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-smoky-quartz"
+    },
+    {
+      "name": "Round Faceted Genuine Smoky Quartz",
+      "material": "Natural",
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 3.7,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 5.6,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 5.8,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "6.0mm",
+          "price": 8.2,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 9.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-smoky-quartz"
+    },
+    {
+      "name": "Pear Faceted Genuine Blue Sapphire",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 44.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 64.26,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-blue-sapphire"
+    },
+    {
+      "name": "Marquise Faceted Genuine Blue Sapphire",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "5x2.5mm",
+          "price": 20.8,
+          "in_stock": true
+        },
+        {
+          "size": "5x2.5mm",
+          "price": 31.2,
+          "in_stock": true
+        },
+        {
+          "size": "5x2.5mm",
+          "price": 41.6,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 31.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 70.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 98.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 1.26,
+          "in_stock": false
+        },
+        {
+          "size": "4x2mm",
+          "price": 28.0,
+          "in_stock": true
+        },
+        {
+          "size": "4x2mm",
+          "price": 31.2,
+          "in_stock": true
+        },
+        {
+          "size": "4x2mm",
+          "price": 41.6,
+          "in_stock": true
+        },
+        {
+          "size": "4x2mm",
+          "price": 28.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-blue-sapphire"
+    },
+    {
+      "name": "Oval Faceted Genuine Blue Sapphire",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 68.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 98.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 1.54,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 92.22,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 1.2,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.69,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.12,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 40.66,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-blue-sapphire"
+    },
+    {
+      "name": "Marquise Faceted Genuine Ruby",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "5x2.5mm",
+          "price": 41.6,
+          "in_stock": true
+        },
+        {
+          "size": "5x2.5mm",
+          "price": 80.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x2.5mm",
+          "price": 159.6,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 70.72,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 70.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 98.0,
+          "in_stock": false
+        },
+        {
+          "size": "6x3mm",
+          "price": 2.2,
+          "in_stock": false
+        },
+        {
+          "size": "4x2mm",
+          "price": 47.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-ruby"
+    },
+    {
+      "name": "Oval Faceted Genuine Ruby",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 56.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 98.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 1.54,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 224.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 1.2,
+          "in_stock": false
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.34,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 4.29,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.98,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 69.36,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-ruby"
+    },
+    {
+      "name": "Round Faceted Genuine Ruby",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 15.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.0mm",
+          "price": 14.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.0mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 13.4,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 28.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 40.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 30.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 24.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 42.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 62.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 33.6,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 39.2,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 88.2,
+          "in_stock": false
+        },
+        {
+          "size": "3.5mm",
+          "price": 117.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 86.7,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 100.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 149.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 277.2,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 68.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 138.56,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 237.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 277.2,
+          "in_stock": false
+        },
+        {
+          "size": "5.0mm",
+          "price": 100.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 182.04,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 3.12,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 8.3,
+          "in_stock": true
+        },
+        {
+          "size": "2.0mm",
+          "price": 8.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-ruby"
+    },
+    {
+      "name": "Pear Faceted Genuine Peridot",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 6.75,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 11.4,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 14.0,
+          "in_stock": false
+        },
+        {
+          "size": "6x4mm",
+          "price": 8.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-peridot"
+    },
+    {
+      "name": "Marquise Faceted Genuine Peridot",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 8.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-peridot"
+    },
+    {
+      "name": "Oval Faceted Genuine Peridot",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 7.7,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.5,
+          "in_stock": true
+        },
+        {
+          "size": "5x3mm",
+          "price": 5.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-peridot"
+    },
+    {
+      "name": "Round Faceted Genuine Peridot",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 4.7,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 9.34,
+          "in_stock": false
+        },
+        {
+          "size": "6.0mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 26.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-peridot"
+    },
+    {
+      "name": "Round Rose-Cut Marcasite",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "1.00mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.25mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.50mm",
+          "price": 25.0,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 17.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.00mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.50mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.00mm",
+          "price": 21.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-rose-cut-faceted-maracsite"
+    },
+    {
+      "name": "Pear Genuine Faceted Garnet",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 6.1,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 8.1,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 10.1,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-genuine-faceted-garnet"
+    },
+    {
+      "name": "Marquise Genuine Faceted Garnet",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 2.7,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 4.24,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-genuine-faceted-garnet"
+    },
+    {
+      "name": "Oval Genuine Faceted Garnet",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 5.8,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 7.4,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 14.1,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 25.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-genuine-faceted-garnet"
+    },
+    {
+      "name": "Round Faceted Genuine Garnet",
+      "material": "Natural",
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 1.65,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 1.95,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.75mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "6.0mm",
+          "price": 17.0,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 34.35,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-garnet"
+    },
+    {
+      "name": "Marquise Faceted Genuine Emerald",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 15.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 84.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-emerald"
+    },
+    {
+      "name": "Oval Faceted Genuine Emerald",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 96.32,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.97,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.95,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-genuine-emerald"
+    },
+    {
+      "name": "Round Faceted Genuine Emerald",
+      "material": "Natural",
+      "color": "Green",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 17.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 17.5,
+          "in_stock": false
+        },
+        {
+          "size": "3.0mm",
+          "price": 18.5,
+          "in_stock": false
+        },
+        {
+          "size": "3.5mm",
+          "price": 62.76,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 63.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 134.32,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 359.04,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-emerald"
+    },
+    {
+      "name": "Pear Faceted Genuine Citrine",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 9.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-citrine"
+    },
+    {
+      "name": "Marquise Faceted Genuine Citrine",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 7.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-citrine"
+    },
+    {
+      "name": "Oval Faceted Genuine Citrine",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 6.2,
+          "in_stock": false
+        },
+        {
+          "size": "7x5mm",
+          "price": 13.6,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-citrine"
+    },
+    {
+      "name": "Round Faceted Genuine Citrine",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 4.4,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 5.0,
+          "in_stock": false
+        },
+        {
+          "size": "3.5mm",
+          "price": 5.5,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 7.7,
+          "in_stock": false
+        },
+        {
+          "size": "4.5mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 12.0,
+          "in_stock": false
+        },
+        {
+          "size": "6.0mm",
+          "price": 23.2,
+          "in_stock": false
+        },
+        {
+          "size": "7.0mm",
+          "price": 28.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-citrine"
+    },
+    {
+      "name": "Marquise Faceted Genuine Aquamarine",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 17.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 39.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-aquamarine"
+    },
+    {
+      "name": "Pear Faceted Genuine Aquamarine",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 34.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 50.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 100.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-aquamarine"
+    },
+    {
+      "name": "Oval Faceted Genuine Aquamarine",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 27.2,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 51.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 108.44,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-aquamarine"
+    },
+    {
+      "name": "Round Faceted Genuine Aquamarine",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 11.5,
+          "in_stock": false
+        },
+        {
+          "size": "3.0mm",
+          "price": 17.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 25.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 35.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 55.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 75.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-aquamarine"
+    },
+    {
+      "name": "Pear Faceted Genuine Amethyst",
+      "material": "Natural",
+      "color": "Purple",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 12.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 15.4,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-genuine-amethyst"
+    },
+    {
+      "name": "Oval Faceted Genuine Amethyst",
+      "material": "Natural",
+      "color": "Purple",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 10.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 12.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-amethyst"
+    },
+    {
+      "name": "Marquise Faceted Genuine Amethyst",
+      "material": "Natural",
+      "color": "Purple",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 6.8,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 8.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-genuine-amethyst"
+    },
+    {
+      "name": "Round Faceted Genuine Amethyst",
+      "material": "Natural",
+      "color": "Purple",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 3.75,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 6.25,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 10.5,
+          "in_stock": false
+        },
+        {
+          "size": "6.0mm",
+          "price": 21.0,
+          "in_stock": true
+        },
+        {
+          "size": "7.0mm",
+          "price": 24.0,
+          "in_stock": true
+        },
+        {
+          "size": "8.0mm",
+          "price": 25.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-amethyst"
+    },
+    {
+      "name": "Pear Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 1.95,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 4.8,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.25,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.5,
+          "in_stock": true
+        },
+        {
+          "size": "12x8mm",
+          "price": 8.5,
+          "in_stock": true
+        },
+        {
+          "size": "15x10mm",
+          "price": 11.25,
+          "in_stock": true
+        },
+        {
+          "size": "18x13mm",
+          "price": 18.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Heart Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "7x7mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "8x8mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "9x9mm",
+          "price": 5.13,
+          "in_stock": true
+        },
+        {
+          "size": "10x10mm",
+          "price": 6.54,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Trillion Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 2.9,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 4.35,
+          "in_stock": true
+        },
+        {
+          "size": "7mm",
+          "price": 3.63,
+          "in_stock": true
+        },
+        {
+          "size": "8mm",
+          "price": 5.01,
+          "in_stock": true
+        },
+        {
+          "size": "9mm",
+          "price": 6.3,
+          "in_stock": true
+        },
+        {
+          "size": "10mm",
+          "price": 8.3,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/trillion-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Quadrillion Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": null,
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 2.76,
+          "in_stock": true
+        },
+        {
+          "size": "5mm",
+          "price": 3.66,
+          "in_stock": true
+        },
+        {
+          "size": "9mm",
+          "price": 13.98,
+          "in_stock": true
+        },
+        {
+          "size": "10mm",
+          "price": 18.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/quadrillion-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Square Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Square",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 1.8,
+          "in_stock": false
+        },
+        {
+          "size": "4mm",
+          "price": 3.0,
+          "in_stock": false
+        },
+        {
+          "size": "5mm",
+          "price": 4.5,
+          "in_stock": false
+        },
+        {
+          "size": "6mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "7mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "8mm",
+          "price": 6.3,
+          "in_stock": true
+        },
+        {
+          "size": "9mm",
+          "price": 6.75,
+          "in_stock": true
+        },
+        {
+          "size": "1.75mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 1.65,
+          "in_stock": true
+        },
+        {
+          "size": "5.5mm",
+          "price": 4.75,
+          "in_stock": true
+        },
+        {
+          "size": "10mm",
+          "price": 7.0,
+          "in_stock": true
+        },
+        {
+          "size": "2mm",
+          "price": 1.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 2.75,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/square-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Straight Baguette Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Baguette",
+      "variations": [
+        {
+          "size": "2x1mm",
+          "price": 1.05,
+          "in_stock": true
+        },
+        {
+          "size": "2.5x1.5mm",
+          "price": 1.15,
+          "in_stock": true
+        },
+        {
+          "size": "3x1.5mm",
+          "price": 1.8,
+          "in_stock": true
+        },
+        {
+          "size": "3.5x2mm",
+          "price": 2.2,
+          "in_stock": true
+        },
+        {
+          "size": "4x2mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "4.5x2mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "5x2mm",
+          "price": 2.7,
+          "in_stock": true
+        },
+        {
+          "size": "5x2.5mm",
+          "price": 2.8,
+          "in_stock": true
+        },
+        {
+          "size": "5.5x2.5mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 3.2,
+          "in_stock": true
+        },
+        {
+          "size": "3x2mm",
+          "price": 2.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/straight-step-cut-baguette-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Triangular Faceted Cubic Zirconia with Sharp Corners",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Trillion",
+      "variations": [
+        {
+          "size": "3mm",
+          "price": 3.57,
+          "in_stock": true
+        },
+        {
+          "size": "4mm",
+          "price": 3.65,
+          "in_stock": false
+        },
+        {
+          "size": "5mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "6mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "7mm",
+          "price": 5.2,
+          "in_stock": true
+        },
+        {
+          "size": "8mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "9mm",
+          "price": 10.5,
+          "in_stock": true
+        },
+        {
+          "size": "10mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "11mm",
+          "price": 13.75,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/triangular-faceted-cubic-zirconia-with-sharp-corners"
+    },
+    {
+      "name": "Oval Faceted Genuine Sky Blue Topaz",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 5.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 15.52,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-genuine-sky-blue-topaz"
+    },
+    {
+      "name": "Pear Faceted Imitation Sapphire",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Pear",
+      "variations": [
+        {
+          "size": "6x4mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "8x5mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "9x6mm",
+          "price": 5.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x7mm",
+          "price": 6.5,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pear-faceted-imitation-sapphire"
+    },
+    {
+      "name": "Oval Faceted Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.4,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.75,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 4.2,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 5.1,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 6.93,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 8.2,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 9.2,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-imitation-aquamarine"
+    },
+    {
+      "name": "Oval Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Oval",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.25,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 2.45,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 3.5,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 4.5,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 5.5,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 6.0,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 8.25,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 11.5,
+          "in_stock": true
+        },
+        {
+          "size": "14x12mm",
+          "price": 13.5,
+          "in_stock": true
+        },
+        {
+          "size": "16x12mm",
+          "price": 23.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/oval-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Round Faceted Cubic Zirconia-Large Sizes 8.5mm to 18.0mm",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "18mm",
+          "price": 17.5,
+          "in_stock": true
+        },
+        {
+          "size": "9.0mm",
+          "price": 13.96,
+          "in_stock": true
+        },
+        {
+          "size": "10.0mm",
+          "price": 15.96,
+          "in_stock": true
+        },
+        {
+          "size": "10.5mm",
+          "price": 22.8,
+          "in_stock": true
+        },
+        {
+          "size": "11.5mm",
+          "price": 32.8,
+          "in_stock": true
+        },
+        {
+          "size": "12.0mm",
+          "price": 35.76,
+          "in_stock": true
+        },
+        {
+          "size": "13.0mm",
+          "price": 38.6,
+          "in_stock": true
+        },
+        {
+          "size": "14.0mm",
+          "price": 41.5,
+          "in_stock": true
+        },
+        {
+          "size": "15.0mm",
+          "price": 44.2,
+          "in_stock": true
+        },
+        {
+          "size": "9.5mm",
+          "price": 14.96,
+          "in_stock": true
+        },
+        {
+          "size": "8.5mm",
+          "price": 12.96,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Heart Faceted Imitation PInk Tourmaline",
+      "material": "Synthetic",
+      "color": "Pink",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "4x4mm",
+          "price": 2.0,
+          "in_stock": true
+        },
+        {
+          "size": "5x5mm",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 4.95,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-pink-tourmaline"
+    },
+    {
+      "name": "Heart Faceted Imitation Aquamarine",
+      "material": "Synthetic",
+      "color": "Blue",
+      "shape": "Heart",
+      "variations": [
+        {
+          "size": "5x5mm",
+          "price": 2.88,
+          "in_stock": true
+        },
+        {
+          "size": "6x6mm",
+          "price": 3.55,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/heart-faceted-imitation-aquamarine"
+    },
+    {
+      "name": "Round Faceted Genuine Blue Sapphire",
+      "material": "Natural",
+      "color": "Blue",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "2.0mm",
+          "price": 8.0,
+          "in_stock": false
+        },
+        {
+          "size": "2.0mm",
+          "price": 14.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.0mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 8.74,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 20.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.5mm",
+          "price": 28.0,
+          "in_stock": false
+        },
+        {
+          "size": "2.5mm",
+          "price": 40.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 22.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.0mm",
+          "price": 24.0,
+          "in_stock": false
+        },
+        {
+          "size": "3.0mm",
+          "price": 42.0,
+          "in_stock": false
+        },
+        {
+          "size": "3.0mm",
+          "price": 62.0,
+          "in_stock": false
+        },
+        {
+          "size": "3.5mm",
+          "price": 36.0,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 39.2,
+          "in_stock": false
+        },
+        {
+          "size": "3.5mm",
+          "price": 88.2,
+          "in_stock": true
+        },
+        {
+          "size": "3.5mm",
+          "price": 117.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 53.04,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 116.2,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 149.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.0mm",
+          "price": 176.8,
+          "in_stock": false
+        },
+        {
+          "size": "4.5mm",
+          "price": 40.26,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 138.56,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 237.6,
+          "in_stock": true
+        },
+        {
+          "size": "4.5mm",
+          "price": 277.2,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 95.88,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 182.04,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 3.12,
+          "in_stock": true
+        },
+        {
+          "size": "5.0mm",
+          "price": 5.0,
+          "in_stock": true
+        },
+        {
+          "size": "2.0mm",
+          "price": 6.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire"
+    },
+    {
+      "name": "Marquise Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Blue",
+      "shape": "Marquise",
+      "variations": [
+        {
+          "size": "4x2mm",
+          "price": 1.5,
+          "in_stock": true
+        },
+        {
+          "size": "5x2.5mm",
+          "price": 1.8,
+          "in_stock": true
+        },
+        {
+          "size": "6x3mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "7.5x3.5mm",
+          "price": 2.75,
+          "in_stock": true
+        },
+        {
+          "size": "8 x 4 (.50ct)",
+          "price": 3.0,
+          "in_stock": true
+        },
+        {
+          "size": "9x4.5mm",
+          "price": 3.25,
+          "in_stock": true
+        },
+        {
+          "size": "10x5mm",
+          "price": 4.95,
+          "in_stock": true
+        },
+        {
+          "size": "11x5.5mm",
+          "price": 8.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x6mm",
+          "price": 8.25,
+          "in_stock": true
+        },
+        {
+          "size": "13x6.5mm",
+          "price": 8.5,
+          "in_stock": true
+        },
+        {
+          "size": "14x7mm",
+          "price": 9.0,
+          "in_stock": true
+        },
+        {
+          "size": "16x8mm",
+          "price": 16.25,
+          "in_stock": true
+        },
+        {
+          "size": "15x7.5mm",
+          "price": 12.0,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/marquise-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Emerald Faceted Cubic Zirconia",
+      "material": "Cubic Zirconia",
+      "color": "Green",
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "5x3mm",
+          "price": 2.5,
+          "in_stock": true
+        },
+        {
+          "size": "6x4mm",
+          "price": 3.3,
+          "in_stock": true
+        },
+        {
+          "size": "7x5mm",
+          "price": 4.0,
+          "in_stock": true
+        },
+        {
+          "size": "8x6mm",
+          "price": 5.16,
+          "in_stock": true
+        },
+        {
+          "size": "9x7mm",
+          "price": 6.15,
+          "in_stock": true
+        },
+        {
+          "size": "10x8mm",
+          "price": 7.05,
+          "in_stock": true
+        },
+        {
+          "size": "11x9mm",
+          "price": 8.5,
+          "in_stock": true
+        },
+        {
+          "size": "14mm",
+          "price": 15.25,
+          "in_stock": true
+        },
+        {
+          "size": "14mm",
+          "price": 15.5,
+          "in_stock": true
+        },
+        {
+          "size": "16mm",
+          "price": 16.0,
+          "in_stock": true
+        },
+        {
+          "size": "12x10mm",
+          "price": 10.1,
+          "in_stock": true
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/emerald-faceted-cubic-zirconia"
+    },
+    {
+      "name": "Closeout Round Faceted 6mm Mahenge Garnet",
+      "material": null,
+      "color": "Red",
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 40.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/closeout-round-faceted-6mm-mahenge-garnet"
+    },
+    {
+      "name": "Diamond Melee 4mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 3.3,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-4mm-si"
+    },
+    {
+      "name": "Diamond Melee 3.5mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.9,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-3-5mm-si"
+    },
+    {
+      "name": "Diamond Melee 3mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 100.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-3mm-si"
+    },
+    {
+      "name": "Round Created Diamond - 5.25mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 115.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-created-diamond-5-25mm"
+    },
+    {
+      "name": "Round Created Diamond - 5mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 95.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-created-diamond-5mm"
+    },
+    {
+      "name": "Pack-5 Rock Deco Natural Rose Cut Diamonds-1.3mm White",
+      "material": "Natural",
+      "color": "White",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 30.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-rock-deco-natural-rose-cut-diamonds-1-3mm-white"
+    },
+    {
+      "name": "Round Created Diamond-3mm",
+      "material": null,
+      "color": null,
+      "shape": "Round",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 22.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/round-created-diamond-3mm"
+    },
+    {
+      "name": "Rock Deco Natural Rose Cut Diamonds-3mm White AAA",
+      "material": "Natural",
+      "color": "White",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 50.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-natural-rose-cut-diamonds-3mm-white-aaa"
+    },
+    {
+      "name": "Pack-3 Rock Deco Natural Rose Cut Diamonds-3mm Yellow",
+      "material": "Natural",
+      "color": "Yellow",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.05,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-rock-deco-natural-rose-cut-diamonds-3mm-yellow"
+    },
+    {
+      "name": "Rock Deco Natural Rose Cut Diamonds-5mm Grey",
+      "material": "Natural",
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.65,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-natural-rose-cut-diamonds-5mm-grey"
+    },
+    {
+      "name": "Rock Deco Natural Rose Cut Diamonds-4mm Grey",
+      "material": "Natural",
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 90.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/rock-deco-natural-rose-cut-diamonds-4mm-grey"
+    },
+    {
+      "name": "Pack-3 Rock Deco Natural Rose Cut Diamonds-3mm Grey",
+      "material": "Natural",
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.05,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-rock-deco-natural-rose-cut-diamonds-3mm-grey"
+    },
+    {
+      "name": "Pack-5 Rock Deco Natural Rose Cut Diamonds-2.2mm Grey",
+      "material": "Natural",
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 75.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-5-rock-deco-natural-rose-cut-diamonds-2mm-grey"
+    },
+    {
+      "name": "Pack-3 Rock Deco Natural Rose Cut Diamonds-3mm White",
+      "material": "Natural",
+      "color": "White",
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.12,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-3-rock-deco-natural-rose-cut-diamonds-3mm-white"
+    },
+    {
+      "name": "Diamond Melee 2.4mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 54.4,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-2-4mm-si"
+    },
+    {
+      "name": "Diamond Melee 2mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 35.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/diamond-melee-2mm-si"
+    },
+    {
+      "name": "Pack-2 Diamond Melee 1.9mm SI",
+      "material": null,
+      "color": null,
+      "shape": null,
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 59.0,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/pack-2-diamond-melee-1-9mm-si"
+    },
+    {
+      "name": "7x5mm Faceted Octagon Sunstone",
+      "material": null,
+      "color": null,
+      "shape": "Emerald",
+      "variations": [
+        {
+          "size": "Default Title",
+          "price": 1.5,
+          "in_stock": false
+        }
+      ],
+      "url": "https://www.ottofrei.com/products/7x5mm-faceted-octagon-sunstone"
+    }
+  ]
+}
