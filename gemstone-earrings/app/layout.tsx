@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Gemstone Earrings - Premium Sterling Silver Jewelry",
   description: "Discover 254 unique gemstone earring designs with premium sterling silver settings",
+  verification: {
+    google: "j01C-ArQYEUoAFF4UMQpAyzs85kDdsDUqBgYGv0oi6U",
+  },
 };
 
 export default function RootLayout({
