@@ -40,6 +40,7 @@ export interface EarringPair {
   gemstone: Gemstone;
   pricing: Pricing;
   compatibility: Compatibility;
+  vendor: string;
 }
 
 export interface ProductData {

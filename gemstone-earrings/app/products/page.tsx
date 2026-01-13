@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { EarringPair } from '@/lib/types';
-import { getProducts, getUniqueColors, getUniqueShapes, getUniqueSizes, getUniqueMaterials, filterProducts, sortProducts } from '@/lib/products';
+import { getProducts, getUniqueColors, getUniqueShapes, getUniqueSizes, getUniqueMaterials, getUniqueVendors, filterProducts, sortProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 
 export default function ProductsPage() {
@@ -16,6 +16,7 @@ export default function ProductsPage() {
     shape: '',
     size: '',
     material: '',
+    vendor: '',
     minPrice: undefined as number | undefined,
     maxPrice: undefined as number | undefined,
   });
@@ -26,6 +27,7 @@ export default function ProductsPage() {
     shape: '',
     size: '',
     material: '',
+    vendor: '',
     minPrice: undefined as number | undefined,
     maxPrice: undefined as number | undefined,
   });
@@ -61,6 +63,7 @@ export default function ProductsPage() {
       shape: '',
       size: '',
       material: '',
+      vendor: '',
       minPrice: undefined,
       maxPrice: undefined,
     };
@@ -82,6 +85,7 @@ export default function ProductsPage() {
   const shapes = getUniqueShapes(allProducts);
   const sizes = getUniqueSizes(allProducts);
   const materials = getUniqueMaterials(allProducts);
+  const vendors = getUniqueVendors(allProducts);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -164,6 +168,21 @@ export default function ProductsPage() {
                 <option value="">All Materials</option>
                 {materials.map(material => (
                   <option key={material} value={material}>{material}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* Vendor Filter */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium mb-2">Vendor</label>
+              <select
+                value={pendingFilters.vendor}
+                onChange={(e) => setPendingFilters({ ...pendingFilters, vendor: e.target.value })}
+                className="w-full p-2 border rounded"
+              >
+                <option value="">All Vendors</option>
+                {vendors.map(vendor => (
+                  <option key={vendor} value={vendor}>{vendor}</option>
                 ))}
               </select>
             </div>

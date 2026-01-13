@@ -58,6 +58,14 @@ export function getUniqueMaterials(products: EarringPair[]): string[] {
   return Array.from(materials).sort();
 }
 
+export function getUniqueVendors(products: EarringPair[]): string[] {
+  const vendors = new Set<string>();
+  products.forEach(p => {
+    vendors.add(p.vendor);
+  });
+  return Array.from(vendors).sort();
+}
+
 export function filterProducts(
   products: EarringPair[],
   filters: {
@@ -65,6 +73,7 @@ export function filterProducts(
     shape?: string;
     size?: string;
     material?: string;
+    vendor?: string;
     minPrice?: number;
     maxPrice?: number;
   }
@@ -74,6 +83,7 @@ export function filterProducts(
     if (filters.shape && product.gemstone.shape !== filters.shape) return false;
     if (filters.size && product.gemstone.size !== filters.size) return false;
     if (filters.material && product.gemstone.material !== filters.material) return false;
+    if (filters.vendor && product.vendor !== filters.vendor) return false;
     if (filters.minPrice && product.pricing.total_pair_price < filters.minPrice) return false;
     if (filters.maxPrice && product.pricing.total_pair_price > filters.maxPrice) return false;
     return true;
