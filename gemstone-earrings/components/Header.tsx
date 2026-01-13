@@ -23,6 +23,9 @@ export default function Header() {
             <Link href="/products" className="text-gray-700 hover:text-purple-600 font-medium">
               Browse All
             </Link>
+            <Link href="/returns" className="text-gray-700 hover:text-purple-600 font-medium">
+              Returns
+            </Link>
             
             <div className="relative">
               <button
