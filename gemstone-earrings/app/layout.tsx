@@ -29,17 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9FFETKZG8L"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `<!-- Google tag (gtag.js) -->\nwindow.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9FFETKZG8L');`,
-          }}
-        ></script>
-      </head>
+      <head
+        dangerouslySetInnerHTML={{
+          __html: `<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-9FFETKZG8L"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9FFETKZG8L');</script>`,
+        }}
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
