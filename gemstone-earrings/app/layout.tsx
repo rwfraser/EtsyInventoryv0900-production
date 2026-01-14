@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/lib/CartContext";
 import Header from "@/components/Header";
-import GoogleTag from "./google-tag";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +30,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <GoogleTag />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9FFETKZG8L"
+        ></script>
+        <script
+          id="gtag-init"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9FFETKZG8L');`,
+          }}
+        ></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
