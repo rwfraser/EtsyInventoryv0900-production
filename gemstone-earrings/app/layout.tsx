@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { CartProvider } from "@/lib/CartContext";
 import Header from "@/components/Header";
+import GoogleTag from "./google-tag";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,26 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <GoogleTag />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
-        <Script
-          strategy="beforeInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-9FFETKZG8L"
-        />
-        <Script
-          id="google-analytics"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9FFETKZG8L');
-            `,
-          }}
-        />
         <CartProvider>
           <Header />
           {children}
