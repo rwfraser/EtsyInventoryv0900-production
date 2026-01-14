@@ -30,10 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
-        <GoogleAnalytics />
         <CartProvider>
           <Header />
           {children}
