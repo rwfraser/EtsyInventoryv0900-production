@@ -1,0 +1,37 @@
+```json
+{
+  "item_name": "Blue Enamel Seahorse Stud Earrings",
+  "category": "Vintage / Novelty Stud Earrings",
+  "style": "Coastal, Nautical, Whimsical",
+  "design": {
+    "motif": "Seahorse",
+    "front_finish": "Glossy blue enamel with gold-tone outline",
+    "back_finish": "Gold-tone metal",
+    "shape": "Stylized seahorse silhouette",
+    "details": "Textured enamel surface with raised gold-tone border defining the seahorse form"
+  },
+  "construction": {
+    "material": "Gold-tone alloy with enamel coating",
+    "post_type": "Standard straight post",
+    "backing": "Friction push-back clutch",
+    "weight_feel": "Lightweight to medium weight"
+  },
+  "color_palette": {
+    "primary": "Ocean blue",
+    "accent": "Gold-tone trim"
+  },
+  "deduced_dimensions": {
+    "reference_card_size": "1 inch x 1 inch",
+    "per_earring": {
+      "height": "approximately 0.6 inches (15 mm)",
+      "width": "approximately 0.3 inches (8 mm)",
+      "depth": "approximately 0.2 inches (5 mm)"
+    },
+    "pair_visual_width_on_ear": "approximately 1.0 inches (25 mm)"
+  },
+  "closure": "Post and push-back",
+  "era_influence": "1980s–1990s costume jewelry",
+  "condition_observation": "Appears to be in very good condition with intact enamel and clean posts",
+  "overall_description": "A charming pair of blue enamel seahorse stud earrings outlined in gold-tone metal. These petite novelty studs feature a glossy ocean-blue finish with sculpted detailing and a raised metallic border that highlights the seahorse silhouette. Lightweight and whimsical, they are perfect for beachwear, summer outfits, nautical themes, or vintage jewelry collectors. Their compact size makes them easy to wear while still delivering playful personality."
+}
+```

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { EarringPair } from '@/lib/types';
 import { getProductById } from '@/lib/products';
 import { useCart } from '@/lib/CartContext';
@@ -59,8 +60,17 @@ export default function ProductDetailPage() {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Product Image */}
-          <div className="bg-gradient-to-br from-purple-100 to-pink-100 aspect-square flex items-center justify-center">
-            <div className="text-9xl">💎</div>
+          <div className="bg-gradient-to-br from-purple-100 to-pink-100 aspect-square flex items-center justify-center relative">
+            {product.images && product.images.length > 0 ? (
+              <Image
+                src={product.images[0]}
+                alt={product.gemstone.name}
+                fill
+                className="object-contain p-8"
+              />
+            ) : (
+              <div className="text-9xl">💎</div>
+            )}
           </div>
 
           {/* Product Info */}

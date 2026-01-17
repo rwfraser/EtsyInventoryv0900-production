@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { EarringPair } from '@/lib/types';
 import { useCart } from '@/lib/CartContext';
 
@@ -19,9 +20,18 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/products/${product.pair_id}`}>
       <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
-        {/* Placeholder for product image */}
-        <div className="bg-gradient-to-br from-purple-100 to-pink-100 h-48 flex items-center justify-center">
-          <div className="text-6xl">💎</div>
+        {/* Product image */}
+        <div className="bg-gradient-to-br from-purple-100 to-pink-100 h-48 flex items-center justify-center relative">
+          {product.images && product.images.length > 0 ? (
+            <Image
+              src={product.images[0]}
+              alt={product.gemstone.name}
+              fill
+              className="object-cover"
+            />
+          ) : (
+            <div className="text-6xl">💎</div>
+          )}
         </div>
         
         <div className="p-4 flex-1 flex flex-col">

@@ -41,6 +41,10 @@ export interface EarringPair {
   pricing: Pricing;
   compatibility: Compatibility;
   vendor: string;
+  category?: string;
+  style?: string;
+  description?: string;
+  images?: string[];
 }
 
 export interface ProductData {

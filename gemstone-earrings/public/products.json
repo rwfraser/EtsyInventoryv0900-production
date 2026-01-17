@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-13T18:35:27.552Z",
-  "total_combinations": 1974,
+  "generated_at": "2026-01-17T23:33:28.677Z",
+  "total_combinations": 1975,
   "combinations": [
     {
       "pair_id": "ES216_Round_Faceted_Pink_Amethyst_4mm",
@@ -71065,6 +71065,49 @@
         "shape_match": "square ↔ square"
       },
       "vendor": "GemsngemsGemsDIYSettings"
+    },
+    {
+      "pair_id": "VINTAGE_Blue_Enamel_Seahorse_Studs",
+      "setting": {
+        "product_number": "VINTAGE001",
+        "product_title": "Blue Enamel Seahorse Stud Earrings - Complete Pair",
+        "price_per_setting": 0,
+        "material": "Gold-tone alloy with enamel",
+        "gemstone_dimensions": "15mm x 8mm",
+        "gemstone_shape": "seahorse",
+        "variant_id": 0,
+        "product_url": "",
+        "quantity_needed": 2
+      },
+      "gemstone": {
+        "name": "Blue Enamel Seahorse Stud Earrings",
+        "material": "Enamel",
+        "color": "Blue",
+        "shape": "Seahorse",
+        "size": "15mm",
+        "price_per_stone": 0,
+        "product_url": "",
+        "quantity_needed": 2
+      },
+      "pricing": {
+        "settings_subtotal": 0,
+        "gemstones_subtotal": 0,
+        "subtotal": 24.99,
+        "markup": 0,
+        "total_pair_price": 24.99
+      },
+      "compatibility": {
+        "size_match": "15x8mm",
+        "shape_match": "novelty seahorse"
+      },
+      "vendor": "Vintage",
+      "category": "Vintage / Novelty Stud Earrings",
+      "style": "Coastal, Nautical, Whimsical",
+      "description": "A charming pair of blue enamel seahorse stud earrings outlined in gold-tone metal. These petite novelty studs feature a glossy ocean-blue finish with sculpted detailing and a raised metallic border that highlights the seahorse silhouette. Lightweight and whimsical, they are perfect for beachwear, summer outfits, nautical themes, or vintage jewelry collectors.",
+      "images": [
+        "/images/seahorse/front.jpg",
+        "/images/seahorse/display.jpg"
+      ]
     }
   ]
 }
