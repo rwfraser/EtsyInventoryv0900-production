@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-18T16:14:49.263764",
+  "generated_at": "2026-01-18T16:26:46.149759",
   "total_combinations": 1975,
   "combinations": [
     {
@@ -36,7 +36,10 @@
         "size_match": "4x4mm",
         "shape_match": "round ↔ round"
       },
-      "vendor": "OttoFreiGemsDIYSettings"
+      "vendor": "OttoFreiGemsDIYSettings",
+      "images": [
+        "/images/generated/ES216_Round_Faceted_Pink_Amethyst_4mm.jpg"
+      ]
     },
     {
       "pair_id": "ES216_Round_Faceted_Green_Quartz_4mm",
