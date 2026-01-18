@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .info-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .info-section strong {
+            color: #333;
+        }
+
+        .example {
+            background: #e9ecef;
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 8px;
+            font-family: monospace;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: monospace;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .operator-group {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .operator-btn {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .operator-btn:active {
+            transform: translateY(0);
+        }
+
+        .operator-btn.selected {
+            background: #4c51bf;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+
+        .calculate-btn {
+            width: 100%;
+            background: #48bb78;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .calculate-btn:hover {
+            background: #38a169;
+        }
+
+        .result {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .result-label {
+            font-size: 14px;
+            color: #718096;
+            margin-bottom: 8px;
+        }
+
+        .result-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2d3748;
+            font-family: monospace;
+        }
+
+        .error {
+            color: #e53e3e;
+            font-size: 14px;
+        }
+
+        .location-breakdown {
+            margin-top: 15px;
+            padding: 15px;
+            background: #edf2f7;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+
+        .location-breakdown div {
+            margin-bottom: 5px;
+        }
+
+        .location-breakdown span {
+            font-family: monospace;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .reference-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+
+        .reference-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .position-table {
+            display: grid;
+            gap: 10px;
+        }
+
+        .position-row {
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+
+        .position-name {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 4px;
+        }
+
+        .position-chars {
+            font-family: monospace;
+            color: #555;
+            word-break: break-all;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>📦 Inventory Calculator</h1>
+        <p class="subtitle">52 Racks × 20 Shelves × 4 Trays × 15 Bins × 25 Items</p>
+
+        <div class="info-section">
+            <strong>Format:</strong> [Rack][Shelf][Tray][Bin][Item]<br>
+            • Rack: a-z, A-Z (52 positions)<br>
+            • Shelf: a-t (20 positions)<br>
+            • Tray: 1-4 (4 positions)<br>
+            • Bin: A-O (15 positions)<br>
+            • Item: a-y (25 positions)
+            <div class="example">Example: Ad3Nm = Rack A, Shelf d, Tray 3, Bin N, Item m</div>
+        </div>
+
+        <div class="input-group">
+            <label for="value1">First Inventory Code:</label>
+            <input type="text" id="value1" placeholder="[A-Z,a-z][a-t][1-4][A-O][a-y]" maxlength="5">
+        </div>
+
+        <div class="input-group">
+            <label>Operator:</label>
+            <div class="operator-group">
+                <button class="operator-btn" data-op="+">+</button>
+                <button class="operator-btn" data-op="-">−</button>
+                <button class="operator-btn" data-op="*">×</button>
+                <button class="operator-btn" data-op="/">/</button>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="value2">Second Value (Code or Number):</label>
+            <input type="text" id="value2" placeholder="e.g., 5 or Aa1a1">
+        </div>
+
+        <button class="calculate-btn" onclick="calculate()">Calculate</button>
+
+        <div class="result">
+            <div class="result-label">Result</div>
+            <div class="result-value" id="result">—</div>
+        </div>
+
+        <div id="breakdown" class="location-breakdown" style="display: none;"></div>
+
+        <div class="reference-section">
+            <h3>📋 Valid Characters for Each Position</h3>
+            <div class="position-table">
+                <div class="position-row">
+                    <div class="position-name">Position 1 - Rack (52 positions)</div>
+                    <div class="position-chars">a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+                </div>
+                <div class="position-row">
+                    <div class="position-name">Position 2 - Shelf (20 positions)</div>
+                    <div class="position-chars">a b c d e f g h i j k l m n o p q r s t</div>
+                </div>
+                <div class="position-row">
+                    <div class="position-name">Position 3 - Tray (4 positions)</div>
+                    <div class="position-chars">1 2 3 4</div>
+                </div>
+                <div class="position-row">
+                    <div class="position-name">Position 4 - Bin (15 positions)</div>
+                    <div class="position-chars">A B C D E F G H I J K L M N O</div>
+                </div>
+                <div class="position-row">
+                    <div class="position-name">Position 5 - Item (25 positions)</div>
+                    <div class="position-chars">a b c d e f g h i j k l m n o p q r s t u v w x y</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Encoding system configuration
+        const ENCODING = {
+            rack: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', // 52 chars
+            shelf: 'abcdefghijklmnopqrst', // 20 chars
+            tray: '1234', // 4 chars
+            bin: 'ABCDEFGHIJKLMNO', // 15 chars (uppercase)
+            item: 'abcdefghijklmnopqrstuvwxy' // 25 chars (lowercase)
+        };
+
+        const MAX_VALUES = {
+            rack: 52,
+            shelf: 20,
+            tray: 4,
+            bin: 15,
+            item: 25
+        };
+
+        let selectedOperator = null;
+
+        // Setup operator button selection
+        document.querySelectorAll('.operator-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.operator-btn').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                selectedOperator = this.dataset.op;
+            });
+        });
+
+        // Convert inventory code to decimal number
+        function codeToDecimal(code) {
+            if (!code || code.length !== 5) {
+                throw new Error('Code must be exactly 5 characters');
+            }
+
+            const rack = code[0];
+            const shelf = code[1];
+            const tray = code[2];
+            const bin = code[3];
+            const item = code[4];
+
+            const rackIdx = ENCODING.rack.indexOf(rack);
+            const shelfIdx = ENCODING.shelf.indexOf(shelf);
+            const trayIdx = ENCODING.tray.indexOf(tray);
+            const binIdx = ENCODING.bin.indexOf(bin);
+            const itemIdx = ENCODING.item.indexOf(item);
+
+            if (rackIdx === -1) throw new Error(`Invalid rack: ${rack}`);
+            if (shelfIdx === -1) throw new Error(`Invalid shelf: ${shelf}`);
+            if (trayIdx === -1) throw new Error(`Invalid tray: ${tray}`);
+            if (binIdx === -1) throw new Error(`Invalid bin: ${bin}`);
+            if (itemIdx === -1) throw new Error(`Invalid item: ${item}`);
+
+            // Calculate decimal value using positional notation
+            const decimal = 
+                rackIdx * (MAX_VALUES.shelf * MAX_VALUES.tray * MAX_VALUES.bin * MAX_VALUES.item) +
+                shelfIdx * (MAX_VALUES.tray * MAX_VALUES.bin * MAX_VALUES.item) +
+                trayIdx * (MAX_VALUES.bin * MAX_VALUES.item) +
+                binIdx * MAX_VALUES.item +
+                itemIdx;
+
+            return decimal;
+        }
+
+        // Convert decimal number to inventory code
+        function decimalToCode(decimal) {
+            if (decimal < 0) {
+                throw new Error('Cannot convert negative numbers to inventory codes');
+            }
+
+            const maxDecimal = MAX_VALUES.rack * MAX_VALUES.shelf * MAX_VALUES.tray * MAX_VALUES.bin * MAX_VALUES.item;
+            if (decimal >= maxDecimal) {
+                throw new Error(`Number exceeds maximum inventory capacity (${maxDecimal - 1})`);
+            }
+
+            let remaining = Math.floor(decimal);
+
+            const itemIdx = remaining % MAX_VALUES.item;
+            remaining = Math.floor(remaining / MAX_VALUES.item);
+
+            const binIdx = remaining % MAX_VALUES.bin;
+            remaining = Math.floor(remaining / MAX_VALUES.bin);
+
+            const trayIdx = remaining % MAX_VALUES.tray;
+            remaining = Math.floor(remaining / MAX_VALUES.tray);
+
+            const shelfIdx = remaining % MAX_VALUES.shelf;
+            remaining = Math.floor(remaining / MAX_VALUES.shelf);
+
+            const rackIdx = remaining % MAX_VALUES.rack;
+
+            const code = 
+                ENCODING.rack[rackIdx] +
+                ENCODING.shelf[shelfIdx] +
+                ENCODING.tray[trayIdx] +
+                ENCODING.bin[binIdx] +
+                ENCODING.item[itemIdx];
+
+            return code;
+        }
+
+        // Get breakdown of inventory location
+        function getLocationBreakdown(code) {
+            const rack = code[0];
+            const shelf = code[1];
+            const tray = code[2];
+            const bin = code[3];
+            const item = code[4];
+
+            const rackNum = ENCODING.rack.indexOf(rack) + 1;
+            const shelfNum = ENCODING.shelf.indexOf(shelf) + 1;
+            const trayNum = ENCODING.tray.indexOf(tray);
+            const binNum = ENCODING.bin.indexOf(bin) + 1;
+            const itemNum = ENCODING.item.indexOf(item) + 1;
+
+            return {
+                rack: { char: rack, num: rackNum },
+                shelf: { char: shelf, num: shelfNum },
+                tray: { char: tray, num: trayNum },
+                bin: { char: bin, num: binNum },
+                item: { char: item, num: itemNum }
+            };
+        }
+
+        function displayBreakdown(code) {
+            const breakdown = getLocationBreakdown(code);
+            const breakdownDiv = document.getElementById('breakdown');
+            
+            breakdownDiv.innerHTML = `
+                <div><strong>Location Breakdown:</strong></div>
+                <div>Rack: <span>${breakdown.rack.char}</span> (${breakdown.rack.num} of 52)</div>
+                <div>Shelf: <span>${breakdown.shelf.char}</span> (${breakdown.shelf.num} of 20)</div>
+                <div>Tray: <span>${breakdown.tray.char}</span> (${breakdown.tray.num} of 4)</div>
+                <div>Bin: <span>${breakdown.bin.char}</span> (${breakdown.bin.num} of 15)</div>
+                <div>Item: <span>${breakdown.item.char}</span> (${breakdown.item.num} of 25)</div>
+            `;
+            breakdownDiv.style.display = 'block';
+        }
+
+        function calculate() {
+            const resultDiv = document.getElementById('result');
+            const breakdownDiv = document.getElementById('breakdown');
+            
+            try {
+                const value1 = document.getElementById('value1').value.trim();
+                const value2Input = document.getElementById('value2').value.trim();
+
+                if (!value1) {
+                    throw new Error('Please enter the first inventory code');
+                }
+
+                if (!selectedOperator) {
+                    throw new Error('Please select an operator');
+                }
+
+                if (!value2Input) {
+                    throw new Error('Please enter the second value');
+                }
+
+                // Convert first value (always inventory code)
+                const decimal1 = codeToDecimal(value1);
+
+                // Determine if second value is a code or a number
+                let decimal2;
+                if (value2Input.length === 5 && isNaN(value2Input)) {
+                    // Assume it's an inventory code
+                    decimal2 = codeToDecimal(value2Input);
+                } else {
+                    // Assume it's a number
+                    decimal2 = parseFloat(value2Input);
+                    if (isNaN(decimal2)) {
+                        throw new Error('Second value must be a valid inventory code or number');
+                    }
+                }
+
+                // Perform operation
+                let result;
+                switch (selectedOperator) {
+                    case '+':
+                        result = decimal1 + decimal2;
+                        break;
+                    case '-':
+                        result = decimal1 - decimal2;
+                        break;
+                    case '*':
+                        result = decimal1 * decimal2;
+                        break;
+                    case '/':
+                        if (decimal2 === 0) throw new Error('Cannot divide by zero');
+                        result = decimal1 / decimal2;
+                        break;
+                    default:
+                        throw new Error('Invalid operator');
+                }
+
+                // Convert result back to code
+                const resultCode = decimalToCode(result);
+                resultDiv.textContent = resultCode;
+                resultDiv.classList.remove('error');
+                
+                displayBreakdown(resultCode);
+
+            } catch (error) {
+                resultDiv.textContent = error.message;
+                resultDiv.classList.add('error');
+                breakdownDiv.style.display = 'none';
+            }
+        }
+
+        // Input validation for inventory codes
+        function validateInventoryInput(e) {
+            const input = e.target;
+            const position = input.value.length;
+            const key = e.key;
+
+            // Allow control keys
+            if (key.length > 1 || e.ctrlKey || e.metaKey) {
+                return;
+            }
+
+            // Validate based on position
+            let isValid = false;
+            switch (position) {
+                case 0: // Rack: a-z, A-Z
+                    isValid = /[a-zA-Z]/.test(key);
+                    break;
+                case 1: // Shelf: a-t
+                    isValid = /[a-t]/.test(key);
+                    break;
+                case 2: // Tray: 1-4
+                    isValid = /[1-4]/.test(key);
+                    break;
+                case 3: // Bin: A-O
+                    isValid = /[A-O]/.test(key);
+                    break;
+                case 4: // Item: a-y
+                    isValid = /[a-y]/.test(key);
+                    break;
+                default:
+                    isValid = false;
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+            }
+        }
+
+        // Validate pasted content
+        function validatePaste(e) {
+            e.preventDefault();
+            const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+            const input = e.target;
+            const currentPos = input.value.length;
+            
+            let validText = '';
+            for (let i = 0; i < pastedText.length && (currentPos + i) < 5; i++) {
+                const char = pastedText[i];
+                const position = currentPos + i;
+                let isValid = false;
+                
+                switch (position) {
+                    case 0: isValid = /[a-zA-Z]/.test(char); break;
+                    case 1: isValid = /[a-t]/.test(char); break;
+                    case 2: isValid = /[1-4]/.test(char); break;
+                    case 3: isValid = /[A-O]/.test(char); break;
+                    case 4: isValid = /[a-y]/.test(char); break;
+                }
+                
+                if (isValid) {
+                    validText += char;
+                } else {
+                    break; // Stop at first invalid character
+                }
+            }
+            
+            input.value += validText;
+        }
+
+        // Attach validation to value1 input
+        const value1Input = document.getElementById('value1');
+        value1Input.addEventListener('keypress', validateInventoryInput);
+        value1Input.addEventListener('paste', validatePaste);
+
+        // Update placeholder dynamically based on current position
+        value1Input.addEventListener('input', function(e) {
+            const position = e.target.value.length;
+            const placeholders = [
+                '[A-Z,a-z][a-t][1-4][A-O][a-y]',
+                '_[a-t][1-4][A-O][a-y]',
+                '__[1-4][A-O][a-y]',
+                '___[A-O][a-y]',
+                '____[a-y]',
+                '_____'
+            ];
+            e.target.placeholder = placeholders[position] || placeholders[0];
+        });
+
+        // Allow Enter key to calculate
+        document.getElementById('value2').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calculate();
+            }
+        });
+    </script>
+</body>
+</html>
