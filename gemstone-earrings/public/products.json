@@ -1,7 +1,49 @@
 {
-  "generated_at": "2026-01-18T21:09:37.239961",
-  "total_combinations": 1975,
+  "generated_at": "2026-01-18T22:00:53.643893",
+  "total_combinations": 1976,
   "combinations": [
+    {
+      "pair_id": "VINTAGE_Blue_Cabochon_Statement_Earrings",
+      "setting": {
+        "product_number": "VINTAGE002",
+        "product_title": "Vintage Blue Cabochon Statement Earrings with Multi-Colored Gemstone Halo",
+        "price_per_setting": 0,
+        "material": "Yellow Gold",
+        "gemstone_dimensions": "Oval",
+        "gemstone_shape": "oval",
+        "variant_id": 0,
+        "product_url": "",
+        "quantity_needed": 2
+      },
+      "gemstone": {
+        "name": "Blue Cabochon with Multi-Colored Gemstone Halo",
+        "material": "Natural Gemstones",
+        "color": "Deep Royal Blue",
+        "shape": "Oval",
+        "size": "Oval Cabochon",
+        "price_per_stone": 0,
+        "product_url": "",
+        "quantity_needed": 2
+      },
+      "pricing": {
+        "settings_subtotal": 0,
+        "gemstones_subtotal": 0,
+        "subtotal": 89.99,
+        "markup": 0,
+        "total_pair_price": 89.99
+      },
+      "compatibility": {
+        "size_match": "Oval statement size",
+        "shape_match": "oval cabochon"
+      },
+      "vendor": "Vintage",
+      "category": "Vintage / Statement Earrings",
+      "style": "Vintage Statement / Button Style",
+      "description": "Stunning vintage statement earrings featuring Deep Royal Blue oval cabochon center stones surrounded by a halo of multi-colored gemstones including Ruby Red, Emerald Green, Sapphire Blue. Set in Yellow Gold with Polished with granulated/beaded texture details. Perfect for collectors and those who appreciate vintage jewelry artistry.",
+      "images": [
+        "/images/generated/VINTAGE_Blue_Cabochon_Statement_Earrings.png"
+      ]
+    },
     {
       "pair_id": "ES216_Round_Faceted_Pink_Amethyst_4mm",
       "setting": {
