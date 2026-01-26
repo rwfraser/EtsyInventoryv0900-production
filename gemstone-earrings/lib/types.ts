@@ -52,3 +52,16 @@ export interface ProductData {
   total_combinations: number;
   combinations: EarringPair[];
 }
+
+// Authentication types
+export interface User {
+  id: string;
+  email: string;
+  name: string | null;
+  emailVerified: Date | null;
+}
+
+export interface CartItem {
+  product: EarringPair;
+  quantity: number;
+}

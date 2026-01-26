@@ -3,10 +3,13 @@
 import Link from 'next/link';
 import { useCart } from '@/lib/CartContext';
 import { useState } from 'react';
+import { useSession, signOut } from 'next-auth/react';
 
 export default function Header() {
   const { totalItems, items, removeFromCart, totalPrice } = useCart();
   const [showCart, setShowCart] = useState(false);
+  const [showUserMenu, setShowUserMenu] = useState(false);
+  const { data: session } = useSession();
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -20,14 +23,52 @@ export default function Header() {
           </Link>
 
           <nav className="flex items-center space-x-6">
-            <Link href="/products" className="text-gray-700 hover:text-purple-600 font-medium">
-              Browse All
-            </Link>
-            <Link href="/returns" className="text-gray-700 hover:text-purple-600 font-medium">
-              Returns
-            </Link>
+            {session && (
+              <>
+                <Link href="/products" className="text-gray-700 hover:text-purple-600 font-medium">
+                  Browse All
+                </Link>
+                <Link href="/returns" className="text-gray-700 hover:text-purple-600 font-medium">
+                  Returns
+                </Link>
+              </>
+            )}
             
-            <div className="relative">
+            {/* User Menu */}
+            {session && (
+              <div className="relative">
+                <button
+                  onClick={() => setShowUserMenu(!showUserMenu)}
+                  className="flex items-center space-x-2 text-gray-700 hover:text-purple-600"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </button>
+
+                {showUserMenu && (
+                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
+                    <div className="px-4 py-2 border-b border-gray-200">
+                      <p className="text-sm font-medium text-gray-900">{session.user?.name}</p>
+                      <p className="text-xs text-gray-500 truncate">{session.user?.email}</p>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setShowUserMenu(false);
+                        signOut({ callbackUrl: '/' });
+                      }}
+                      className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors"
+                    >
+                      Log Out
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Cart */}
+            {session && (
+              <div className="relative">
               <button
                 onClick={() => setShowCart(!showCart)}
                 className="flex items-center space-x-2 text-gray-700 hover:text-purple-600"
@@ -88,7 +129,8 @@ export default function Header() {
                   )}
                 </div>
               )}
-            </div>
+              </div>
+            )}
           </nav>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { EarringPair } from './types';
+import { useSession } from 'next-auth/react';
 
 interface CartItem {
   product: EarringPair;
@@ -22,19 +23,104 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
+  const [isInitialized, setIsInitialized] = useState(false);
+  const { data: session, status } = useSession();
 
-  // Load cart from localStorage on mount
+  // Load cart from localStorage and database on mount
   useEffect(() => {
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-      setItems(JSON.parse(savedCart));
-    }
-  }, []);
+    if (status === 'loading') return;
+
+    const loadCart = async () => {
+      // First, load from localStorage
+      const savedCart = localStorage.getItem('cart');
+      const localItems: CartItem[] = savedCart ? JSON.parse(savedCart) : [];
+
+      // If user is authenticated, load from database and merge
+      if (session?.user) {
+        try {
+          const response = await fetch('/api/cart/load');
+          if (response.ok) {
+            const data = await response.json();
+            const dbItems: CartItem[] = data.items || [];
+
+            // Merge local and database carts
+            const mergedItems = mergeCarts(localItems, dbItems);
+            setItems(mergedItems);
+
+            // Sync merged cart back to database
+            if (mergedItems.length > 0) {
+              await syncCartToDatabase(mergedItems);
+            }
+          } else {
+            setItems(localItems);
+          }
+        } catch (error) {
+          console.error('Failed to load cart from database:', error);
+          setItems(localItems);
+        }
+      } else {
+        setItems(localItems);
+      }
+
+      setIsInitialized(true);
+    };
+
+    loadCart();
+  }, [session, status]);
 
   // Save cart to localStorage whenever it changes
   useEffect(() => {
+    if (!isInitialized) return;
     localStorage.setItem('cart', JSON.stringify(items));
-  }, [items]);
+  }, [items, isInitialized]);
+
+  // Sync cart to database periodically if user is authenticated
+  useEffect(() => {
+    if (!isInitialized || !session?.user || items.length === 0) return;
+
+    const syncInterval = setInterval(() => {
+      syncCartToDatabase(items);
+    }, 60000); // Sync every 60 seconds
+
+    return () => clearInterval(syncInterval);
+  }, [items, session, isInitialized]);
+
+  // Merge local and database carts
+  const mergeCarts = (localItems: CartItem[], dbItems: CartItem[]): CartItem[] => {
+    const merged = [...dbItems];
+
+    localItems.forEach(localItem => {
+      const existingIndex = merged.findIndex(
+        item => item.product.pair_id === localItem.product.pair_id
+      );
+
+      if (existingIndex >= 0) {
+        // If item exists in both, use the higher quantity
+        merged[existingIndex].quantity = Math.max(
+          merged[existingIndex].quantity,
+          localItem.quantity
+        );
+      } else {
+        // Add new item from local cart
+        merged.push(localItem);
+      }
+    });
+
+    return merged;
+  };
+
+  // Sync cart to database
+  const syncCartToDatabase = async (cartItems: CartItem[]) => {
+    try {
+      await fetch('/api/cart/sync', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: cartItems }),
+      });
+    } catch (error) {
+      console.error('Failed to sync cart to database:', error);
+    }
+  };
 
   const addToCart = (product: EarringPair, quantity: number = 1) => {
     setItems(prev => {

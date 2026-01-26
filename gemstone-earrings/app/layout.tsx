@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { CartProvider } from "@/lib/CartContext";
 import Header from "@/components/Header";
+import { SessionProvider } from "next-auth/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,10 +48,12 @@ export default function RootLayout({
           `}
         </Script>
 
-        <CartProvider>
-          <Header />
-          {children}
-        </CartProvider>
+        <SessionProvider>
+          <CartProvider>
+            <Header />
+            {children}
+          </CartProvider>
+        </SessionProvider>
       </body>
     </html>
   );

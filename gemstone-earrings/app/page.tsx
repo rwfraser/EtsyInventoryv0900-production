@@ -3,8 +3,17 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { ProductData } from '@/lib/types';
 import ProductCard from '@/components/ProductCard';
+import { auth } from '@/lib/auth';
+import AuthGate from '@/components/AuthGate';
 
 export default async function Home() {
+  const session = await auth();
+
+  // If user is not authenticated, show auth gate
+  if (!session) {
+    return <AuthGate />;
+  }
+
   // Load products server-side
   const filePath = path.join(process.cwd(), 'public', 'products.json');
   const fileContent = await fs.readFile(filePath, 'utf-8');
