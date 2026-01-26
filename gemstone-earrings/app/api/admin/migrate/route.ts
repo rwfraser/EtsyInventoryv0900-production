@@ -12,9 +12,9 @@ export async function POST() {
       SELECT column_name 
       FROM information_schema.columns 
       WHERE table_name = 'users' AND column_name = 'role'
-    `);
+    `) as any;
     
-    if (roleCheck.rows.length === 0) {
+    if (!roleCheck || roleCheck.length === 0) {
       // Add role column
       await db.execute(sql`
         ALTER TABLE users 
@@ -27,9 +27,9 @@ export async function POST() {
       SELECT table_name 
       FROM information_schema.tables 
       WHERE table_name = 'products'
-    `);
+    `) as any;
     
-    if (productsCheck.rows.length === 0) {
+    if (!productsCheck || productsCheck.length === 0) {
       // Create products table
       await db.execute(sql`
         CREATE TABLE products (
@@ -51,9 +51,9 @@ export async function POST() {
       SELECT table_name 
       FROM information_schema.tables 
       WHERE table_name = 'orders'
-    `);
+    `) as any;
     
-    if (ordersCheck.rows.length === 0) {
+    if (!ordersCheck || ordersCheck.length === 0) {
       // Create orders table
       await db.execute(sql`
         CREATE TABLE orders (
