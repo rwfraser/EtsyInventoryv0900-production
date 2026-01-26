@@ -31,6 +31,11 @@ export default function Header() {
                 <Link href="/returns" className="text-gray-700 hover:text-purple-600 font-medium">
                   Returns
                 </Link>
+                {session.user.role === 'admin' && (
+                  <Link href="/admin/dashboard" className="text-purple-600 hover:text-purple-800 font-bold">
+                    Admin
+                  </Link>
+                )}
               </>
             )}
             
@@ -51,7 +56,21 @@ export default function Header() {
                     <div className="px-4 py-2 border-b border-gray-200">
                       <p className="text-sm font-medium text-gray-900">{session.user?.name}</p>
                       <p className="text-xs text-gray-500 truncate">{session.user?.email}</p>
+                      {session.user.role === 'admin' && (
+                        <span className="inline-block mt-1 px-2 py-0.5 text-xs font-semibold text-purple-800 bg-purple-100 rounded-full">
+                          Admin
+                        </span>
+                      )}
                     </div>
+                    {session.user.role === 'admin' && (
+                      <Link
+                        href="/admin/dashboard"
+                        onClick={() => setShowUserMenu(false)}
+                        className="block w-full text-left px-4 py-2 text-sm text-purple-600 hover:bg-purple-50 transition-colors"
+                      >
+                        Admin Dashboard
+                      </Link>
+                    )}
                     <button
                       onClick={() => {
                         setShowUserMenu(false);

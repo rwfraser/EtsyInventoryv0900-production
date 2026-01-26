@@ -1,0 +1,32 @@
+{
+  "correction_rules": {
+    "gemstone_color_mappings": {
+      "Round Faceted Morganite": "Pink",
+      "Square Faceted Imitation Alexandrite": "Color-Change (Purple/Green)",
+      "Round Faceted Chrome Diopside": "Green",
+      "Round Faceted Genuine Iolite": "Blue-Violet",
+      "Round Faceted Genuine Smoky Quartz": "Brown"
+    },
+    "gemstone_material_mappings": {
+      "Round Faceted Pink Amethyst": "Amethyst",
+      "Round Faceted Green Quartz": "Natural Green Quartz",
+      "Round Faceted Morganite": "Morganite",
+      "Round Faceted Tanzanite": "Tazanite",
+      "Round Faceted Chrome Diopside": "Natural Chrome Diopside",
+      "Round Faceted Genuine Iolite": "Genuine Natural Iolite",
+      "Round Faceted Genuine Smoky Quartz": "Natural Smoky Quartz"
+    }
+  },
+  "issues_summary": {
+    "total_records": 254,
+    "null_colors": 57,
+    "null_materials": 99,
+    "missing_urls": 0,
+    "malformed_urls": 0,
+    "price_errors": 0
+  },
+  "affected_indices": {
+    "null_color_indices": [2, 8, 9, 20, 29, 39, 48, 67, 73, 80, 83, 90, 94, 98, 101, 105, 106, 109, 113, 114, 118, 119, 122, 124, 125, 128, 132, 139, 154, 157, 171, 172, 175, 182, 183, 189, 190, 193, 195, 196, 199, 203, 204, 210, 211, 217, 224, 227, 231, 232, 235, 240, 241, 242, 245, 249, 250],
+    "null_material_indices": [0, 1, 2, 3, 6, 7, 8, 9, 10, 46, 47, 48, 49, 65, 66, 67, 68, 71, 72, 73, 74, 77, 81, 82, 83, 84, 87, 91, 95, 99, 100, 101, 102, 105, 106, 107, 111, 112, 113, 114, 115, 118, 119, 120, 124, 125, 126, 130, 131, 132, 133, 137, 151, 171, 172, 173, 180, 181, 182, 183, 184, 188, 189, 190, 191, 195, 196, 197, 201, 202, 203, 204, 205, 208, 209, 210, 211, 212, 215, 216, 217, 218, 221, 225, 226, 227, 228, 231, 232, 233, 237, 241, 242, 243, 247, 248, 249, 250, 251]
+  }
+}

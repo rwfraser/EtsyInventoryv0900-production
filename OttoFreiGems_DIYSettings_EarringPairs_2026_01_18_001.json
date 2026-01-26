@@ -17,7 +17,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -52,7 +52,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -87,8 +87,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -122,7 +122,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -227,7 +227,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "6mm",
@@ -262,7 +262,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "6mm",
@@ -297,20 +297,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 1.02,
+        "price_per_stone": 102.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-morganite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 58.4,
-        "gemstones_subtotal": 2.04,
-        "subtotal": 60.44,
+        "gemstones_subtotal": 204.00,
+        "subtotal": 262.40,
         "markup": 20.0,
-        "total_pair_price": 80.44
+        "total_pair_price": 314.88
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -332,8 +332,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "6mm",
         "price_per_stone": 92.75,
@@ -367,7 +367,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "6mm",
@@ -718,7 +718,7 @@
       "gemstone": {
         "name": "Square Faceted Imitation Alexandrite",
         "material": "Synthetic",
-        "color": null,
+        "color": "Color-Change (Purple/Green)",
         "shape": "Square",
         "size": "3x3mm",
         "price_per_stone": 1.95,
@@ -1033,7 +1033,7 @@
       "gemstone": {
         "name": "Square Faceted Imitation Alexandrite",
         "material": "Synthetic",
-        "color": null,
+        "color": "Color-Change (Purple/Green)",
         "shape": "Square",
         "size": "4x4mm",
         "price_per_stone": 4.5,
@@ -1383,7 +1383,7 @@
       "gemstone": {
         "name": "Square Faceted Imitation Alexandrite",
         "material": "Synthetic",
-        "color": null,
+        "color": "Color-Change (Purple/Green)",
         "shape": "Square",
         "size": "4x4mm",
         "price_per_stone": 4.5,
@@ -1627,7 +1627,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -1662,7 +1662,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -1697,8 +1697,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -1732,7 +1732,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -2292,7 +2292,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -2327,7 +2327,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -2362,8 +2362,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -2397,7 +2397,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -2502,7 +2502,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -2537,7 +2537,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -2572,8 +2572,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -2607,7 +2607,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -2712,7 +2712,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -2818,7 +2818,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -2852,7 +2852,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -2887,7 +2887,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -2922,8 +2922,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -2957,7 +2957,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -3062,7 +3062,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -3168,7 +3168,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -3202,7 +3202,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -3308,7 +3308,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -3342,7 +3342,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -3448,7 +3448,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -3482,7 +3482,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -3517,7 +3517,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -3552,8 +3552,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -3587,7 +3587,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -3692,8 +3692,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -3727,8 +3727,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -3762,20 +3762,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 7.1,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 10.92,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 389.10,
         "markup": 20.0,
-        "total_pair_price": 30.92
+        "total_pair_price": 466.92
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -3833,7 +3833,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -3902,7 +3902,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "6mm",
@@ -3937,7 +3937,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "6mm",
@@ -3972,20 +3972,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 1.02,
+        "price_per_stone": 102.0,
         "product_url": "https://www.ottofrei.com/products/round-faceted-morganite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 7.66,
-        "gemstones_subtotal": 2.04,
-        "subtotal": 9.7,
+        "gemstones_subtotal": 204.0,
+        "subtotal": 211.66,
         "markup": 20.0,
-        "total_pair_price": 29.7
+        "total_pair_price": 253.99
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -4007,8 +4007,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "6mm",
         "price_per_stone": 92.75,
@@ -4042,7 +4042,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "6mm",
@@ -4147,8 +4147,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -4182,8 +4182,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -4217,20 +4217,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 40.0,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 43.82,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 442.00,
         "markup": 20.0,
-        "total_pair_price": 63.82
+        "total_pair_price": 530.40
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -4288,7 +4288,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -4357,8 +4357,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -4392,8 +4392,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -4427,20 +4427,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 42.8,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 46.62,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 424.80,
         "markup": 20.0,
-        "total_pair_price": 66.62
+        "total_pair_price": 509.76
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -4498,7 +4498,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -4567,7 +4567,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -4602,7 +4602,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -4637,8 +4637,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -4672,7 +4672,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -4812,7 +4812,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "2.5mm",
@@ -4883,7 +4883,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Smoky Quartz",
         "material": "Natural",
-        "color": null,
+        "color": "Brown",
         "shape": "Round",
         "size": "2.5mm",
         "price_per_stone": 5.6,
@@ -5196,13 +5196,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire Grade C",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "2.5mm",
         "price_per_stone": 8.74,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire Grade C",
         "quantity_needed": 2
       },
       "pricing": {
@@ -5231,13 +5231,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire Grade A",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "2.5mm",
         "price_per_stone": 20.0,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire Grade A",
         "quantity_needed": 2
       },
       "pricing": {
@@ -5266,13 +5266,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire Grade AAA",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "2.5mm",
         "price_per_stone": 40.0,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire Grade AAA",
         "quantity_needed": 2
       },
       "pricing": {
@@ -5302,7 +5302,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -5408,7 +5408,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -5513,7 +5513,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Smoky Quartz",
         "material": "Natural",
-        "color": null,
+        "color": "Brown",
         "shape": "Round",
         "size": "4.5mm",
         "price_per_stone": 7.0,
@@ -5861,13 +5861,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire Grade C",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "4.5mm",
         "price_per_stone": 40.26,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire Grade C",
         "quantity_needed": 2
       },
       "pricing": {
@@ -5896,13 +5896,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire Grade A",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "4.5mm",
         "price_per_stone": 138.56,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire Grade A",
         "quantity_needed": 2
       },
       "pricing": {
@@ -5931,13 +5931,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire AAA",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "4.5mm",
         "price_per_stone": 237.6,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire AAA",
         "quantity_needed": 2
       },
       "pricing": {
@@ -5966,13 +5966,13 @@
         "quantity_needed": 2
       },
       "gemstone": {
-        "name": "Round Faceted Genuine Blue Sapphire",
+        "name": "Round Faceted Genuine Blue Sapphire AAA",
         "material": "Natural",
         "color": "Blue",
         "shape": "Round",
         "size": "4.5mm",
         "price_per_stone": 277.2,
-        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire",
+        "product_url": "https://www.ottofrei.com/products/round-faceted-genuine-blue-sapphire AAA",
         "quantity_needed": 2
       },
       "pricing": {
@@ -6002,8 +6002,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -6037,8 +6037,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -6072,20 +6072,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 41.94,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 45.76,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 423.94,
         "markup": 20.0,
-        "total_pair_price": 65.76
+        "total_pair_price": 508.73
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -6143,7 +6143,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -6317,7 +6317,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "6mm",
@@ -6352,7 +6352,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "6mm",
@@ -6387,20 +6387,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 1.02,
+        "price_per_stone": 102,
         "product_url": "https://www.ottofrei.com/products/round-faceted-morganite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 410.4,
-        "gemstones_subtotal": 2.04,
-        "subtotal": 412.44,
-        "markup": 82.49,
-        "total_pair_price": 494.93
+        "gemstones_subtotal": 204.0,
+        "subtotal": 614.40,
+        "markup": 20.00,
+        "total_pair_price": 737.28
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -6422,8 +6422,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "6mm",
         "price_per_stone": 92.75,
@@ -6457,7 +6457,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "6mm",
@@ -6597,7 +6597,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "8mm",
@@ -6632,8 +6632,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -6667,8 +6667,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -6702,20 +6702,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 60.76,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 64.58,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 442.76,
         "markup": 20.0,
-        "total_pair_price": 84.58
+        "total_pair_price": 531.31
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -6773,7 +6773,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -6842,8 +6842,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -6877,8 +6877,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -6912,20 +6912,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 66.12,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 69.94,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 448.12,
         "markup": 20.0,
-        "total_pair_price": 89.94
+        "total_pair_price": 537.74
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -6983,7 +6983,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -7052,7 +7052,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "6mm",
@@ -7087,7 +7087,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "6mm",
@@ -7122,20 +7122,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 1.02,
+        "price_per_stone": 102.0,
         "product_url": "https://www.ottofrei.com/products/round-faceted-morganite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 42.14,
-        "gemstones_subtotal": 2.04,
-        "subtotal": 44.18,
+        "gemstones_subtotal": 204.0,
+        "subtotal": 246.14,
         "markup": 20.0,
-        "total_pair_price": 64.18
+        "total_pair_price": 295.37
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -7157,8 +7157,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "6mm",
         "price_per_stone": 92.75,
@@ -7192,20 +7192,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 4.0,
+        "price_per_stone": 400.0,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 42.14,
-        "gemstones_subtotal": 8.0,
-        "subtotal": 50.14,
+        "gemstones_subtotal": 800.0,
+        "subtotal": 842.14,
         "markup": 20.0,
-        "total_pair_price": 70.14
+        "total_pair_price": 1010.58
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -7297,7 +7297,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "6mm",
@@ -7332,7 +7332,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "6mm",
@@ -7367,20 +7367,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 1.02,
+        "price_per_stone": 102.0,
         "product_url": "https://www.ottofrei.com/products/round-faceted-morganite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 39.5,
-        "gemstones_subtotal": 2.04,
-        "subtotal": 41.54,
+        "gemstones_subtotal": 204.0,
+        "subtotal": 243.5,
         "markup": 20.0,
-        "total_pair_price": 61.54
+        "total_pair_price": 292.2
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -7402,8 +7402,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "6mm",
         "price_per_stone": 92.75,
@@ -7437,7 +7437,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "6mm",
@@ -7542,7 +7542,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -7577,7 +7577,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -7612,8 +7612,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -7647,7 +7647,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -7752,7 +7752,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -7858,7 +7858,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -7892,7 +7892,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "4mm",
@@ -7927,7 +7927,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "4mm",
@@ -7962,8 +7962,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "4mm",
         "price_per_stone": 25.72,
@@ -7997,7 +7997,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "4mm",
@@ -8102,8 +8102,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -8137,8 +8137,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -8172,20 +8172,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 35.26,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 39.08,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 417.26,
         "markup": 20.0,
-        "total_pair_price": 59.08
+        "total_pair_price": 500.71
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -8243,7 +8243,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -8312,7 +8312,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "3mm",
@@ -8418,7 +8418,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "3mm",
         "price_per_stone": 6.0,
@@ -8452,8 +8452,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 63.0,
@@ -8487,8 +8487,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 62.0,
@@ -8522,20 +8522,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "5mm",
-        "price_per_stone": 1.91,
+        "price_per_stone": 191.00,
         "product_url": "https://www.ottofrei.com/products/round-faceted-tanzanite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 51.48,
-        "gemstones_subtotal": 3.82,
-        "subtotal": 55.3,
+        "gemstones_subtotal": 382.00,
+        "subtotal": 433.48,
         "markup": 20.0,
-        "total_pair_price": 75.3
+        "total_pair_price": 520.18
       },
       "compatibility": {
         "size_match": "5x5mm",
@@ -8593,7 +8593,7 @@
       "gemstone": {
         "name": "Round Faceted Genuine Iolite",
         "material": "Natural",
-        "color": null,
+        "color": "Blue-Violet",
         "shape": "Round",
         "size": "5mm",
         "price_per_stone": 18.0,
@@ -8662,7 +8662,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Pink Amethyst",
-        "material": null,
+        "material": "Amethyst",
         "color": "Purple",
         "shape": "Round",
         "size": "6mm",
@@ -8697,7 +8697,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Green Quartz",
-        "material": null,
+        "material": "Natural Green Quartz",
         "color": "Green",
         "shape": "Round",
         "size": "6mm",
@@ -8732,20 +8732,20 @@
       },
       "gemstone": {
         "name": "Round Faceted Morganite",
-        "material": null,
-        "color": null,
+        "material": "Morganite",
+        "color": "Pink",
         "shape": "Round",
         "size": "6mm",
-        "price_per_stone": 1.02,
+        "price_per_stone": 102.0,
         "product_url": "https://www.ottofrei.com/products/round-faceted-morganite",
         "quantity_needed": 2
       },
       "pricing": {
         "settings_subtotal": 42.6,
-        "gemstones_subtotal": 2.04,
-        "subtotal": 44.64,
+        "gemstones_subtotal": 204.0,
+        "subtotal": 246.6,
         "markup": 20.0,
-        "total_pair_price": 64.64
+        "total_pair_price": 295.92
       },
       "compatibility": {
         "size_match": "6x6mm",
@@ -8767,8 +8767,8 @@
       },
       "gemstone": {
         "name": "Round Faceted Chrome Diopside",
-        "material": null,
-        "color": null,
+        "material": "Natural Chrome Diopside",
+        "color": "Green",
         "shape": "Round",
         "size": "6mm",
         "price_per_stone": 92.75,
@@ -8802,7 +8802,7 @@
       },
       "gemstone": {
         "name": "Round Faceted Tanzanite",
-        "material": null,
+        "material": "Tazanite",
         "color": "Blue",
         "shape": "Round",
         "size": "6mm",

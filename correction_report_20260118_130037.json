@@ -1,0 +1,1065 @@
+{
+  "colors_updated": 57,
+  "materials_updated": 99,
+  "records_modified": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    20,
+    29,
+    39,
+    46,
+    47,
+    48,
+    49,
+    65,
+    66,
+    67,
+    68,
+    71,
+    72,
+    73,
+    74,
+    77,
+    80,
+    81,
+    82,
+    83,
+    84,
+    87,
+    90,
+    91,
+    94,
+    95,
+    98,
+    99,
+    100,
+    101,
+    102,
+    105,
+    106,
+    107,
+    109,
+    111,
+    112,
+    113,
+    114,
+    115,
+    118,
+    119,
+    120,
+    122,
+    124,
+    125,
+    126,
+    128,
+    130,
+    131,
+    132,
+    133,
+    137,
+    139,
+    151,
+    154,
+    157,
+    171,
+    172,
+    173,
+    175,
+    180,
+    181,
+    182,
+    183,
+    184,
+    188,
+    189,
+    190,
+    191,
+    193,
+    195,
+    196,
+    197,
+    199,
+    201,
+    202,
+    203,
+    204,
+    205,
+    208,
+    209,
+    210,
+    211,
+    212,
+    215,
+    216,
+    217,
+    218,
+    221,
+    224,
+    225,
+    226,
+    227,
+    228,
+    231,
+    232,
+    233,
+    235,
+    237,
+    240,
+    241,
+    242,
+    243,
+    245,
+    247,
+    248,
+    249,
+    250,
+    251
+  ],
+  "color_changes": [
+    {
+      "index": 2,
+      "pair_id": "ES216_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 8,
+      "pair_id": "ES218_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 9,
+      "pair_id": "ES218_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 20,
+      "pair_id": "ES282_Square_Faceted_Imitation_Alexandrite_3x3mm",
+      "gemstone_name": "Square Faceted Imitation Alexandrite",
+      "new_color": "Color-Change (Purple/Green)"
+    },
+    {
+      "index": 29,
+      "pair_id": "ES283_Square_Faceted_Imitation_Alexandrite_4x4mm",
+      "gemstone_name": "Square Faceted Imitation Alexandrite",
+      "new_color": "Color-Change (Purple/Green)"
+    },
+    {
+      "index": 39,
+      "pair_id": "ES227_Square_Faceted_Imitation_Alexandrite_4x4mm",
+      "gemstone_name": "Square Faceted Imitation Alexandrite",
+      "new_color": "Color-Change (Purple/Green)"
+    },
+    {
+      "index": 48,
+      "pair_id": "ES338_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 67,
+      "pair_id": "ES174_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 73,
+      "pair_id": "EW782_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 80,
+      "pair_id": "ES318_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 83,
+      "pair_id": "EW781_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 90,
+      "pair_id": "ES332_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 94,
+      "pair_id": "ES173_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 98,
+      "pair_id": "ES201_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 101,
+      "pair_id": "ES202_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 105,
+      "pair_id": "ES203_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 106,
+      "pair_id": "ES203_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 109,
+      "pair_id": "ES203_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 113,
+      "pair_id": "ES204_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 114,
+      "pair_id": "ES204_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 118,
+      "pair_id": "ES330_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 119,
+      "pair_id": "ES330_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 122,
+      "pair_id": "ES330_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 124,
+      "pair_id": "ES327_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 125,
+      "pair_id": "ES327_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 128,
+      "pair_id": "ES327_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 132,
+      "pair_id": "ES320_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 139,
+      "pair_id": "ES288_Round_Faceted_Genuine_Smoky_Quartz_2.5mm",
+      "gemstone_name": "Round Faceted Genuine Smoky Quartz",
+      "new_color": "Brown"
+    },
+    {
+      "index": 154,
+      "pair_id": "ES347_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 157,
+      "pair_id": "ES345_Round_Faceted_Genuine_Smoky_Quartz_4.5mm",
+      "gemstone_name": "Round Faceted Genuine Smoky Quartz",
+      "new_color": "Brown"
+    },
+    {
+      "index": 171,
+      "pair_id": "ES317_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 172,
+      "pair_id": "ES317_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 175,
+      "pair_id": "ES317_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 182,
+      "pair_id": "ES218K14_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 183,
+      "pair_id": "ES218K14_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 189,
+      "pair_id": "ES341_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 190,
+      "pair_id": "ES341_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 193,
+      "pair_id": "ES341_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 195,
+      "pair_id": "ES335_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 196,
+      "pair_id": "ES335_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 199,
+      "pair_id": "ES335_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 203,
+      "pair_id": "ES331_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 204,
+      "pair_id": "ES331_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 210,
+      "pair_id": "ES321_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 211,
+      "pair_id": "ES321_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 217,
+      "pair_id": "ES343_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 224,
+      "pair_id": "ES339_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 227,
+      "pair_id": "ES334_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 231,
+      "pair_id": "ES333_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 232,
+      "pair_id": "ES333_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 235,
+      "pair_id": "ES333_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 240,
+      "pair_id": "ES329_Round_Faceted_Genuine_Iolite_3mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 241,
+      "pair_id": "ES325_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 242,
+      "pair_id": "ES325_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    },
+    {
+      "index": 245,
+      "pair_id": "ES325_Round_Faceted_Genuine_Iolite_5mm",
+      "gemstone_name": "Round Faceted Genuine Iolite",
+      "new_color": "Blue-Violet"
+    },
+    {
+      "index": 249,
+      "pair_id": "ES337_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_color": "Pink"
+    },
+    {
+      "index": 250,
+      "pair_id": "ES337_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_color": "Green"
+    }
+  ],
+  "material_changes": [
+    {
+      "index": 0,
+      "pair_id": "ES216_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 1,
+      "pair_id": "ES216_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 2,
+      "pair_id": "ES216_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 3,
+      "pair_id": "ES216_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 6,
+      "pair_id": "ES218_Round_Faceted_Pink_Amethyst_6mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 7,
+      "pair_id": "ES218_Round_Faceted_Green_Quartz_6mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 8,
+      "pair_id": "ES218_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 9,
+      "pair_id": "ES218_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 10,
+      "pair_id": "ES218_Round_Faceted_Tanzanite_6mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 46,
+      "pair_id": "ES338_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 47,
+      "pair_id": "ES338_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 48,
+      "pair_id": "ES338_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 49,
+      "pair_id": "ES338_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 65,
+      "pair_id": "ES174_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 66,
+      "pair_id": "ES174_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 67,
+      "pair_id": "ES174_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 68,
+      "pair_id": "ES174_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 71,
+      "pair_id": "EW782_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 72,
+      "pair_id": "EW782_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 73,
+      "pair_id": "EW782_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 74,
+      "pair_id": "EW782_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 77,
+      "pair_id": "ES318_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 81,
+      "pair_id": "EW781_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 82,
+      "pair_id": "EW781_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 83,
+      "pair_id": "EW781_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 84,
+      "pair_id": "EW781_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 87,
+      "pair_id": "ES332_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 91,
+      "pair_id": "ES173_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 95,
+      "pair_id": "ES201_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 99,
+      "pair_id": "ES202_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 100,
+      "pair_id": "ES202_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 101,
+      "pair_id": "ES202_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 102,
+      "pair_id": "ES202_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 105,
+      "pair_id": "ES203_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 106,
+      "pair_id": "ES203_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 107,
+      "pair_id": "ES203_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 111,
+      "pair_id": "ES204_Round_Faceted_Pink_Amethyst_6mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 112,
+      "pair_id": "ES204_Round_Faceted_Green_Quartz_6mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 113,
+      "pair_id": "ES204_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 114,
+      "pair_id": "ES204_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 115,
+      "pair_id": "ES204_Round_Faceted_Tanzanite_6mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 118,
+      "pair_id": "ES330_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 119,
+      "pair_id": "ES330_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 120,
+      "pair_id": "ES330_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 124,
+      "pair_id": "ES327_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 125,
+      "pair_id": "ES327_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 126,
+      "pair_id": "ES327_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 130,
+      "pair_id": "ES320_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 131,
+      "pair_id": "ES320_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 132,
+      "pair_id": "ES320_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 133,
+      "pair_id": "ES320_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 137,
+      "pair_id": "ES288_Round_Faceted_Tanzanite_2.5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 151,
+      "pair_id": "ES347_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 171,
+      "pair_id": "ES317_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 172,
+      "pair_id": "ES317_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 173,
+      "pair_id": "ES317_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 180,
+      "pair_id": "ES218K14_Round_Faceted_Pink_Amethyst_6mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 181,
+      "pair_id": "ES218K14_Round_Faceted_Green_Quartz_6mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 182,
+      "pair_id": "ES218K14_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 183,
+      "pair_id": "ES218K14_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 184,
+      "pair_id": "ES218K14_Round_Faceted_Tanzanite_6mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 188,
+      "pair_id": "ES220K14_Round_Faceted_Pink_Amethyst_8mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 189,
+      "pair_id": "ES341_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 190,
+      "pair_id": "ES341_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 191,
+      "pair_id": "ES341_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 195,
+      "pair_id": "ES335_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 196,
+      "pair_id": "ES335_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 197,
+      "pair_id": "ES335_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 201,
+      "pair_id": "ES331_Round_Faceted_Pink_Amethyst_6mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 202,
+      "pair_id": "ES331_Round_Faceted_Green_Quartz_6mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 203,
+      "pair_id": "ES331_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 204,
+      "pair_id": "ES331_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 205,
+      "pair_id": "ES331_Round_Faceted_Tanzanite_6mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 208,
+      "pair_id": "ES321_Round_Faceted_Pink_Amethyst_6mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 209,
+      "pair_id": "ES321_Round_Faceted_Green_Quartz_6mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 210,
+      "pair_id": "ES321_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 211,
+      "pair_id": "ES321_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 212,
+      "pair_id": "ES321_Round_Faceted_Tanzanite_6mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 215,
+      "pair_id": "ES343_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 216,
+      "pair_id": "ES343_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 217,
+      "pair_id": "ES343_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 218,
+      "pair_id": "ES343_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 221,
+      "pair_id": "ES339_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 225,
+      "pair_id": "ES334_Round_Faceted_Pink_Amethyst_4mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 226,
+      "pair_id": "ES334_Round_Faceted_Green_Quartz_4mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 227,
+      "pair_id": "ES334_Round_Faceted_Morganite_4mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 228,
+      "pair_id": "ES334_Round_Faceted_Tanzanite_4mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 231,
+      "pair_id": "ES333_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 232,
+      "pair_id": "ES333_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 233,
+      "pair_id": "ES333_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 237,
+      "pair_id": "ES329_Round_Faceted_Tanzanite_3mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 241,
+      "pair_id": "ES325_Round_Faceted_Morganite_5mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 242,
+      "pair_id": "ES325_Round_Faceted_Chrome_Diopside_5mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 243,
+      "pair_id": "ES325_Round_Faceted_Tanzanite_5mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    },
+    {
+      "index": 247,
+      "pair_id": "ES337_Round_Faceted_Pink_Amethyst_6mm",
+      "gemstone_name": "Round Faceted Pink Amethyst",
+      "new_material": "Amethyst"
+    },
+    {
+      "index": 248,
+      "pair_id": "ES337_Round_Faceted_Green_Quartz_6mm",
+      "gemstone_name": "Round Faceted Green Quartz",
+      "new_material": "Natural Green Quartz"
+    },
+    {
+      "index": 249,
+      "pair_id": "ES337_Round_Faceted_Morganite_6mm",
+      "gemstone_name": "Round Faceted Morganite",
+      "new_material": "Morganite"
+    },
+    {
+      "index": 250,
+      "pair_id": "ES337_Round_Faceted_Chrome_Diopside_6mm",
+      "gemstone_name": "Round Faceted Chrome Diopside",
+      "new_material": "Natural Chrome Diopside"
+    },
+    {
+      "index": 251,
+      "pair_id": "ES337_Round_Faceted_Tanzanite_6mm",
+      "gemstone_name": "Round Faceted Tanzanite",
+      "new_material": "Tazanite"
+    }
+  ]
+}

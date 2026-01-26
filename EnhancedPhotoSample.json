@@ -1,0 +1,37 @@
+{
+  "item_description": {
+    "product_type": "Earrings",
+    "style": "Vintage Statement / Button Style",
+    "overall_shape": "Oval",
+    "materials": {
+      "metal_type": "Yellow Gold",
+      "metal_finish": "Polished with granulated/beaded texture details"
+    },
+    "gemstones": {
+      "center_stone": {
+        "type": "Cabochon",
+        "color": "Deep Royal Blue",
+        "shape": "Oval",
+        "cut": "Smooth, domed (Cabochon)",
+        "setting_style": "Bezel set"
+      },
+      "accent_stones": {
+        "type": "Multi-colored gemstones",
+        "colors": [
+          "Ruby Red",
+          "Emerald Green",
+          "Sapphire Blue"
+        ],
+        "shape": "Round",
+        "cut": "Faceted",
+        "arrangement": "Halo/Border surrounding the center stone",
+        "details": " interspersed with gold beading"
+      }
+    },
+    "visual_characteristics": {
+      "color_palette": "Gold, Blue, Red, Green",
+      "texture": "Smooth center stone contrasting with detailed, textured metalwork on the rim",
+      "presentation": "Mounted on a white display card"
+    }
+  }
+}

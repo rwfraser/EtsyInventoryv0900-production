@@ -1,0 +1,51 @@
+{
+  "ucp": {
+    "version": "2026-01-11",
+    "merchant_id": "mer_8675309",
+    "environment": "production",
+    "meta": {
+      "name": "MyEarringAdvisor",
+      "description": "Personalized Suggestions from Our Inventory of TENS OF THOUSANDS of earrings!",
+      "support_email": "rojer@myearringdepot.com",
+      "icon": "https://myearringadvisor.com/static/icon.png"
+    },
+    "services": {
+      "dev.ucp.shopping": {
+        "version": "1.0",
+        "capabilities": {
+          "discovery": {
+            "endpoint": "https://api.myearringadvisor.com/ucp/v1/discovery",
+            "methods": ["search", "lookup"],
+            "description": "Search our 10,000 items by keyword, category, or semantic description."
+          },
+          "cart": {
+            "endpoint": "https://api.myearringadvisor.com/ucp/v1/cart",
+            "supports_guest_checkout": true,https://assets.msn.com/staticsb/statics/latest/fluent-icons/caret_left_16_filled.svg
+            "session_timeout": 3600
+          },
+          "checkout": {
+            "endpoint": "https://api.myearringadvisor.com/ucp/v1/checkout",
+            "mode": "delegated",
+            "payment_handlers": [
+              {
+                "type": "stripe_connect",
+                "supported_currencies": ["USD", "EUR"],
+                "merchant_account_id": "acct_123456789"
+              },
+              {
+                "type": "google_pay",
+                "merchant_id": "BCR2DN6T7..."
+              }
+            ]
+          }
+        },
+        "extensions": {
+          "dev.ucp.fulfillment": {
+            "endpoint": "https://api.myearringadvisor.com/ucp/v1/fulfillment",
+            "features": ["shipping_estimates", "real_time_tracking"]
+          }
+        }
+      }
+    }
+  }
+}
