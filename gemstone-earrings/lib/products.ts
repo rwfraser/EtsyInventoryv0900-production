@@ -1,16 +1,39 @@
 import { EarringPair, ProductData } from './types';
 
 let cachedData: ProductData | null = null;
+let cachedDbProducts: EarringPair[] | null = null;
+let lastDbFetch: number = 0;
+const DB_CACHE_DURATION = 60000; // Cache database products for 1 minute
 
 export async function getProducts(): Promise<EarringPair[]> {
-  if (cachedData) {
-    return cachedData.combinations;
+  // Fetch static products from JSON
+  if (!cachedData) {
+    const response = await fetch('/products.json');
+    const data: ProductData = await response.json();
+    cachedData = data;
   }
 
-  const response = await fetch('/products.json');
-  const data: ProductData = await response.json();
-  cachedData = data;
-  return data.combinations;
+  // Fetch database products (with caching)
+  const now = Date.now();
+  if (!cachedDbProducts || (now - lastDbFetch) > DB_CACHE_DURATION) {
+    try {
+      const dbResponse = await fetch('/api/products');
+      if (dbResponse.ok) {
+        const dbData = await dbResponse.json();
+        cachedDbProducts = dbData.products || [];
+        lastDbFetch = now;
+      } else {
+        // If database fetch fails, use empty array
+        cachedDbProducts = [];
+      }
+    } catch (error) {
+      console.error('Failed to fetch database products:', error);
+      cachedDbProducts = [];
+    }
+  }
+
+  // Merge both sources: static products + database products
+  return [...cachedData.combinations, ...cachedDbProducts];
 }
 
 export async function getProductById(id: string): Promise<EarringPair | undefined> {
