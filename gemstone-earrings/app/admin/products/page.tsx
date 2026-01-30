@@ -45,26 +45,26 @@ export default async function AdminProductsPage() {
             </Link>
           </div>
         ) : (
-          <div className="bg-white rounded-lg shadow overflow-hidden">
-            <table className="min-w-full divide-y divide-gray-200">
+          <div className="bg-white rounded-lg shadow overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200 table-fixed">
               <thead className="bg-gray-50">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-96">
                     Product
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-32">
                     Category
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-28">
                     Price
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
                     Stock
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-32">
                     Created
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-28">
                     Actions
                   </th>
                 </tr>
@@ -81,10 +81,10 @@ export default async function AdminProductsPage() {
                             className="h-10 w-10 rounded object-cover mr-3"
                           />
                         )}
-                        <div>
-                          <div className="text-sm font-medium text-gray-900">{product.name}</div>
+                        <div className="min-w-0 flex-1">
+                          <div className="text-sm font-medium text-gray-900 truncate">{product.name}</div>
                           {product.description && (
-                            <div className="text-sm text-gray-500 truncate max-w-xs">
+                            <div className="text-sm text-gray-500 truncate">
                               {product.description}
                             </div>
                           )}

@@ -17,6 +17,18 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'diyjewelry.us',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.ottofrei.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
