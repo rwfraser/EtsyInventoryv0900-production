@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
+import { saveTempFile } from '@/lib/uploadUtils';
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,7 +15,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { name, description, price, imageUrl, category, stock } = await request.json();
+    // Extract form data for file uploads
+    const formData = await request.formData();
+    const name = formData.get('name') as string;
+    const description = formData.get('description') as string;
+    const price = formData.get('price') as string;
+    const imageUrl = formData.get('imageUrl') as string;
+    const category = formData.get('category') as string;
+    const stock = formData.get('stock') as string;
+
+    const image1File = formData.get('image1') as File | null;
+    const image2File = formData.get('image2') as File | null;
+    const image3File = formData.get('image3') as File | null;
+    const image4File = formData.get('image4') as File | null;
 
     if (!name || !price) {
       return NextResponse.json(
@@ -22,6 +35,12 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    // Save uploaded files to temp storage
+    const image1Path = image1File && image1File.size > 0 ? await saveTempFile(image1File) : null;
+    const image2Path = image2File && image2File.size > 0 ? await saveTempFile(image2File) : null;
+    const image3Path = image3File && image3File.size > 0 ? await saveTempFile(image3File) : null;
+    const image4Path = image4File && image4File.size > 0 ? await saveTempFile(image4File) : null;
 
     // Create product
     const [newProduct] = await db
@@ -32,6 +51,10 @@ export async function POST(request: NextRequest) {
         price: price.toString(),
         imageUrl: imageUrl || null,
         category: category || null,
+        image1: image1Path,
+        image2: image2Path,
+        image3: image3Path,
+        image4: image4Path,
         stock: parseInt(stock) || 0,
       })
       .returning();

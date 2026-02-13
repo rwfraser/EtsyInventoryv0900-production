@@ -49,3 +49,7 @@ next-env.d.ts
 
 .vercel
 .env*.local
+
+# Uploaded images (but keep directory)
+public/uploads/temp/*
+!public/uploads/temp/.gitkeep

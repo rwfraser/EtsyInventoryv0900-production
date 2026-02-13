@@ -17,6 +17,28 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
     category: '',
     stock: '',
   });
+  const [existingImages, setExistingImages] = useState<{
+    image1: string | null;
+    image2: string | null;
+    image3: string | null;
+    image4: string | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
+  const [imageFiles, setImageFiles] = useState<{
+    image1: File | null;
+    image2: File | null;
+    image3: File | null;
+    image4: File | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
 
   useEffect(() => {
     async function loadProduct() {
@@ -31,6 +53,12 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
             imageUrl: data.product.imageUrl || '',
             category: data.product.category || '',
             stock: data.product.stock?.toString() || '0',
+          });
+          setExistingImages({
+            image1: data.product.image1 || null,
+            image2: data.product.image2 || null,
+            image3: data.product.image3 || null,
+            image4: data.product.image4 || null,
           });
         } else {
           alert('Failed to load product');
@@ -52,10 +80,30 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
     setIsSaving(true);
 
     try {
+      // Create FormData for file upload
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('description', formData.description);
+      formDataToSend.append('price', formData.price);
+      formDataToSend.append('imageUrl', formData.imageUrl);
+      formDataToSend.append('category', formData.category);
+      formDataToSend.append('stock', formData.stock);
+
+      // Append new image files if selected
+      if (imageFiles.image1) formDataToSend.append('image1', imageFiles.image1);
+      if (imageFiles.image2) formDataToSend.append('image2', imageFiles.image2);
+      if (imageFiles.image3) formDataToSend.append('image3', imageFiles.image3);
+      if (imageFiles.image4) formDataToSend.append('image4', imageFiles.image4);
+
+      // Tell backend to keep existing images if no new file uploaded
+      formDataToSend.append('keepImage1', (!imageFiles.image1).toString());
+      formDataToSend.append('keepImage2', (!imageFiles.image2).toString());
+      formDataToSend.append('keepImage3', (!imageFiles.image3).toString());
+      formDataToSend.append('keepImage4', (!imageFiles.image4).toString());
+
       const response = await fetch(`/api/admin/products/${params.id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: formDataToSend,
       });
 
       if (response.ok) {
@@ -225,6 +273,105 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
                   />
                 </div>
               )}
+            </div>
+
+            {/* Image Upload Fields */}
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="image1" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 1
+                </label>
+                {existingImages.image1 && !imageFiles.image1 && (
+                  <div className="mb-2">
+                    <img src={existingImages.image1} alt="Current Image 1" className="h-24 w-24 object-cover rounded" />
+                    <p className="text-xs text-gray-500 mt-1">Current image</p>
+                  </div>
+                )}
+                <input
+                  id="image1"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image1: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image1 && (
+                  <div className="mt-2 text-sm text-green-600">
+                    New: {imageFiles.image1.name}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="image2" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 2
+                </label>
+                {existingImages.image2 && !imageFiles.image2 && (
+                  <div className="mb-2">
+                    <img src={existingImages.image2} alt="Current Image 2" className="h-24 w-24 object-cover rounded" />
+                    <p className="text-xs text-gray-500 mt-1">Current image</p>
+                  </div>
+                )}
+                <input
+                  id="image2"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image2: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image2 && (
+                  <div className="mt-2 text-sm text-green-600">
+                    New: {imageFiles.image2.name}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="image3" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 3
+                </label>
+                {existingImages.image3 && !imageFiles.image3 && (
+                  <div className="mb-2">
+                    <img src={existingImages.image3} alt="Current Image 3" className="h-24 w-24 object-cover rounded" />
+                    <p className="text-xs text-gray-500 mt-1">Current image</p>
+                  </div>
+                )}
+                <input
+                  id="image3"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image3: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image3 && (
+                  <div className="mt-2 text-sm text-green-600">
+                    New: {imageFiles.image3.name}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="image4" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 4
+                </label>
+                {existingImages.image4 && !imageFiles.image4 && (
+                  <div className="mb-2">
+                    <img src={existingImages.image4} alt="Current Image 4" className="h-24 w-24 object-cover rounded" />
+                    <p className="text-xs text-gray-500 mt-1">Current image</p>
+                  </div>
+                )}
+                <input
+                  id="image4"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image4: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image4 && (
+                  <div className="mt-2 text-sm text-green-600">
+                    New: {imageFiles.image4.name}
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="flex gap-4">

@@ -15,16 +15,41 @@ export default function AddProductPage() {
     category: '',
     stock: '',
   });
+  const [imageFiles, setImageFiles] = useState<{
+    image1: File | null;
+    image2: File | null;
+    image3: File | null;
+    image4: File | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
     try {
+      // Create FormData for file upload
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('description', formData.description);
+      formDataToSend.append('price', formData.price);
+      formDataToSend.append('imageUrl', formData.imageUrl);
+      formDataToSend.append('category', formData.category);
+      formDataToSend.append('stock', formData.stock);
+
+      // Append image files if selected
+      if (imageFiles.image1) formDataToSend.append('image1', imageFiles.image1);
+      if (imageFiles.image2) formDataToSend.append('image2', imageFiles.image2);
+      if (imageFiles.image3) formDataToSend.append('image3', imageFiles.image3);
+      if (imageFiles.image4) formDataToSend.append('image4', imageFiles.image4);
+
       const response = await fetch('/api/admin/products', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: formDataToSend,
       });
 
       if (response.ok) {
@@ -56,6 +81,81 @@ export default function AddProductPage() {
 
         <div className="bg-white rounded-lg shadow p-6">
           <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Image Upload Fields - Moved to Top */}
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="image1" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 1
+                </label>
+                <input
+                  id="image1"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image1: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image1 && (
+                  <div className="mt-2 text-sm text-gray-600">
+                    Selected: {imageFiles.image1.name}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="image2" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 2
+                </label>
+                <input
+                  id="image2"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image2: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image2 && (
+                  <div className="mt-2 text-sm text-gray-600">
+                    Selected: {imageFiles.image2.name}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="image3" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 3
+                </label>
+                <input
+                  id="image3"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image3: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image3 && (
+                  <div className="mt-2 text-sm text-gray-600">
+                    Selected: {imageFiles.image3.name}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="image4" className="block text-sm font-medium text-gray-700 mb-1">
+                  Product Image 4
+                </label>
+                <input
+                  id="image4"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => setImageFiles({ ...imageFiles, image4: e.target.files?.[0] || null })}
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                {imageFiles.image4 && (
+                  <div className="mt-2 text-sm text-gray-600">
+                    Selected: {imageFiles.image4.name}
+                  </div>
+                )}
+              </div>
+            </div>
+
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Product Name *
@@ -116,46 +216,6 @@ export default function AddProductPage() {
                   placeholder="0"
                 />
               </div>
-            </div>
-
-            <div>
-              <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-1">
-                Category
-              </label>
-              <input
-                id="category"
-                type="text"
-                value={formData.category}
-                onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="e.g., Earrings, Necklaces"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="imageUrl" className="block text-sm font-medium text-gray-700 mb-1">
-                Image URL
-              </label>
-              <input
-                id="imageUrl"
-                type="url"
-                value={formData.imageUrl}
-                onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="https://example.com/image.jpg"
-              />
-              {formData.imageUrl && (
-                <div className="mt-2">
-                  <img
-                    src={formData.imageUrl}
-                    alt="Preview"
-                    className="h-32 w-32 object-cover rounded"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                    }}
-                  />
-                </div>
-              )}
             </div>
 
             <div className="flex gap-4">
