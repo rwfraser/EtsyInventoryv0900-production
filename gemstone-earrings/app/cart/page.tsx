@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useCart } from '@/lib/CartContext';
 
 export const dynamic = 'force-dynamic';
@@ -43,9 +44,21 @@ export default function CartPage() {
               >
                 <div className="flex gap-4">
                   {/* Product Image */}
-                  <div className="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded flex items-center justify-center">
-                    <div className="text-3xl">💎</div>
-                  </div>
+                  <Link
+                    href={`/products/${item.product.pair_id}`}
+                    className="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded overflow-hidden relative hover:opacity-80 transition-opacity"
+                  >
+                    {item.product.images && item.product.images.length > 0 ? (
+                      <Image
+                        src={item.product.images[0]}
+                        alt={item.product.gemstone.name}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-3xl">💎</div>
+                    )}
+                  </Link>
 
                   {/* Product Info */}
                   <div className="flex-1">
