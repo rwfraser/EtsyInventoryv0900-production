@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { promises as fs } from 'fs';
-import path from 'path';
-import { ProductData } from '@/lib/types';
+import { EarringPair } from '@/lib/types';
 import ProductCard from '@/components/ProductCard';
 import { auth } from '@/lib/auth';
 import AuthGate from '@/components/AuthGate';
+import { db } from '@/lib/db';
+import { products } from '@/drizzle/schema';
 
 export default async function Home() {
   const session = await auth();
@@ -14,13 +14,63 @@ export default async function Home() {
     return <AuthGate />;
   }
 
-  // Load products server-side
-  const filePath = path.join(process.cwd(), 'public', 'products.json');
-  const fileContent = await fs.readFile(filePath, 'utf-8');
-  const data: ProductData = JSON.parse(fileContent);
+  // Load products from database
+  const dbProducts = await db.select().from(products);
+  
+  // Convert to EarringPair format
+  const allProducts: EarringPair[] = dbProducts.map((product) => {
+    const images = [
+      product.image1,
+      product.image2,
+      product.image3,
+      product.image4,
+      product.imageUrl,
+    ].filter((img): img is string => img !== null && img !== undefined && img !== '');
+
+    return {
+      pair_id: `DB_${product.id}`,
+      setting: {
+        product_number: product.id,
+        product_title: product.name,
+        price_per_setting: parseFloat(product.price) / 2,
+        material: 'Sterling Silver',
+        gemstone_dimensions: '',
+        gemstone_shape: '',
+        variant_id: 0,
+        product_url: '',
+        quantity_needed: 2,
+      },
+      gemstone: {
+        name: product.name,
+        material: product.category || 'Gemstone',
+        color: null,
+        shape: '',
+        size: '',
+        price_per_stone: parseFloat(product.price) / 2,
+        product_url: '',
+        quantity_needed: 2,
+      },
+      pricing: {
+        settings_subtotal: parseFloat(product.price) / 2,
+        gemstones_subtotal: parseFloat(product.price) / 2,
+        subtotal: parseFloat(product.price),
+        markup: 0,
+        total_pair_price: parseFloat(product.price),
+      },
+      compatibility: {
+        size_match: 'Custom',
+        shape_match: 'Custom',
+      },
+      vendor: 'Custom Design',
+      category: product.category || 'Earrings',
+      description: product.description || '',
+      images: images,
+    };
+  });
   
   // Get a selection of featured products (first 6)
-  const featuredProducts = data.combinations.slice(0, 6);
+  const featuredProducts = allProducts.slice(0, 6);
+  const totalProducts = allProducts.length;
 
   return (
     <main>
@@ -31,7 +81,7 @@ export default async function Home() {
             Exquisite Gemstone Earrings
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Discover {data.total_combinations} unique handcrafted earring designs featuring premium gemstones 
+            Discover {totalProducts} unique handcrafted earring designs featuring premium gemstones 
             and sterling silver settings
           </p>
           <Link
@@ -58,7 +108,7 @@ export default async function Home() {
               <div className="text-5xl mb-4">🎨</div>
               <h3 className="text-xl font-bold mb-2">Unique Designs</h3>
               <p className="text-gray-600">
-                254 exclusive combinations of gems, shapes, and sizes
+                {totalProducts} exclusive combinations of gems, shapes, and sizes
               </p>
             </div>
             <div className="p-6">
@@ -88,7 +138,7 @@ export default async function Home() {
               href="/products"
               className="inline-block bg-purple-600 text-white font-bold py-3 px-8 rounded hover:bg-purple-700 transition-colors"
             >
-              View All {data.total_combinations} Designs
+              View All {totalProducts} Designs
             </Link>
           </div>
         </div>
