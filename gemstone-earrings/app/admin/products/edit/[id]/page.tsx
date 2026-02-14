@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
-export default function EditProductPage({ params }: { params: { id: string } }) {
+export default function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
@@ -43,7 +44,7 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
   useEffect(() => {
     async function loadProduct() {
       try {
-        const response = await fetch(`/api/admin/products/${params.id}`);
+        const response = await fetch(`/api/admin/products/${id}`);
         if (response.ok) {
           const data = await response.json();
           setFormData({
@@ -73,7 +74,7 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
     }
 
     loadProduct();
-  }, [params.id, router]);
+  }, [id, router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -101,7 +102,7 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
       formDataToSend.append('keepImage3', (!imageFiles.image3).toString());
       formDataToSend.append('keepImage4', (!imageFiles.image4).toString());
 
-      const response = await fetch(`/api/admin/products/${params.id}`, {
+      const response = await fetch(`/api/admin/products/${id}`, {
         method: 'PUT',
         body: formDataToSend,
       });
@@ -128,7 +129,7 @@ export default function EditProductPage({ params }: { params: { id: string } }) 
     setIsDeleting(true);
 
     try {
-      const response = await fetch(`/api/admin/products/${params.id}`, {
+      const response = await fetch(`/api/admin/products/${id}`, {
         method: 'DELETE',
       });
 
