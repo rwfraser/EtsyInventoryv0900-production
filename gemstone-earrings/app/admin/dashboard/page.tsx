@@ -3,8 +3,6 @@ import { db } from '@/lib/db';
 import { users, products } from '@/drizzle/schema';
 import { eq } from 'drizzle-orm';
 import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
 
 export default async function AdminDashboard() {
   const session = await requireAdmin();
@@ -14,21 +12,9 @@ export default async function AdminDashboard() {
   const userCount = allUsers.length;
   const adminCount = allUsers.filter(u => u.role === 'admin').length;
 
-  // Get product counts
+  // Get product count from database
   const dbProducts = await db.select().from(products);
-  const dbProductCount = dbProducts.length;
-  
-  // Get static products count from JSON
-  let staticProductCount = 0;
-  try {
-    const productsJsonPath = path.join(process.cwd(), 'public', 'products.json');
-    const productsJson = JSON.parse(fs.readFileSync(productsJsonPath, 'utf-8'));
-    staticProductCount = productsJson.total_combinations || 0;
-  } catch (error) {
-    console.error('Failed to read products.json:', error);
-  }
-  
-  const totalProducts = staticProductCount + dbProductCount;
+  const productCount = dbProducts.length;
 
   return (
     <div className="min-h-screen bg-gray-100 py-8">
@@ -42,8 +28,8 @@ export default async function AdminDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white rounded-lg shadow p-6">
             <h3 className="text-gray-500 text-sm font-medium">Total Products</h3>
-            <p className="text-3xl font-bold text-gray-900 mt-2">{totalProducts}</p>
-            <p className="text-xs text-gray-500 mt-1">{staticProductCount} static + {dbProductCount} database</p>
+            <p className="text-3xl font-bold text-gray-900 mt-2">{productCount}</p>
+            <p className="text-xs text-gray-500 mt-1">Database products</p>
           </div>
           <div className="bg-white rounded-lg shadow p-6">
             <h3 className="text-gray-500 text-sm font-medium">Total Users</h3>
