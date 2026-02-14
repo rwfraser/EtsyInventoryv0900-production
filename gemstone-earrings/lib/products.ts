@@ -1,19 +1,11 @@
-import { EarringPair, ProductData } from './types';
+import { EarringPair } from './types';
 
-let cachedData: ProductData | null = null;
 let cachedDbProducts: EarringPair[] | null = null;
 let lastDbFetch: number = 0;
 const DB_CACHE_DURATION = 60000; // Cache database products for 1 minute
 
 export async function getProducts(): Promise<EarringPair[]> {
-  // Fetch static products from JSON
-  if (!cachedData) {
-    const response = await fetch('/products.json');
-    const data: ProductData = await response.json();
-    cachedData = data;
-  }
-
-  // Fetch database products (with caching)
+  // Fetch ONLY from database (no more JSON products)
   const now = Date.now();
   if (!cachedDbProducts || (now - lastDbFetch) > DB_CACHE_DURATION) {
     try {
@@ -23,7 +15,7 @@ export async function getProducts(): Promise<EarringPair[]> {
         cachedDbProducts = dbData.products || [];
         lastDbFetch = now;
       } else {
-        // If database fetch fails, use empty array
+        console.error('Failed to fetch database products');
         cachedDbProducts = [];
       }
     } catch (error) {
@@ -32,8 +24,7 @@ export async function getProducts(): Promise<EarringPair[]> {
     }
   }
 
-  // Merge both sources: static products + database products
-  return [...cachedData.combinations, ...cachedDbProducts];
+  return cachedDbProducts;
 }
 
 export async function getProductById(id: string): Promise<EarringPair | undefined> {
@@ -54,7 +45,9 @@ export function getUniqueColors(products: EarringPair[]): string[] {
 export function getUniqueShapes(products: EarringPair[]): string[] {
   const shapes = new Set<string>();
   products.forEach(p => {
-    shapes.add(p.gemstone.shape);
+    if (p.gemstone.shape) {
+      shapes.add(p.gemstone.shape);
+    }
   });
   return Array.from(shapes).sort();
 }
@@ -62,7 +55,9 @@ export function getUniqueShapes(products: EarringPair[]): string[] {
 export function getUniqueSizes(products: EarringPair[]): string[] {
   const sizes = new Set<string>();
   products.forEach(p => {
-    sizes.add(p.gemstone.size);
+    if (p.gemstone.size) {
+      sizes.add(p.gemstone.size);
+    }
   });
   return Array.from(sizes).sort((a, b) => {
     const numA = parseFloat(a);
