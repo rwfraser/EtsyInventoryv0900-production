@@ -74,9 +74,9 @@ export default async function AdminProductsPage() {
                   <tr key={product.id}>
                     <td className="px-6 py-4">
                       <div className="flex items-center">
-                        {product.imageUrl && (
+                        {(product.image1 || product.image2 || product.image3 || product.image4 || product.imageUrl) && (
                           <img
-                            src={product.imageUrl}
+                            src={product.image1 || product.image2 || product.image3 || product.image4 || product.imageUrl || ''}
                             alt={product.name}
                             className="h-10 w-10 rounded object-cover mr-3"
                           />
