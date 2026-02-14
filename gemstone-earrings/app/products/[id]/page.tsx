@@ -16,6 +16,7 @@ export default function ProductDetailPage() {
   const [loading, setLoading] = useState(true);
   const { addToCart } = useCart();
   const [addedToCart, setAddedToCart] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     async function loadProduct() {
@@ -59,17 +60,75 @@ export default function ProductDetailPage() {
 
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Product Image */}
-          <div className="bg-gradient-to-br from-purple-100 to-pink-100 aspect-square flex items-center justify-center relative">
-            {product.images && product.images.length > 0 ? (
-              <Image
-                src={product.images[0]}
-                alt={product.gemstone.name}
-                fill
-                className="object-contain p-8"
-              />
-            ) : (
-              <div className="text-9xl">💎</div>
+          {/* Product Image Gallery */}
+          <div className="p-4">
+            {/* Main Image */}
+            <div className="bg-gradient-to-br from-purple-100 to-pink-100 aspect-square flex items-center justify-center relative rounded-lg overflow-hidden mb-4">
+              {product.images && product.images.length > 0 ? (
+                <>
+                  <Image
+                    src={product.images[currentImageIndex]}
+                    alt={`${product.gemstone.name} - Image ${currentImageIndex + 1}`}
+                    fill
+                    className="object-contain p-8"
+                  />
+                  {/* Navigation Arrows */}
+                  {product.images.length > 1 && (
+                    <>
+                      <button
+                        onClick={() => setCurrentImageIndex((prev) => 
+                          prev === 0 ? product.images.length - 1 : prev - 1
+                        )}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-colors"
+                        aria-label="Previous image"
+                      >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={() => setCurrentImageIndex((prev) => 
+                          prev === product.images.length - 1 ? 0 : prev + 1
+                        )}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-colors"
+                        aria-label="Next image"
+                      >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </>
+                  )}
+                </>
+              ) : (
+                <div className="text-9xl">💎</div>
+              )}
+            </div>
+            
+            {/* Thumbnail Navigation */}
+            {product.images && product.images.length > 1 && (
+              <div className="flex gap-2 overflow-x-auto pb-2">
+                {product.images.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+                      currentImageIndex === index
+                        ? 'border-purple-600 ring-2 ring-purple-300'
+                        : 'border-gray-200 hover:border-purple-400'
+                    }`}
+                  >
+                    <div className="relative w-full h-full bg-gradient-to-br from-purple-50 to-pink-50">
+                      <Image
+                        src={image}
+                        alt={`Thumbnail ${index + 1}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </button>
+                ))}
+              </div>
             )}
           </div>
 
