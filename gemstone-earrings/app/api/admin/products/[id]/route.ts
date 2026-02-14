@@ -7,7 +7,7 @@ import { saveTempFile } from '@/lib/uploadUtils';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     // Check if current user is admin
@@ -19,7 +19,7 @@ export async function GET(
       );
     }
 
-    const id = params.id;
+    const { id } = await params;
     const [product] = await db
       .select()
       .from(products)
@@ -44,7 +44,7 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     // Check if current user is admin
@@ -56,7 +56,7 @@ export async function PUT(
       );
     }
 
-    const id = params.id;
+    const { id } = await params;
     
     // Extract form data for file uploads
     const formData = await request.formData();
@@ -150,7 +150,7 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     // Check if current user is admin
@@ -162,7 +162,7 @@ export async function DELETE(
       );
     }
 
-    const id = params.id;
+    const { id } = await params;
 
     // Delete product
     const [deletedProduct] = await db
