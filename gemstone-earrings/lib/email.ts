@@ -6,6 +6,19 @@ import crypto from 'crypto';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Use default Resend email if custom domain isn't configured
+const getFromEmail = () => {
+  const customEmail = process.env.RESEND_FROM_EMAIL;
+  const defaultEmail = 'onboarding@resend.dev';
+  
+  // If custom email is set and looks valid, use it
+  if (customEmail && customEmail !== 'onboarding@resend.dev') {
+    return customEmail;
+  }
+  
+  return defaultEmail;
+};
+
 export async function generateVerificationToken(email: string) {
   const token = crypto.randomBytes(32).toString('hex');
   const expires = new Date(Date.now() + 24 * 60 * 60 * 1000); // 24 hours
@@ -26,9 +39,11 @@ export async function generateVerificationToken(email: string) {
 export async function sendVerificationEmail(email: string, token: string) {
   const verificationUrl = `${process.env.NEXTAUTH_URL}/verify-email?token=${token}`;
 
+  const fromEmail = getFromEmail();
+  
   try {
     await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
+      from: fromEmail,
       to: email,
       subject: 'Verify your email for Gemstone Earrings',
       html: `

@@ -51,6 +51,7 @@ export default function SignupPage() {
         throw new Error(data.error || 'Failed to create account');
       }
 
+      // Handle both new signups and resent verifications
       setSuccess(true);
     } catch (err: any) {
       setError(err.message);
