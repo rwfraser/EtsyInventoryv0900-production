@@ -1,24 +1,32 @@
 // Google Gemini AI client configuration
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-if (!process.env.GEMINI_API_KEY) {
-  throw new Error('GEMINI_API_KEY environment variable is not set');
-}
+// Initialize Gemini client (lazy initialization)
+let genAI: GoogleGenerativeAI | null = null;
 
-// Initialize Gemini client
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+function getGenAI() {
+  if (!genAI) {
+    if (!process.env.GEMINI_API_KEY) {
+      throw new Error('GEMINI_API_KEY environment variable is not set');
+    }
+    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+  }
+  return genAI;
+}
 
 // Get Gemini model for image enhancement
 // Using gemini-3-pro-image-preview as specified in plan
 export function getImageModel() {
-  return genAI.getGenerativeModel({ 
+  const client = getGenAI();
+  return client.getGenerativeModel({ 
     model: 'gemini-3-pro-image-preview' 
   });
 }
 
 // Get Gemini model for text generation (if needed as fallback)
 export function getTextModel() {
-  return genAI.getGenerativeModel({ 
+  const client = getGenAI();
+  return client.getGenerativeModel({ 
     model: 'gemini-pro' 
   });
 }
@@ -44,4 +52,4 @@ export async function prepareImageForGemini(imageUrl: string) {
   };
 }
 
-export { genAI };
+export { getGenAI };

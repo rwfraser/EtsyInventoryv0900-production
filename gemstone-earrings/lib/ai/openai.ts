@@ -1,21 +1,28 @@
 // OpenAI client configuration
 import OpenAI from 'openai';
 
-if (!process.env.OPENAI_API_KEY) {
-  throw new Error('OPENAI_API_KEY environment variable is not set');
-}
+// Initialize OpenAI client (lazy initialization)
+let openaiClient: OpenAI | null = null;
 
-// Initialize OpenAI client
-export const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+function getOpenAI() {
+  if (!openaiClient) {
+    if (!process.env.OPENAI_API_KEY) {
+      throw new Error('OPENAI_API_KEY environment variable is not set');
+    }
+    openaiClient = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+  }
+  return openaiClient;
+}
 
 // Using ChatGPT v5.2 as specified in plan
 export const GPT_MODEL = 'gpt-5.2';
 
 // Generate embeddings for RAG (using text-embedding-3-small for efficiency)
 export async function generateEmbedding(text: string): Promise<number[]> {
-  const response = await openai.embeddings.create({
+  const client = getOpenAI();
+  const response = await client.embeddings.create({
     model: 'text-embedding-3-small',
     input: text,
   });
@@ -44,7 +51,8 @@ Generate a compelling, SEO-friendly product description (2-3 paragraphs) that:
 
 Do not use markdown formatting. Return plain text only.`;
 
-  const completion = await openai.chat.completions.create({
+  const client = getOpenAI();
+  const completion = await client.chat.completions.create({
     model: GPT_MODEL,
     messages: [
       {
@@ -81,7 +89,8 @@ Generate 10-15 relevant SEO keywords and phrases. Focus on:
 
 Return ONLY a JSON array of keywords, no other text.`;
 
-  const completion = await openai.chat.completions.create({
+  const client = getOpenAI();
+  const completion = await client.chat.completions.create({
     model: GPT_MODEL,
     messages: [
       {
