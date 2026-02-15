@@ -40,11 +40,29 @@ export const products = pgTable('products', {
   price: numeric('price', { precision: 10, scale: 2 }).notNull(),
   imageUrl: text('image_url'),
   category: text('category'),
+  
+  // Original images (uploaded by user)
   image1: text('image1'),
   image2: text('image2'),
   image3: text('image3'),
   image4: text('image4'),
+  
+  // AI-enhanced images (processed by Gemini using baseline reference)
+  enhancedImage1: text('enhanced_image1'),
+  enhancedImage2: text('enhanced_image2'),
+  enhancedImage3: text('enhanced_image3'),
+  enhancedImage4: text('enhanced_image4'),
+  
   stock: integer('stock').default(0).notNull(),
+  
+  // AI-enhanced content fields
+  originalDescription: text('original_description'), // User-provided description
+  aiDescription: text('ai_description'),             // AI-generated description (ChatGPT)
+  aiKeywords: text('ai_keywords'),                   // JSON array of SEO keywords
+  aiProcessedAt: timestamp('ai_processed_at'),       // When AI processing completed
+  aiModelUsed: text('ai_model_used'),                // e.g., "gemini-3-pro-image-preview, gpt-5.2"
+  embeddingVector: text('embedding_vector'),         // For RAG (JSON serialized vector)
+  
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });

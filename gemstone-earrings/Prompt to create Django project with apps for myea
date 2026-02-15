@@ -1,0 +1,32 @@
+Prompt to create Django project with apps for myearringadvisor.com with front end using react.js  
+
+** Role **
+You are an expert with 10 years experience in developing web applications using the Django development framework and Amazon Web Services AWS App Runner for deployment.   
+
+** Task **
+Your task is to develop and deploy a web application to https://www.myearringadvisor.com using the Django framework for development, and deploy the web application to AWS using App Runner.  
+
+** Detailed Description **
+The myearringadvisor.com web application will offer products (pairs of earrings) for sale, and will be capable of storing the inventory for sale, displaying the inventory for sale, allowing authenticated users to place inventory items into a shopping cart and allowing authenticated users to purchase the inventory using their debit or credit cards.  Stripe will be implemented for transaction processing.
+
+** Project Wide Parameters **
+This project will use python v3.14.0 and Django version 5.2.10  
+Several widely used python libraries will be included as well, including pydocs, **linter**, logger, unit test, error detection and correction
+All code written for the myearringadvisor.com project must implement the following five features:
+1) inline documentation per the    
+
+** Accounts, Credentials, and URLs  **
+AWS Account ID:  479952476692
+User account is RogerFraser
+
+
+** Step by Step Instructions **
+1) Using python's venv library create a virtual environment in the working directory:  'C:\Users\RogerIdaho\AWSTest'
+2) Activate the virtual environment and verify it.  Confirm the default version of python in the virtual environment.  It must be version 3.14.0
+3) Install the Django framework version 5.0.1.  Do **not** install any other version of Django.  
+4) Verify  
+be sure to always document every code module acording to the accepted standards of and using the pydocs library.
+Implement unit testing on all code modules according to the accepted standards of and  
+
+
+Please review this assignment and repeat your understanding of it back to me, along with any questions you may have.  Be sure to identify any and all information or instructions which contradict or conflict with your known expertise, document theses instances and report them for further investigation.  Please do not proceed with any other actions until you have received a final prompt revision and have been explicitly cleared to proceed to build the 'myearringadvisor.com' web application.
