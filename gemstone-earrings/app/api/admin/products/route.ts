@@ -8,9 +8,27 @@ export async function POST(request: NextRequest) {
   try {
     // Check if current user is admin
     const session = await auth();
+    
+    console.log('Product creation attempt:', {
+      hasSession: !!session,
+      userEmail: session?.user?.email,
+      userRole: session?.user?.role,
+      isAdmin: session?.user?.role === 'admin',
+    });
+    
     if (!session || session.user.role !== 'admin') {
+      console.error('Unauthorized product creation attempt:', {
+        hasSession: !!session,
+        role: session?.user?.role,
+      });
       return NextResponse.json(
-        { error: 'Unauthorized' },
+        { 
+          error: 'Unauthorized',
+          debug: process.env.NODE_ENV === 'development' ? {
+            hasSession: !!session,
+            userRole: session?.user?.role,
+          } : undefined
+        },
         { status: 403 }
       );
     }
