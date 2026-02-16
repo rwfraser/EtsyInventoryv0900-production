@@ -36,6 +36,28 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
     image3: null,
     image4: null,
   });
+  const [enhancedImages, setEnhancedImages] = useState<{
+    enhancedImage1: string | null;
+    enhancedImage2: string | null;
+    enhancedImage3: string | null;
+    enhancedImage4: string | null;
+  }>({
+    enhancedImage1: null,
+    enhancedImage2: null,
+    enhancedImage3: null,
+    enhancedImage4: null,
+  });
+  const [aiData, setAiData] = useState<{
+    aiDescription: string | null;
+    aiKeywords: string[] | null;
+    aiProcessedAt: string | null;
+    originalDescription: string | null;
+  }>({
+    aiDescription: null,
+    aiKeywords: null,
+    aiProcessedAt: null,
+    originalDescription: null,
+  });
   const [imageFiles, setImageFiles] = useState<{
     image1: File | null;
     image2: File | null;
@@ -67,6 +89,18 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
             image2: data.product.image2 || null,
             image3: data.product.image3 || null,
             image4: data.product.image4 || null,
+          });
+          setEnhancedImages({
+            enhancedImage1: data.product.enhancedImage1 || null,
+            enhancedImage2: data.product.enhancedImage2 || null,
+            enhancedImage3: data.product.enhancedImage3 || null,
+            enhancedImage4: data.product.enhancedImage4 || null,
+          });
+          setAiData({
+            aiDescription: data.product.aiDescription || null,
+            aiKeywords: data.product.aiKeywords ? JSON.parse(data.product.aiKeywords) : null,
+            aiProcessedAt: data.product.aiProcessedAt || null,
+            originalDescription: data.product.originalDescription || null,
           });
         } else {
           alert('Failed to load product');
@@ -162,15 +196,18 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
           keywords: data.aiKeywords,
         });
         
+        // Update AI data state immediately
+        setAiData({
+          aiDescription: data.aiDescription || null,
+          aiKeywords: data.aiKeywords || null,
+          aiProcessedAt: new Date().toISOString(),
+          originalDescription: formData.description || null,
+        });
+        
         // Update the description field with AI-generated content
         if (data.aiDescription) {
           setFormData({ ...formData, description: data.aiDescription });
         }
-        
-        // Reload product to get updated data
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
       } else {
         setAiResult({
           success: false,
@@ -487,9 +524,48 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
               </button>
             </div>
 
-            {/* AI Result Display */}
+            {/* AI Status Display */}
+            {aiData.aiDescription && (
+              <div className="p-4 rounded-lg bg-purple-50 border border-purple-200 mb-4">
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="font-semibold text-purple-900">🤖 AI-Enhanced Content</h4>
+                  {aiData.aiProcessedAt && (
+                    <span className="text-xs text-purple-600">
+                      Processed: {new Date(aiData.aiProcessedAt).toLocaleString()}
+                    </span>
+                  )}
+                </div>
+                
+                {aiData.originalDescription && (
+                  <div className="mb-3 p-3 bg-white rounded border border-purple-100">
+                    <p className="text-xs font-medium text-gray-600 mb-1">Original Description:</p>
+                    <p className="text-sm text-gray-700">{aiData.originalDescription}</p>
+                  </div>
+                )}
+                
+                <div className="mb-3 p-3 bg-white rounded border border-purple-100">
+                  <p className="text-xs font-medium text-purple-900 mb-1">AI Description (Current):</p>
+                  <p className="text-sm text-purple-800">{aiData.aiDescription}</p>
+                </div>
+                
+                {aiData.aiKeywords && aiData.aiKeywords.length > 0 && (
+                  <div>
+                    <p className="text-xs font-medium text-purple-900 mb-2">Keywords:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {aiData.aiKeywords.map((keyword, i) => (
+                        <span key={i} className="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+            
+            {/* AI Result Display (temporary message) */}
             {aiResult && (
-              <div className={`p-4 rounded-lg ${
+              <div className={`p-4 rounded-lg mb-4 ${
                 aiResult.success 
                   ? 'bg-green-50 border border-green-200' 
                   : 'bg-red-50 border border-red-200'
@@ -499,26 +575,10 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
                 }`}>
                   {aiResult.success ? '✅ ' : '❌ '}{aiResult.message}
                 </p>
-                {aiResult.description && (
-                  <div className="mt-3 pt-3 border-t border-green-200">
-                    <p className="text-sm font-medium text-green-900 mb-1">Generated Description:</p>
-                    <p className="text-sm text-green-800">{aiResult.description}</p>
-                  </div>
-                )}
-                {aiResult.keywords && aiResult.keywords.length > 0 && (
-                  <div className="mt-2">
-                    <p className="text-sm font-medium text-green-900 mb-1">Keywords:</p>
-                    <div className="flex flex-wrap gap-2">
-                      {aiResult.keywords.map((keyword, i) => (
-                        <span key={i} className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">
-                          {keyword}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
             )}
+            
+            {/* Note: Image enhancement currently provides analysis, not generated images */}
 
             <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
               <p className="text-sm text-blue-800">
