@@ -204,6 +204,16 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
           originalDescription: formData.description || null,
         });
         
+        // Update enhanced images if available
+        if (data.product) {
+          setEnhancedImages({
+            enhancedImage1: data.product.enhancedImage1 || null,
+            enhancedImage2: data.product.enhancedImage2 || null,
+            enhancedImage3: data.product.enhancedImage3 || null,
+            enhancedImage4: data.product.enhancedImage4 || null,
+          });
+        }
+        
         // Update the description field with AI-generated content
         if (data.aiDescription) {
           setFormData({ ...formData, description: data.aiDescription });
