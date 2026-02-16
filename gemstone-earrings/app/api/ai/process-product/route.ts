@@ -79,17 +79,27 @@ export async function POST(request: NextRequest) {
     }
 
     // Step 3: Update product in database
+    const updateData: any = {
+      originalDescription: product.description,
+      aiDescription: descriptionResult.description,
+      aiKeywords: JSON.stringify(descriptionResult.keywords),
+      embeddingVector: JSON.stringify(descriptionResult.embedding),
+      aiProcessedAt: new Date(),
+      aiModelUsed: descriptionResult.modelsUsed || 'gemini-3-pro-image-preview, gpt-5.2',
+      updatedAt: new Date(),
+    };
+
+    // Add enhanced image URLs if available
+    if (enhancementResults && enhancementResults.length === 4) {
+      if (enhancementResults[0].enhancedImageUrl) updateData.enhancedImage1 = enhancementResults[0].enhancedImageUrl;
+      if (enhancementResults[1].enhancedImageUrl) updateData.enhancedImage2 = enhancementResults[1].enhancedImageUrl;
+      if (enhancementResults[2].enhancedImageUrl) updateData.enhancedImage3 = enhancementResults[2].enhancedImageUrl;
+      if (enhancementResults[3].enhancedImageUrl) updateData.enhancedImage4 = enhancementResults[3].enhancedImageUrl;
+    }
+
     const [updatedProduct] = await db
       .update(products)
-      .set({
-        originalDescription: product.description,
-        aiDescription: descriptionResult.description,
-        aiKeywords: JSON.stringify(descriptionResult.keywords),
-        embeddingVector: JSON.stringify(descriptionResult.embedding),
-        aiProcessedAt: new Date(),
-        aiModelUsed: descriptionResult.modelsUsed || 'gemini-3-pro-image-preview, gpt-5.2',
-        updatedAt: new Date(),
-      })
+      .set(updateData)
       .where(eq(products.id, productId))
       .returning();
 

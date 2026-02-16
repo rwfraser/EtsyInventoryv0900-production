@@ -1,8 +1,23 @@
 // Image enhancement service using Gemini
-import { getImageModel, prepareImageForGemini } from './gemini';
+import { GoogleGenAI } from '@google/genai';
+import { prepareImageForGemini } from './gemini';
+import { put } from '@vercel/blob';
 
 // Baseline professional photo URL (to be provided by user)
 const BASELINE_IMAGE_URL = process.env.AI_BASELINE_IMAGE_URL || '';
+
+// Initialize GoogleGenAI client
+let genAI: GoogleGenAI | null = null;
+
+function getGenAI() {
+  if (!genAI) {
+    if (!process.env.GEMINI_API_KEY) {
+      throw new Error('GEMINI_API_KEY environment variable is not set');
+    }
+    genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+  }
+  return genAI;
+}
 
 // Engineered prompt for image enhancement (to be provided by user)
 const ENHANCEMENT_PROMPT = process.env.AI_ENHANCEMENT_PROMPT || `**Role**  You are a professional jewelry photographer and photoshop artist.  The first of the two attached photos is representative of your work.  A client has provided you with samples of their earring photography which is mediocre.  The second attached photo is an example.  
@@ -13,6 +28,7 @@ const ENHANCEMENT_PROMPT = process.env.AI_ENHANCEMENT_PROMPT || `**Role**  You 
 
 interface EnhancementResult {
   success: boolean;
+  enhancedImageUrl?: string;
   enhancementInstructions?: string;
   error?: string;
   modelUsed: string;
@@ -22,31 +38,69 @@ interface EnhancementResult {
  * Enhance a single product image using Gemini with baseline reference
  */
 export async function enhanceSingleImage(
-  productImageUrl: string
+  productImageUrl: string,
+  imageNumber: number
 ): Promise<EnhancementResult> {
   try {
     if (!BASELINE_IMAGE_URL) {
       throw new Error('AI_BASELINE_IMAGE_URL environment variable not set');
     }
 
-    const model = getImageModel();
+    const ai = getGenAI();
 
     // Prepare both images for Gemini
     const baselineImage = await prepareImageForGemini(BASELINE_IMAGE_URL);
     const productImage = await prepareImageForGemini(productImageUrl);
 
-    // Generate enhancement instructions
-    const result = await model.generateContent([
-      ENHANCEMENT_PROMPT,
+    // Generate enhanced image using Gemini
+    const contents = [
+      { text: ENHANCEMENT_PROMPT },
       baselineImage,
       productImage,
-    ]);
+    ];
 
-    const response = await result.response;
-    const enhancementInstructions = response.text();
+    const response = await ai.models.generateContent({
+      model: 'gemini-3-pro-image-preview',
+      contents,
+      config: {
+        responseModalities: ['TEXT', 'IMAGE'],
+        imageConfig: {
+          aspectRatio: '1:1',
+          imageSize: '2K',
+        },
+      },
+    });
+
+    // Extract enhanced image from response
+    let enhancedImageUrl: string | undefined;
+    let enhancementInstructions: string | undefined;
+
+    for (const part of response.candidates[0].content.parts) {
+      if (part.text) {
+        enhancementInstructions = part.text;
+      } else if (part.inlineData) {
+        // Convert base64 image to Buffer and upload to Vercel Blob
+        const imageData = part.inlineData.data;
+        const buffer = Buffer.from(imageData, 'base64');
+        const mimeType = part.inlineData.mimeType || 'image/png';
+        
+        // Upload to Vercel Blob
+        const timestamp = Date.now();
+        const filename = `enhanced/enhanced-${timestamp}-${imageNumber}.png`;
+        
+        const blob = await put(filename, buffer, {
+          access: 'public',
+          token: process.env.BLOB_READ_WRITE_TOKEN,
+          contentType: mimeType,
+        });
+        
+        enhancedImageUrl = blob.url;
+      }
+    }
 
     return {
       success: true,
+      enhancedImageUrl,
       enhancementInstructions,
       modelUsed: 'gemini-3-pro-image-preview',
     };
@@ -67,7 +121,7 @@ export async function enhanceProductImages(
   images: [string, string, string, string]
 ): Promise<EnhancementResult[]> {
   const results = await Promise.all(
-    images.map((imageUrl) => enhanceSingleImage(imageUrl))
+    images.map((imageUrl, index) => enhanceSingleImage(imageUrl, index + 1))
   );
 
   return results;
@@ -81,7 +135,7 @@ export async function analyzeProductImages(
   images: string[]
 ): Promise<string> {
   try {
-    const model = getImageModel();
+    const ai = getGenAI();
     
     // Prepare all product images
     const imagePromises = images
@@ -99,13 +153,17 @@ export async function analyzeProductImages(
 
 Focus on factual observations that would help write a compelling product description.`;
 
-    const result = await model.generateContent([
-      analysisPrompt,
+    const contents = [
+      { text: analysisPrompt },
       ...preparedImages,
-    ]);
+    ];
 
-    const response = await result.response;
-    return response.text();
+    const response = await ai.models.generateContent({
+      model: 'gemini-3-pro-image-preview',
+      contents,
+    });
+
+    return response.candidates[0].content.parts.find(p => p.text)?.text || 'Unable to analyze images';
   } catch (error) {
     console.error('Image analysis error:', error);
     return 'Unable to analyze images';

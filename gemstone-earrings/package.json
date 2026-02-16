@@ -13,6 +13,7 @@
     "db:studio": "dotenv -e .env.local -- drizzle-kit studio"
   },
   "dependencies": {
+    "@google/genai": "^1.41.0",
     "@google/generative-ai": "^0.24.1",
     "@types/bcryptjs": "^2.4.6",
     "@vercel/blob": "^2.2.0",
