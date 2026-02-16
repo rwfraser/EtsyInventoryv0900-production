@@ -1,31 +1,26 @@
-import { writeFile, mkdir } from 'fs/promises';
-import { join } from 'path';
-import { existsSync } from 'fs';
-
-const UPLOAD_DIR = join(process.cwd(), 'public', 'uploads', 'temp');
+import { put } from '@vercel/blob';
 
 /**
- * Saves an uploaded file to temporary storage
+ * Saves an uploaded file to Vercel Blob storage
  * @param file - The File object from FormData
- * @returns The relative path to the saved file (e.g., /uploads/temp/123456-image.jpg)
+ * @returns The public URL to the uploaded file
  */
 export async function saveTempFile(file: File): Promise<string> {
-  // Ensure upload directory exists
-  if (!existsSync(UPLOAD_DIR)) {
-    await mkdir(UPLOAD_DIR, { recursive: true });
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    throw new Error('BLOB_READ_WRITE_TOKEN environment variable is not set');
   }
 
   // Generate unique filename with timestamp
   const timestamp = Date.now();
   const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-  const filename = `${timestamp}-${originalName}`;
-  const filepath = join(UPLOAD_DIR, filename);
+  const filename = `products/${timestamp}-${originalName}`;
 
-  // Convert file to buffer and save
-  const bytes = await file.arrayBuffer();
-  const buffer = Buffer.from(bytes);
-  await writeFile(filepath, buffer);
+  // Upload to Vercel Blob
+  const blob = await put(filename, file, {
+    access: 'public',
+    token: process.env.BLOB_READ_WRITE_TOKEN,
+  });
 
-  // Return relative path for database storage
-  return `/uploads/temp/${filename}`;
+  // Return public URL
+  return blob.url;
 }
