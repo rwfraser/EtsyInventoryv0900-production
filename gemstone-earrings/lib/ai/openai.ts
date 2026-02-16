@@ -65,7 +65,7 @@ Do not use markdown formatting. Return plain text only.`;
       },
     ],
     temperature: 0.7,
-    max_tokens: 500,
+    max_completion_tokens: 500,
   });
 
   return completion.choices[0].message.content || '';
@@ -99,7 +99,7 @@ Return ONLY a JSON array of keywords, no other text.`;
       },
     ],
     temperature: 0.5,
-    max_tokens: 200,
+    max_completion_tokens: 200,
   });
 
   const content = completion.choices[0].message.content || '[]';
