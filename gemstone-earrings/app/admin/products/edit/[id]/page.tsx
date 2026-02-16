@@ -10,6 +10,13 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isProcessingAI, setIsProcessingAI] = useState(false);
+  const [aiResult, setAiResult] = useState<{
+    success: boolean;
+    message: string;
+    description?: string;
+    keywords?: string[];
+  } | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -118,6 +125,65 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
       alert('An error occurred');
     } finally {
       setIsSaving(false);
+    }
+  };
+
+  const handleEnhanceWithAI = async () => {
+    // Check if product has at least one image
+    const hasImages = existingImages.image1 || existingImages.image2 || existingImages.image3 || existingImages.image4;
+    if (!hasImages) {
+      alert('Product must have at least one image to use AI enhancement');
+      return;
+    }
+
+    if (!confirm('This will analyze the product images and generate an AI-enhanced description. Continue?')) {
+      return;
+    }
+
+    setIsProcessingAI(true);
+    setAiResult(null);
+
+    try {
+      const response = await fetch('/api/ai/process-product', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ productId: id }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setAiResult({
+          success: true,
+          message: 'AI processing completed successfully!',
+          description: data.aiDescription,
+          keywords: data.aiKeywords,
+        });
+        
+        // Update the description field with AI-generated content
+        if (data.aiDescription) {
+          setFormData({ ...formData, description: data.aiDescription });
+        }
+        
+        // Reload product to get updated data
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      } else {
+        setAiResult({
+          success: false,
+          message: data.error || 'Failed to process product with AI',
+        });
+      }
+    } catch (error) {
+      setAiResult({
+        success: false,
+        message: 'An error occurred during AI processing',
+      });
+    } finally {
+      setIsProcessingAI(false);
     }
   };
 
@@ -391,6 +457,76 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
               </Link>
             </div>
           </form>
+
+          {/* AI Enhancement Section */}
+          <div className="mt-8 pt-8 border-t border-gray-200">
+            <div className="flex items-start justify-between mb-4">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">🤖 AI Enhancement</h3>
+                <p className="text-sm text-gray-600">
+                  Use AI to analyze product images and generate an optimized description
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={handleEnhanceWithAI}
+                disabled={isProcessingAI}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-6 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed font-medium shadow-md"
+              >
+                {isProcessingAI ? (
+                  <span className="flex items-center gap-2">
+                    <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Processing...
+                  </span>
+                ) : (
+                  '✨ Enhance with AI'
+                )}
+              </button>
+            </div>
+
+            {/* AI Result Display */}
+            {aiResult && (
+              <div className={`p-4 rounded-lg ${
+                aiResult.success 
+                  ? 'bg-green-50 border border-green-200' 
+                  : 'bg-red-50 border border-red-200'
+              }`}>
+                <p className={`font-medium ${
+                  aiResult.success ? 'text-green-800' : 'text-red-800'
+                }`}>
+                  {aiResult.success ? '✅ ' : '❌ '}{aiResult.message}
+                </p>
+                {aiResult.description && (
+                  <div className="mt-3 pt-3 border-t border-green-200">
+                    <p className="text-sm font-medium text-green-900 mb-1">Generated Description:</p>
+                    <p className="text-sm text-green-800">{aiResult.description}</p>
+                  </div>
+                )}
+                {aiResult.keywords && aiResult.keywords.length > 0 && (
+                  <div className="mt-2">
+                    <p className="text-sm font-medium text-green-900 mb-1">Keywords:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {aiResult.keywords.map((keyword, i) => (
+                        <span key={i} className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+              <p className="text-sm text-blue-800">
+                <strong>How it works:</strong> AI analyzes your product images using Gemini vision model,
+                then generates an SEO-optimized description using GPT-5.2. The original description is preserved.
+              </p>
+            </div>
+          </div>
 
           {/* Delete Section */}
           <div className="mt-8 pt-8 border-t border-gray-200">
