@@ -54,11 +54,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Save uploaded files to temp storage
-    const image1Path = image1File && image1File.size > 0 ? await saveTempFile(image1File) : null;
-    const image2Path = image2File && image2File.size > 0 ? await saveTempFile(image2File) : null;
-    const image3Path = image3File && image3File.size > 0 ? await saveTempFile(image3File) : null;
-    const image4Path = image4File && image4File.size > 0 ? await saveTempFile(image4File) : null;
+    // Save uploaded files to temp storage (Vercel has read-only filesystem, this will fail)
+    // TODO: Implement cloud storage (Vercel Blob, Cloudflare R2, or S3)
+    let image1Path = null;
+    let image2Path = null;
+    let image3Path = null;
+    let image4Path = null;
+    
+    try {
+      if (image1File && image1File.size > 0) image1Path = await saveTempFile(image1File);
+      if (image2File && image2File.size > 0) image2Path = await saveTempFile(image2File);
+      if (image3File && image3File.size > 0) image3Path = await saveTempFile(image3File);
+      if (image4File && image4File.size > 0) image4Path = await saveTempFile(image4File);
+    } catch (uploadError) {
+      console.error('File upload error (expected on Vercel):', uploadError);
+      // Continue without uploaded files - admin can add image URLs manually
+    }
 
     // Create product
     const [newProduct] = await db
