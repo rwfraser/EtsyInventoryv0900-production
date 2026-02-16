@@ -84,7 +84,7 @@ export default async function AdminProductsPage() {
                         <div className="min-w-0 flex-1">
                           <div className="text-sm font-medium text-gray-900 truncate">{product.name}</div>
                           {product.description && (
-                            <div className="text-sm text-gray-500 truncate">
+                            <div className="text-sm text-gray-500 line-clamp-2">
                               {product.description}
                             </div>
                           )}

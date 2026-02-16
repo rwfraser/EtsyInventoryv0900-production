@@ -136,6 +136,13 @@ export default function ProductDetailPage() {
           <div className="p-8">
             <h1 className="text-3xl font-bold mb-4">{product.gemstone.name}</h1>
             
+            {/* Description */}
+            {product.description && (
+              <div className="mb-6 text-gray-700">
+                <p className="leading-relaxed">{product.description}</p>
+              </div>
+            )}
+            
             <div className="flex items-center gap-3 mb-6">
               <span className="text-4xl font-bold text-purple-600">
                 ${product.pricing.total_pair_price.toFixed(2)}
