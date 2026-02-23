@@ -188,12 +188,12 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // Get product counts
+    // Get product counts (using CASE for broader compatibility)
     const stats = await db.execute(sql`
       SELECT 
         COUNT(*) as total_products,
         COUNT(sku) as products_with_sku,
-        COUNT(*) FILTER (WHERE sku IS NULL) as products_without_sku
+        COUNT(CASE WHEN sku IS NULL THEN 1 END) as products_without_sku
       FROM products
     `);
 
