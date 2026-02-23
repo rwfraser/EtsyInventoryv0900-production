@@ -35,6 +35,7 @@ export const carts = pgTable('carts', {
 
 export const products = pgTable('products', {
   id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  sku: text('sku').notNull().unique(), // Physical location: Rack-Shelf-Tray-Bin-Item (e.g., Aa1a01)
   name: text('name').notNull(),
   description: text('description'),
   price: numeric('price', { precision: 10, scale: 2 }).notNull(),
