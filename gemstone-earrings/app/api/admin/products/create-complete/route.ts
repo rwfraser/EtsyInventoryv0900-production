@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
+import { eq } from 'drizzle-orm';
 import { SKUGenerator } from '@/lib/skuGenerator';
 
 /**
@@ -97,7 +98,7 @@ export async function POST(request: NextRequest) {
     const existingProduct = await db
       .select({ id: products.id })
       .from(products)
-      .where(products.sku.eq(sku))
+      .where(eq(products.sku, sku))
       .limit(1);
 
     if (existingProduct.length > 0) {
