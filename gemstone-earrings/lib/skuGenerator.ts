@@ -92,8 +92,8 @@ export class SKUGenerator {
       item = '01';
       carryToBins = true;
     } else {
-      const itemNum = parseInt(item[1], 10);
-      item = '0' + String.fromCharCode(itemNum + 48 + 1); // Convert to char code
+      const itemNum = parseInt(item, 10);
+      item = (itemNum + 1).toString().padStart(2, '0');
     }
     
     // Increment bin (a-o, then overflow to trays)
@@ -111,7 +111,7 @@ export class SKUGenerator {
       tray = '1';
     } else if (carryToTrays) {
       const trayNum = parseInt(tray, 10);
-      tray = String.fromCharCode(trayNum + 48 + 1);
+      tray = (trayNum + 1).toString();
     }
     
     // Increment shelf (a-t, then overflow to rack)
