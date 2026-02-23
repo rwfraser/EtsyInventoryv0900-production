@@ -68,22 +68,18 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     loadCart();
   }, [session, status]);
 
-  // Save cart to localStorage whenever it changes
+  // Save cart to localStorage and sync to database whenever it changes
   useEffect(() => {
     if (!isInitialized) return;
     localStorage.setItem('cart', JSON.stringify(items));
-  }, [items, isInitialized]);
-
-  // Sync cart to database periodically if user is authenticated
-  useEffect(() => {
-    if (!isInitialized || !session?.user || items.length === 0) return;
-
-    const syncInterval = setInterval(() => {
+    
+    // Sync to database immediately if user is authenticated
+    if (session?.user) {
       syncCartToDatabase(items);
-    }, 60000); // Sync every 60 seconds
+    }
+  }, [items, isInitialized, session]);
 
-    return () => clearInterval(syncInterval);
-  }, [items, session, isInitialized]);
+  // No longer need periodic sync - we sync immediately on every change
 
   // Merge local and database carts
   const mergeCarts = (localItems: CartItem[], dbItems: CartItem[]): CartItem[] => {
