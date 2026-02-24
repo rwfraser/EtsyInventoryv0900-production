@@ -183,6 +183,30 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error('Chat send error:', error);
+    console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+    
+    // Try to save error to database for debugging
+    try {
+      if (sessionToken) {
+        const [session] = await db
+          .select()
+          .from(chatSessions)
+          .where(eq(chatSessions.sessionToken, sessionToken))
+          .limit(1);
+        
+        if (session) {
+          await db.insert(chatMessages).values({
+            id: crypto.randomUUID(),
+            sessionId: session.id,
+            role: 'system',
+            content: `Error: ${error instanceof Error ? error.message : 'Unknown error'}`,
+          });
+        }
+      }
+    } catch (dbError) {
+      console.error('Failed to save error to database:', dbError);
+    }
+    
     return NextResponse.json(
       {
         success: false,

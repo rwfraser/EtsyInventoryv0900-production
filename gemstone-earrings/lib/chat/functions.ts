@@ -58,7 +58,7 @@ export async function searchProducts(params: {
     conditions.push(gte(products.stock, 1));
 
     // Execute query
-    const results = await db
+    let query_builder = db
       .select({
         id: products.id,
         sku: products.sku,
@@ -73,8 +73,14 @@ export async function searchProducts(params: {
         image3: products.image3,
         image4: products.image4,
       })
-      .from(products)
-      .where(and(...conditions))
+      .from(products);
+    
+    // Only add where clause if we have conditions
+    if (conditions.length > 0) {
+      query_builder = query_builder.where(and(...conditions));
+    }
+    
+    const results = await query_builder
       .limit(Math.min(limit, 10))
       .execute();
 

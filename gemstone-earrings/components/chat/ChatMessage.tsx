@@ -65,16 +65,18 @@ function ProductCards({ products }: { products?: any[] }) {
         >
           <div className="flex gap-3">
             {/* Product Image */}
-            {product.images && product.images.length > 0 && (
-              <div className="relative w-16 h-16 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
+            <div className="relative w-16 h-16 flex-shrink-0 bg-gradient-to-br from-purple-100 to-pink-100 rounded overflow-hidden flex items-center justify-center">
+              {product.images && product.images.length > 0 ? (
                 <Image
                   src={product.images[0]}
                   alt={product.name}
                   fill
                   className="object-cover"
                 />
-              </div>
-            )}
+              ) : (
+                <span className="text-2xl">💎</span>
+              )}
+            </div>
 
             {/* Product Info */}
             <div className="flex-1 min-w-0">
