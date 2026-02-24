@@ -78,3 +78,41 @@ export const orders = pgTable('orders', {
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
+
+// Chat sessions - tracks individual chat conversations
+export const chatSessions = pgTable('chat_sessions', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  userId: text('user_id').references(() => users.id, { onDelete: 'set null' }), // null for guest users
+  sessionToken: text('session_token').notNull().unique(), // For guest session tracking
+  startedAt: timestamp('started_at').defaultNow().notNull(),
+  endedAt: timestamp('ended_at'),
+  lastMessageAt: timestamp('last_message_at').defaultNow().notNull(),
+  messageCount: integer('message_count').default(0).notNull(),
+  userAgent: text('user_agent'),
+  ipAddress: text('ip_address'),
+});
+
+// Chat messages - individual messages in a conversation
+export const chatMessages = pgTable('chat_messages', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  sessionId: text('session_id').notNull().references(() => chatSessions.id, { onDelete: 'cascade' }),
+  role: text('role').notNull(), // 'user', 'assistant', 'system', 'function'
+  content: text('content').notNull(),
+  functionName: text('function_name'), // If role is 'function', which function was called
+  functionArgs: text('function_args'), // JSON string of function arguments
+  functionResult: text('function_result'), // JSON string of function result
+  timestamp: timestamp('timestamp').defaultNow().notNull(),
+});
+
+// Chat analytics - track performance and insights
+export const chatAnalytics = pgTable('chat_analytics', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  sessionId: text('session_id').notNull().references(() => chatSessions.id, { onDelete: 'cascade' }),
+  productsViewed: text('products_viewed'), // JSON array of product IDs
+  productsAddedToCart: text('products_added_to_cart'), // JSON array of product IDs
+  queryType: text('query_type'), // 'product_search', 'support', 'general', etc.
+  userSatisfaction: integer('user_satisfaction'), // 1-5 rating, null if not provided
+  conversionOccurred: integer('conversion_occurred').default(0), // 0 or 1 (boolean)
+  totalCostUsd: numeric('total_cost_usd', { precision: 10, scale: 4 }), // OpenAI API cost
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});
