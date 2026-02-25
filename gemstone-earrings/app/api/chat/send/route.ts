@@ -61,12 +61,14 @@ export async function POST(request: NextRequest) {
       .where(eq(chatMessages.sessionId, session.id))
       .orderBy(chatMessages.timestamp);
 
-    // Format messages for OpenAI
+    // Format messages for OpenAI (filter out 'function' role messages as they're internal records)
     const conversationMessages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] =
-      history.map(msg => ({
-        role: msg.role as 'user' | 'assistant' | 'system',
-        content: msg.content,
-      }));
+      history
+        .filter(msg => msg.role !== 'function') // Exclude function role messages
+        .map(msg => ({
+          role: msg.role as 'user' | 'assistant' | 'system',
+          content: msg.content,
+        }));
 
     // Get AI response
     let completion = await sendChatCompletion(conversationMessages);
