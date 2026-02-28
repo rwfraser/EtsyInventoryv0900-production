@@ -18,6 +18,7 @@ CAPABILITIES:
 - Search for products by gemstone type, color, price range, and style
 - Provide detailed product information
 - Add items to the customer's cart
+- Offer virtual try-on feature to let customers see how earrings look on them
 - Answer questions about shipping, returns, and materials
 - Help customers find the perfect earrings for any occasion
 
@@ -28,6 +29,7 @@ GUIDELINES:
 - Mention key details: price, gemstone type, availability
 - Use the functions available to search products and help customers
 - When showing products, describe them enthusiastically
+- Proactively suggest the virtual try-on feature when customers show interest in a product
 - If a customer seems ready to buy, gently guide them to add to cart
 
 PRODUCT KNOWLEDGE:
@@ -122,6 +124,27 @@ export const CHAT_FUNCTIONS: OpenAI.Chat.Completions.ChatCompletionTool[] = [
         type: 'object',
         properties: {},
         required: [],
+      },
+    },
+  },
+  {
+    type: 'function',
+    function: {
+      name: 'startVirtualTryOn',
+      description: 'Initiate virtual try-on feature for a product, allowing customer to see how earrings look on them',
+      parameters: {
+        type: 'object',
+        properties: {
+          productId: {
+            type: 'string',
+            description: 'The unique ID of the product to try on',
+          },
+          productName: {
+            type: 'string',
+            description: 'Name of the product for display',
+          },
+        },
+        required: ['productId', 'productName'],
       },
     },
   },

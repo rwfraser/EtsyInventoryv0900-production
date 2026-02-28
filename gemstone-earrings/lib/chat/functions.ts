@@ -258,6 +258,64 @@ export async function getCartContents(params: {}): Promise<{
 }
 
 /**
+ * Initiate virtual try-on for a product
+ * This returns instructions for the frontend to launch the try-on interface
+ */
+export async function startVirtualTryOn(params: {
+  productId: string;
+  productName: string;
+}): Promise<{
+  success: boolean;
+  action: string;
+  productId: string;
+  productName: string;
+  message: string;
+}> {
+  try {
+    const { productId, productName } = params;
+
+    // Verify product exists
+    const [product] = await db
+      .select({
+        id: products.id,
+        name: products.name,
+        image1: products.image1,
+      })
+      .from(products)
+      .where(sql`${products.id} = ${productId}`)
+      .limit(1)
+      .execute();
+
+    if (!product) {
+      return {
+        success: false,
+        action: 'none',
+        productId,
+        productName,
+        message: 'Product not found. Please try a different product.',
+      };
+    }
+
+    return {
+      success: true,
+      action: 'start_tryon', // Frontend will recognize this action
+      productId: product.id,
+      productName: product.name,
+      message: `Great! Let's see how the ${product.name} look on you. I'll open the virtual try-on feature where you can upload a photo or use your camera.`,
+    };
+  } catch (error) {
+    console.error('startVirtualTryOn error:', error);
+    return {
+      success: false,
+      action: 'none',
+      productId: params.productId,
+      productName: params.productName,
+      message: 'Sorry, the virtual try-on feature is temporarily unavailable. Please try again later.',
+    };
+  }
+}
+
+/**
  * Execute a function call from GPT
  */
 export async function executeFunctionCall(
@@ -278,6 +336,9 @@ export async function executeFunctionCall(
 
     case 'getCartContents':
       return await getCartContents(args);
+
+    case 'startVirtualTryOn':
+      return await startVirtualTryOn(args);
 
     default:
       return {
