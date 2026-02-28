@@ -116,3 +116,40 @@ export const chatAnalytics = pgTable('chat_analytics', {
   totalCostUsd: numeric('total_cost_usd', { precision: 10, scale: 4 }), // OpenAI API cost
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
+
+// Virtual Try-On Sessions - tracks when users try on earrings
+export const tryonSessions = pgTable('tryon_sessions', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  userId: text('user_id').references(() => users.id, { onDelete: 'set null' }), // null for guest users
+  sessionToken: text('session_token').notNull(), // For guest session tracking
+  selfieUrl: text('selfie_url'), // Vercel Blob URL for uploaded selfie
+  faceLandmarks: text('face_landmarks'), // JSON string of detected facial landmarks
+  status: text('status').notNull().default('pending'), // pending, processing, completed, failed
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  expiresAt: timestamp('expires_at').notNull(), // Auto-cleanup after 24 hours
+});
+
+// Try-On Results - stores rendered images of earrings on users
+export const tryonResults = pgTable('tryon_results', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  sessionId: text('session_id').notNull().references(() => tryonSessions.id, { onDelete: 'cascade' }),
+  productId: text('product_id').notNull().references(() => products.id, { onDelete: 'cascade' }),
+  resultImageUrl: text('result_image_url'), // Vercel Blob URL for rendered image
+  renderingTime: integer('rendering_time'), // Milliseconds taken to render
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});
+
+// Product Try-On Assets - metadata for overlay rendering
+export const productTryonAssets = pgTable('product_tryon_assets', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  productId: text('product_id').notNull().unique().references(() => products.id, { onDelete: 'cascade' }),
+  leftEarringUrl: text('left_earring_url'), // Transparent PNG for left ear
+  rightEarringUrl: text('right_earring_url'), // Transparent PNG for right ear (or mirrored)
+  realWorldWidth: numeric('real_world_width', { precision: 6, scale: 2 }), // Width in millimeters
+  realWorldHeight: numeric('real_world_height', { precision: 6, scale: 2 }), // Height in millimeters
+  anchorPointX: numeric('anchor_point_x', { precision: 4, scale: 3 }), // X coordinate (0-1) for attachment point
+  anchorPointY: numeric('anchor_point_y', { precision: 4, scale: 3 }), // Y coordinate (0-1) for attachment point
+  reflectivity: numeric('reflectivity', { precision: 3, scale: 2 }), // 0-1 for lighting effects
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
