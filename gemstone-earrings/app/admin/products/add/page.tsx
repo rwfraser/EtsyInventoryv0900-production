@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { upload } from '@vercel/blob/client';
 
 interface PreviewData {
   sku: string;
@@ -98,29 +99,44 @@ export default function AddProductPage() {
         throw new Error('At least one product image is required');
       }
 
-      // Step 1: Upload images to Vercel Blob
-      const uploadFormData = new FormData();
-      if (imageFiles.image1) uploadFormData.append('image1', imageFiles.image1);
-      if (imageFiles.image2) uploadFormData.append('image2', imageFiles.image2);
-      if (imageFiles.image3) uploadFormData.append('image3', imageFiles.image3);
-      if (imageFiles.image4) uploadFormData.append('image4', imageFiles.image4);
-      
-      const uploadResponse = await fetch('/api/admin/upload-images', {
-        method: 'POST',
-        body: uploadFormData,
-      });
-      
-      if (!uploadResponse.ok) {
-        const uploadError = await uploadResponse.json();
-        throw new Error(uploadError.error || 'Failed to upload images');
+      // Step 1: Upload images directly to Vercel Blob (client-side upload)
+      // This bypasses the 4.5 MB serverless function body size limit
+      const imageUrls: {
+        image1?: string;
+        image2?: string;
+        image3?: string;
+        image4?: string;
+      } = {};
+
+      const imageKeys = ['image1', 'image2', 'image3', 'image4'] as const;
+
+      for (const key of imageKeys) {
+        const file = imageFiles[key];
+        if (file && file.size > 0) {
+          const timestamp = Date.now();
+          const safeName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
+
+          const blob = await upload(`products/${timestamp}-${safeName}`, file, {
+            access: 'public',
+            handleUploadUrl: '/api/admin/upload-images',
+          });
+
+          imageUrls[key] = blob.url;
+        }
       }
-      
-      const { imageUrls } = await uploadResponse.json();
 
       // Step 2: Generate SKU
       const skuResponse = await fetch('/api/admin/sku/generate');
       if (!skuResponse.ok) {
-        throw new Error('Failed to generate SKU');
+        const errorText = await skuResponse.text();
+        let errorMessage = 'Failed to generate SKU';
+        try {
+          const errorJson = JSON.parse(errorText);
+          errorMessage = errorJson.error || errorMessage;
+        } catch {
+          // Response was not JSON — use default message
+        }
+        throw new Error(errorMessage);
       }
       const { sku } = await skuResponse.json();
 
@@ -175,8 +191,15 @@ export default function AddProductPage() {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to create product');
+        const errorText = await response.text();
+        let errorMessage = 'Failed to create product';
+        try {
+          const errorJson = JSON.parse(errorText);
+          errorMessage = errorJson.error || errorMessage;
+        } catch {
+          // Response was not JSON — use default message
+        }
+        throw new Error(errorMessage);
       }
 
       const { product } = await response.json();

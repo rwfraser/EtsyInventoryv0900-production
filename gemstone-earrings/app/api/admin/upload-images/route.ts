@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
-import { saveTempFile } from '@/lib/uploadUtils';
+import { handleUpload, type HandleUploadBody } from '@vercel/blob/client';
 
 /**
- * Upload images to Vercel Blob storage
- * This is used during the preview step before product creation
+ * Client-side upload handler for Vercel Blob storage.
  * 
+ * Instead of receiving file data through the serverless function (which is
+ * limited to 4.5 MB on Vercel), this endpoint generates upload tokens so the
+ * browser can upload directly to Vercel Blob.
+ *
  * POST /api/admin/upload-images
  */
 export async function POST(request: NextRequest) {
@@ -19,41 +22,33 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Extract form data
-    const formData = await request.formData();
-    const image1File = formData.get('image1') as File | null;
-    const image2File = formData.get('image2') as File | null;
-    const image3File = formData.get('image3') as File | null;
-    const image4File = formData.get('image4') as File | null;
+    const body = (await request.json()) as HandleUploadBody;
 
-    // Upload files to Vercel Blob storage
-    const imageUrls: {
-      image1?: string;
-      image2?: string;
-      image3?: string;
-      image4?: string;
-    } = {};
-
-    if (image1File && image1File.size > 0) {
-      imageUrls.image1 = await saveTempFile(image1File);
-    }
-    
-    if (image2File && image2File.size > 0) {
-      imageUrls.image2 = await saveTempFile(image2File);
-    }
-    
-    if (image3File && image3File.size > 0) {
-      imageUrls.image3 = await saveTempFile(image3File);
-    }
-    
-    if (image4File && image4File.size > 0) {
-      imageUrls.image4 = await saveTempFile(image4File);
-    }
-
-    return NextResponse.json({
-      success: true,
-      imageUrls,
+    const jsonResponse = await handleUpload({
+      body,
+      request,
+      onBeforeGenerateToken: async (pathname) => {
+        // Auth already verified above
+        return {
+          allowedContentTypes: [
+            'image/jpeg',
+            'image/png',
+            'image/gif',
+            'image/webp',
+          ],
+          maximumSizeInBytes: 10 * 1024 * 1024, // 10 MB per file
+          tokenPayload: JSON.stringify({
+            userId: session.user.id,
+          }),
+        };
+      },
+      onUploadCompleted: async ({ blob, tokenPayload }) => {
+        // Optional: log or process after upload completes
+        console.log('Blob upload completed:', blob.url);
+      },
     });
+
+    return NextResponse.json(jsonResponse);
   } catch (error) {
     console.error('Image upload error:', error);
     return NextResponse.json(
