@@ -1,12 +1,14 @@
 import { requireAdmin } from '@/lib/admin';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
+import { desc } from 'drizzle-orm';
 import Link from 'next/link';
 
 export default async function AdminProductsPage() {
   await requireAdmin();
   
-  const allProducts = await db.select().from(products);
+  // Get all products ordered by most recently created (newest first)
+  const allProducts = await db.select().from(products).orderBy(desc(products.createdAt));
 
   return (
     <div className="min-h-screen bg-gray-100 py-8">

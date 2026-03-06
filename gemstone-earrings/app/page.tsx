@@ -5,6 +5,7 @@ import { auth } from '@/lib/auth';
 import AuthGate from '@/components/AuthGate';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
+import { desc } from 'drizzle-orm';
 
 export default async function Home() {
   const session = await auth();
@@ -14,8 +15,8 @@ export default async function Home() {
     return <AuthGate />;
   }
 
-  // Load products from database
-  const dbProducts = await db.select().from(products);
+  // Load products from database (ordered by most recently created)
+  const dbProducts = await db.select().from(products).orderBy(desc(products.createdAt));
   
   // Convert to EarringPair format
   const allProducts: EarringPair[] = dbProducts.map((product) => {

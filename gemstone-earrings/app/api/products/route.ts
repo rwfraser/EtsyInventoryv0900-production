@@ -1,11 +1,13 @@
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
+import { desc } from 'drizzle-orm';
 import { EarringPair } from '@/lib/types';
 
 export async function GET() {
   try {
-    const dbProducts = await db.select().from(products);
+    // Get products ordered by most recently created (newest first)
+    const dbProducts = await db.select().from(products).orderBy(desc(products.createdAt));
     
     // Convert database products to EarringPair format
     const earringPairs: EarringPair[] = dbProducts.map((product) => {
