@@ -110,11 +110,14 @@ export function filterProducts(
 
 export function sortProducts(
   products: EarringPair[],
-  sortBy: 'price-asc' | 'price-desc' | 'name-asc' | 'name-desc'
+  sortBy: 'newest-first' | 'price-asc' | 'price-desc' | 'name-asc' | 'name-desc'
 ): EarringPair[] {
   const sorted = [...products];
   
   switch (sortBy) {
+    case 'newest-first':
+      // Products from API are already sorted by createdAt desc (newest first)
+      return sorted;
     case 'price-asc':
       return sorted.sort((a, b) => a.pricing.total_pair_price - b.pricing.total_pair_price);
     case 'price-desc':

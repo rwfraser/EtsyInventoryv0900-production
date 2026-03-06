@@ -32,7 +32,7 @@ export default function ProductsPage() {
     maxPrice: undefined as number | undefined,
   });
 
-  const [sortBy, setSortBy] = useState<'price-asc' | 'price-desc' | 'name-asc' | 'name-desc'>('name-asc');
+  const [sortBy, setSortBy] = useState<'newest-first' | 'price-asc' | 'price-desc' | 'name-asc' | 'name-desc'>('newest-first');
 
   useEffect(() => {
     async function loadProducts() {
@@ -105,6 +105,7 @@ export default function ProductsPage() {
                 onChange={(e) => setSortBy(e.target.value as any)}
                 className="w-full p-2 border rounded"
               >
+                <option value="newest-first">Newest First</option>
                 <option value="name-asc">Name (A-Z)</option>
                 <option value="name-desc">Name (Z-A)</option>
                 <option value="price-asc">Price (Low to High)</option>
