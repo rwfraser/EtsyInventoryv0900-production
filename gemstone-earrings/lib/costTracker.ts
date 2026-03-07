@@ -1,7 +1,21 @@
 import { Redis } from '@upstash/redis';
 
-// Initialize Redis client
-const redis = Redis.fromEnv();
+// Lazy-loaded Redis client to prevent build failures without env vars
+// Required: UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN
+let redis: Redis | null = null;
+
+function getRedisClient(): Redis {
+  if (!redis) {
+    // Check if environment variables are set
+    if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) {
+      throw new Error(
+        'Upstash Redis not configured. Please set UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN environment variables.'
+      );
+    }
+    redis = Redis.fromEnv();
+  }
+  return redis;
+}
 
 // Cost configuration
 export const COST_CONFIG = {
@@ -63,10 +77,11 @@ export async function trackCost(params: {
   };
 
   // Store the cost entry
-  await redis.rpush(key, JSON.stringify(entry));
+  const redisClient = getRedisClient();
+  await redisClient.rpush(key, JSON.stringify(entry));
   
   // Set expiry to 7 days for weekly reports
-  await redis.expire(key, 7 * 24 * 60 * 60);
+  await redisClient.expire(key, 7 * 24 * 60 * 60);
 
   // Get today's total cost
   const dailyTotal = await getDailyCost();
@@ -90,7 +105,8 @@ export async function trackCost(params: {
  */
 export async function getDailyCost(): Promise<number> {
   const key = getTodayKey();
-  const entries = await redis.lrange(key, 0, -1);
+  const redisClient = getRedisClient();
+  const entries = await redisClient.lrange(key, 0, -1);
   
   if (!entries || entries.length === 0) {
     return 0;
@@ -117,7 +133,8 @@ export async function getCostBreakdown(): Promise<{
   total: number;
 }> {
   const key = getTodayKey();
-  const entries = await redis.lrange(key, 0, -1);
+  const redisClient = getRedisClient();
+  const entries = await redisClient.lrange(key, 0, -1);
   
   const breakdown = {
     openai: 0,
@@ -152,6 +169,7 @@ export async function getWeeklyCostSummary(): Promise<{
 }> {
   const days: { date: string; cost: number }[] = [];
   let total = 0;
+  const redisClient = getRedisClient();
 
   // Get costs for last 7 days
   for (let i = 0; i < 7; i++) {
@@ -160,7 +178,7 @@ export async function getWeeklyCostSummary(): Promise<{
     const dateStr = date.toISOString().split('T')[0];
     const key = `costs:daily:${dateStr}`;
     
-    const entries = await redis.lrange(key, 0, -1);
+    const entries = await redisClient.lrange(key, 0, -1);
     const dayCost = entries.reduce((sum: number, entryStr: string) => {
       try {
         const entry = JSON.parse(entryStr) as CostEntry;
@@ -185,16 +203,17 @@ export async function getWeeklyCostSummary(): Promise<{
  * Send budget warning email (75% threshold)
  */
 async function sendBudgetWarning(currentCost: number): Promise<void> {
+  const redisClient = getRedisClient();
   // Check if we already sent a warning today
   const warningKey = `budget:warning:${getTodayKey()}`;
-  const alreadySent = await redis.get(warningKey);
+  const alreadySent = await redisClient.get(warningKey);
   
   if (alreadySent) {
     return; // Don't send duplicate warnings
   }
 
   // Mark warning as sent
-  await redis.setex(warningKey, 24 * 60 * 60, '1');
+  await redisClient.setex(warningKey, 24 * 60 * 60, '1');
 
   // TODO: Implement actual email sending via Resend or similar
   console.warn(`⚠️ BUDGET WARNING: Daily AI cost is $${currentCost.toFixed(2)} (Limit: $${COST_CONFIG.dailyBudget})`);
@@ -212,16 +231,17 @@ async function sendBudgetWarning(currentCost: number): Promise<void> {
  * Send budget exceeded email
  */
 async function sendBudgetExceeded(currentCost: number): Promise<void> {
+  const redisClient = getRedisClient();
   // Check if we already sent an alert today
   const alertKey = `budget:exceeded:${getTodayKey()}`;
-  const alreadySent = await redis.get(alertKey);
+  const alreadySent = await redisClient.get(alertKey);
   
   if (alreadySent) {
     return; // Don't send duplicate alerts
   }
 
   // Mark alert as sent
-  await redis.setex(alertKey, 24 * 60 * 60, '1');
+  await redisClient.setex(alertKey, 24 * 60 * 60, '1');
 
   // TODO: Implement actual email sending
   console.error(`🚨 BUDGET EXCEEDED: Daily AI cost is $${currentCost.toFixed(2)} (Limit: $${COST_CONFIG.dailyBudget})`);

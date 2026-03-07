@@ -1,9 +1,22 @@
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
 
-// Initialize Redis client from environment variables
+// Lazy-loaded Redis client to prevent build failures without env vars
 // Required: UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN
-const redis = Redis.fromEnv();
+let redis: Redis | null = null;
+
+function getRedisClient(): Redis {
+  if (!redis) {
+    // Check if environment variables are set
+    if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) {
+      throw new Error(
+        'Upstash Redis not configured. Please set UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN environment variables.'
+      );
+    }
+    redis = Redis.fromEnv();
+  }
+  return redis;
+}
 
 // Rate limit configurations
 export const RATE_LIMITS = {
@@ -21,38 +34,55 @@ export const RATE_LIMITS = {
   },
 } as const;
 
-// Create rate limiter for anonymous users
-export const anonymousRateLimiter = new Ratelimit({
-  redis,
-  limiter: Ratelimit.slidingWindow(
-    RATE_LIMITS.anonymous.requests,
-    RATE_LIMITS.anonymous.window
-  ),
-  analytics: true,
-  prefix: 'ratelimit:anonymous',
-});
+// Lazy-create rate limiters
+let anonymousRateLimiter: Ratelimit | null = null;
+let authenticatedRateLimiter: Ratelimit | null = null;
+let adminRateLimiter: Ratelimit | null = null;
 
-// Create rate limiter for authenticated users
-export const authenticatedRateLimiter = new Ratelimit({
-  redis,
-  limiter: Ratelimit.slidingWindow(
-    RATE_LIMITS.authenticated.requests,
-    RATE_LIMITS.authenticated.window
-  ),
-  analytics: true,
-  prefix: 'ratelimit:authenticated',
-});
+function getAnonymousRateLimiter(): Ratelimit {
+  if (!anonymousRateLimiter) {
+    anonymousRateLimiter = new Ratelimit({
+      redis: getRedisClient(),
+      limiter: Ratelimit.slidingWindow(
+        RATE_LIMITS.anonymous.requests,
+        RATE_LIMITS.anonymous.window
+      ),
+      analytics: true,
+      prefix: 'ratelimit:anonymous',
+    });
+  }
+  return anonymousRateLimiter;
+}
 
-// Create rate limiter for admin users (high limit)
-export const adminRateLimiter = new Ratelimit({
-  redis,
-  limiter: Ratelimit.slidingWindow(
-    RATE_LIMITS.admin.requests,
-    RATE_LIMITS.admin.window
-  ),
-  analytics: true,
-  prefix: 'ratelimit:admin',
-});
+function getAuthenticatedRateLimiter(): Ratelimit {
+  if (!authenticatedRateLimiter) {
+    authenticatedRateLimiter = new Ratelimit({
+      redis: getRedisClient(),
+      limiter: Ratelimit.slidingWindow(
+        RATE_LIMITS.authenticated.requests,
+        RATE_LIMITS.authenticated.window
+      ),
+      analytics: true,
+      prefix: 'ratelimit:authenticated',
+    });
+  }
+  return authenticatedRateLimiter;
+}
+
+function getAdminRateLimiter(): Ratelimit {
+  if (!adminRateLimiter) {
+    adminRateLimiter = new Ratelimit({
+      redis: getRedisClient(),
+      limiter: Ratelimit.slidingWindow(
+        RATE_LIMITS.admin.requests,
+        RATE_LIMITS.admin.window
+      ),
+      analytics: true,
+      prefix: 'ratelimit:admin',
+    });
+  }
+  return adminRateLimiter;
+}
 
 /**
  * Get the appropriate rate limiter based on user role
@@ -60,12 +90,12 @@ export const adminRateLimiter = new Ratelimit({
 export function getRateLimiter(role: 'anonymous' | 'user' | 'admin') {
   switch (role) {
     case 'admin':
-      return adminRateLimiter;
+      return getAdminRateLimiter();
     case 'user':
-      return authenticatedRateLimiter;
+      return getAuthenticatedRateLimiter();
     case 'anonymous':
     default:
-      return anonymousRateLimiter;
+      return getAnonymousRateLimiter();
   }
 }
 

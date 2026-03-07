@@ -33,9 +33,9 @@ export async function POST(request: NextRequest) {
     }
 
     // Check authentication and determine rate limit tier
-    const session = await auth();
-    const userEmail = session?.user?.email;
-    const userRole = session?.user?.role === 'admin' ? 'admin' : session?.user ? 'user' : 'anonymous';
+    const authSession = await auth();
+    const userEmail = authSession?.user?.email;
+    const userRole = authSession?.user?.role === 'admin' ? 'admin' : authSession?.user ? 'user' : 'anonymous';
     
     // Get identifier for rate limiting (email or IP)
     const identifier = userEmail || request.headers.get('x-forwarded-for') || request.ip || 'anonymous';
