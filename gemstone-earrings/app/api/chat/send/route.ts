@@ -4,6 +4,9 @@ import { chatMessages, chatSessions, chatAnalytics } from '@/drizzle/schema';
 import { eq, sql } from 'drizzle-orm';
 import { sendChatCompletion, calculateCost } from '@/lib/chat/openai';
 import { executeFunctionCall } from '@/lib/chat/functions';
+import { auth } from '@/lib/auth';
+import { checkRateLimit, formatRateLimitError, getRateLimitHeaders } from '@/lib/rateLimiter';
+import { trackCost } from '@/lib/costTracker';
 import OpenAI from 'openai';
 
 /**
@@ -27,6 +30,25 @@ export async function POST(request: NextRequest) {
         { error: 'Session token and message are required' },
         { status: 400 }
       );
+    }
+
+    // Check authentication and determine rate limit tier
+    const session = await auth();
+    const userEmail = session?.user?.email;
+    const userRole = session?.user?.role === 'admin' ? 'admin' : session?.user ? 'user' : 'anonymous';
+    
+    // Get identifier for rate limiting (email or IP)
+    const identifier = userEmail || request.headers.get('x-forwarded-for') || request.ip || 'anonymous';
+    
+    // Check rate limit
+    const rateLimit = await checkRateLimit(identifier, userRole);
+    
+    if (!rateLimit.success) {
+      const errorResponse = formatRateLimitError(rateLimit);
+      return NextResponse.json(errorResponse, {
+        status: 429,
+        headers: getRateLimitHeaders(rateLimit),
+      });
     }
 
     // Find session
@@ -142,8 +164,18 @@ export async function POST(request: NextRequest) {
       })
       .where(eq(chatSessions.id, session.id));
 
-    // Track analytics
+    // Track analytics and costs
     const apiCost = calculateCost(completion);
+    const tokensUsed = completion.usage?.total_tokens || 0;
+    
+    // Track AI cost for budget monitoring
+    await trackCost({
+      service: 'openai',
+      endpoint: '/api/chat/send',
+      userId: identifier,
+      tokens: tokensUsed,
+      estimatedCost: apiCost,
+    });
     
     // Extract products mentioned for analytics
     const productsViewed = functionCallsExecuted
@@ -174,15 +206,20 @@ export async function POST(request: NextRequest) {
 
     console.log(`Chat response sent. Cost: $${apiCost.toFixed(4)}`);
 
-    return NextResponse.json({
-      success: true,
-      message: finalResponse,
-      functionCalls: functionCallsExecuted.length > 0 ? functionCallsExecuted : undefined,
-      metadata: {
-        tokensUsed: completion.usage?.total_tokens,
-        cost: apiCost,
+    return NextResponse.json(
+      {
+        success: true,
+        message: finalResponse,
+        functionCalls: functionCallsExecuted.length > 0 ? functionCallsExecuted : undefined,
+        metadata: {
+          tokensUsed: completion.usage?.total_tokens,
+          cost: apiCost,
+        },
       },
-    });
+      {
+        headers: getRateLimitHeaders(rateLimit),
+      }
+    );
   } catch (error) {
     console.error('Chat send error:', error);
     console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');

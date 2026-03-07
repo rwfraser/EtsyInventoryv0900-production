@@ -5,7 +5,8 @@ from .models import Product, Category, StockMovement
 
 def product_list(request):
     """Display list of all products"""
-    products = Product.objects.select_related('category').all()
+    # Order by most recently created (newest first)
+    products = Product.objects.select_related('category').order_by('-created_at')
     
     # Filter by status if provided
     status = request.GET.get('status')

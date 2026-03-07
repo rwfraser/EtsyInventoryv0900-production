@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import { enhanceProductImages, getConfigStatus } from '@/lib/ai/imageEnhancer';
+import { checkRateLimit, formatRateLimitError, getRateLimitHeaders } from '@/lib/rateLimiter';
+import { trackCost, estimateGeminiCost } from '@/lib/costTracker';
 
 export async function POST(request: NextRequest) {
   try {
@@ -11,6 +13,22 @@ export async function POST(request: NextRequest) {
         { error: 'Unauthorized' },
         { status: 401 }
       );
+    }
+
+    // Get identifier for rate limiting
+    const userEmail = session.user.email;
+    const identifier = userEmail || request.headers.get('x-forwarded-for') || 'anonymous';
+    const userRole = session.user.role === 'admin' ? 'admin' : 'user';
+    
+    // Check rate limit
+    const rateLimit = await checkRateLimit(identifier, userRole);
+    
+    if (!rateLimit.success) {
+      const errorResponse = formatRateLimitError(rateLimit);
+      return NextResponse.json(errorResponse, {
+        status: 429,
+        headers: getRateLimitHeaders(rateLimit),
+      });
     }
 
     // Check AI configuration
@@ -43,6 +61,16 @@ export async function POST(request: NextRequest) {
     // Check if all enhancements succeeded
     const allSuccessful = results.every(r => r.success);
 
+    // Track AI cost (Gemini Pro Vision - 4 images)
+    const estimatedCost = estimateGeminiCost({ images: 4 });
+    await trackCost({
+      service: 'gemini',
+      endpoint: '/api/ai/enhance-images',
+      userId: identifier,
+      images: 4,
+      estimatedCost,
+    });
+
     return NextResponse.json(
       {
         success: allSuccessful,
@@ -51,7 +79,10 @@ export async function POST(request: NextRequest) {
           ? 'All images analyzed successfully'
           : 'Some images failed to process'
       },
-      { status: allSuccessful ? 200 : 207 }
+      { 
+        status: allSuccessful ? 200 : 207,
+        headers: getRateLimitHeaders(rateLimit),
+      }
     );
   } catch (error) {
     console.error('Image enhancement API error:', error);
