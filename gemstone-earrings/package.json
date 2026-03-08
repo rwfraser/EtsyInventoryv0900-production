@@ -25,6 +25,7 @@
     "bcryptjs": "^3.0.3",
     "drizzle-kit": "^0.31.8",
     "drizzle-orm": "^0.45.1",
+    "lucide-react": "^0.577.0",
     "next": "^16.1.6",
     "next-auth": "^5.0.0-beta.30",
     "openai": "^6.22.0",
