@@ -22,8 +22,12 @@ import OpenAI from 'openai';
  * Returns AI response, potentially with function calls executed
  */
 export async function POST(request: NextRequest) {
+  let sessionToken: string | undefined;
+  
   try {
-    const { sessionToken, message } = await request.json();
+    const body = await request.json();
+    sessionToken = body.sessionToken;
+    const message = body.message;
 
     if (!sessionToken || !message) {
       return NextResponse.json(
@@ -38,7 +42,7 @@ export async function POST(request: NextRequest) {
     const userRole = authSession?.user?.role === 'admin' ? 'admin' : authSession?.user ? 'user' : 'anonymous';
     
     // Get identifier for rate limiting (email or IP)
-    const identifier = userEmail || request.headers.get('x-forwarded-for') || request.ip || 'anonymous';
+    const identifier = userEmail || request.headers.get('x-forwarded-for') || 'anonymous';
     
     // Check rate limit
     const rateLimit = await checkRateLimit(identifier, userRole);
@@ -103,8 +107,10 @@ export async function POST(request: NextRequest) {
     if (responseMessage.tool_calls && responseMessage.tool_calls.length > 0) {
       // Execute each function call
       for (const toolCall of responseMessage.tool_calls) {
-        const functionName = toolCall.function.name;
-        const functionArgs = JSON.parse(toolCall.function.arguments);
+        // In OpenAI v6+, tool_calls structure changed
+        const func = (toolCall as any).function || toolCall;
+        const functionName = func.name;
+        const functionArgs = JSON.parse(func.arguments);
 
         console.log(`Executing function: ${functionName}`, functionArgs);
 
