@@ -4,7 +4,6 @@ import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
 import { saveTempFile } from '@/lib/uploadUtils';
 import { SKUGenerator } from '@/lib/skuGenerator';
-import { eq, sql } from 'drizzle-orm';
 
 export async function POST(request: NextRequest) {
   try {
@@ -62,18 +61,18 @@ export async function POST(request: NextRequest) {
     const image3Path = image3File && image3File.size > 0 ? await saveTempFile(image3File) : null;
     const image4Path = image4File && image4File.size > 0 ? await saveTempFile(image4File) : null;
 
-    // Generate next available SKU
-    const existingSKUs = await db
+    // Generate next available SKU using proper physical location sorting
+    const allSKUs = await db
       .select({ sku: products.sku })
-      .from(products)
-      .orderBy(sql`${products.sku} DESC`)
-      .limit(1);
+      .from(products);
     
     let newSKU: string;
-    if (existingSKUs.length === 0) {
+    const highestSKU = SKUGenerator.findHighestSKU(allSKUs.map(row => row.sku));
+    
+    if (!highestSKU) {
       newSKU = SKUGenerator.getStartingSKU();
     } else {
-      const result = SKUGenerator.nextSKU(existingSKUs[0].sku);
+      const result = SKUGenerator.nextSKU(highestSKU);
       if (!result.success) {
         return NextResponse.json(
           { error: 'Failed to generate SKU: ' + result.error },
