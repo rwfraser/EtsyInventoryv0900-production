@@ -17,9 +17,9 @@ async function applyMigration() {
         AND table_name IN ('chat_sessions', 'chat_messages', 'chat_analytics')
     `);
 
-    if (tablesCheck.rows.length > 0) {
+    if (tablesCheck.length > 0) {
       console.log('⚠️  Chat tables already exist:');
-      tablesCheck.rows.forEach(row => console.log(`   - ${row.table_name}`));
+      tablesCheck.forEach(row => console.log(`   - ${row.table_name}`));
       console.log('\nSkipping migration. Tables are already created.');
       return;
     }
