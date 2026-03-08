@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
       WHERE table_name = 'products' AND column_name = 'sku'
     `);
 
-    if (columnCheck.rows.length === 0) {
+    if (columnCheck.length === 0) {
       return NextResponse.json({
         success: false,
         error: 'SKU column does not exist',
@@ -37,14 +37,14 @@ export async function POST(request: NextRequest) {
       }, { status: 400 });
     }
 
-    const isNullable = columnCheck.rows[0].is_nullable === 'YES';
+    const isNullable = columnCheck[0].is_nullable === 'YES';
     console.log(`Current nullable status: ${isNullable}`);
 
     // Step 2: Check if there are any products with NULL SKUs
     const nullCheck = await db.execute(sql`
       SELECT COUNT(*) as count FROM products WHERE sku IS NULL
     `);
-    const nullCount = Number(nullCheck.rows[0]?.count || 0);
+    const nullCount = Number(nullCheck[0]?.count || 0);
 
     if (nullCount > 0) {
       return NextResponse.json({
@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
         AND constraint_name = 'products_sku_unique'
     `);
 
-    if (uniqueCheck.rows.length === 0) {
+    if (uniqueCheck.length === 0) {
       console.log('Adding UNIQUE constraint...');
       try {
         await db.execute(sql`
@@ -92,11 +92,11 @@ export async function POST(request: NextRequest) {
           HAVING COUNT(*) > 1
         `);
         
-        if (dupCheck.rows.length > 0) {
+        if (dupCheck.length > 0) {
           return NextResponse.json({
             success: false,
             error: 'Cannot add UNIQUE constraint: duplicate SKUs found',
-            duplicates: dupCheck.rows,
+            duplicates: dupCheck,
             message: 'Fix duplicate SKUs before adding UNIQUE constraint'
           }, { status: 400 });
         }
@@ -142,7 +142,7 @@ export async function GET(request: NextRequest) {
       WHERE table_name = 'products' AND column_name = 'sku'
     `);
 
-    if (columnCheck.rows.length === 0) {
+    if (columnCheck.length === 0) {
       return NextResponse.json({
         columnExists: false,
         message: 'SKU column does not exist'
@@ -162,18 +162,18 @@ export async function GET(request: NextRequest) {
       SELECT COUNT(*) as count FROM products WHERE sku IS NULL
     `);
 
-    const isNullable = columnCheck.rows[0].is_nullable === 'YES';
-    const hasUnique = constraints.rows.some(r => r.constraint_name === 'products_sku_unique');
+    const isNullable = columnCheck[0].is_nullable === 'YES';
+    const hasUnique = constraints.some(r => r.constraint_name === 'products_sku_unique');
 
     return NextResponse.json({
       columnExists: true,
-      columnInfo: columnCheck.rows[0],
+      columnInfo: columnCheck[0],
       isNullable: isNullable,
       hasUniqueConstraint: hasUnique,
-      productsWithNullSKU: Number(nullCount.rows[0]?.count || 0),
+      productsWithNullSKU: Number(nullCount[0]?.count || 0),
       needsNotNull: isNullable,
       needsUnique: !hasUnique,
-      readyForConstraints: Number(nullCount.rows[0]?.count || 0) === 0
+      readyForConstraints: Number(nullCount[0]?.count || 0) === 0
     });
 
   } catch (error) {

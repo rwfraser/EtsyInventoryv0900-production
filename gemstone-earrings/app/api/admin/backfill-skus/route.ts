@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     `);
 
     // Add column if it doesn't exist
-    if (columnCheck.rows.length === 0) {
+    if (columnCheck.length === 0) {
       console.log('Adding SKU column...');
       await db.execute(sql`ALTER TABLE products ADD COLUMN sku TEXT`);
     } else {
@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
       ORDER BY created_at ASC
     `);
 
-    if (productsToUpdate.rows.length === 0) {
+    if (productsToUpdate.length === 0) {
       // Check if column needs constraints
       const constraintCheck = await db.execute(sql`
         SELECT column_name, is_nullable
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
         WHERE table_name = 'products' AND column_name = 'sku'
       `);
 
-      const isNullable = constraintCheck.rows[0]?.is_nullable === 'YES';
+      const isNullable = constraintCheck[0]?.is_nullable === 'YES';
 
       if (isNullable) {
         console.log('No products to backfill, but adding constraints...');
@@ -82,7 +82,7 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    console.log(`Found ${productsToUpdate.rows.length} products to backfill`);
+    console.log(`Found ${productsToUpdate.length} products to backfill`);
 
     // Determine starting SKU
     const existingSKUs = await db.execute(sql`
@@ -90,11 +90,11 @@ export async function POST(request: NextRequest) {
     `);
 
     let currentSKU: string;
-    if (existingSKUs.rows.length === 0) {
+    if (existingSKUs.length === 0) {
       currentSKU = SKUGenerator.getStartingSKU();
       console.log(`Starting from beginning: ${currentSKU}`);
     } else {
-      const skus = existingSKUs.rows.map(r => r.sku as string);
+      const skus = existingSKUs.map(r => r.sku as string);
       const highest = SKUGenerator.findHighestSKU(skus);
       if (!highest) {
         currentSKU = SKUGenerator.getStartingSKU();
@@ -110,7 +110,7 @@ export async function POST(request: NextRequest) {
 
     // Assign SKUs to all products
     const assignments = [];
-    for (const row of productsToUpdate.rows) {
+    for (const row of productsToUpdate) {
       await db.execute(sql`
         UPDATE products 
         SET sku = ${currentSKU} 
@@ -181,7 +181,7 @@ export async function GET(request: NextRequest) {
       WHERE table_name = 'products' AND column_name = 'sku'
     `);
 
-    if (columnCheck.rows.length === 0) {
+    if (columnCheck.length === 0) {
       return NextResponse.json({
         skuColumnExists: false,
         message: 'SKU column does not exist yet'
@@ -199,21 +199,21 @@ export async function GET(request: NextRequest) {
 
     // Get SKU range if any exist
     let skuRange = null;
-    if (Number(stats.rows[0].products_with_sku) > 0) {
+    if (Number(stats[0].products_with_sku) > 0) {
       const range = await db.execute(sql`
         SELECT MIN(sku) as lowest, MAX(sku) as highest
         FROM products
         WHERE sku IS NOT NULL
       `);
-      skuRange = range.rows[0];
+      skuRange = range[0];
     }
 
     return NextResponse.json({
       skuColumnExists: true,
-      columnInfo: columnCheck.rows[0],
-      stats: stats.rows[0],
+      columnInfo: columnCheck[0],
+      stats: stats[0],
       skuRange: skuRange,
-      needsBackfill: Number(stats.rows[0].products_without_sku) > 0
+      needsBackfill: Number(stats[0].products_without_sku) > 0
     });
 
   } catch (error) {

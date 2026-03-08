@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
       WHERE table_name = 'products' AND column_name = 'sku'
     `);
 
-    if (columnCheck.rows.length > 0) {
+    if (columnCheck.length > 0) {
       return NextResponse.json({
         success: true,
         message: 'SKU column already exists',
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     const productCount = await db.execute(sql`
       SELECT COUNT(*) as count FROM products
     `);
-    const count = Number(productCount.rows[0]?.count || 0);
+    const count = Number(productCount[0]?.count || 0);
 
     if (count > 0) {
       return NextResponse.json({
@@ -98,7 +98,7 @@ export async function GET(request: NextRequest) {
       WHERE table_name = 'products' AND column_name = 'sku'
     `);
 
-    if (columnCheck.rows.length === 0) {
+    if (columnCheck.length === 0) {
       return NextResponse.json({
         initialized: false,
         message: 'SKU column does not exist'
@@ -112,8 +112,8 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({
       initialized: true,
-      columnInfo: columnCheck.rows[0],
-      productCount: Number(productCount.rows[0]?.count || 0)
+      columnInfo: columnCheck[0],
+      productCount: Number(productCount[0]?.count || 0)
     });
 
   } catch (error) {
