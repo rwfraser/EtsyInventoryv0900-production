@@ -77,7 +77,7 @@ export default function ProductDetailPage() {
                     <>
                       <button
                         onClick={() => setCurrentImageIndex((prev) => 
-                          prev === 0 ? product.images.length - 1 : prev - 1
+                          prev === 0 ? (product.images?.length ?? 1) - 1 : prev - 1
                         )}
                         className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-colors"
                         aria-label="Previous image"
@@ -88,7 +88,7 @@ export default function ProductDetailPage() {
                       </button>
                       <button
                         onClick={() => setCurrentImageIndex((prev) => 
-                          prev === product.images.length - 1 ? 0 : prev + 1
+                          prev === (product.images?.length ?? 1) - 1 ? 0 : prev + 1
                         )}
                         className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-colors"
                         aria-label="Next image"

@@ -77,7 +77,7 @@ export async function searchProducts(params: {
     
     // Only add where clause if we have conditions
     if (conditions.length > 0) {
-      query_builder = query_builder.where(and(...conditions));
+      query_builder = query_builder.where(and(...conditions)) as typeof query_builder;
     }
     
     const results = await query_builder
