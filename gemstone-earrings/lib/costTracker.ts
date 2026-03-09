@@ -1,4 +1,5 @@
 import { Redis } from '@upstash/redis';
+import { Resend } from 'resend';
 
 // Lazy-loaded Redis client to prevent build failures without env vars
 // Required: UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN
@@ -215,16 +216,29 @@ async function sendBudgetWarning(currentCost: number): Promise<void> {
   // Mark warning as sent
   await redisClient.setex(warningKey, 24 * 60 * 60, '1');
 
-  // TODO: Implement actual email sending via Resend or similar
   console.warn(`⚠️ BUDGET WARNING: Daily AI cost is $${currentCost.toFixed(2)} (Limit: $${COST_CONFIG.dailyBudget})`);
-  console.warn(`Email would be sent to: ${COST_CONFIG.alertEmail}`);
-  
-  // For now, just log. In production, integrate with email service:
-  // await sendEmail({
-  //   to: COST_CONFIG.alertEmail,
-  //   subject: '⚠️ AI Budget Warning - 75% Threshold Reached',
-  //   body: `Your daily AI budget has reached $${currentCost.toFixed(2)} of $${COST_CONFIG.dailyBudget}.`
-  // });
+
+  try {
+    const breakdown = await getCostBreakdown();
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
+      to: COST_CONFIG.alertEmail,
+      subject: '⚠️ AI Budget Warning - 75% Threshold Reached',
+      html: `
+        <h2>⚠️ AI Budget Warning</h2>
+        <p>Your daily AI budget has reached <strong>$${currentCost.toFixed(2)}</strong> of $${COST_CONFIG.dailyBudget.toFixed(2)}.</p>
+        <h3>Breakdown</h3>
+        <ul>
+          <li>OpenAI: $${breakdown.openai.toFixed(4)}</li>
+          <li>Gemini: $${breakdown.gemini.toFixed(4)}</li>
+        </ul>
+        <p>Date: ${new Date().toISOString().split('T')[0]}</p>
+      `,
+    });
+  } catch (emailError) {
+    console.error('Failed to send budget warning email:', emailError);
+  }
 }
 
 /**
@@ -243,16 +257,30 @@ async function sendBudgetExceeded(currentCost: number): Promise<void> {
   // Mark alert as sent
   await redisClient.setex(alertKey, 24 * 60 * 60, '1');
 
-  // TODO: Implement actual email sending
   console.error(`🚨 BUDGET EXCEEDED: Daily AI cost is $${currentCost.toFixed(2)} (Limit: $${COST_CONFIG.dailyBudget})`);
-  console.error(`Email would be sent to: ${COST_CONFIG.alertEmail}`);
-  
-  // For now, just log. In production, integrate with email service:
-  // await sendEmail({
-  //   to: COST_CONFIG.alertEmail,
-  //   subject: '🚨 AI Budget EXCEEDED',
-  //   body: `Your daily AI budget has been exceeded: $${currentCost.toFixed(2)} of $${COST_CONFIG.dailyBudget}.`
-  // });
+
+  try {
+    const breakdown = await getCostBreakdown();
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
+      to: COST_CONFIG.alertEmail,
+      subject: '🚨 AI Budget EXCEEDED - Immediate Attention Required',
+      html: `
+        <h2>🚨 AI Budget Exceeded</h2>
+        <p>Your daily AI budget has been <strong>exceeded</strong>: <strong>$${currentCost.toFixed(2)}</strong> of $${COST_CONFIG.dailyBudget.toFixed(2)}.</p>
+        <h3>Breakdown</h3>
+        <ul>
+          <li>OpenAI: $${breakdown.openai.toFixed(4)}</li>
+          <li>Gemini: $${breakdown.gemini.toFixed(4)}</li>
+        </ul>
+        <p>Consider temporarily disabling AI features or increasing the budget.</p>
+        <p>Date: ${new Date().toISOString().split('T')[0]}</p>
+      `,
+    });
+  } catch (emailError) {
+    console.error('Failed to send budget exceeded email:', emailError);
+  }
 }
 
 /**
