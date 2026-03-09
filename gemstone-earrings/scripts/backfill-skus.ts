@@ -20,7 +20,7 @@ async function backfillSKUs() {
       WHERE table_name = 'products' AND column_name = 'sku'
     `);
 
-    if (columnCheck.rows.length > 0) {
+    if (columnCheck.length > 0) {
       console.log('⚠️  SKU column already exists. This script should be run BEFORE migration.');
       console.log('   If you need to re-backfill, drop the column first or use a different approach.');
       process.exit(1);
@@ -38,19 +38,19 @@ async function backfillSKUs() {
       ORDER BY created_at ASC
     `);
 
-    if (existingProducts.rows.length === 0) {
+    if (existingProducts.length === 0) {
       console.log('✅ No existing products found. SKU column added, ready for migration.');
       console.log('   You can now run: npm run db:push');
       return;
     }
 
-    console.log(`   Found ${existingProducts.rows.length} products to backfill`);
+    console.log(`   Found ${existingProducts.length} products to backfill`);
 
     // Generate sequential SKUs starting from Aa1a01
     let currentSKU = SKUGenerator.getStartingSKU();
     const skuUpdates: Array<{ id: string; sku: string; name: string }> = [];
 
-    for (const row of existingProducts.rows) {
+    for (const row of existingProducts) {
       skuUpdates.push({
         id: row.id as string,
         sku: currentSKU,

@@ -39,6 +39,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ['status', 'category', 'created_at', 'updated_at']
     search_fields = ['sku', 'title', 'description', 'etsy_listing_id']
     readonly_fields = ['created_at', 'updated_at', 'profit_margin', 'available_stock', 'total_value']
+    ordering = ['-created_at']  # Order by most recently created (newest first)
     
     fieldsets = (
         ('Basic Information', {

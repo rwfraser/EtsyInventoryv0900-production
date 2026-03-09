@@ -14,12 +14,12 @@ async function checkProducts() {
       FROM products
     `);
     
-    const count = Number(result.rows[0].count);
+    const count = Number(result[0].count);
     console.log(`\nProducts in database: ${count}`);
     
     if (count > 0) {
-      console.log(`First created: ${result.rows[0].first_created}`);
-      console.log(`Last created: ${result.rows[0].last_created}`);
+      console.log(`First created: ${result[0].first_created}`);
+      console.log(`Last created: ${result[0].last_created}`);
       console.log('\n⚠️  You should run backfill script BEFORE migration');
       console.log('   npx tsx scripts/backfill-skus.ts\n');
     } else {

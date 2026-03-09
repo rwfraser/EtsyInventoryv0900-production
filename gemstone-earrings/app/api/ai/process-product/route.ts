@@ -5,6 +5,8 @@ import { products } from '@/drizzle/schema';
 import { eq } from 'drizzle-orm';
 import { enhanceProductImages } from '@/lib/ai/imageEnhancer';
 import { generateProductDescription } from '@/lib/ai/descriptionGenerator';
+import { checkRateLimit, formatRateLimitError, getRateLimitHeaders } from '@/lib/rateLimiter';
+import { trackCost, estimateGeminiCost, estimateOpenAICost } from '@/lib/costTracker';
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,6 +17,22 @@ export async function POST(request: NextRequest) {
         { error: 'Unauthorized' },
         { status: 401 }
       );
+    }
+
+    // Get identifier for rate limiting
+    const userEmail = session.user.email;
+    const identifier = userEmail || request.headers.get('x-forwarded-for') || 'anonymous';
+    const userRole = session.user.role === 'admin' ? 'admin' : 'user';
+    
+    // Check rate limit
+    const rateLimit = await checkRateLimit(identifier, userRole);
+    
+    if (!rateLimit.success) {
+      const errorResponse = formatRateLimitError(rateLimit);
+      return NextResponse.json(errorResponse, {
+        status: 429,
+        headers: getRateLimitHeaders(rateLimit),
+      });
     }
 
     const body = await request.json();
@@ -103,14 +121,47 @@ export async function POST(request: NextRequest) {
       .where(eq(products.id, productId))
       .returning();
 
-    return NextResponse.json({
-      success: true,
-      product: updatedProduct,
-      enhancementResults,
-      aiDescription: descriptionResult.description,
-      aiKeywords: descriptionResult.keywords,
-      modelsUsed: descriptionResult.modelsUsed,
+    // Track AI costs (both Gemini for images and OpenAI for description)
+    let totalCost = 0;
+    
+    // Track Gemini cost if images were enhanced
+    if (enhancementResults && imageUrls.length === 4) {
+      const geminiCost = estimateGeminiCost({ images: 4 });
+      await trackCost({
+        service: 'gemini',
+        endpoint: '/api/ai/process-product',
+        userId: identifier,
+        images: 4,
+        estimatedCost: geminiCost,
+      });
+      totalCost += geminiCost;
+    }
+    
+    // Track OpenAI cost for description
+    const openaiCost = estimateOpenAICost(500, 'gpt-4');
+    await trackCost({
+      service: 'openai',
+      endpoint: '/api/ai/process-product',
+      userId: identifier,
+      tokens: 500,
+      estimatedCost: openaiCost,
     });
+    totalCost += openaiCost;
+
+    return NextResponse.json(
+      {
+        success: true,
+        product: updatedProduct,
+        enhancementResults,
+        aiDescription: descriptionResult.description,
+        aiKeywords: descriptionResult.keywords,
+        modelsUsed: descriptionResult.modelsUsed,
+        estimatedCost: totalCost,
+      },
+      {
+        headers: getRateLimitHeaders(rateLimit),
+      }
+    );
   } catch (error) {
     console.error('Product processing API error:', error);
     return NextResponse.json(

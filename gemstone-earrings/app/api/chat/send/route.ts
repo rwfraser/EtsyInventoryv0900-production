@@ -4,6 +4,9 @@ import { chatMessages, chatSessions, chatAnalytics } from '@/drizzle/schema';
 import { eq, sql } from 'drizzle-orm';
 import { sendChatCompletion, calculateCost } from '@/lib/chat/openai';
 import { executeFunctionCall } from '@/lib/chat/functions';
+import { auth } from '@/lib/auth';
+import { checkRateLimit, formatRateLimitError, getRateLimitHeaders } from '@/lib/rateLimiter';
+import { trackCost } from '@/lib/costTracker';
 import OpenAI from 'openai';
 
 /**
@@ -19,14 +22,37 @@ import OpenAI from 'openai';
  * Returns AI response, potentially with function calls executed
  */
 export async function POST(request: NextRequest) {
+  let sessionToken: string | undefined;
+  
   try {
-    const { sessionToken, message } = await request.json();
+    const body = await request.json();
+    sessionToken = body.sessionToken;
+    const message = body.message;
 
     if (!sessionToken || !message) {
       return NextResponse.json(
         { error: 'Session token and message are required' },
         { status: 400 }
       );
+    }
+
+    // Check authentication and determine rate limit tier
+    const authSession = await auth();
+    const userEmail = authSession?.user?.email;
+    const userRole = authSession?.user?.role === 'admin' ? 'admin' : authSession?.user ? 'user' : 'anonymous';
+    
+    // Get identifier for rate limiting (email or IP)
+    const identifier = userEmail || request.headers.get('x-forwarded-for') || 'anonymous';
+    
+    // Check rate limit
+    const rateLimit = await checkRateLimit(identifier, userRole);
+    
+    if (!rateLimit.success) {
+      const errorResponse = formatRateLimitError(rateLimit);
+      return NextResponse.json(errorResponse, {
+        status: 429,
+        headers: getRateLimitHeaders(rateLimit),
+      });
     }
 
     // Find session
@@ -81,8 +107,10 @@ export async function POST(request: NextRequest) {
     if (responseMessage.tool_calls && responseMessage.tool_calls.length > 0) {
       // Execute each function call
       for (const toolCall of responseMessage.tool_calls) {
-        const functionName = toolCall.function.name;
-        const functionArgs = JSON.parse(toolCall.function.arguments);
+        // In OpenAI v6+, tool_calls structure changed
+        const func = (toolCall as any).function || toolCall;
+        const functionName = func.name;
+        const functionArgs = JSON.parse(func.arguments);
 
         console.log(`Executing function: ${functionName}`, functionArgs);
 
@@ -142,8 +170,18 @@ export async function POST(request: NextRequest) {
       })
       .where(eq(chatSessions.id, session.id));
 
-    // Track analytics
+    // Track analytics and costs
     const apiCost = calculateCost(completion);
+    const tokensUsed = completion.usage?.total_tokens || 0;
+    
+    // Track AI cost for budget monitoring
+    await trackCost({
+      service: 'openai',
+      endpoint: '/api/chat/send',
+      userId: identifier,
+      tokens: tokensUsed,
+      estimatedCost: apiCost,
+    });
     
     // Extract products mentioned for analytics
     const productsViewed = functionCallsExecuted
@@ -174,15 +212,20 @@ export async function POST(request: NextRequest) {
 
     console.log(`Chat response sent. Cost: $${apiCost.toFixed(4)}`);
 
-    return NextResponse.json({
-      success: true,
-      message: finalResponse,
-      functionCalls: functionCallsExecuted.length > 0 ? functionCallsExecuted : undefined,
-      metadata: {
-        tokensUsed: completion.usage?.total_tokens,
-        cost: apiCost,
+    return NextResponse.json(
+      {
+        success: true,
+        message: finalResponse,
+        functionCalls: functionCallsExecuted.length > 0 ? functionCallsExecuted : undefined,
+        metadata: {
+          tokensUsed: completion.usage?.total_tokens,
+          cost: apiCost,
+        },
       },
-    });
+      {
+        headers: getRateLimitHeaders(rateLimit),
+      }
+    );
   } catch (error) {
     console.error('Chat send error:', error);
     console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');

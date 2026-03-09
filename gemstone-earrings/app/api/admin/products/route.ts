@@ -3,6 +3,7 @@ import { auth } from '@/lib/auth';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
 import { saveTempFile } from '@/lib/uploadUtils';
+import { SKUGenerator } from '@/lib/skuGenerator';
 
 export async function POST(request: NextRequest) {
   try {
@@ -60,10 +61,32 @@ export async function POST(request: NextRequest) {
     const image3Path = image3File && image3File.size > 0 ? await saveTempFile(image3File) : null;
     const image4Path = image4File && image4File.size > 0 ? await saveTempFile(image4File) : null;
 
+    // Generate next available SKU using proper physical location sorting
+    const allSKUs = await db
+      .select({ sku: products.sku })
+      .from(products);
+    
+    let newSKU: string;
+    const highestSKU = SKUGenerator.findHighestSKU(allSKUs.map(row => row.sku));
+    
+    if (!highestSKU) {
+      newSKU = SKUGenerator.getStartingSKU();
+    } else {
+      const result = SKUGenerator.nextSKU(highestSKU);
+      if (!result.success) {
+        return NextResponse.json(
+          { error: 'Failed to generate SKU: ' + result.error },
+          { status: 500 }
+        );
+      }
+      newSKU = result.sku!;
+    }
+
     // Create product
     const [newProduct] = await db
       .insert(products)
       .values({
+        sku: newSKU,
         name,
         description: description || null,
         price: price.toString(),

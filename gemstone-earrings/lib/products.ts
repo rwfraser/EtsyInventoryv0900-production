@@ -24,7 +24,7 @@ export async function getProducts(): Promise<EarringPair[]> {
     }
   }
 
-  return cachedDbProducts;
+  return cachedDbProducts || [];
 }
 
 export async function getProductById(id: string): Promise<EarringPair | undefined> {
