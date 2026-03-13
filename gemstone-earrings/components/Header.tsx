@@ -2,27 +2,48 @@
 
 import Link from 'next/link';
 import { useCart } from '@/lib/CartContext';
-import { useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
+import { ShoppingCart, User, LogOut, LayoutDashboard } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+} from '@/components/ui/dropdown-menu';
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetClose,
+  SheetDescription,
+} from '@/components/ui/sheet';
+import MobileNav from '@/components/MobileNav';
 
 export default function Header() {
   const { totalItems, items, removeFromCart, totalPrice } = useCart();
-  const [showCart, setShowCart] = useState(false);
-  const [showUserMenu, setShowUserMenu] = useState(false);
   const { data: session } = useSession();
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
+          {/* Mobile: hamburger menu */}
+          <MobileNav session={session} />
+
+          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-3xl">💎</span>
-            <h1 className="text-2xl font-bold text-purple-600">
+            <span className="text-2xl md:text-3xl">💎</span>
+            <h1 className="text-lg md:text-2xl font-bold text-purple-600">
               Gemstone Earrings
             </h1>
           </Link>
 
-          <nav className="flex items-center space-x-6">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-6">
             {session && (
               <>
                 <Link href="/products" className="text-gray-700 hover:text-purple-600 font-medium">
@@ -38,82 +59,101 @@ export default function Header() {
                 )}
               </>
             )}
-            
-            {/* User Menu */}
-            {session && (
-              <div className="relative">
-                <button
-                  onClick={() => setShowUserMenu(!showUserMenu)}
-                  className="flex items-center space-x-2 text-gray-700 hover:text-purple-600"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </button>
+          </nav>
 
-                {showUserMenu && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
-                    <div className="px-4 py-2 border-b border-gray-200">
-                      <p className="text-sm font-medium text-gray-900">{session.user?.name}</p>
-                      <p className="text-xs text-gray-500 truncate">{session.user?.email}</p>
+          {/* Right-side icons (user + cart) */}
+          <div className="flex items-center gap-1 md:gap-3">
+            {/* User Menu — Desktop: DropdownMenu, Mobile: handled in MobileNav */}
+            {session && (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    className="hidden md:flex items-center justify-center min-h-[44px] min-w-[44px] text-gray-700 hover:text-purple-600 transition-colors"
+                    aria-label="User menu"
+                  >
+                    <User className="w-6 h-6" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  <DropdownMenuLabel className="font-normal">
+                    <div className="flex flex-col gap-1">
+                      <p className="text-sm font-medium">{session.user?.name}</p>
+                      <p className="text-xs text-muted-foreground truncate">{session.user?.email}</p>
                       {session.user.role === 'admin' && (
-                        <span className="inline-block mt-1 px-2 py-0.5 text-xs font-semibold text-purple-800 bg-purple-100 rounded-full">
+                        <span className="inline-block w-fit mt-0.5 px-2 py-0.5 text-xs font-semibold text-purple-800 bg-purple-100 rounded-full">
                           Admin
                         </span>
                       )}
                     </div>
-                    {session.user.role === 'admin' && (
-                      <Link
-                        href="/admin/dashboard"
-                        onClick={() => setShowUserMenu(false)}
-                        className="block w-full text-left px-4 py-2 text-sm text-purple-600 hover:bg-purple-50 transition-colors"
-                      >
+                  </DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  {session.user.role === 'admin' && (
+                    <DropdownMenuItem asChild>
+                      <Link href="/admin/dashboard" className="flex items-center gap-2 cursor-pointer">
+                        <LayoutDashboard className="w-4 h-4" />
                         Admin Dashboard
                       </Link>
-                    )}
-                    <button
-                      onClick={() => {
-                        setShowUserMenu(false);
-                        signOut({ callbackUrl: '/' });
-                      }}
-                      className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors"
-                    >
-                      Log Out
-                    </button>
-                  </div>
-                )}
-              </div>
+                    </DropdownMenuItem>
+                  )}
+                  <DropdownMenuItem
+                    variant="destructive"
+                    onClick={() => signOut({ callbackUrl: '/' })}
+                    className="cursor-pointer"
+                  >
+                    <LogOut className="w-4 h-4" />
+                    Log Out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             )}
 
-            {/* Cart */}
+            {/* Cart — Sheet slide-in (works on all breakpoints) */}
             {session && (
-              <div className="relative">
-              <button
-                onClick={() => setShowCart(!showCart)}
-                className="flex items-center space-x-2 text-gray-700 hover:text-purple-600"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                {totalItems > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-                    {totalItems}
-                  </span>
-                )}
-              </button>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <button
+                    className="relative flex items-center justify-center min-h-[44px] min-w-[44px] text-gray-700 hover:text-purple-600 transition-colors"
+                    aria-label="Open cart"
+                  >
+                    <ShoppingCart className="w-6 h-6" />
+                    {totalItems > 0 && (
+                      <span className="absolute top-1 right-0 bg-purple-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                        {totalItems}
+                      </span>
+                    )}
+                  </button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-full sm:w-[400px] p-0 flex flex-col">
+                  <SheetHeader className="border-b px-4 py-4">
+                    <SheetTitle>Shopping Cart</SheetTitle>
+                    <SheetDescription>
+                      {totalItems === 0
+                        ? 'Your cart is empty'
+                        : `${totalItems} item${totalItems !== 1 ? 's' : ''} in your cart`}
+                    </SheetDescription>
+                  </SheetHeader>
 
-              {showCart && (
-                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 max-h-96 overflow-y-auto">
                   {items.length === 0 ? (
-                    <div className="p-4 text-center text-gray-500">
-                      Your cart is empty
+                    <div className="flex-1 flex items-center justify-center p-8 text-center text-gray-500">
+                      <div>
+                        <ShoppingCart className="w-12 h-12 mx-auto mb-3 text-gray-300" />
+                        <p>Your cart is empty</p>
+                        <SheetClose asChild>
+                          <Link
+                            href="/products"
+                            className="inline-block mt-4 text-purple-600 hover:underline font-medium"
+                          >
+                            Browse Products
+                          </Link>
+                        </SheetClose>
+                      </div>
                     </div>
                   ) : (
                     <>
-                      <div className="p-4">
+                      <div className="flex-1 overflow-y-auto p-4 space-y-3">
                         {items.map(item => (
-                          <div key={item.product.pair_id} className="flex items-center justify-between mb-3 pb-3 border-b">
-                            <div className="flex-1">
+                          <div key={item.product.pair_id} className="flex items-center justify-between pb-3 border-b">
+                            <div className="flex-1 min-w-0">
                               <p className="text-sm font-medium line-clamp-1">
                                 {item.product.gemstone.name}
                               </p>
@@ -123,34 +163,35 @@ export default function Header() {
                             </div>
                             <button
                               onClick={() => removeFromCart(item.product.pair_id)}
-                              className="text-red-500 hover:text-red-700 ml-2"
+                              className="text-red-500 hover:text-red-700 min-h-[44px] min-w-[44px] flex items-center justify-center flex-shrink-0"
+                              aria-label={`Remove ${item.product.gemstone.name}`}
                             >
                               ×
                             </button>
                           </div>
                         ))}
                       </div>
-                      
+
                       <div className="border-t p-4 bg-gray-50">
                         <div className="flex justify-between font-bold text-lg mb-3">
                           <span>Total:</span>
                           <span>${totalPrice.toFixed(2)}</span>
                         </div>
-                        <Link
-                          href="/cart"
-                          onClick={() => setShowCart(false)}
-                          className="block w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded text-center"
-                        >
-                          View Cart & Checkout
-                        </Link>
+                        <SheetClose asChild>
+                          <Link
+                            href="/cart"
+                            className="block w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded text-center min-h-[44px]"
+                          >
+                            View Cart & Checkout
+                          </Link>
+                        </SheetClose>
                       </div>
                     </>
                   )}
-                </div>
-              )}
-              </div>
+                </SheetContent>
+              </Sheet>
             )}
-          </nav>
+          </div>
         </div>
       </div>
     </header>

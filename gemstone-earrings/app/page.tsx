@@ -7,6 +7,8 @@ import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
 import { desc } from 'drizzle-orm';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const session = await auth();
 

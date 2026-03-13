@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
-import { withSentryConfig } from '@sentry/nextjs';
+
+// Note: Sentry runtime error capturing is handled by sentry.client.config.ts,
+// sentry.server.config.ts, and sentry.edge.config.ts. The withSentryConfig
+// build wrapper was removed due to incompatibility with Next.js 16 Turbopack.
+// Source map uploads to Sentry can be configured separately via CI if needed.
 
 const nextConfig: NextConfig = {
   typescript: {
@@ -36,9 +40,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withSentryConfig(nextConfig, {
-  // Suppresses source map upload logs during build
-  silent: true,
-  // Hides source maps from generated client bundles
-  hideSourceMaps: true,
-});
+export default nextConfig;

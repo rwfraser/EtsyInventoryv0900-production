@@ -4,6 +4,8 @@ import { users } from '@/drizzle/schema';
 import Link from 'next/link';
 import PromoteUserButton from './PromoteUserButton';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminUsersPage() {
   await requireAdmin();
   

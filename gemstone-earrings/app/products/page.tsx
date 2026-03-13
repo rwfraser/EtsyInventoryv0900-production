@@ -1,14 +1,26 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { SlidersHorizontal } from 'lucide-react';
 import { EarringPair } from '@/lib/types';
 import { getProducts, getUniqueColors, getUniqueShapes, getUniqueSizes, getUniqueMaterials, getUniqueVendors, filterProducts, sortProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import { ProductFilters } from '@/components/ProductFilters';
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
+  SheetClose,
+} from '@/components/ui/sheet';
 
 export default function ProductsPage() {
   const [allProducts, setAllProducts] = useState<EarringPair[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<EarringPair[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filterSheetOpen, setFilterSheetOpen] = useState(false);
 
   // Pending filters (not yet applied)
   const [pendingFilters, setPendingFilters] = useState({
@@ -45,15 +57,12 @@ export default function ProductsPage() {
   }, []);
 
   useEffect(() => {
-    console.log('Filtering with:', appliedFilters);
     let result = filterProducts(allProducts, appliedFilters);
-    console.log('Filtered results:', result.length, 'products');
     result = sortProducts(result, sortBy);
     setFilteredProducts(result);
   }, [appliedFilters, sortBy, allProducts]);
 
   const handleApplyFilters = () => {
-    console.log('Applying filters:', pendingFilters);
     setAppliedFilters(pendingFilters);
   };
 
@@ -73,6 +82,9 @@ export default function ProductsPage() {
 
   const hasFilterChanges = JSON.stringify(pendingFilters) !== JSON.stringify(appliedFilters);
 
+  // Count how many filter fields are actively set
+  const activeFilterCount = [appliedFilters.color, appliedFilters.shape, appliedFilters.size, appliedFilters.material, appliedFilters.vendor].filter(Boolean).length;
+
   if (loading) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
@@ -87,17 +99,30 @@ export default function ProductsPage() {
   const materials = getUniqueMaterials(allProducts);
   const vendors = getUniqueVendors(allProducts);
 
+  const filterProps = {
+    pendingFilters,
+    onFilterChange: setPendingFilters,
+    onApply: handleApplyFilters,
+    onClear: handleClearFilters,
+    hasChanges: hasFilterChanges,
+    colors,
+    shapes,
+    sizes,
+    materials,
+    vendors,
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">Browse All Earrings</h1>
+      <h1 className="text-2xl md:text-4xl font-bold mb-6 md:mb-8">Browse All Earrings</h1>
 
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Filters Sidebar */}
-        <aside className="lg:w-64 flex-shrink-0">
+        {/* Desktop Filters Sidebar — hidden on mobile */}
+        <aside className="hidden lg:block lg:w-64 flex-shrink-0">
           <div className="bg-white rounded-lg shadow p-6 sticky top-24">
             <h2 className="text-xl font-bold mb-4">Filters</h2>
 
-            {/* Sort */}
+            {/* Sort (desktop sidebar) */}
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2">Sort By</label>
               <select
@@ -113,108 +138,58 @@ export default function ProductsPage() {
               </select>
             </div>
 
-            {/* Color Filter */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Color</label>
-              <select
-                value={pendingFilters.color}
-                onChange={(e) => setPendingFilters({ ...pendingFilters, color: e.target.value })}
-                className="w-full p-2 border rounded"
-              >
-                <option value="">All Colors</option>
-                {colors.map(color => (
-                  <option key={color} value={color}>{color}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* Shape Filter */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Shape</label>
-              <select
-                value={pendingFilters.shape}
-                onChange={(e) => setPendingFilters({ ...pendingFilters, shape: e.target.value })}
-                className="w-full p-2 border rounded"
-              >
-                <option value="">All Shapes</option>
-                {shapes.map(shape => (
-                  <option key={shape} value={shape}>{shape}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* Size Filter */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Size</label>
-              <select
-                value={pendingFilters.size}
-                onChange={(e) => setPendingFilters({ ...pendingFilters, size: e.target.value })}
-                className="w-full p-2 border rounded"
-              >
-                <option value="">All Sizes</option>
-                {sizes.map(size => (
-                  <option key={size} value={size}>{size}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* Material Filter */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Material</label>
-              <select
-                value={pendingFilters.material}
-                onChange={(e) => setPendingFilters({ ...pendingFilters, material: e.target.value })}
-                className="w-full p-2 border rounded"
-              >
-                <option value="">All Materials</option>
-                {materials.map(material => (
-                  <option key={material} value={material}>{material}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* Vendor Filter */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Vendor</label>
-              <select
-                value={pendingFilters.vendor}
-                onChange={(e) => setPendingFilters({ ...pendingFilters, vendor: e.target.value })}
-                className="w-full p-2 border rounded"
-              >
-                <option value="">All Vendors</option>
-                {vendors.map(vendor => (
-                  <option key={vendor} value={vendor}>{vendor}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* Apply and Clear Filters */}
-            <div className="space-y-3">
-              <button
-                onClick={handleApplyFilters}
-                disabled={!hasFilterChanges}
-                className={`w-full font-bold py-2 px-4 rounded transition-colors ${
-                  hasFilterChanges
-                    ? 'bg-purple-600 hover:bg-purple-700 text-white'
-                    : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                }`}
-              >
-                Apply Filters
-              </button>
-              
-              <button
-                onClick={handleClearFilters}
-                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded"
-              >
-                Clear All Filters
-              </button>
-            </div>
+            <ProductFilters {...filterProps} />
           </div>
         </aside>
 
         {/* Products Grid */}
         <main className="flex-1">
-          <div className="mb-4 text-gray-600">
+          {/* Mobile toolbar: filter button + sort + count */}
+          <div className="flex flex-wrap items-center gap-3 mb-4 lg:hidden">
+            <Sheet open={filterSheetOpen} onOpenChange={setFilterSheetOpen}>
+              <SheetTrigger asChild>
+                <button className="inline-flex items-center gap-2 min-h-[44px] px-4 bg-white border border-gray-300 rounded-lg font-medium text-sm shadow-sm">
+                  <SlidersHorizontal className="w-4 h-4" />
+                  Filters
+                  {activeFilterCount > 0 && (
+                    <span className="ml-1 bg-purple-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                      {activeFilterCount}
+                    </span>
+                  )}
+                </button>
+              </SheetTrigger>
+
+              <SheetContent side="left" className="w-[300px] sm:w-[360px] overflow-y-auto">
+                <SheetHeader>
+                  <SheetTitle>Filters</SheetTitle>
+                  <SheetDescription>Narrow down your search</SheetDescription>
+                </SheetHeader>
+                <div className="py-4">
+                  <ProductFilters {...filterProps} onApply={() => { handleApplyFilters(); setFilterSheetOpen(false); }} />
+                </div>
+              </SheetContent>
+            </Sheet>
+
+            {/* Sort dropdown (mobile) */}
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as any)}
+              className="min-h-[44px] px-3 bg-white border border-gray-300 rounded-lg text-sm shadow-sm"
+            >
+              <option value="newest-first">Newest First</option>
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="price-asc">Price (Low → High)</option>
+              <option value="price-desc">Price (High → Low)</option>
+            </select>
+
+            <span className="text-sm text-gray-600 ml-auto">
+              {filteredProducts.length} of {allProducts.length}
+            </span>
+          </div>
+
+          {/* Desktop product count */}
+          <div className="hidden lg:block mb-4 text-gray-600">
             Showing {filteredProducts.length} of {allProducts.length} products
           </div>
 
@@ -223,13 +198,13 @@ export default function ProductsPage() {
               <p className="text-xl text-gray-600">No products match your filters.</p>
               <button
                 onClick={handleClearFilters}
-                className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded"
+                className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-medium min-h-[44px] py-2 px-6 rounded"
               >
                 Clear Filters
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               {filteredProducts.map(product => (
                 <ProductCard key={product.pair_id} product={product} />
               ))}

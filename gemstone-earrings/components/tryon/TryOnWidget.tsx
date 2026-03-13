@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, X } from 'lucide-react';
 import TryOnCamera from './TryOnCamera';
 import TryOnCanvas from './TryOnCanvas';
 
@@ -11,7 +11,6 @@ interface TryOnWidgetProps {
     name: string;
     price: string;
     image1?: string;
-    // Try-on specific fields (optional, will use defaults if not provided)
     leftEarringUrl?: string;
     rightEarringUrl?: string;
     realWorldWidth?: number;
@@ -34,24 +33,19 @@ export default function TryOnWidget({
 
   const handleImageCapture = async (file: File) => {
     setSelfieFile(file);
-    
-    // Optional: Upload to server
     try {
       const formData = new FormData();
       formData.append('selfie', file);
-      
       const response = await fetch('/api/tryon/upload', {
         method: 'POST',
         body: formData,
       });
-      
       if (response.ok) {
         const data = await response.json();
         console.log('Selfie uploaded:', data.sessionId);
       }
     } catch (error) {
       console.error('Upload error:', error);
-      // Continue anyway - processing happens client-side
     }
   };
 
@@ -70,7 +64,6 @@ export default function TryOnWidget({
     setResultUrl(null);
   };
 
-  // Prepare product data for rendering
   const tryOnProduct = {
     id: product.id,
     name: product.name,
@@ -89,33 +82,34 @@ export default function TryOnWidget({
         onClick={() => setIsOpen(true)}
         className={
           buttonClassName ||
-          'flex items-center justify-center gap-2 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition font-medium shadow-lg hover:shadow-xl'
+          'flex items-center justify-center gap-2 w-full min-h-[48px] bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition font-medium shadow-lg hover:shadow-xl'
         }
       >
         <Sparkles className="w-5 h-5" />
         {buttonText}
       </button>
 
-      {/* Modal */}
+      {/* Modal — full-screen on mobile, centered card on desktop */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black/50 flex items-end md:items-center justify-center z-50 md:p-4">
+          <div className="bg-white w-full h-full md:h-auto md:rounded-lg md:shadow-2xl md:max-w-4xl md:max-h-[90vh] overflow-y-auto flex flex-col">
             {/* Header */}
-            <div className="sticky top-0 bg-white border-b p-4 flex items-center justify-between">
-              <div>
-                <h2 className="text-xl font-semibold">Virtual Try-On</h2>
-                <p className="text-sm text-gray-600">{product.name}</p>
+            <div className="sticky top-0 bg-white border-b px-4 py-3 flex items-center justify-between z-10 flex-shrink-0">
+              <div className="min-w-0">
+                <h2 className="text-lg md:text-xl font-semibold truncate">Virtual Try-On</h2>
+                <p className="text-sm text-gray-600 truncate">{product.name}</p>
               </div>
               <button
                 onClick={handleClose}
-                className="px-4 py-2 text-gray-600 hover:text-gray-900 transition"
+                className="min-h-[44px] min-w-[44px] flex items-center justify-center text-gray-600 hover:text-gray-900 transition flex-shrink-0"
+                aria-label="Close try-on"
               >
-                Close
+                <X className="w-6 h-6" />
               </button>
             </div>
 
             {/* Content */}
-            <div className="p-6">
+            <div className="flex-1 p-4 md:p-6 overflow-y-auto">
               {!selfieFile && (
                 <TryOnCamera
                   onImageCapture={handleImageCapture}
@@ -133,7 +127,7 @@ export default function TryOnWidget({
                   <div className="mt-4 text-center">
                     <button
                       onClick={handleReset}
-                      className="text-sm text-gray-600 hover:text-gray-900 underline"
+                      className="min-h-[44px] text-sm text-gray-600 hover:text-gray-900 underline"
                     >
                       Use different photo
                     </button>
@@ -151,13 +145,13 @@ export default function TryOnWidget({
                   <div className="flex gap-3">
                     <button
                       onClick={handleReset}
-                      className="flex-1 px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
+                      className="flex-1 min-h-[48px] px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition font-medium"
                     >
                       Try Again
                     </button>
                     <button
                       onClick={handleClose}
-                      className="flex-1 px-4 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
+                      className="flex-1 min-h-[48px] px-4 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-medium"
                     >
                       Done
                     </button>

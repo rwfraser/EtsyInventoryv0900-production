@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -6,6 +6,15 @@ import { CartProvider } from "@/lib/CartContext";
 import Header from "@/components/Header";
 import { ChatWidget } from "@/components/ChatWidget";
 import { SessionProvider } from "next-auth/react";
+
+// All pages require auth/session — skip static prerendering
+export const dynamic = 'force-dynamic';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

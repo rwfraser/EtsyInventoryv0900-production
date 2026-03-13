@@ -4,6 +4,8 @@ import { users, products } from '@/drizzle/schema';
 import { eq } from 'drizzle-orm';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminDashboard() {
   const session = await requireAdmin();
   
@@ -25,7 +27,7 @@ export default async function AdminDashboard() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 overflow-x-auto">
           <div className="bg-white rounded-lg shadow p-6">
             <h3 className="text-gray-500 text-sm font-medium">Total Products</h3>
             <p className="text-3xl font-bold text-gray-900 mt-2">{productCount}</p>
@@ -48,7 +50,7 @@ export default async function AdminDashboard() {
         {/* Quick Actions */}
         <div className="bg-white rounded-lg shadow p-6 mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Actions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             <Link
               href="/admin/users"
               className="p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-md transition-all"

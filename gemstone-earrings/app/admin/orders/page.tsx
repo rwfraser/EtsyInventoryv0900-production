@@ -4,6 +4,8 @@ import { orders, users } from '@/drizzle/schema';
 import { eq } from 'drizzle-orm';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminOrdersPage() {
   await requireAdmin();
   

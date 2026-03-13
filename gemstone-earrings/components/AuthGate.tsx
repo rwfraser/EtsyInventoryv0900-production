@@ -107,7 +107,7 @@ export default function AuthGate() {
               setSignupSuccess(false);
               setActiveTab('login');
             }}
-            className="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition-colors"
+            className="bg-purple-600 text-white px-6 min-h-[44px] py-2 rounded hover:bg-purple-700 transition-colors"
           >
             Go to Login
           </button>
@@ -119,13 +119,13 @@ export default function AuthGate() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 to-pink-500">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center text-white mb-12">
-          <span className="text-6xl mb-4 block">💎</span>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <div className="container mx-auto px-4 py-10 md:py-16">
+        <div className="text-center text-white mb-8 md:mb-12">
+          <span className="text-5xl md:text-6xl mb-4 block">💎</span>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6">
             Exquisite Gemstone Earrings
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-2xl mb-6 md:mb-8 max-w-2xl mx-auto">
             Discover 254 unique handcrafted earring designs featuring premium gemstones 
             and sterling silver settings
           </p>
@@ -163,9 +163,9 @@ export default function AuthGate() {
             </button>
           </div>
 
-          <div className="p-8">
+          <div className="p-6 md:p-8">
             {error && (
-              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4 text-sm">
                 {error}
               </div>
             )}
@@ -179,10 +179,12 @@ export default function AuthGate() {
                   <input
                     id="login-email"
                     type="email"
+                    inputMode="email"
+                    autoComplete="email"
                     required
                     value={loginData.email}
                     onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full min-h-[44px] px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -194,10 +196,11 @@ export default function AuthGate() {
                   <input
                     id="login-password"
                     type="password"
+                    autoComplete="current-password"
                     required
                     value={loginData.password}
                     onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full min-h-[44px] px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
                     placeholder="••••••••"
                   />
                 </div>
@@ -205,7 +208,7 @@ export default function AuthGate() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed font-medium"
+                  className="w-full min-h-[48px] bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed font-medium"
                 >
                   {loading ? 'Logging in...' : 'Log In'}
                 </button>
@@ -219,10 +222,11 @@ export default function AuthGate() {
                   <input
                     id="signup-name"
                     type="text"
+                    autoComplete="name"
                     required
                     value={signupData.name}
                     onChange={(e) => setSignupData({ ...signupData, name: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full min-h-[44px] px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
                     placeholder="John Doe"
                   />
                 </div>
@@ -234,10 +238,12 @@ export default function AuthGate() {
                   <input
                     id="signup-email"
                     type="email"
+                    inputMode="email"
+                    autoComplete="email"
                     required
                     value={signupData.email}
                     onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full min-h-[44px] px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -249,10 +255,11 @@ export default function AuthGate() {
                   <input
                     id="signup-password"
                     type="password"
+                    autoComplete="new-password"
                     required
                     value={signupData.password}
                     onChange={(e) => setSignupData({ ...signupData, password: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full min-h-[44px] px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
                     placeholder="••••••••"
                     minLength={8}
                   />
@@ -265,10 +272,11 @@ export default function AuthGate() {
                   <input
                     id="signup-confirm"
                     type="password"
+                    autoComplete="new-password"
                     required
                     value={signupData.confirmPassword}
                     onChange={(e) => setSignupData({ ...signupData, confirmPassword: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full min-h-[44px] px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent text-base"
                     placeholder="••••••••"
                     minLength={8}
                   />
@@ -277,7 +285,7 @@ export default function AuthGate() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed font-medium"
+                  className="w-full min-h-[48px] bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed font-medium"
                 >
                   {loading ? 'Creating Account...' : 'Sign Up'}
                 </button>
