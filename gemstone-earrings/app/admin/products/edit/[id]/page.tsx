@@ -25,28 +25,8 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
     category: '',
     stock: '',
   });
-  const [existingImages, setExistingImages] = useState<{
-    image1: string | null;
-    image2: string | null;
-    image3: string | null;
-    image4: string | null;
-  }>({
-    image1: null,
-    image2: null,
-    image3: null,
-    image4: null,
-  });
-  const [enhancedImages, setEnhancedImages] = useState<{
-    enhancedImage1: string | null;
-    enhancedImage2: string | null;
-    enhancedImage3: string | null;
-    enhancedImage4: string | null;
-  }>({
-    enhancedImage1: null,
-    enhancedImage2: null,
-    enhancedImage3: null,
-    enhancedImage4: null,
-  });
+  const [existingImage, setExistingImage] = useState<string | null>(null);
+  const [enhancedImage, setEnhancedImage] = useState<string | null>(null);
   const [aiData, setAiData] = useState<{
     aiDescription: string | null;
     aiKeywords: string[] | null;
@@ -58,17 +38,7 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
     aiProcessedAt: null,
     originalDescription: null,
   });
-  const [imageFiles, setImageFiles] = useState<{
-    image1: File | null;
-    image2: File | null;
-    image3: File | null;
-    image4: File | null;
-  }>({
-    image1: null,
-    image2: null,
-    image3: null,
-    image4: null,
-  });
+  const [imageFile, setImageFile] = useState<File | null>(null);
 
   useEffect(() => {
     async function loadProduct() {
@@ -84,18 +54,8 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
             category: data.product.category || '',
             stock: data.product.stock?.toString() || '0',
           });
-          setExistingImages({
-            image1: data.product.image1 || null,
-            image2: data.product.image2 || null,
-            image3: data.product.image3 || null,
-            image4: data.product.image4 || null,
-          });
-          setEnhancedImages({
-            enhancedImage1: data.product.enhancedImage1 || null,
-            enhancedImage2: data.product.enhancedImage2 || null,
-            enhancedImage3: data.product.enhancedImage3 || null,
-            enhancedImage4: data.product.enhancedImage4 || null,
-          });
+          setExistingImage(data.product.image1 || null);
+          setEnhancedImage(data.product.enhancedImage1 || null);
           setAiData({
             aiDescription: data.product.aiDescription || null,
             aiKeywords: data.product.aiKeywords ? JSON.parse(data.product.aiKeywords) : null,
@@ -131,17 +91,11 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
       formDataToSend.append('category', formData.category);
       formDataToSend.append('stock', formData.stock);
 
-      // Append new image files if selected
-      if (imageFiles.image1) formDataToSend.append('image1', imageFiles.image1);
-      if (imageFiles.image2) formDataToSend.append('image2', imageFiles.image2);
-      if (imageFiles.image3) formDataToSend.append('image3', imageFiles.image3);
-      if (imageFiles.image4) formDataToSend.append('image4', imageFiles.image4);
+      // Append new image file if selected
+      if (imageFile) formDataToSend.append('image1', imageFile);
 
-      // Tell backend to keep existing images if no new file uploaded
-      formDataToSend.append('keepImage1', (!imageFiles.image1).toString());
-      formDataToSend.append('keepImage2', (!imageFiles.image2).toString());
-      formDataToSend.append('keepImage3', (!imageFiles.image3).toString());
-      formDataToSend.append('keepImage4', (!imageFiles.image4).toString());
+      // Tell backend to keep existing image if no new file uploaded
+      formDataToSend.append('keepImage1', (!imageFile).toString());
 
       const response = await fetch(`/api/admin/products/${id}`, {
         method: 'PUT',
@@ -163,10 +117,9 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
   };
 
   const handleEnhanceWithAI = async () => {
-    // Check if product has at least one image
-    const hasImages = existingImages.image1 || existingImages.image2 || existingImages.image3 || existingImages.image4;
-    if (!hasImages) {
-      alert('Product must have at least one image to use AI enhancement');
+    // Check if product has an image
+    if (!existingImage) {
+      alert('Product must have an image to use AI enhancement');
       return;
     }
 
@@ -204,14 +157,9 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
           originalDescription: formData.description || null,
         });
         
-        // Update enhanced images if available
+        // Update enhanced image if available
         if (data.product) {
-          setEnhancedImages({
-            enhancedImage1: data.product.enhancedImage1 || null,
-            enhancedImage2: data.product.enhancedImage2 || null,
-            enhancedImage3: data.product.enhancedImage3 || null,
-            enhancedImage4: data.product.enhancedImage4 || null,
-          });
+          setEnhancedImage(data.product.enhancedImage1 || null);
         }
         
         // Update the description field with AI-generated content
@@ -389,103 +337,29 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
               )}
             </div>
 
-            {/* Image Upload Fields */}
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="image1" className="block text-sm font-medium text-gray-700 mb-1">
-                  Product Image 1
-                </label>
-                {existingImages.image1 && !imageFiles.image1 && (
-                  <div className="mb-2">
-                    <img src={existingImages.image1} alt="Current Image 1" className="h-24 w-24 object-cover rounded" />
-                    <p className="text-xs text-gray-500 mt-1">Current image</p>
-                  </div>
-                )}
-                <input
-                  id="image1"
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => setImageFiles({ ...imageFiles, image1: e.target.files?.[0] || null })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                {imageFiles.image1 && (
-                  <div className="mt-2 text-sm text-green-600">
-                    New: {imageFiles.image1.name}
-                  </div>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="image2" className="block text-sm font-medium text-gray-700 mb-1">
-                  Product Image 2
-                </label>
-                {existingImages.image2 && !imageFiles.image2 && (
-                  <div className="mb-2">
-                    <img src={existingImages.image2} alt="Current Image 2" className="h-24 w-24 object-cover rounded" />
-                    <p className="text-xs text-gray-500 mt-1">Current image</p>
-                  </div>
-                )}
-                <input
-                  id="image2"
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => setImageFiles({ ...imageFiles, image2: e.target.files?.[0] || null })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                {imageFiles.image2 && (
-                  <div className="mt-2 text-sm text-green-600">
-                    New: {imageFiles.image2.name}
-                  </div>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="image3" className="block text-sm font-medium text-gray-700 mb-1">
-                  Product Image 3
-                </label>
-                {existingImages.image3 && !imageFiles.image3 && (
-                  <div className="mb-2">
-                    <img src={existingImages.image3} alt="Current Image 3" className="h-24 w-24 object-cover rounded" />
-                    <p className="text-xs text-gray-500 mt-1">Current image</p>
-                  </div>
-                )}
-                <input
-                  id="image3"
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => setImageFiles({ ...imageFiles, image3: e.target.files?.[0] || null })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                {imageFiles.image3 && (
-                  <div className="mt-2 text-sm text-green-600">
-                    New: {imageFiles.image3.name}
-                  </div>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="image4" className="block text-sm font-medium text-gray-700 mb-1">
-                  Product Image 4
-                </label>
-                {existingImages.image4 && !imageFiles.image4 && (
-                  <div className="mb-2">
-                    <img src={existingImages.image4} alt="Current Image 4" className="h-24 w-24 object-cover rounded" />
-                    <p className="text-xs text-gray-500 mt-1">Current image</p>
-                  </div>
-                )}
-                <input
-                  id="image4"
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => setImageFiles({ ...imageFiles, image4: e.target.files?.[0] || null })}
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                {imageFiles.image4 && (
-                  <div className="mt-2 text-sm text-green-600">
-                    New: {imageFiles.image4.name}
-                  </div>
-                )}
-              </div>
+            {/* Image Upload Field */}
+            <div>
+              <label htmlFor="image1" className="block text-sm font-medium text-gray-700 mb-1">
+                Product Image
+              </label>
+              {existingImage && !imageFile && (
+                <div className="mb-2">
+                  <img src={existingImage} alt="Current Image" className="h-32 w-32 object-cover rounded" />
+                  <p className="text-xs text-gray-500 mt-1">Current image</p>
+                </div>
+              )}
+              <input
+                id="image1"
+                type="file"
+                accept="image/*"
+                onChange={(e) => setImageFile(e.target.files?.[0] || null)}
+                className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+              />
+              {imageFile && (
+                <div className="mt-2 text-sm text-green-600">
+                  New: {imageFile.name}
+                </div>
+              )}
             </div>
 
             <div className="flex gap-4">
@@ -588,57 +462,44 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
               </div>
             )}
             
-            {/* Enhanced Images Display */}
-            {(enhancedImages.enhancedImage1 || enhancedImages.enhancedImage2 || enhancedImages.enhancedImage3 || enhancedImages.enhancedImage4) && (
+            {/* Enhanced Image Display */}
+            {enhancedImage && (
               <div className="mt-4 p-4 bg-indigo-50 border border-indigo-200 rounded-lg">
-                <h4 className="font-semibold text-indigo-900 mb-3">✨ AI-Enhanced Images</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  {[1, 2, 3, 4].map((num) => {
-                    const enhancedKey = `enhancedImage${num}` as keyof typeof enhancedImages;
-                    const originalKey = `image${num}` as keyof typeof existingImages;
-                    const enhancedUrl = enhancedImages[enhancedKey];
-                    const originalUrl = existingImages[originalKey];
-                    
-                    if (!enhancedUrl) return null;
-                    
-                    return (
-                      <div key={num} className="bg-white p-3 rounded border border-indigo-200">
-                        <div className="grid grid-cols-2 gap-2 mb-2">
-                          {originalUrl && (
-                            <div>
-                              <p className="text-xs text-gray-600 mb-1">Original:</p>
-                              <img src={originalUrl} alt={`Original ${num}`} className="w-full h-24 object-cover rounded" />
-                            </div>
-                          )}
-                          <div>
-                            <p className="text-xs text-indigo-700 font-medium mb-1">Enhanced:</p>
-                            <img src={enhancedUrl} alt={`Enhanced ${num}`} className="w-full h-24 object-cover rounded" />
-                          </div>
-                        </div>
-                        <div className="flex gap-2">
-                          <a
-                            href={enhancedUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-indigo-600 hover:text-indigo-800 underline"
-                          >
-                            View Full Size
-                          </a>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              if (confirm(`Delete enhanced image ${num}?`)) {
-                                setEnhancedImages({ ...enhancedImages, [enhancedKey]: null });
-                              }
-                            }}
-                            className="text-xs text-red-600 hover:text-red-800 underline"
-                          >
-                            Delete
-                          </button>
-                        </div>
+                <h4 className="font-semibold text-indigo-900 mb-3">✨ AI-Enhanced Image</h4>
+                <div className="bg-white p-3 rounded border border-indigo-200">
+                  <div className="grid grid-cols-2 gap-4 mb-2">
+                    {existingImage && (
+                      <div>
+                        <p className="text-xs text-gray-600 mb-1">Original:</p>
+                        <img src={existingImage} alt="Original" className="w-full h-32 object-cover rounded" />
                       </div>
-                    );
-                  })}
+                    )}
+                    <div>
+                      <p className="text-xs text-indigo-700 font-medium mb-1">Enhanced:</p>
+                      <img src={enhancedImage} alt="Enhanced" className="w-full h-32 object-cover rounded" />
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <a
+                      href={enhancedImage}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-indigo-600 hover:text-indigo-800 underline"
+                    >
+                      View Full Size
+                    </a>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (confirm('Delete enhanced image?')) {
+                          setEnhancedImage(null);
+                        }
+                      }}
+                      className="text-xs text-red-600 hover:text-red-800 underline"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
                 <p className="text-xs text-indigo-600 mt-3">
                   🎪 Generated by Gemini using professional baseline reference photo
