@@ -37,29 +37,49 @@ export default function AddProductPage() {
     stock: '1',
   });
   
-  // Image file (single image)
-  const [imageFile, setImageFile] = useState<File | null>(null);
+  // Image files (4 images)
+  const [imageFiles, setImageFiles] = useState<{
+    image1: File | null;
+    image2: File | null;
+    image3: File | null;
+    image4: File | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
   
-  // Image preview (data URL for display)
-  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  // Image previews (data URLs for display)
+  const [imagePreviews, setImagePreviews] = useState<{
+    image1: string | null;
+    image2: string | null;
+    image3: string | null;
+    image4: string | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
   
   // Preview data (after AI processing)
   const [previewData, setPreviewData] = useState<PreviewData | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   // Handle image file selection
-  const handleImageChange = (file: File | null) => {
-    setImageFile(file);
+  const handleImageChange = (key: keyof typeof imageFiles, file: File | null) => {
+    setImageFiles({ ...imageFiles, [key]: file });
     
     // Generate preview URL
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setImagePreview(reader.result as string);
+        setImagePreviews({ ...imagePreviews, [key]: reader.result as string });
       };
       reader.readAsDataURL(file);
     } else {
-      setImagePreview(null);
+      setImagePreviews({ ...imagePreviews, [key]: null });
     }
   };
 
@@ -75,23 +95,35 @@ export default function AddProductPage() {
         throw new Error('Name and price are required');
       }
       
-      if (!imageFile) {
-        throw new Error('Product image is required');
+      if (!imageFiles.image1) {
+        throw new Error('At least one product image is required');
       }
 
-      // Upload image directly to Vercel Blob (client-side upload)
+      // Upload images directly to Vercel Blob (client-side upload)
       // This bypasses the 4.5 MB serverless function body size limit
-      let imageUrl: string | undefined;
+      const imageUrls: {
+        image1?: string;
+        image2?: string;
+        image3?: string;
+        image4?: string;
+      } = {};
 
-      const timestamp = Date.now();
-      const safeName = imageFile.name.replace(/[^a-zA-Z0-9.-]/g, '_');
+      const imageKeys = ['image1', 'image2', 'image3', 'image4'] as const;
 
-      const blob = await upload(`products/${timestamp}-${safeName}`, imageFile, {
-        access: 'public',
-        handleUploadUrl: '/api/admin/upload-images',
-      });
+      for (const key of imageKeys) {
+        const file = imageFiles[key];
+        if (file && file.size > 0) {
+          const timestamp = Date.now();
+          const safeName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
 
-      imageUrl = blob.url;
+          const blob = await upload(`products/${timestamp}-${safeName}`, file, {
+            access: 'public',
+            handleUploadUrl: '/api/admin/upload-images',
+          });
+
+          imageUrls[key] = blob.url;
+        }
+      }
 
       // Step 2: Generate SKU
       const skuResponse = await fetch('/api/admin/sku/generate');
@@ -126,7 +158,10 @@ export default function AddProductPage() {
         price: formData.price,
         category: formData.category,
         stock: parseInt(formData.stock) || 1,
-        image1: imageUrl,
+        image1: imageUrls.image1,
+        image2: imageUrls.image2,
+        image3: imageUrls.image3,
+        image4: imageUrls.image4,
         aiDescription,
         aiKeywords,
         aiProcessedAt: new Date().toISOString(),
@@ -211,29 +246,33 @@ export default function AddProductPage() {
           /* STEP 1: Form Input */
           <div className="bg-white rounded-lg shadow p-6">
             <form onSubmit={handleGeneratePreview} className="space-y-6">
-              {/* Image Upload Field */}
-              <div>
-                <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-1">
-                  Product Image *
-                </label>
-                <input
-                  id="image"
-                  type="file"
-                  accept="image/*"
-                  required
-                  onChange={(e) => handleImageChange(e.target.files?.[0] || null)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                {imagePreview && (
-                  <div className="mt-2 relative w-full h-48">
-                    <Image
-                      src={imagePreview}
-                      alt="Product Preview"
-                      fill
-                      className="object-cover rounded"
+              {/* Image Upload Fields */}
+              <div className="grid grid-cols-2 gap-4">
+                {(['image1', 'image2', 'image3', 'image4'] as const).map((key, index) => (
+                  <div key={key}>
+                    <label htmlFor={key} className="block text-sm font-medium text-gray-700 mb-1">
+                      Product Image {index + 1} {index === 0 && <span className="text-purple-600">(AI Enhanced)</span>} {index === 0 && '*'}
+                    </label>
+                    <input
+                      id={key}
+                      type="file"
+                      accept="image/*"
+                      required={index === 0}
+                      onChange={(e) => handleImageChange(key, e.target.files?.[0] || null)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                     />
+                    {imagePreviews[key] && (
+                      <div className="mt-2 relative w-full h-32">
+                        <Image
+                          src={imagePreviews[key]!}
+                          alt={`Preview ${index + 1}`}
+                          fill
+                          className="object-cover rounded"
+                        />
+                      </div>
+                    )}
                   </div>
-                )}
+                ))}
               </div>
 
               <div>
@@ -344,19 +383,26 @@ export default function AddProductPage() {
                 </div>
               </div>
 
-              {/* Image */}
-              {previewData?.image1 && (
-                <div className="mb-6">
-                  <div className="relative w-full h-64 max-w-md">
-                    <Image
-                      src={previewData.image1}
-                      alt="Product Image"
-                      fill
-                      className="object-cover rounded"
-                    />
-                  </div>
-                </div>
-              )}
+              {/* Images */}
+              <div className="grid grid-cols-4 gap-4 mb-6">
+                {(['image1', 'image2', 'image3', 'image4'] as const).map((key, index) => (
+                  previewData?.[key] && (
+                    <div key={key} className="relative w-full h-40">
+                      <Image
+                        src={previewData[key]!}
+                        alt={`Product ${key}`}
+                        fill
+                        className="object-cover rounded"
+                      />
+                      {index === 0 && (
+                        <span className="absolute top-1 right-1 bg-purple-600 text-white text-xs px-2 py-1 rounded">
+                          AI Enhanced
+                        </span>
+                      )}
+                    </div>
+                  )
+                ))}
+              </div>
 
               {/* Editable Fields */}
               <div className="space-y-4">

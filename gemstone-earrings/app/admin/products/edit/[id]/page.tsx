@@ -25,7 +25,17 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
     category: '',
     stock: '',
   });
-  const [existingImage, setExistingImage] = useState<string | null>(null);
+  const [existingImages, setExistingImages] = useState<{
+    image1: string | null;
+    image2: string | null;
+    image3: string | null;
+    image4: string | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
   const [enhancedImage, setEnhancedImage] = useState<string | null>(null);
   const [aiData, setAiData] = useState<{
     aiDescription: string | null;
@@ -38,7 +48,17 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
     aiProcessedAt: null,
     originalDescription: null,
   });
-  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imageFiles, setImageFiles] = useState<{
+    image1: File | null;
+    image2: File | null;
+    image3: File | null;
+    image4: File | null;
+  }>({
+    image1: null,
+    image2: null,
+    image3: null,
+    image4: null,
+  });
 
   useEffect(() => {
     async function loadProduct() {
@@ -54,7 +74,12 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
             category: data.product.category || '',
             stock: data.product.stock?.toString() || '0',
           });
-          setExistingImage(data.product.image1 || null);
+          setExistingImages({
+            image1: data.product.image1 || null,
+            image2: data.product.image2 || null,
+            image3: data.product.image3 || null,
+            image4: data.product.image4 || null,
+          });
           setEnhancedImage(data.product.enhancedImage1 || null);
           setAiData({
             aiDescription: data.product.aiDescription || null,
@@ -91,11 +116,17 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
       formDataToSend.append('category', formData.category);
       formDataToSend.append('stock', formData.stock);
 
-      // Append new image file if selected
-      if (imageFile) formDataToSend.append('image1', imageFile);
+      // Append new image files if selected
+      if (imageFiles.image1) formDataToSend.append('image1', imageFiles.image1);
+      if (imageFiles.image2) formDataToSend.append('image2', imageFiles.image2);
+      if (imageFiles.image3) formDataToSend.append('image3', imageFiles.image3);
+      if (imageFiles.image4) formDataToSend.append('image4', imageFiles.image4);
 
-      // Tell backend to keep existing image if no new file uploaded
-      formDataToSend.append('keepImage1', (!imageFile).toString());
+      // Tell backend to keep existing images if no new file uploaded
+      formDataToSend.append('keepImage1', (!imageFiles.image1).toString());
+      formDataToSend.append('keepImage2', (!imageFiles.image2).toString());
+      formDataToSend.append('keepImage3', (!imageFiles.image3).toString());
+      formDataToSend.append('keepImage4', (!imageFiles.image4).toString());
 
       const response = await fetch(`/api/admin/products/${id}`, {
         method: 'PUT',
@@ -117,9 +148,9 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
   };
 
   const handleEnhanceWithAI = async () => {
-    // Check if product has an image
-    if (!existingImage) {
-      alert('Product must have an image to use AI enhancement');
+    // Check if product has at least the first image (only image1 is AI enhanced)
+    if (!existingImages.image1) {
+      alert('Product must have Image 1 to use AI enhancement');
       return;
     }
 
@@ -337,29 +368,33 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
               )}
             </div>
 
-            {/* Image Upload Field */}
-            <div>
-              <label htmlFor="image1" className="block text-sm font-medium text-gray-700 mb-1">
-                Product Image
-              </label>
-              {existingImage && !imageFile && (
-                <div className="mb-2">
-                  <img src={existingImage} alt="Current Image" className="h-32 w-32 object-cover rounded" />
-                  <p className="text-xs text-gray-500 mt-1">Current image</p>
+            {/* Image Upload Fields */}
+            <div className="grid grid-cols-2 gap-4">
+              {(['image1', 'image2', 'image3', 'image4'] as const).map((key, index) => (
+                <div key={key}>
+                  <label htmlFor={key} className="block text-sm font-medium text-gray-700 mb-1">
+                    Product Image {index + 1} {index === 0 && <span className="text-purple-600">(AI Enhanced)</span>}
+                  </label>
+                  {existingImages[key] && !imageFiles[key] && (
+                    <div className="mb-2">
+                      <img src={existingImages[key]!} alt={`Current Image ${index + 1}`} className="h-24 w-24 object-cover rounded" />
+                      <p className="text-xs text-gray-500 mt-1">Current image</p>
+                    </div>
+                  )}
+                  <input
+                    id={key}
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => setImageFiles({ ...imageFiles, [key]: e.target.files?.[0] || null })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  />
+                  {imageFiles[key] && (
+                    <div className="mt-2 text-sm text-green-600">
+                      New: {imageFiles[key]!.name}
+                    </div>
+                  )}
                 </div>
-              )}
-              <input
-                id="image1"
-                type="file"
-                accept="image/*"
-                onChange={(e) => setImageFile(e.target.files?.[0] || null)}
-                className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-              />
-              {imageFile && (
-                <div className="mt-2 text-sm text-green-600">
-                  New: {imageFile.name}
-                </div>
-              )}
+              ))}
             </div>
 
             <div className="flex gap-4">
@@ -462,16 +497,16 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
               </div>
             )}
             
-            {/* Enhanced Image Display */}
+            {/* Enhanced Image Display (only image1 is AI enhanced) */}
             {enhancedImage && (
               <div className="mt-4 p-4 bg-indigo-50 border border-indigo-200 rounded-lg">
-                <h4 className="font-semibold text-indigo-900 mb-3">✨ AI-Enhanced Image</h4>
+                <h4 className="font-semibold text-indigo-900 mb-3">✨ AI-Enhanced Image (Image 1 only)</h4>
                 <div className="bg-white p-3 rounded border border-indigo-200">
                   <div className="grid grid-cols-2 gap-4 mb-2">
-                    {existingImage && (
+                    {existingImages.image1 && (
                       <div>
-                        <p className="text-xs text-gray-600 mb-1">Original:</p>
-                        <img src={existingImage} alt="Original" className="w-full h-32 object-cover rounded" />
+                        <p className="text-xs text-gray-600 mb-1">Original (Image 1):</p>
+                        <img src={existingImages.image1} alt="Original" className="w-full h-32 object-cover rounded" />
                       </div>
                     )}
                     <div>
