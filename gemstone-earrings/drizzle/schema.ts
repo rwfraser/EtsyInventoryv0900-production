@@ -139,6 +139,20 @@ export const tryonResults = pgTable('tryon_results', {
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
 
+// API Keys - for third-party integrations
+export const apiKeys = pgTable('api_keys', {
+  id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+  name: text('name').notNull(), // Descriptive name (e.g., "Partner XYZ Integration")
+  keyHash: text('key_hash').notNull().unique(), // SHA-256 hash of the API key
+  keyPrefix: text('key_prefix').notNull(), // First 8 chars for identification (e.g., "mea_abc1")
+  createdById: text('created_by_id').references(() => users.id, { onDelete: 'set null' }),
+  isActive: integer('is_active').default(1).notNull(), // 1 = active, 0 = revoked
+  lastUsedAt: timestamp('last_used_at'),
+  expiresAt: timestamp('expires_at'), // null = never expires
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  revokedAt: timestamp('revoked_at'),
+});
+
 // Product Try-On Assets - metadata for overlay rendering
 export const productTryonAssets = pgTable('product_tryon_assets', {
   id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),

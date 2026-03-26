@@ -1,6 +1,6 @@
-# MyEarringAdvisor Public API Documentation
+# MyEarringAdvisor API Documentation
 
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Base URL:** `https://www.myearringadvisor.com`  
 **Last Updated:** March 2026
 
@@ -8,13 +8,44 @@
 
 ## Overview
 
-The MyEarringAdvisor API provides read-only access to product catalog data. This API is publicly accessible and does not require authentication.
+The MyEarringAdvisor API provides read-only access to product catalog data. All API requests require authentication via API key.
 
 ### Rate Limiting
 
 Please be respectful of our servers. We recommend:
 - Maximum 60 requests per minute
 - Cache responses when possible
+
+---
+
+## Authentication
+
+All API requests require an API key. To obtain an API key, contact **support@myearringadvisor.com**.
+
+### Providing Your API Key
+
+You can provide your API key using one of these methods:
+
+**Option 1: Authorization Header (Recommended)**
+```
+Authorization: Bearer mea_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+**Option 2: X-API-Key Header**
+```
+X-API-Key: mea_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+### API Key Format
+
+API keys follow this format: `mea_` followed by 32 alphanumeric characters (e.g., `mea_AbCd1234EfGh5678IjKl9012MnOp3456`).
+
+### Security Best Practices
+
+- **Never expose your API key** in client-side code, public repositories, or logs
+- Store API keys in environment variables or secure secret management systems
+- Use HTTPS for all API requests
+- Rotate keys periodically and immediately if compromised
 
 ---
 
@@ -26,13 +57,14 @@ Retrieves the complete product catalog.
 
 **Endpoint:** `GET /api/products`
 
-**Authentication:** None required
+**Authentication:** API key required
 
 **Request Example:**
 
 ```bash
 curl -X GET "https://www.myearringadvisor.com/api/products" \
-  -H "Accept: application/json"
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
 **Response Format:**
@@ -152,6 +184,28 @@ curl -X GET "https://www.myearringadvisor.com/api/products" \
 
 ## Error Responses
 
+### 401 Unauthorized
+
+Returned when API key is missing, invalid, or expired.
+
+```json
+{
+  "error": "API key required. Provide via Authorization: Bearer <key> or X-API-Key header."
+}
+```
+
+```json
+{
+  "error": "Invalid API key format."
+}
+```
+
+```json
+{
+  "error": "Invalid or expired API key."
+}
+```
+
 ### 500 Internal Server Error
 
 ```json
@@ -168,8 +222,15 @@ curl -X GET "https://www.myearringadvisor.com/api/products" \
 ### JavaScript/TypeScript
 
 ```typescript
+const API_KEY = process.env.MEA_API_KEY; // Store in environment variable
+
 async function getProducts(): Promise<Product[]> {
-  const response = await fetch('https://www.myearringadvisor.com/api/products');
+  const response = await fetch('https://www.myearringadvisor.com/api/products', {
+    headers: {
+      'Authorization': `Bearer ${API_KEY}`,
+      'Accept': 'application/json'
+    }
+  });
   
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
@@ -187,10 +248,20 @@ console.log(`Found ${products.length} products`);
 ### Python
 
 ```python
+import os
 import requests
 
+API_KEY = os.environ.get('MEA_API_KEY')  # Store in environment variable
+
 def get_products():
-    response = requests.get('https://www.myearringadvisor.com/api/products')
+    headers = {
+        'Authorization': f'Bearer {API_KEY}',
+        'Accept': 'application/json'
+    }
+    response = requests.get(
+        'https://www.myearringadvisor.com/api/products',
+        headers=headers
+    )
     response.raise_for_status()
     return response.json()['products']
 
@@ -207,15 +278,27 @@ for product in products:
 
 ```php
 <?php
-function getProducts() {
+$apiKey = getenv('MEA_API_KEY'); // Store in environment variable
+
+function getProducts($apiKey) {
     $url = 'https://www.myearringadvisor.com/api/products';
-    $response = file_get_contents($url);
+    $options = [
+        'http' => [
+            'method' => 'GET',
+            'header' => [
+                "Authorization: Bearer $apiKey",
+                "Accept: application/json"
+            ]
+        ]
+    ];
+    $context = stream_context_create($options);
+    $response = file_get_contents($url, false, $context);
     $data = json_decode($response, true);
     return $data['products'];
 }
 
 // Usage
-$products = getProducts();
+$products = getProducts($apiKey);
 echo "Found " . count($products) . " products\n";
 
 foreach ($products as $product) {
@@ -231,9 +314,11 @@ foreach ($products as $product) {
 ### Display Products on External Website
 
 ```javascript
-// Fetch and display products
-async function displayProducts() {
-  const response = await fetch('https://www.myearringadvisor.com/api/products');
+// Fetch and display products (server-side only - never expose API key in browser)
+async function displayProducts(apiKey) {
+  const response = await fetch('https://www.myearringadvisor.com/api/products', {
+    headers: { 'Authorization': `Bearer ${apiKey}` }
+  });
   const { products } = await response.json();
   
   products.forEach(product => {
@@ -304,6 +389,11 @@ By using this API, you agree to:
 ---
 
 ## Changelog
+
+### v1.1.0 (March 2026)
+- **BREAKING:** API key authentication now required
+- Support for Authorization header (Bearer token) and X-API-Key header
+- Added 401 Unauthorized error responses
 
 ### v1.0.0 (March 2026)
 - Initial public API release

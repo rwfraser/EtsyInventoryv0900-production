@@ -1,10 +1,17 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { products } from '@/drizzle/schema';
 import { desc } from 'drizzle-orm';
 import { EarringPair } from '@/lib/types';
+import { validateApiKey, unauthorizedResponse } from '@/lib/api-auth';
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  // Validate API key
+  const authResult = await validateApiKey(request);
+  if (!authResult.valid) {
+    return unauthorizedResponse(authResult.error || 'Unauthorized');
+  }
+
   try {
     // Get products ordered by most recently created (newest first)
     const dbProducts = await db.select().from(products).orderBy(desc(products.createdAt));
