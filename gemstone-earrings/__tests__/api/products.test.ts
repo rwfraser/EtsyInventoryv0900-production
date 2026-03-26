@@ -10,8 +10,21 @@ vi.mock('@/lib/db', () => ({
   },
 }));
 
+// Mock API authentication to always succeed in tests
+vi.mock('@/lib/api-auth', () => ({
+  validateApiKey: vi.fn().mockResolvedValue({ valid: true, keyId: 'test-key', keyName: 'Test Key' }),
+  unauthorizedResponse: vi.fn((message: string) => new Response(JSON.stringify({ error: message }), { status: 401 })),
+}));
+
 import { GET } from '@/app/api/products/route';
 import { db } from '@/lib/db';
+
+// Helper to create mock request
+function createMockRequest(): NextRequest {
+  return new NextRequest('http://localhost:3000/api/products', {
+    headers: { 'Authorization': 'Bearer mea_test_key_12345678901234567890' },
+  });
+}
 
 beforeEach(() => {
   vi.clearAllMocks();
@@ -54,7 +67,7 @@ describe('GET /api/products', () => {
       }),
     } as any);
 
-    const response = await GET();
+    const response = await GET(createMockRequest());
     const data = await response.json();
 
     expect(response.status).toBe(200);
@@ -70,7 +83,7 @@ describe('GET /api/products', () => {
       }),
     } as any);
 
-    const response = await GET();
+    const response = await GET(createMockRequest());
     const data = await response.json();
 
     expect(response.status).toBe(200);
@@ -84,7 +97,7 @@ describe('GET /api/products', () => {
       }),
     } as any);
 
-    const response = await GET();
+    const response = await GET(createMockRequest());
     const data = await response.json();
 
     expect(response.status).toBe(500);
@@ -127,7 +140,7 @@ describe('GET /api/products', () => {
       }),
     } as any);
 
-    const response = await GET();
+    const response = await GET(createMockRequest());
     const data = await response.json();
 
     // Should include image1, image2, and legacy imageUrl (not null image3/image4)
