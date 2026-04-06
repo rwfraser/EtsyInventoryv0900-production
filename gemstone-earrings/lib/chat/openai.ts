@@ -150,13 +150,30 @@ export const CHAT_FUNCTIONS: OpenAI.Chat.Completions.ChatCompletionTool[] = [
   },
 ];
 
-// Send chat completion request to OpenAI
+// Model configuration with fallback
+const PRIMARY_MODEL = 'gpt-4o-mini';
+const FALLBACK_MODELS = ['gpt-4o', 'gpt-3.5-turbo'];
+
+// Send chat completion request to OpenAI with fallback support
 export async function sendChatCompletion(
-  messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[]
+  messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[],
+  attemptedModels: string[] = []
 ): Promise<OpenAI.Chat.Completions.ChatCompletion> {
+  const modelsToTry = attemptedModels.length === 0 
+    ? [PRIMARY_MODEL, ...FALLBACK_MODELS]
+    : FALLBACK_MODELS.filter(m => !attemptedModels.includes(m));
+  
+  if (modelsToTry.length === 0) {
+    throw new Error('All fallback models exhausted');
+  }
+  
+  const currentModel = modelsToTry[0];
+  
   try {
+    console.log(`Attempting chat completion with model: ${currentModel}`);
+    
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini', // Updated to current available model
+      model: currentModel,
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         ...messages,
@@ -169,20 +186,36 @@ export async function sendChatCompletion(
 
     return completion;
   } catch (error) {
-    console.error('==================== OpenAI API Error ====================');
+    console.error(`==================== OpenAI API Error (${currentModel}) ====================`);
     console.error('Error details:', error);
+    
+    // Check if error is retryable with fallback model
+    const isModelError = error instanceof Error && (
+      error.message.includes('model') ||
+      error.message.includes('does not exist') ||
+      error.message.includes('not found') ||
+      (error as any).code === 'model_not_found'
+    );
+    
     if (error instanceof Error) {
       console.error('Error name:', error.name);
       console.error('Error message:', error.message);
-      console.error('Error stack:', error.stack);
     }
-    // Log additional OpenAI-specific error details
+    
+    // If model-specific error and we have fallback models, try them
+    if (isModelError && modelsToTry.length > 1) {
+      console.warn(`Model ${currentModel} failed, attempting fallback...`);
+      const nextAttemptedModels = [...attemptedModels, currentModel];
+      return sendChatCompletion(messages, nextAttemptedModels);
+    }
+    
+    // Log full error details for non-retryable errors
     if (typeof error === 'object' && error !== null) {
       console.error('Error object keys:', Object.keys(error));
       console.error('Full error:', JSON.stringify(error, null, 2));
     }
     console.error('=========================================================');
-    throw new Error('Failed to get response from AI');
+    throw new Error(`Failed to get response from AI (tried: ${[...attemptedModels, currentModel].join(', ')})`);
   }
 }
 
