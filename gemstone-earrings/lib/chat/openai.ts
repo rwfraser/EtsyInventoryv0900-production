@@ -156,7 +156,7 @@ export async function sendChatCompletion(
 ): Promise<OpenAI.Chat.Completions.ChatCompletion> {
   try {
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4-turbo-preview',
+      model: 'gpt-4o-mini', // Updated to current available model
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         ...messages,
@@ -169,7 +169,19 @@ export async function sendChatCompletion(
 
     return completion;
   } catch (error) {
-    console.error('OpenAI API error:', error);
+    console.error('==================== OpenAI API Error ====================');
+    console.error('Error details:', error);
+    if (error instanceof Error) {
+      console.error('Error name:', error.name);
+      console.error('Error message:', error.message);
+      console.error('Error stack:', error.stack);
+    }
+    // Log additional OpenAI-specific error details
+    if (typeof error === 'object' && error !== null) {
+      console.error('Error object keys:', Object.keys(error));
+      console.error('Full error:', JSON.stringify(error, null, 2));
+    }
+    console.error('=========================================================');
     throw new Error('Failed to get response from AI');
   }
 }

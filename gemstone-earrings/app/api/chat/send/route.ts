@@ -227,8 +227,13 @@ export async function POST(request: NextRequest) {
       }
     );
   } catch (error) {
+    console.error('================== CHAT ERROR ==================');
     console.error('Chat send error:', error);
+    console.error('Error type:', typeof error);
+    console.error('Error name:', error instanceof Error ? error.name : 'N/A');
+    console.error('Error message:', error instanceof Error ? error.message : JSON.stringify(error));
     console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+    console.error('================================================');
     
     // Try to save error to database for debugging
     try {
