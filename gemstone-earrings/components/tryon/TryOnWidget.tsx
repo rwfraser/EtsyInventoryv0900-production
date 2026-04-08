@@ -9,7 +9,7 @@ interface TryOnWidgetProps {
   product: {
     id: string;
     name: string;
-    price: string;
+    price?: string;
     image1?: string;
     leftEarringUrl?: string;
     rightEarringUrl?: string;
@@ -20,14 +20,18 @@ interface TryOnWidgetProps {
   };
   buttonClassName?: string;
   buttonText?: string;
+  onClose?: () => void; // Optional callback for chatbot integration
+  autoOpen?: boolean; // Auto-open modal (for chatbot)
 }
 
 export default function TryOnWidget({
   product,
   buttonClassName,
   buttonText = 'Try On Virtually',
+  onClose,
+  autoOpen = false,
 }: TryOnWidgetProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(autoOpen);
   const [selfieFile, setSelfieFile] = useState<File | null>(null);
   const [resultUrl, setResultUrl] = useState<string | null>(null);
 
@@ -57,6 +61,7 @@ export default function TryOnWidget({
     setIsOpen(false);
     setSelfieFile(null);
     setResultUrl(null);
+    onClose?.(); // Call parent onClose if provided (for chatbot)
   };
 
   const handleReset = () => {
@@ -77,17 +82,19 @@ export default function TryOnWidget({
 
   return (
     <>
-      {/* Trigger Button */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className={
-          buttonClassName ||
-          'flex items-center justify-center gap-2 w-full min-h-[48px] bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition font-medium shadow-lg hover:shadow-xl'
-        }
-      >
-        <Sparkles className="w-5 h-5" />
-        {buttonText}
-      </button>
+      {/* Trigger Button (hidden if autoOpen) */}
+      {!autoOpen && (
+        <button
+          onClick={() => setIsOpen(true)}
+          className={
+            buttonClassName ||
+            'flex items-center justify-center gap-2 w-full min-h-[48px] bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition font-medium shadow-lg hover:shadow-xl'
+          }
+        >
+          <Sparkles className="w-5 h-5" />
+          {buttonText}
+        </button>
+      )}
 
       {/* Modal — full-screen on mobile, centered card on desktop */}
       {isOpen && (

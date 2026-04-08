@@ -6,6 +6,10 @@ import { ChatMessage } from './chat/ChatMessage';
 import { ChatInput } from './chat/ChatInput';
 import { TypingIndicator } from './chat/TypingIndicator';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+import dynamic from 'next/dynamic';
+
+// Dynamically import TryOnWidget to avoid SSR issues
+const TryOnWidget = dynamic(() => import('./tryon/TryOnWidget'), { ssr: false });
 import {
   Drawer,
   DrawerTrigger,
@@ -35,6 +39,15 @@ export function ChatWidget() {
   const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const isMobile = useMediaQuery('(max-width: 767px)');
+  
+  // Virtual try-on state
+  const [showTryOn, setShowTryOn] = useState(false);
+  const [tryOnProduct, setTryOnProduct] = useState<{
+    id: string;
+    name: string;
+    price?: string;
+    image1?: string;
+  } | null>(null);
 
   // Auto-scroll to bottom when new messages arrive
   const scrollToBottom = () => {
@@ -144,6 +157,24 @@ export function ChatWidget() {
         };
 
         setMessages(prev => [...prev, assistantMessage]);
+        
+        // Handle virtual try-on action from chatbot
+        if (data.functionCalls && data.functionCalls.length > 0) {
+          const functionCall = data.functionCalls[0];
+          
+          if (functionCall.result && functionCall.result.action === 'start_tryon') {
+            // Fetch product details for try-on
+            const productData = {
+              id: functionCall.result.productId,
+              name: functionCall.result.productName,
+              price: '0', // Will be populated from product fetch if needed
+              image1: '', // Will be populated from product fetch if needed
+            };
+            
+            setTryOnProduct(productData);
+            setShowTryOn(true);
+          }
+        }
       } else {
         setError(data.error || 'Failed to send message');
       }
@@ -259,6 +290,18 @@ export function ChatWidget() {
           {chatHeader}
           {chatBody}
         </div>
+      )}
+      
+      {/* Virtual Try-On Modal */}
+      {showTryOn && tryOnProduct && (
+        <TryOnWidget 
+          product={tryOnProduct}
+          autoOpen={true}
+          onClose={() => {
+            setShowTryOn(false);
+            setTryOnProduct(null);
+          }}
+        />
       )}
     </>
   );
