@@ -21,6 +21,13 @@ interface ChatMessageProps {
 export function ChatMessage({ message }: ChatMessageProps) {
   const isUser = message.role === 'user';
 
+  // Extract image URLs from message content
+  const imageUrlRegex = /(https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|JPG|JPEG|PNG|GIF|WEBP))/gi;
+  const imageUrls = message.content.match(imageUrlRegex) || [];
+  
+  // Remove image URLs from text content
+  const textContent = message.content.replace(imageUrlRegex, '').trim();
+
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
       <div className={`max-w-[80%] ${isUser ? 'order-2' : 'order-1'}`}>
@@ -32,7 +39,24 @@ export function ChatMessage({ message }: ChatMessageProps) {
               : 'bg-white text-gray-900 border border-gray-200'
           }`}
         >
-          <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+          {textContent && <p className="text-sm whitespace-pre-wrap">{textContent}</p>}
+          
+          {/* Render images if any found */}
+          {imageUrls.length > 0 && (
+            <div className="mt-2 space-y-2">
+              {imageUrls.map((url, index) => (
+                <div key={index} className="relative w-full h-48 rounded overflow-hidden bg-gray-100">
+                  <Image
+                    src={url}
+                    alt={`Image ${index + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 80vw, 400px"
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Product Cards (if function call returned products) */}
@@ -71,8 +95,10 @@ function ProductCards({ products }: { products?: any[] }) {
                   src={product.images[0]}
                   alt={product.name}
                   fill
+                  sizes="64px"
                   className="object-cover"
                 />
+              
               ) : (
                 <span className="text-2xl">💎</span>
               )}

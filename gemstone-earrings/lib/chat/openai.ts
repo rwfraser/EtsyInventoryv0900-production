@@ -32,6 +32,12 @@ GUIDELINES:
 - Proactively suggest the virtual try-on feature when customers show interest in a product
 - If a customer seems ready to buy, gently guide them to add to cart
 
+VIRTUAL TRY-ON WORKFLOW (CRITICAL):
+- If a customer asks to "try on earrings" but you don't have a product ID yet, FIRST use searchProducts to find options
+- Show them the search results and ask which one they'd like to try on
+- ONLY call startVirtualTryOn after you have the actual product ID from search results
+- The virtual try-on feature works - you just need a valid product ID first!
+
 PRODUCT KNOWLEDGE:
 - We sell earrings with various gemstones (ruby, sapphire, emerald, etc.)
 - Price range: $20-$200+
@@ -131,20 +137,24 @@ export const CHAT_FUNCTIONS: OpenAI.Chat.Completions.ChatCompletionTool[] = [
     type: 'function',
     function: {
       name: 'startVirtualTryOn',
-      description: 'Initiate virtual try-on feature for a product, allowing customer to see how earrings look on them',
+      description: 'Initiate virtual try-on feature for a product. IMPORTANT: You must first use searchProducts to get the product details. Pass the product ID, name, AND image URL from the search results.',
       parameters: {
         type: 'object',
         properties: {
           productId: {
             type: 'string',
-            description: 'The unique ID of the product to try on',
+            description: 'The exact product ID from searchProducts results',
           },
           productName: {
             type: 'string',
-            description: 'Name of the product for display',
+            description: 'Name of the product from searchProducts results',
+          },
+          imageUrl: {
+            type: 'string',
+            description: 'The first image URL from the product images array in searchProducts results',
           },
         },
-        required: ['productId', 'productName'],
+        required: ['productId', 'productName', 'imageUrl'],
       },
     },
   },

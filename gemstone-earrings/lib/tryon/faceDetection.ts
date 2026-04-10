@@ -1,5 +1,3 @@
-import { FaceMesh } from '@mediapipe/face_mesh';
-
 export interface EarPosition {
   x: number;
   y: number;
@@ -17,98 +15,118 @@ export interface FaceLandmarks {
   };
 }
 
-// MediaPipe landmark indices for ears (approximate)
-const LEFT_EAR_TOP = 234;
-const LEFT_EAR_BOTTOM = 127;
-const RIGHT_EAR_TOP = 454;
-const RIGHT_EAR_BOTTOM = 356;
-
-// Face reference points for measurements
-const LEFT_EYE_OUTER = 33;
-const RIGHT_EYE_OUTER = 263;
-const NOSE_TIP = 1;
-const CHIN = 152;
-
 /**
- * Initialize MediaPipe Face Mesh detector
+ * Initialize BlazeFace detector (client-side only)
+ * BlazeFace is a lightweight face detection model that works reliably in browsers
  */
-export function createFaceDetector(): FaceMesh {
-  const faceMesh = new FaceMesh({
-    locateFile: (file) => {
-      return `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`;
-    },
-  });
+export async function createFaceDetector(): Promise<any> {
+  // Only run in browser
+  if (typeof window === 'undefined') {
+    throw new Error('Face detection can only run in the browser');
+  }
 
-  faceMesh.setOptions({
-    maxNumFaces: 1,
-    refineLandmarks: true,
-    minDetectionConfidence: 0.5,
-    minTrackingConfidence: 0.5,
-  });
+  console.log('[FaceDetection] Initializing TensorFlow.js and BlazeFace...');
+  
+  // Dynamically import TensorFlow.js libraries
+  const [tfCore, tfBackend, blazeface] = await Promise.all([
+    import('@tensorflow/tfjs-core'),
+    import('@tensorflow/tfjs-backend-webgl'),
+    import('@tensorflow-models/blazeface'),
+  ]);
 
-  return faceMesh;
+  // Set backend to WebGL for better performance
+  await tfCore.setBackend('webgl');
+  await tfCore.ready();
+  
+  console.log('[FaceDetection] TensorFlow.js backend ready:', tfCore.getBackend());
+
+  // Load BlazeFace model
+  console.log('[FaceDetection] Loading BlazeFace model...');
+  const model = await blazeface.load();
+  console.log('[FaceDetection] BlazeFace model loaded successfully');
+  
+  return model;
 }
 
 /**
- * Detect face landmarks from an image
+ * Detect face landmarks from an image using BlazeFace
+ * BlazeFace provides 6 keypoints: left eye, right eye, nose tip, mouth center, left ear, right ear
  */
 export async function detectFaceLandmarks(
   imageElement: HTMLImageElement | HTMLVideoElement | HTMLCanvasElement,
-  faceMesh: FaceMesh
+  detector: any
 ): Promise<FaceLandmarks | null> {
-  return new Promise((resolve) => {
-    faceMesh.onResults((results) => {
-      if (!results.multiFaceLandmarks || results.multiFaceLandmarks.length === 0) {
-        resolve(null);
-        return;
-      }
+  console.log('[FaceDetection] Starting face detection with BlazeFace...');
+  
+  try {
+    const predictions = await detector.estimateFaces(imageElement, false);
 
-      const landmarks = results.multiFaceLandmarks[0];
-      
-      // Calculate ear positions (average of top and bottom ear landmarks)
-      const leftEar: EarPosition = {
-        x: (landmarks[LEFT_EAR_TOP].x + landmarks[LEFT_EAR_BOTTOM].x) / 2,
-        y: (landmarks[LEFT_EAR_TOP].y + landmarks[LEFT_EAR_BOTTOM].y) / 2,
-        z: (landmarks[LEFT_EAR_TOP].z + landmarks[LEFT_EAR_BOTTOM].z) / 2,
-      };
+    if (!predictions || predictions.length === 0) {
+      console.log('[FaceDetection] No faces detected');
+      return null;
+    }
 
-      const rightEar: EarPosition = {
-        x: (landmarks[RIGHT_EAR_TOP].x + landmarks[RIGHT_EAR_BOTTOM].x) / 2,
-        y: (landmarks[RIGHT_EAR_TOP].y + landmarks[RIGHT_EAR_BOTTOM].y) / 2,
-        z: (landmarks[RIGHT_EAR_TOP].z + landmarks[RIGHT_EAR_BOTTOM].z) / 2,
-      };
+    console.log('[FaceDetection] Face detected, processing landmarks...');
+    const face = predictions[0];
+    
+    // BlazeFace provides: [rightEye, leftEye, nose, mouth, rightEarTragion, leftEarTragion]
+    // Indices: 0=rightEye, 1=leftEye, 2=nose, 3=mouth, 4=rightEar, 5=leftEar
+    const landmarks = face.landmarks;
+    const width = imageElement.width;
+    const height = imageElement.height;
+    
+    // Extract eye positions (normalized to 0-1)
+    const rightEye = { x: landmarks[0][0] / width, y: landmarks[0][1] / height };
+    const leftEye = { x: landmarks[1][0] / width, y: landmarks[1][1] / height };
+    const nose = { x: landmarks[2][0] / width, y: landmarks[2][1] / height };
+    
+    // Calculate face width (distance between eyes)
+    const faceWidth = Math.sqrt(
+      Math.pow(rightEye.x - leftEye.x, 2) + Math.pow(rightEye.y - leftEye.y, 2)
+    );
+    
+    // Estimate ear positions based on face geometry
+    // Ears are positioned:
+    // - Horizontally: About 60-70% of face width outward from each eye
+    // - Vertically: Slightly below eye level (about 10-20% of face width down)
+    const eyeCenterY = (leftEye.y + rightEye.y) / 2;
+    const earHorizontalOffset = faceWidth * 0.65; // 65% of face width from eye
+    const earVerticalOffset = faceWidth * 0.15; // 15% down from eye level
+    
+    const leftEar: EarPosition = {
+      x: leftEye.x - earHorizontalOffset,
+      y: eyeCenterY + earVerticalOffset,
+      z: 0,
+    };
 
-      // Calculate face width (distance between eyes)
-      const leftEye = landmarks[LEFT_EYE_OUTER];
-      const rightEye = landmarks[RIGHT_EYE_OUTER];
-      const faceWidth = Math.sqrt(
-        Math.pow(rightEye.x - leftEye.x, 2) + Math.pow(rightEye.y - leftEye.y, 2)
-      );
+    const rightEar: EarPosition = {
+      x: rightEye.x + earHorizontalOffset,
+      y: eyeCenterY + earVerticalOffset,
+      z: 0,
+    };
 
-      // Estimate head rotation
-      const noseTip = landmarks[NOSE_TIP];
-      const chin = landmarks[CHIN];
-      
-      // Simple rotation estimation (can be improved with full 3D analysis)
-      const pitch = (chin.y - noseTip.y) * 90; // Approximate pitch angle
-      const yaw = (noseTip.x - 0.5) * 60; // Approximate yaw angle
-      const roll = Math.atan2(rightEye.y - leftEye.y, rightEye.x - leftEye.x) * (180 / Math.PI);
+    // Estimate head rotation based on eye and nose positions
+    const yaw = (nose.x - 0.5) * 60; // Horizontal head turn
+    const roll = Math.atan2(rightEye.y - leftEye.y, rightEye.x - leftEye.x) * (180 / Math.PI);
+    const pitch = 0; // BlazeFace doesn't provide enough info for accurate pitch
 
-      resolve({
-        leftEar,
-        rightEar,
-        faceWidth,
-        faceRotation: {
-          pitch,
-          yaw,
-          roll,
-        },
-      });
-    });
-
-    // Send image to MediaPipe for processing
-    faceMesh.send({ image: imageElement });
-  });
+    console.log('[FaceDetection] Landmarks processed successfully');
+    console.log('[FaceDetection] Left ear:', leftEar, 'Right ear:', rightEar);
+    
+    return {
+      leftEar,
+      rightEar,
+      faceWidth,
+      faceRotation: {
+        pitch,
+        yaw,
+        roll,
+      },
+    };
+  } catch (error) {
+    console.error('[FaceDetection] Error during detection:', error);
+    throw error;
+  }
 }
 
 /**

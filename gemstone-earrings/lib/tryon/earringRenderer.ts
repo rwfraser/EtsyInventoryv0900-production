@@ -36,10 +36,24 @@ export async function renderEarringsOnImage(
   ctx.drawImage(selfieImage, 0, 0);
 
   // Load earring images
+  console.log('[EarringRenderer] Loading earring images:', {
+    left: earringAsset.leftEarringUrl,
+    right: earringAsset.rightEarringUrl,
+  });
+  
+  if (!earringAsset.leftEarringUrl) {
+    throw new Error('No earring image available for this product');
+  }
+  
   const [leftEarring, rightEarring] = await Promise.all([
     loadImage(earringAsset.leftEarringUrl),
     loadImage(earringAsset.rightEarringUrl || earringAsset.leftEarringUrl), // Use left if right not provided
   ]);
+  
+  console.log('[EarringRenderer] Earring images loaded:', {
+    left: `${leftEarring.width}x${leftEarring.height}`,
+    right: `${rightEarring.width}x${rightEarring.height}`,
+  });
 
   // Calculate positioning
   const leftEarPixels = landmarkToPixels(
@@ -146,10 +160,25 @@ function drawEarring(
  */
 function loadImage(url: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
+    if (!url || url.trim() === '') {
+      reject(new Error('Empty image URL provided'));
+      return;
+    }
+    
+    console.log('[EarringRenderer] Loading image from URL:', url);
     const img = new Image();
     img.crossOrigin = 'anonymous'; // Allow CORS
-    img.onload = () => resolve(img);
-    img.onerror = reject;
+    
+    img.onload = () => {
+      console.log('[EarringRenderer] Image loaded successfully:', url);
+      resolve(img);
+    };
+    
+    img.onerror = (e) => {
+      console.error('[EarringRenderer] Failed to load image:', url, e);
+      reject(new Error(`Failed to load earring image from ${url}`));
+    };
+    
     img.src = url;
   });
 }

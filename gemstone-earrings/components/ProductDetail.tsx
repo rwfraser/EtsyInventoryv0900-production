@@ -42,6 +42,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                     src={product.images[currentImageIndex]}
                     alt={`${product.gemstone.name} - Image ${currentImageIndex + 1}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-contain p-4 md:p-8"
                   />
                   {/* Navigation Arrows */}
@@ -91,6 +92,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                         src={image}
                         alt={`Thumbnail ${index + 1}`}
                         fill
+                        sizes="80px"
                         className="object-cover"
                       />
                     </div>

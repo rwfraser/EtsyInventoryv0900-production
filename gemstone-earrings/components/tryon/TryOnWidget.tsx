@@ -72,7 +72,8 @@ export default function TryOnWidget({
   const tryOnProduct = {
     id: product.id,
     name: product.name,
-    leftEarringUrl: product.leftEarringUrl || product.image1 || '/placeholder-earring.png',
+    image1: product.image1, // Pass through the product image
+    leftEarringUrl: product.leftEarringUrl,
     rightEarringUrl: product.rightEarringUrl,
     realWorldWidth: product.realWorldWidth || 15,
     realWorldHeight: product.realWorldHeight || 25,

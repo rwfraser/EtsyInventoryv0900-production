@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, KeyboardEvent } from 'react';
+import { useState, useRef, useEffect, KeyboardEvent } from 'react';
 import { Send } from 'lucide-react';
 
 interface ChatInputProps {
@@ -10,6 +10,14 @@ interface ChatInputProps {
 
 export function ChatInput({ onSend, disabled }: ChatInputProps) {
   const [input, setInput] = useState('');
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  
+  // Maintain focus after bot replies (when disabled changes from true to false)
+  useEffect(() => {
+    if (!disabled && textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [disabled]);
 
   const handleSend = () => {
     if (input.trim() && !disabled) {
@@ -29,6 +37,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
     <div className="border-t border-gray-200 p-3 sm:p-4 bg-white flex-shrink-0">
       <div className="flex gap-2 items-end">
         <textarea
+          ref={textareaRef}
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}

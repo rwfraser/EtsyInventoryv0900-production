@@ -41,61 +41,137 @@ export default function TryOnCanvas({ selfieFile, product, onComplete }: TryOnCa
   }, [selfieFile, product]);
 
   async function processTryOn() {
+    console.log('[TryOnCanvas] Starting processTryOn...');
+    console.log('[TryOnCanvas] Selfie file:', selfieFile.name, selfieFile.type, selfieFile.size, 'bytes');
+    console.log('[TryOnCanvas] Product:', product);
+    
     try {
       setStatus('loading');
       setError(null);
 
-      // Load selfie image
-      const selfieUrl = URL.createObjectURL(selfieFile);
+      // Load selfie image using FileReader for better reliability
+      console.log('[TryOnCanvas] Reading selfie file...');
+      const selfieDataUrl = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          if (e.target?.result && typeof e.target.result === 'string') {
+            resolve(e.target.result);
+          } else {
+            reject(new Error('Failed to read file'));
+          }
+        };
+        reader.onerror = () => reject(new Error('Failed to read your photo file'));
+        reader.readAsDataURL(selfieFile);
+      });
+      
+      console.log('[TryOnCanvas] File read complete, loading image...');
       const selfieImg = new Image();
+      
       await new Promise((resolve, reject) => {
-        selfieImg.onload = resolve;
-        selfieImg.onerror = reject;
-        selfieImg.src = selfieUrl;
+        selfieImg.onload = () => {
+          console.log('[TryOnCanvas] Selfie loaded successfully, dimensions:', selfieImg.width, 'x', selfieImg.height);
+          resolve(null);
+        };
+        selfieImg.onerror = (e) => {
+          console.error('[TryOnCanvas] Failed to load selfie image into Image element:', e);
+          reject(new Error('Failed to load your photo. Please try a different image.'));
+        };
+        selfieImg.src = selfieDataUrl;
       });
 
       // Resize if needed for performance
       const resizedCanvas = resizeImageIfNeeded(selfieImg, 1024, 1024);
       const processedImg = new Image();
-      await new Promise((resolve) => {
+      processedImg.crossOrigin = 'anonymous';
+      
+      await new Promise((resolve, reject) => {
         processedImg.onload = resolve;
+        processedImg.onerror = (e) => {
+          console.error('Failed to load processed image:', e);
+          reject(new Error('Failed to process your photo. Please try again.'));
+        };
         processedImg.src = resizedCanvas.toDataURL();
       });
+      
+      console.log('[TryOnCanvas] Image resized, dimensions:', processedImg.width, 'x', processedImg.height);
 
       // Detect face landmarks
       setStatus('detecting');
-      const faceDetector = createFaceDetector();
+      console.log('[TryOnCanvas] Creating face detector...');
+      
+      let faceDetector;
+      try {
+        faceDetector = await createFaceDetector();
+      } catch (detectorErr) {
+        console.error('[TryOnCanvas] Face detector creation failed:', detectorErr);
+        throw new Error('Failed to initialize face detection. Please refresh and try again.');
+      }
+      
+      console.log('[TryOnCanvas] Face detector ready, detecting landmarks...');
       const landmarks = await detectFaceLandmarks(processedImg, faceDetector);
 
       if (!landmarks) {
-        setError('No face detected in the photo. Please try another image with a clear view of your face.');
+        console.log('[TryOnCanvas] No face detected');
+        setError('No face detected in the photo. Please try another image with a clear, front-facing view of your face.');
         setStatus('error');
         return;
       }
 
+      console.log('[TryOnCanvas] Face landmarks detected:', landmarks);
       setFaceLandmarks(landmarks);
 
       // Prepare earring asset
+      // Use product's main image if no specific earring images are provided
+      console.log('[TryOnCanvas] ===== PRODUCT DATA DEBUG =====');
+      console.log('[TryOnCanvas] Full product object:', JSON.stringify(product, null, 2));
+      console.log('[TryOnCanvas] Product keys:', Object.keys(product));
+      console.log('[TryOnCanvas] Available image sources:', {
+        leftEarringUrl: product.leftEarringUrl,
+        image1: product.image1,
+        'product.image1 type': typeof product.image1,
+        'product.image1 length': product.image1?.length,
+      });
+      
+      const defaultEarringImage = product.leftEarringUrl || product.image1 || '';
+      
+      console.log('[TryOnCanvas] Selected earring image:', defaultEarringImage);
+      
+      if (!defaultEarringImage) {
+        console.error('[TryOnCanvas] No image available! Product dump:', product);
+        throw new Error('This product does not have any images available for virtual try-on. Please try a different product.');
+      }
+      
       const earringAsset: EarringAsset = {
-        leftEarringUrl: product.leftEarringUrl || '/placeholder-earring.png',
-        rightEarringUrl: product.rightEarringUrl || product.leftEarringUrl || '/placeholder-earring.png',
+        leftEarringUrl: defaultEarringImage,
+        rightEarringUrl: product.rightEarringUrl || defaultEarringImage,
         realWorldWidth: product.realWorldWidth || 20, // Default 20mm
         realWorldHeight: product.realWorldHeight || 30, // Default 30mm
         anchorPointX: product.anchorPointX || 0.5, // Center
         anchorPointY: product.anchorPointY || 0.1, // Top
       };
 
+      console.log('[TryOnCanvas] Earring asset prepared:', earringAsset);
+
       // Render earrings
       setStatus('rendering');
-      const resultDataUrl = await renderEarringsOnImage(processedImg, landmarks, earringAsset);
+      console.log('[TryOnCanvas] Starting earring rendering...');
+      
+      let resultDataUrl;
+      try {
+        resultDataUrl = await renderEarringsOnImage(processedImg, landmarks, earringAsset);
+        console.log('[TryOnCanvas] Rendering complete, data URL length:', resultDataUrl.length);
+      } catch (renderErr) {
+        console.error('[TryOnCanvas] Rendering failed:', renderErr);
+        throw new Error('Failed to render earrings on your photo. Please try again.');
+      }
+      
       setResultImageUrl(resultDataUrl);
       setStatus('complete');
+      console.log('[TryOnCanvas] Try-on complete!');
 
       if (onComplete) {
         onComplete(resultDataUrl);
       }
-
-      URL.revokeObjectURL(selfieUrl);
     } catch (err) {
       console.error('Try-on processing error:', err);
       setError(err instanceof Error ? err.message : 'An error occurred while processing your photo');

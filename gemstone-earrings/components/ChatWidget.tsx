@@ -6,6 +6,7 @@ import { ChatMessage } from './chat/ChatMessage';
 import { ChatInput } from './chat/ChatInput';
 import { TypingIndicator } from './chat/TypingIndicator';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { useCart } from '@/lib/CartContext';
 import dynamic from 'next/dynamic';
 
 // Dynamically import TryOnWidget to avoid SSR issues
@@ -39,6 +40,7 @@ export function ChatWidget() {
   const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const isMobile = useMediaQuery('(max-width: 767px)');
+  const { addToCart } = useCart();
   
   // Virtual try-on state
   const [showTryOn, setShowTryOn] = useState(false);
@@ -158,21 +160,88 @@ export function ChatWidget() {
 
         setMessages(prev => [...prev, assistantMessage]);
         
-        // Handle virtual try-on action from chatbot
+        // Handle function call actions from chatbot
         if (data.functionCalls && data.functionCalls.length > 0) {
           const functionCall = data.functionCalls[0];
           
+          // Handle virtual try-on
           if (functionCall.result && functionCall.result.action === 'start_tryon') {
-            // Fetch product details for try-on
+            console.log('[ChatWidget] Virtual try-on action detected:', functionCall.result);
+            const { productId, productName } = functionCall.result;
+            
+            // Use the image URL from the function result
+            console.log('[ChatWidget] Virtual try-on function result:', functionCall.result);
+            
             const productData = {
               id: functionCall.result.productId,
               name: functionCall.result.productName,
-              price: '0', // Will be populated from product fetch if needed
-              image1: '', // Will be populated from product fetch if needed
+              price: '0',
+              image1: functionCall.result.imageUrl || '', // Use the image URL from chatbot
             };
             
+            console.log('[ChatWidget] Opening try-on modal with product:', productData);
             setTryOnProduct(productData);
             setShowTryOn(true);
+          }
+          
+          // Handle add to cart
+          if (functionCall.result && functionCall.result.action === 'add_to_cart') {
+            console.log('[ChatWidget] Add to cart action detected:', functionCall.result);
+            const { productId, quantity } = functionCall.result;
+            
+            // Use getProductDetails to fetch full product data (uses chatbot's database access)
+            fetch('/api/chat/send', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                sessionToken,
+                message: `get product details for ${productId}`, // This will trigger getProductDetails
+              }),
+            })
+              .then(res => res.json())
+              .then(data => {
+                if (data.success && data.functionCalls && data.functionCalls[0]?.result?.product) {
+                  const product = data.functionCalls[0].result.product;
+                  console.log('[ChatWidget] Product details retrieved:', product);
+                  
+                  // Convert simple product to EarringPair format for cart
+                  // Since the cart expects EarringPair but chatbot uses simple products,
+                  // we create a minimal EarringPair-compatible object
+                  const earringPairFormat = {
+                    pair_id: product.id, // Use product id as pair_id
+                    gemstone: {
+                      name: product.name,
+                      size: '',
+                      shape: '',
+                      color: '',
+                      material: '',
+                      price_per_stone: parseFloat(product.price) / 2,
+                    },
+                    setting: {
+                      product_number: product.sku || product.id,
+                      product_title: product.description || product.name,
+                      material: '',
+                      gemstone_dimensions: '',
+                      price_per_setting: 0,
+                    },
+                    pricing: {
+                      settings_subtotal: 0,
+                      gemstones_subtotal: parseFloat(product.price),
+                      total_pair_price: parseFloat(product.price),
+                    },
+                    images: product.images || [],
+                    description: product.description,
+                  };
+                  
+                  console.log('[ChatWidget] Adding to cart:', earringPairFormat);
+                  addToCart(earringPairFormat, quantity || 1);
+                } else {
+                  console.error('[ChatWidget] Failed to get product details:', data);
+                }
+              })
+              .catch(err => {
+                console.error('[ChatWidget] Error fetching product for cart:', err);
+              });
           }
         }
       } else {

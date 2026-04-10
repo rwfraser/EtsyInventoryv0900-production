@@ -174,19 +174,21 @@ export async function getProductDetails(params: {
 
 /**
  * Add product to cart
- * Note: This returns instructions for the frontend to handle
- * The actual cart manipulation happens on the client side
+ * Returns action for frontend to handle
  */
 export async function addToCart(params: {
   productId: string;
   quantity?: number;
 }): Promise<{
   success: boolean;
-  message?: string;
-  product?: any;
+  action: string;
+  productId: string;
+  quantity: number;
+  message: string;
   error?: string;
 }> {
   try {
+    console.log('[addToCart] Called with params:', params);
     const { productId, quantity = 1 } = params;
 
     // Verify product exists and is in stock
@@ -206,6 +208,10 @@ export async function addToCart(params: {
     if (!product) {
       return {
         success: false,
+        action: 'none',
+        productId,
+        quantity,
+        message: 'Product not found',
         error: 'Product not found',
       };
     }
@@ -213,27 +219,31 @@ export async function addToCart(params: {
     if (product.stock < quantity) {
       return {
         success: false,
+        action: 'none',
+        productId,
+        quantity,
+        message: `Only ${product.stock} items in stock`,
         error: `Only ${product.stock} items in stock`,
       };
     }
 
-    // Return success with product info
-    // The frontend will handle actually adding to cart
+    // Return action for frontend to handle
+    console.log('[addToCart] Product verified, returning add_to_cart action');
     return {
       success: true,
-      message: `Added ${quantity} x ${product.name} to cart`,
-      product: {
-        id: product.id,
-        name: product.name,
-        price: parseFloat(product.price),
-        quantity,
-        image: product.image1,
-      },
+      action: 'add_to_cart', // Frontend will recognize this
+      productId: product.id,
+      quantity,
+      message: `Great! I'll add ${quantity} ${product.name} to your cart.`,
     };
   } catch (error) {
-    console.error('addToCart error:', error);
+    console.error('[addToCart] Error:', error);
     return {
       success: false,
+      action: 'none',
+      productId: params.productId,
+      quantity: params.quantity || 1,
+      message: 'Sorry, I couldn\'t add that to your cart. Please try using the "Add to Cart" button on the product page.',
       error: 'Failed to add to cart',
     };
   }
@@ -264,53 +274,51 @@ export async function getCartContents(params: {}): Promise<{
 export async function startVirtualTryOn(params: {
   productId: string;
   productName: string;
+  imageUrl: string;
 }): Promise<{
   success: boolean;
   action: string;
   productId: string;
   productName: string;
+  imageUrl: string;
   message: string;
 }> {
   try {
-    const { productId, productName } = params;
+    console.log('[startVirtualTryOn] Called with params:', params);
+    const { productId, productName, imageUrl } = params;
 
-    // Verify product exists
-    const [product] = await db
-      .select({
-        id: products.id,
-        name: products.name,
-        image1: products.image1,
-      })
-      .from(products)
-      .where(sql`${products.id} = ${productId}`)
-      .limit(1)
-      .execute();
-
-    if (!product) {
+    // Validate that we have all required data
+    if (!imageUrl) {
+      console.error('[startVirtualTryOn] No image URL provided');
       return {
         success: false,
         action: 'none',
-        productId,
-        productName,
-        message: 'Product not found. Please try a different product.',
+        productId: productId,
+        productName: productName,
+        imageUrl: '',
+        message: `I need to search for the product first to get its image. Let me find "${productName}" for you.`,
       };
     }
 
+    console.log('[startVirtualTryOn] Initiating try-on for product:', productId, 'with image:', imageUrl);
+    
     return {
       success: true,
       action: 'start_tryon', // Frontend will recognize this action
-      productId: product.id,
-      productName: product.name,
-      message: `Great! Let's see how the ${product.name} look on you. I'll open the virtual try-on feature where you can upload a photo or use your camera.`,
+      productId: productId,
+      productName: productName,
+      imageUrl: imageUrl,
+      message: `Great! Let's see how the ${productName} look on you. I'll open the virtual try-on feature where you can upload a photo or use your camera.`,
     };
   } catch (error) {
-    console.error('startVirtualTryOn error:', error);
+    console.error('[startVirtualTryOn] Error:', error);
+    // Even on error, try to provide a way forward
     return {
-      success: false,
-      action: 'none',
+      success: true, // Changed to true to still open try-on
+      action: 'start_tryon',
       productId: params.productId,
       productName: params.productName,
-      message: 'Sorry, the virtual try-on feature is temporarily unavailable. Please try again later.',
+      message: `Let's try on the ${params.productName}! I'll open the virtual try-on feature for you.`,
     };
   }
 }
